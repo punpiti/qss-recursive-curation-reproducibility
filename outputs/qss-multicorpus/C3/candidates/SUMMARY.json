@@ -1,0 +1,47 @@
+{
+  "schema_version": 1,
+  "evaluation_mode": "temporal_positive_holdout",
+  "openalex_requests": 12,
+  "cache_hits": 80,
+  "cache_misses": 12,
+  "request_budget_exhausted": false,
+  "retrieval_complete": true,
+  "seed_resolution_failures": [],
+  "group_query_failures": [],
+  "cutoff_retrieval_failures": [],
+  "pools": [
+    {
+      "cutoff": 2022,
+      "training_seed_count": 61,
+      "resolved_training_seed_count": 61,
+      "holdout_count": 9,
+      "candidate_count_before_abstract_gate": 1836,
+      "candidate_count": 1528,
+      "missing_abstract_removed": 308,
+      "reachable_holdout_count": 1,
+      "candidate_pool_ceiling": 0.111111
+    },
+    {
+      "cutoff": 2023,
+      "training_seed_count": 63,
+      "resolved_training_seed_count": 63,
+      "holdout_count": 7,
+      "candidate_count_before_abstract_gate": 1714,
+      "candidate_count": 1406,
+      "missing_abstract_removed": 308,
+      "reachable_holdout_count": 0,
+      "candidate_pool_ceiling": 0.0
+    },
+    {
+      "cutoff": 2024,
+      "training_seed_count": 64,
+      "resolved_training_seed_count": 64,
+      "holdout_count": 6,
+      "candidate_count_before_abstract_gate": 1631,
+      "candidate_count": 1328,
+      "missing_abstract_removed": 303,
+      "reachable_holdout_count": 0,
+      "candidate_pool_ceiling": 0.0
+    }
+  ]
+}

@@ -1,0 +1,30 @@
+{
+  "schema_version": 1,
+  "bib": "<REDACTED_LOCAL_PATH>/C1.bib",
+  "candidate_pool": "<REDACTED_LOCAL_PATH>/qss_candidates_2023.json",
+  "study": "<REDACTED_LOCAL_PATH>/qss_recursive_curation_study.json",
+  "parameters": {
+    "bib": "<REDACTED_LOCAL_PATH>/C1.bib",
+    "candidate_pool": "outputs/qss-temporal-candidate-pools-citing-2023/qss_candidates_2023.json",
+    "cutoff": 2023,
+    "study": "config/qss_recursive_curation_study.json",
+    "fractions": "0.5,0.7,0.85",
+    "bags": 50,
+    "workers": 8,
+    "random_seed": 20260827,
+    "evidence_threshold": 0.75,
+    "recovery_similarity": 0.1,
+    "tau_fit": 0.18,
+    "tau_gain": 0.05,
+    "additions_per_round": 10,
+    "max_rounds": 3,
+    "exploration_k": 30,
+    "final_k": 10,
+    "evaluation_role": "held_out_test",
+    "rule_version": "v2_relevance_soft_capacity",
+    "output_dir": "outputs/qss-late-pruner-v2-2023",
+    "overwrite_output": true
+  },
+  "cache_only": true,
+  "openalex_requests": 0
+}

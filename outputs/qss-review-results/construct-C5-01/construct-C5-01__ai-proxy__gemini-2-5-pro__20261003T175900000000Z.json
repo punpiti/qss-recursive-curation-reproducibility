@@ -1,0 +1,239 @@
+{
+  "schema_version": "qss-review-response-v1",
+  "batch_id": "construct-C5-01",
+  "review_type": "CONSTRUCT_AUDIT",
+  "rubric_version": "qss-review-rubric-v3",
+  "reviewer": {
+    "type": "AI_PROXY",
+    "id": "gemini-2-5-pro",
+    "role": "PRIMARY_REVIEWER",
+    "review_status": "AI_FIRST_PASS",
+    "reviewed_at": null
+  },
+  "reviews": [
+    {
+      "review_row_id": "C5-2023-01",
+      "corpus_or_project": "C5",
+      "source_group": "vehicle_make_model_scope",
+      "paper": {
+        "title": "Fine-Grained Vehicle Make and Model Recognition Framework Based on Magnetic Fingerprint",
+        "doi": "https://doi.org/10.1109/tits.2024.3374888",
+        "openalex_id": "https://openalex.org/W4393241264"
+      },
+      "normalized_decision": "EXCLUDE",
+      "scope_fit": "OUT_OF_SCOPE",
+      "role_fit": "MISMATCH",
+      "evidence_sufficiency": "SUFFICIENT_ABSTRACT",
+      "primary_reason_code": "WRONG_DOMAIN_OR_POPULATION",
+      "secondary_reason_codes": [
+        "FALSE_LEXICAL_OR_SEMANTIC_MATCH"
+      ],
+      "assigned_label": "vehicle_make_model_scope",
+      "corrected_label": null,
+      "evidence": [
+        {
+          "source_field": "ABSTRACT",
+          "supports": "SCOPE",
+          "paraphrase": "The framework utilizes magnetic fingerprint sensors on roads instead of surveillance video to perform fine-grained vehicle model recognition."
+        }
+      ],
+      "rationale": "While the paper addresses fine-grained vehicle make and model recognition, it relies on magnetic fingerprint sensors rather than video or surveillance cameras. Given that the target research scope specifically specifies video-based recognition, the non-visual sensor modality places this work out of scope.",
+      "confidence": "HIGH",
+      "flags": [
+        "POSSIBLE_FALSE_MATCH"
+      ],
+      "follow_up": {
+        "required": true,
+        "priority": "ROUTINE",
+        "reasons": [
+          "AI_PROXY_REQUIRES_HUMAN_CONFIRMATION"
+        ],
+        "recommended_action": "HUMAN_CHECK"
+      },
+      "task_specific": {
+        "scope_decision": "REMOVE_OUT_OF_SCOPE",
+        "group_decision": "WRONG_GROUP",
+        "corrected_group": null,
+        "literature_decision": null
+      }
+    },
+    {
+      "review_row_id": "C5-2023-02",
+      "corpus_or_project": "C5",
+      "source_group": "detection_tracking_pipeline",
+      "paper": {
+        "title": "RESEARCH ON MULTI-OBJECT TRACKING OF PIGS BASED ON IMPROVED BYTE TRACK",
+        "doi": "https://doi.org/10.35633/inmateh-79-22",
+        "openalex_id": "https://openalex.org/W7204204548"
+      },
+      "normalized_decision": "EXCLUDE",
+      "scope_fit": "OUT_OF_SCOPE",
+      "role_fit": "MISMATCH",
+      "evidence_sufficiency": "SUFFICIENT_ABSTRACT",
+      "primary_reason_code": "WRONG_DOMAIN_OR_POPULATION",
+      "secondary_reason_codes": [],
+      "assigned_label": "detection_tracking_pipeline",
+      "corrected_label": null,
+      "evidence": [
+        {
+          "source_field": "ABSTRACT",
+          "supports": "SCOPE",
+          "paraphrase": "The study develops an enhanced ByteTrack algorithm to perform multi-object tracking of pigs in intelligent livestock farming environments."
+        }
+      ],
+      "rationale": "The paper investigates multi-object tracking specifically for livestock (pigs) in agricultural settings. Because the target population is animals rather than vehicles in surveillance traffic, it falls completely outside the research scope.",
+      "confidence": "HIGH",
+      "flags": [
+        "POSSIBLE_WRONG_GROUP"
+      ],
+      "follow_up": {
+        "required": true,
+        "priority": "ROUTINE",
+        "reasons": [
+          "AI_PROXY_REQUIRES_HUMAN_CONFIRMATION"
+        ],
+        "recommended_action": "HUMAN_CHECK"
+      },
+      "task_specific": {
+        "scope_decision": "REMOVE_OUT_OF_SCOPE",
+        "group_decision": "WRONG_GROUP",
+        "corrected_group": null,
+        "literature_decision": null
+      }
+    },
+    {
+      "review_row_id": "C5-2023-03",
+      "corpus_or_project": "C5",
+      "source_group": "semantic_parts_occlusion",
+      "paper": {
+        "title": "Vehicle Classification Algorithm Based on Improved Vision Transformer",
+        "doi": "https://doi.org/10.3390/wevj15080344",
+        "openalex_id": "https://openalex.org/W4401111520"
+      },
+      "normalized_decision": "INCLUDE",
+      "scope_fit": "IN_SCOPE",
+      "role_fit": "DIRECT",
+      "evidence_sufficiency": "SUFFICIENT_ABSTRACT",
+      "primary_reason_code": "DIRECT_METHOD_OR_EVIDENCE_ROLE",
+      "secondary_reason_codes": [],
+      "assigned_label": "semantic_parts_occlusion",
+      "corrected_label": null,
+      "evidence": [
+        {
+          "source_field": "ABSTRACT",
+          "supports": "SCOPE",
+          "paraphrase": "The proposed IND-ViT extracts local features and uses a sparse attention module to select discernible regions for vehicle classification on vehicle datasets like BIT-Vehicles."
+        }
+      ],
+      "rationale": "The paper directly addresses vehicle classification by incorporating local feature extraction and sparse attention to isolate discernible visual regions. This directly aligns with the semantic parts and local evidence requirements within the research scope.",
+      "confidence": "HIGH",
+      "flags": [
+        "NONE"
+      ],
+      "follow_up": {
+        "required": true,
+        "priority": "ROUTINE",
+        "reasons": [
+          "AI_PROXY_REQUIRES_HUMAN_CONFIRMATION"
+        ],
+        "recommended_action": "HUMAN_CHECK"
+      },
+      "task_specific": {
+        "scope_decision": "KEEP_IN_SCOPE",
+        "group_decision": "CORRECT_GROUP",
+        "corrected_group": null,
+        "literature_decision": null
+      }
+    },
+    {
+      "review_row_id": "C5-2023-04",
+      "corpus_or_project": "C5",
+      "source_group": "detection_tracking_pipeline",
+      "paper": {
+        "title": "RESEARCH ON MULTI-OBJECT TRACKING OF PIGS BASED ON IMPROVED BYTE TRACK",
+        "doi": "https://doi.org/10.35633/inmateh-79-22",
+        "openalex_id": "https://openalex.org/W7204204548"
+      },
+      "normalized_decision": "EXCLUDE",
+      "scope_fit": "OUT_OF_SCOPE",
+      "role_fit": "MISMATCH",
+      "evidence_sufficiency": "SUFFICIENT_ABSTRACT",
+      "primary_reason_code": "WRONG_DOMAIN_OR_POPULATION",
+      "secondary_reason_codes": [],
+      "assigned_label": "detection_tracking_pipeline",
+      "corrected_label": null,
+      "evidence": [
+        {
+          "source_field": "ABSTRACT",
+          "supports": "SCOPE",
+          "paraphrase": "The study focuses on multi-object tracking of pigs in livestock farming scenarios rather than vehicle surveillance."
+        }
+      ],
+      "rationale": "The research focuses on multi-object tracking of livestock (pigs) in agricultural farming environments. Due to the domain mismatch, it is out of scope for vehicle detection and tracking pipelines in traffic contexts.",
+      "confidence": "HIGH",
+      "flags": [
+        "POSSIBLE_WRONG_GROUP"
+      ],
+      "follow_up": {
+        "required": true,
+        "priority": "ROUTINE",
+        "reasons": [
+          "AI_PROXY_REQUIRES_HUMAN_CONFIRMATION"
+        ],
+        "recommended_action": "HUMAN_CHECK"
+      },
+      "task_specific": {
+        "scope_decision": "REMOVE_OUT_OF_SCOPE",
+        "group_decision": "WRONG_GROUP",
+        "corrected_group": null,
+        "literature_decision": null
+      }
+    },
+    {
+      "review_row_id": "C5-2023-05",
+      "corpus_or_project": "C5",
+      "source_group": "temporal_evidence_fusion",
+      "paper": {
+        "title": "Exploring Multi-Modal Spatial–Temporal Contexts for High-Performance RGB-T Tracking",
+        "doi": "https://doi.org/10.1109/tip.2024.3428316",
+        "openalex_id": "https://openalex.org/W4400810524"
+      },
+      "normalized_decision": "EXCLUDE",
+      "scope_fit": "OUT_OF_SCOPE",
+      "role_fit": "PARTIAL",
+      "evidence_sufficiency": "SUFFICIENT_ABSTRACT",
+      "primary_reason_code": "TOO_GENERIC_FOR_CLAIM",
+      "secondary_reason_codes": [
+        "WRONG_DOMAIN_OR_POPULATION"
+      ],
+      "assigned_label": "temporal_evidence_fusion",
+      "corrected_label": null,
+      "evidence": [
+        {
+          "source_field": "ABSTRACT",
+          "supports": "SCOPE",
+          "paraphrase": "The paper proposes MMSTC network for generic RGB-T tracking by propagating temporal tracking cues across historical frames using a Transformer decoder."
+        }
+      ],
+      "rationale": "The paper addresses general multi-modal (RGB-T) object tracking and temporal cue propagation across video frames. While it serves as a boundary reference for temporal tracking mechanisms, it targets generic object tracking rather than vehicle-specific recognition or fine-grained vehicle evidence fusion.",
+      "confidence": "HIGH",
+      "flags": [
+        "BOUNDARY_CASE"
+      ],
+      "follow_up": {
+        "required": true,
+        "priority": "ROUTINE",
+        "reasons": [
+          "AI_PROXY_REQUIRES_HUMAN_CONFIRMATION"
+        ],
+        "recommended_action": "HUMAN_CHECK"
+      },
+      "task_specific": {
+        "scope_decision": "REMOVE_OUT_OF_SCOPE",
+        "group_decision": "PARTIAL_ANALOGUE",
+        "corrected_group": null,
+        "literature_decision": null
+      }
+    }
+  ]
+}

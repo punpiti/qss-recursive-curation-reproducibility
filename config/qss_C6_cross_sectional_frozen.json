@@ -1,0 +1,185 @@
+{
+  "schema_version": 1,
+  "study_id": "qss-C6-cross-sectional-v1",
+  "status": "frozen_before_candidate_retrieval",
+  "frozen_on": "2026-08-28",
+  "evaluation_mode": "cross_sectional_scope_robustness",
+  "snapshot_through_year": 2024,
+  "candidate_years": [
+    2025,
+    2026
+  ],
+  "scope": "Integrated path models relating computational thinking and STEM attitudes to computational self-efficacy, scientific problem solving, and scientific reasoning, with cautious multi-group comparison across gender.",
+  "canonical_inputs": {
+    "bib": "<REDACTED_LOCAL_PATH>/ejmste-43711-references.bib",
+    "bib_sha256": "9bed3598351e4bbbb8a10a66b9349197521b1f69725be1291ab3fd01447b4f5f",
+    "scope_file": "<REDACTED_LOCAL_PATH>/revised_manuscript_2026-08-06_pdf.txt",
+    "scope_sha256": "702db1c01c7f6a42079ca0e395380f2a78fd868707dfee92fa5b34a75f5905ee"
+  },
+  "interpretation_boundary": "No viable temporal positive holdout exists. Report descriptive frozen-group coverage and stability only; do not infer causal or confirmed path-specific gender differences.",
+  "legacy_group_key_note": "The runner reads kbs_frozen_evidence_groups; these are independently frozen C6 groups.",
+  "kbs_frozen_evidence_groups": [
+    {
+      "id": "computational_thinking_construct",
+      "purpose": "Definitions, assessment, and development of computational thinking as abstraction, decomposition, algorithmic reasoning, and transferable problem solving in school STEM contexts.",
+      "capacity": 3,
+      "query": "computational thinking assessment abstraction decomposition algorithmic reasoning K-12 STEM",
+      "seed_validation_terms": [
+        "computational thinking",
+        "algorithmic thinking",
+        "abstraction",
+        "decomposition"
+      ],
+      "terms": [
+        "computational thinking",
+        "CT assessment",
+        "abstraction",
+        "decomposition",
+        "algorithmic thinking",
+        "pattern recognition",
+        "K-12",
+        "middle school"
+      ],
+      "anchor_families": [
+        [
+          "computational thinking",
+          "algorithmic thinking",
+          "coding",
+          "programming"
+        ],
+        [
+          "assessment",
+          "skill",
+          "competency",
+          "education",
+          "student"
+        ]
+      ]
+    },
+    {
+      "id": "stem_motivation_self_efficacy",
+      "purpose": "STEM attitudes, computational self-efficacy, expectancy-value, motivation, interest, engagement, and persistence evidence.",
+      "capacity": 3,
+      "query": "STEM attitudes computational self efficacy motivation expectancy value students",
+      "seed_expansion_query": "STEM attitudes computational self efficacy motivation expectancy value students",
+      "seed_validation_terms": [
+        "STEM attitudes",
+        "computational self-efficacy",
+        "self-efficacy",
+        "expectancy value",
+        "motivation",
+        "interest",
+        "engagement"
+      ],
+      "terms": [
+        "STEM attitudes",
+        "computational self-efficacy",
+        "self-efficacy",
+        "expectancy value",
+        "motivation",
+        "interest",
+        "engagement",
+        "persistence"
+      ],
+      "anchor_families": [
+        [
+          "STEM",
+          "science",
+          "technology",
+          "computing"
+        ],
+        [
+          "attitude",
+          "self-efficacy",
+          "motivation",
+          "expectancy",
+          "interest",
+          "engagement"
+        ]
+      ]
+    },
+    {
+      "id": "scientific_reasoning_problem_solving",
+      "purpose": "Scientific reasoning and science problem-solving evidence linking experimentation, evidence evaluation, belief revision, and structured solution strategies to computational thinking.",
+      "capacity": 3,
+      "query": "scientific reasoning problem solving computational thinking students evidence evaluation",
+      "seed_validation_terms": [
+        "scientific reasoning",
+        "problem solving",
+        "problem-solving",
+        "evidence evaluation",
+        "belief revision",
+        "experimentation"
+      ],
+      "terms": [
+        "scientific reasoning",
+        "problem solving",
+        "problem-solving",
+        "evidence evaluation",
+        "belief revision",
+        "experimentation",
+        "cognitive skill",
+        "reasoning ability"
+      ],
+      "anchor_families": [
+        [
+          "reasoning",
+          "problem solving",
+          "problem-solving",
+          "inquiry"
+        ],
+        [
+          "science",
+          "scientific",
+          "computational thinking",
+          "STEM",
+          "student"
+        ]
+      ]
+    },
+    {
+      "id": "gender_multigroup_equity",
+      "purpose": "Gender equity and multi-group path or invariance analysis needed to interpret whether structural coefficient configurations differ without overclaiming individual paths.",
+      "capacity": 3,
+      "query": "gender computational thinking STEM attitudes multi group path analysis measurement invariance equity",
+      "seed_expansion_query": "gender computational thinking STEM attitudes multigroup measurement invariance students",
+      "seed_validation_terms": [
+        "gender",
+        "female",
+        "male",
+        "equity",
+        "multi-group",
+        "multigroup",
+        "measurement invariance"
+      ],
+      "terms": [
+        "gender",
+        "female",
+        "male",
+        "equity",
+        "multi-group",
+        "multigroup",
+        "path analysis",
+        "measurement invariance",
+        "structural equation"
+      ],
+      "anchor_families": [
+        [
+          "gender",
+          "female",
+          "male",
+          "equity",
+          "sex differences"
+        ],
+        [
+          "computational thinking",
+          "STEM",
+          "science education",
+          "path analysis",
+          "multi-group",
+          "invariance"
+        ]
+      ]
+    }
+  ]
+}

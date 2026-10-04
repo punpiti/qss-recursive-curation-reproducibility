@@ -1,0 +1,254 @@
+{
+  "schema_version": "qss-review-response-v1",
+  "batch_id": "construct-C2-02",
+  "review_type": "CONSTRUCT_AUDIT",
+  "rubric_version": "qss-review-rubric-v3",
+  "reviewer": {
+    "type": "AI_PROXY",
+    "id": "claude-opus-5-5",
+    "role": "PRIMARY_REVIEWER",
+    "review_status": "AI_FIRST_PASS",
+    "reviewed_at": "2026-10-03T17:01:21.621945Z"
+  },
+  "reviews": [
+    {
+      "review_row_id": "C2-2023-06",
+      "corpus_or_project": "C2",
+      "source_group": "continuity_residual_diagnostic",
+      "paper": {
+        "title": "An integrated method for TCWV prediction using deep learning coupled with physical constraints: a physics-aware spatio-temporal attention network",
+        "doi": "https://doi.org/10.1080/20964471.2026.2680809",
+        "openalex_id": "https://openalex.org/W7167021323"
+      },
+      "normalized_decision": "EXCLUDE",
+      "scope_fit": "OUT_OF_SCOPE",
+      "role_fit": "MISMATCH",
+      "evidence_sufficiency": "SUFFICIENT_ABSTRACT",
+      "primary_reason_code": "WRONG_DOMAIN_OR_POPULATION",
+      "secondary_reason_codes": [
+        "FALSE_LEXICAL_OR_SEMANTIC_MATCH",
+        "WRONG_METHOD_OR_OUTCOME"
+      ],
+      "assigned_label": "continuity_residual_diagnostic",
+      "corrected_label": null,
+      "evidence": [
+        {
+          "source_field": "ABSTRACT",
+          "supports": "SCOPE",
+          "paraphrase": "Predicts global/regional Total Column Water Vapor and multi-year trends (2025-2029), not surface rainfall fields or convective rainfall growth."
+        },
+        {
+          "source_field": "ABSTRACT",
+          "supports": "ROLE",
+          "paraphrase": "The vertically integrated water-vapour continuity equation is embedded as an inductive bias for prediction, not used to compute an advection residual that isolates local rainfall change."
+        },
+        {
+          "source_field": "ABSTRACT",
+          "supports": "RISK",
+          "paraphrase": "The match to the group rests on the phrase continuity equation and physics constraints."
+        }
+      ],
+      "rationale": "The paper uses a water-vapour continuity constraint to regularise a deep-learning TCWV predictor at large scales, which differs in variable, scale and purpose from a rainfall transport-residual diagnostic. It is a lexical/semantic false match for the continuity group and out of scope, consistent with its use as a boundary example.",
+      "confidence": "HIGH",
+      "flags": [
+        "POSSIBLE_FALSE_MATCH",
+        "CLAIM_CRITICAL"
+      ],
+      "follow_up": {
+        "required": true,
+        "priority": "MEDIUM",
+        "reasons": [
+          "AI_PROXY_REQUIRES_HUMAN_CONFIRMATION",
+          "CLAIM_CRITICAL"
+        ],
+        "recommended_action": "HUMAN_CHECK"
+      },
+      "task_specific": {
+        "scope_decision": "REMOVE_OUT_OF_SCOPE",
+        "group_decision": "WRONG_GROUP",
+        "corrected_group": null,
+        "literature_decision": null
+      }
+    },
+    {
+      "review_row_id": "C2-2024-07",
+      "corpus_or_project": "C2",
+      "source_group": "continuity_residual_diagnostic",
+      "paper": {
+        "title": "A physically based neural network for flood routing: The Muskingum-Recurrent neural network",
+        "doi": "https://doi.org/10.1016/j.jhydrol.2026.135403",
+        "openalex_id": "https://openalex.org/W7148539509"
+      },
+      "normalized_decision": "EXCLUDE",
+      "scope_fit": "OUT_OF_SCOPE",
+      "role_fit": "MISMATCH",
+      "evidence_sufficiency": "SUFFICIENT_ABSTRACT",
+      "primary_reason_code": "WRONG_DOMAIN_OR_POPULATION",
+      "secondary_reason_codes": [
+        "FALSE_LEXICAL_OR_SEMANTIC_MATCH"
+      ],
+      "assigned_label": "continuity_residual_diagnostic",
+      "corrected_label": null,
+      "evidence": [
+        {
+          "source_field": "ABSTRACT",
+          "supports": "SCOPE",
+          "paraphrase": "Studies river flood routing with the Muskingum method in channels and benchmark floods (Village Creek), not spatial rainfall fields or convective rainfall growth."
+        },
+        {
+          "source_field": "ABSTRACT",
+          "supports": "ROLE",
+          "paraphrase": "Mass conservation is a hard architectural constraint on channel water storage in a recurrent network, not a continuity/source-sink residual separating local rainfall change from horizontal advection."
+        },
+        {
+          "source_field": "ABSTRACT",
+          "supports": "RISK",
+          "paraphrase": "Overlap with the group is limited to generic terms such as water mass conservation and physics-embedded modelling."
+        }
+      ],
+      "rationale": "The paper is a hydrological flood-routing model; its mass-conservation constraint concerns channel storage rather than a rainfall-field transport residual. It matches the continuity group only lexically and is out of scope for diagnosing convective rainfall growth from gauge fields. Because it is the highest-fit pool candidate for the omitted group, its exclusion suggests the group's absence may reflect a weak candidate pool rather than an exploration-stage loss.",
+      "confidence": "HIGH",
+      "flags": [
+        "POSSIBLE_FALSE_MATCH",
+        "ROLE_COVERAGE_RISK",
+        "CLAIM_CRITICAL"
+      ],
+      "follow_up": {
+        "required": true,
+        "priority": "HIGH",
+        "reasons": [
+          "AI_PROXY_REQUIRES_HUMAN_CONFIRMATION",
+          "CLAIM_CRITICAL",
+          "ROLE_COVERAGE_RISK"
+        ],
+        "recommended_action": "HUMAN_CHECK"
+      },
+      "task_specific": {
+        "scope_decision": "REMOVE_OUT_OF_SCOPE",
+        "group_decision": "WRONG_GROUP",
+        "corrected_group": null,
+        "literature_decision": null
+      }
+    },
+    {
+      "review_row_id": "C2-2024-08",
+      "corpus_or_project": "C2",
+      "source_group": "gauge_field_reconstruction",
+      "paper": {
+        "title": "A dense rain-gauge observation framework for advection-consistency diagnosis of urban convective rainfall",
+        "doi": "https://doi.org/10.5194/egusphere-2026-1314",
+        "openalex_id": "https://openalex.org/W7164816061"
+      },
+      "normalized_decision": "INCLUDE",
+      "scope_fit": "IN_SCOPE",
+      "role_fit": "PARTIAL",
+      "evidence_sufficiency": "SUFFICIENT_ABSTRACT",
+      "primary_reason_code": "VALID_CONTEXT_BUT_WRONG_GROUP",
+      "secondary_reason_codes": [
+        "DIRECT_METHOD_OR_EVIDENCE_ROLE"
+      ],
+      "assigned_label": "gauge_field_reconstruction",
+      "corrected_label": "continuity_residual_diagnostic",
+      "evidence": [
+        {
+          "source_field": "ABSTRACT",
+          "supports": "ROLE",
+          "paraphrase": "Defines convective rainfall via the continuity equation as the residual between the observed field and a purely advected field without source/sink terms, interpreted as non-advective processes."
+        },
+        {
+          "source_field": "ABSTRACT",
+          "supports": "SCOPE",
+          "paraphrase": "Uses a high-density Bangkok rain-gauge network, reconstructs kilometre-scale rainfall grids and estimates motion with Horn-Schunck optical flow, matching all three components of the research scope."
+        },
+        {
+          "source_field": "ABSTRACT",
+          "supports": "RISK",
+          "paraphrase": "Gauge-field reconstruction is a supporting step; the stated contribution is the advection-consistency residual diagnostic, and the design closely mirrors the project's own research scope."
+        }
+      ],
+      "rationale": "The paper is squarely in scope and its central contribution is a continuity-equation advection residual, so continuity_residual_diagnostic fits better than the assigned gauge_field_reconstruction, which describes only a supporting step. If confirmed, the target group was represented in bags counted as target-absent, which bears directly on the omission claim. Its near-identical design to the research scope also warrants checking whether it is the project's own or a closely related source manuscript.",
+      "confidence": "MEDIUM",
+      "flags": [
+        "POSSIBLE_WRONG_GROUP",
+        "CLAIM_CRITICAL",
+        "BOUNDARY_CASE"
+      ],
+      "follow_up": {
+        "required": true,
+        "priority": "HIGH",
+        "reasons": [
+          "AI_PROXY_REQUIRES_HUMAN_CONFIRMATION",
+          "GROUP_DISAGREEMENT",
+          "CLAIM_CRITICAL",
+          "BOUNDARY_CASE"
+        ],
+        "recommended_action": "HUMAN_CHECK"
+      },
+      "task_specific": {
+        "scope_decision": "KEEP_IN_SCOPE",
+        "group_decision": "WRONG_GROUP",
+        "corrected_group": "continuity_residual_diagnostic",
+        "literature_decision": null
+      }
+    },
+    {
+      "review_row_id": "C2-2024-09",
+      "corpus_or_project": "C2",
+      "source_group": "continuity_residual_diagnostic",
+      "paper": {
+        "title": "An integrated method for TCWV prediction using deep learning coupled with physical constraints: a physics-aware spatio-temporal attention network",
+        "doi": "https://doi.org/10.1080/20964471.2026.2680809",
+        "openalex_id": "https://openalex.org/W7167021323"
+      },
+      "normalized_decision": "EXCLUDE",
+      "scope_fit": "OUT_OF_SCOPE",
+      "role_fit": "MISMATCH",
+      "evidence_sufficiency": "SUFFICIENT_ABSTRACT",
+      "primary_reason_code": "WRONG_DOMAIN_OR_POPULATION",
+      "secondary_reason_codes": [
+        "FALSE_LEXICAL_OR_SEMANTIC_MATCH",
+        "WRONG_METHOD_OR_OUTCOME"
+      ],
+      "assigned_label": "continuity_residual_diagnostic",
+      "corrected_label": null,
+      "evidence": [
+        {
+          "source_field": "ABSTRACT",
+          "supports": "SCOPE",
+          "paraphrase": "Predicts global/regional Total Column Water Vapor and multi-year trends (2025-2029), not surface rainfall fields or convective rainfall growth."
+        },
+        {
+          "source_field": "ABSTRACT",
+          "supports": "ROLE",
+          "paraphrase": "The vertically integrated water-vapour continuity equation is embedded as an inductive bias for prediction, not used to compute an advection residual that isolates local rainfall change."
+        },
+        {
+          "source_field": "ABSTRACT",
+          "supports": "RISK",
+          "paraphrase": "The match to the group rests on the phrase continuity equation and physics constraints."
+        }
+      ],
+      "rationale": "The paper uses a water-vapour continuity constraint to regularise a deep-learning TCWV predictor at large scales, which differs in variable, scale and purpose from a rainfall transport-residual diagnostic. It is a lexical/semantic false match for the continuity group and out of scope, consistent with its use as a boundary example.",
+      "confidence": "HIGH",
+      "flags": [
+        "POSSIBLE_FALSE_MATCH",
+        "CLAIM_CRITICAL"
+      ],
+      "follow_up": {
+        "required": true,
+        "priority": "MEDIUM",
+        "reasons": [
+          "AI_PROXY_REQUIRES_HUMAN_CONFIRMATION",
+          "CLAIM_CRITICAL"
+        ],
+        "recommended_action": "HUMAN_CHECK"
+      },
+      "task_specific": {
+        "scope_decision": "REMOVE_OUT_OF_SCOPE",
+        "group_decision": "WRONG_GROUP",
+        "corrected_group": null,
+        "literature_decision": null
+      }
+    }
+  ]
+}

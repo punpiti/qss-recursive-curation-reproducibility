@@ -1,0 +1,176 @@
+{
+  "schema_version": "qss-review-response-v1",
+  "batch_id": "round0-temporal-evaluation-observability-01",
+  "review_type": "ROUND0_LITERATURE_REVIEW",
+  "rubric_version": "qss-review-rubric-v3",
+  "reviewer": {
+    "type": "AI_PROXY",
+    "id": "claude-opus-5-5",
+    "role": "PRIMARY_REVIEWER",
+    "review_status": "AI_FIRST_PASS",
+    "reviewed_at": "2026-10-03T17:07:23.079906Z"
+  },
+  "reviews": [
+    {
+      "review_row_id": "round0-031",
+      "corpus_or_project": "qss_self_hosting",
+      "source_group": "temporal_evaluation_observability",
+      "paper": {
+        "title": "Efficient Learning Machines: Theories, Concepts, and Applications for Engineers and System Designers",
+        "doi": "https://doi.org/10.1007/978-1-4302-5990-9",
+        "openalex_id": "https://openalex.org/W2473394283"
+      },
+      "normalized_decision": "EXCLUDE",
+      "scope_fit": "OUT_OF_SCOPE",
+      "role_fit": "MISMATCH",
+      "evidence_sufficiency": "SUFFICIENT_ABSTRACT",
+      "primary_reason_code": "TOO_GENERIC_FOR_CLAIM",
+      "secondary_reason_codes": [
+        "FALSE_LEXICAL_OR_SEMANTIC_MATCH"
+      ],
+      "assigned_label": "temporal_evaluation_observability",
+      "corrected_label": null,
+      "evidence": [
+        {
+          "source_field": "ABSTRACT",
+          "supports": "SCOPE",
+          "paraphrase": "General machine-learning textbook covering classification, genetic algorithms, neural networks, SVMs and bio-inspired methods."
+        },
+        {
+          "source_field": "ABSTRACT",
+          "supports": "RISK",
+          "paraphrase": "'Temporal' appears only in 'hierarchical temporal memory'; there is no temporal evaluation, leakage or offline-observability content."
+        }
+      ],
+      "rationale": "A broad ML textbook is too generic to evidence temporal evaluation of recommender or retrieval systems, and its match is lexical. It is out of scope.",
+      "confidence": "HIGH",
+      "flags": [
+        "POSSIBLE_FALSE_MATCH"
+      ],
+      "follow_up": {
+        "required": true,
+        "priority": "ROUTINE",
+        "reasons": [
+          "AI_PROXY_REQUIRES_HUMAN_CONFIRMATION"
+        ],
+        "recommended_action": "HUMAN_CHECK"
+      },
+      "task_specific": {
+        "scope_decision": null,
+        "group_decision": null,
+        "corrected_group": null,
+        "literature_decision": "REMOVE"
+      }
+    },
+    {
+      "review_row_id": "round0-032",
+      "corpus_or_project": "qss_self_hosting",
+      "source_group": "temporal_evaluation_observability",
+      "paper": {
+        "title": "A systematic literature review of recent advances on context-aware recommender systems",
+        "doi": "https://doi.org/10.1007/s10462-024-10939-4",
+        "openalex_id": "https://openalex.org/W4404432903"
+      },
+      "normalized_decision": "EXCLUDE",
+      "scope_fit": "OUT_OF_SCOPE",
+      "role_fit": "PARTIAL",
+      "evidence_sufficiency": "SUFFICIENT_ABSTRACT",
+      "primary_reason_code": "WRONG_METHOD_OR_OUTCOME",
+      "secondary_reason_codes": [
+        "TOO_GENERIC_FOR_CLAIM"
+      ],
+      "assigned_label": "temporal_evaluation_observability",
+      "corrected_label": null,
+      "evidence": [
+        {
+          "source_field": "ABSTRACT",
+          "supports": "SCOPE",
+          "paraphrase": "Systematic review of context-aware recommender systems for products, services or contacts, with temporal context as one input attribute."
+        },
+        {
+          "source_field": "ABSTRACT",
+          "supports": "ROLE",
+          "paraphrase": "Discusses evaluation reproducibility, datasets and metrics, but not temporal splits, look-ahead leakage or unreachable positives."
+        },
+        {
+          "source_field": "ABSTRACT",
+          "supports": "RISK",
+          "paraphrase": "No candidate in this role batch supports temporal evaluation, so the role may lack Round-0 coverage."
+        }
+      ],
+      "rationale": "This is a generic recommender-systems review without a scholarly or evidence-selection workflow, which the frozen boundary excludes; 'temporal' refers to context features, not temporal evaluation design. Its evaluation-reproducibility discussion is too general to support the role.",
+      "confidence": "MEDIUM",
+      "flags": [
+        "BOUNDARY_CASE",
+        "ROLE_COVERAGE_RISK"
+      ],
+      "follow_up": {
+        "required": true,
+        "priority": "MEDIUM",
+        "reasons": [
+          "AI_PROXY_REQUIRES_HUMAN_CONFIRMATION",
+          "BOUNDARY_CASE",
+          "ROLE_COVERAGE_RISK"
+        ],
+        "recommended_action": "HUMAN_CHECK"
+      },
+      "task_specific": {
+        "scope_decision": null,
+        "group_decision": null,
+        "corrected_group": null,
+        "literature_decision": "REMOVE"
+      }
+    },
+    {
+      "review_row_id": "round0-033",
+      "corpus_or_project": "qss_self_hosting",
+      "source_group": "temporal_evaluation_observability",
+      "paper": {
+        "title": "Improving Estimates of Gross Primary Productivity by Assimilating Solar‐Induced Fluorescence Satellite Retrievals in a Terrestrial Biosphere Model Using a Process‐Based SIF Model",
+        "doi": "https://doi.org/10.1029/2019jg005040",
+        "openalex_id": "https://openalex.org/W2979987213"
+      },
+      "normalized_decision": "EXCLUDE",
+      "scope_fit": "OUT_OF_SCOPE",
+      "role_fit": "MISMATCH",
+      "evidence_sufficiency": "SUFFICIENT_ABSTRACT",
+      "primary_reason_code": "WRONG_DOMAIN_OR_POPULATION",
+      "secondary_reason_codes": [
+        "FALSE_LEXICAL_OR_SEMANTIC_MATCH"
+      ],
+      "assigned_label": "temporal_evaluation_observability",
+      "corrected_label": null,
+      "evidence": [
+        {
+          "source_field": "ABSTRACT",
+          "supports": "SCOPE",
+          "paraphrase": "Assimilates OCO-2 solar-induced fluorescence retrievals into the ORCHIDEE biosphere model to improve gross primary productivity estimates."
+        },
+        {
+          "source_field": "ABSTRACT",
+          "supports": "RISK",
+          "paraphrase": "'Retrievals' and 'spatio-temporal' are satellite and ecosystem terms, unrelated to information retrieval evaluation."
+        }
+      ],
+      "rationale": "An Earth-system data-assimilation study has no connection to recommender or retrieval evaluation; the match is lexical. It is out of scope.",
+      "confidence": "HIGH",
+      "flags": [
+        "POSSIBLE_FALSE_MATCH"
+      ],
+      "follow_up": {
+        "required": true,
+        "priority": "ROUTINE",
+        "reasons": [
+          "AI_PROXY_REQUIRES_HUMAN_CONFIRMATION"
+        ],
+        "recommended_action": "HUMAN_CHECK"
+      },
+      "task_specific": {
+        "scope_decision": null,
+        "group_decision": null,
+        "corrected_group": null,
+        "literature_decision": "REMOVE"
+      }
+    }
+  ]
+}

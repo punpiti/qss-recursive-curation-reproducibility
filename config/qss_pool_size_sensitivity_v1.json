@@ -1,0 +1,38 @@
+{
+  "schema_version": 1,
+  "analysis_id": "qss-deterministic-pool-size-sensitivity-v1",
+  "status": "secondary_robustness_not_retrieval_rank_experiment",
+  "baseline": {
+    "exploration_k": 30,
+    "final_k": 10,
+    "tau_fit": 0.18,
+    "recovery_similarity": 0.1,
+    "group_capacity": 3,
+    "group_semantic_weight": 0.7
+  },
+  "pool_fractions": [
+    0.25,
+    0.5,
+    0.75,
+    1.0
+  ],
+  "deterministic_replicates": 20,
+  "sampling": {
+    "namespace": "qss-pool-size-v1",
+    "identifier_priority": [
+      "openalex_id",
+      "doi",
+      "title"
+    ],
+    "stratum": "exact stored discovery_channels signature",
+    "within_stratum_order": "sha256(namespace|case_id|replicate|canonical_identifier)",
+    "interleaving": "smallest next within-stratum cumulative share, SHA-256 tie-break",
+    "nested": true,
+    "output_order": "original frozen-pool order"
+  },
+  "interpretation": {
+    "primary_question": "How stable is the fixed-versus-recursive result when the number and naturally co-varying mix of records in each frozen candidate pool are reduced?",
+    "boundary": "The frozen files do not preserve retrieval rank. Results estimate sensitivity to candidate-pool quantity and composition, not the causal effect of a real retrieval top-N cutoff.",
+    "labels": "Machine scope and frozen-group assignments only; evaluator-specific relabeling is not estimated."
+  }
+}

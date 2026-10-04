@@ -1,0 +1,275 @@
+{
+  "schema_version": "qss-review-response-v1",
+  "batch_id": "round0-bibliography-as-research-state-03",
+  "review_type": "ROUND0_LITERATURE_REVIEW",
+  "rubric_version": "qss-review-rubric-v3",
+  "reviewer": {
+    "type": "AI_PROXY",
+    "id": "claude-opus-5-5",
+    "role": "PRIMARY_REVIEWER",
+    "review_status": "AI_FIRST_PASS",
+    "reviewed_at": "2026-10-03T17:12:20.498619Z"
+  },
+  "reviews": [
+    {
+      "review_row_id": "round0-084",
+      "corpus_or_project": "qss_self_hosting",
+      "source_group": "bibliography_as_research_state",
+      "paper": {
+        "title": "Assessing the vulnerability of food supply chains to climate change-induced disruptions",
+        "doi": "https://doi.org/10.1016/j.scitotenv.2024.171047",
+        "openalex_id": "https://openalex.org/W4391896453"
+      },
+      "normalized_decision": "EXCLUDE",
+      "scope_fit": "OUT_OF_SCOPE",
+      "role_fit": "MISMATCH",
+      "evidence_sufficiency": "SUFFICIENT_ABSTRACT",
+      "primary_reason_code": "WRONG_DOMAIN_OR_POPULATION",
+      "secondary_reason_codes": [
+        "FALSE_LEXICAL_OR_SEMANTIC_MATCH"
+      ],
+      "assigned_label": "bibliography_as_research_state",
+      "corrected_label": null,
+      "evidence": [
+        {
+          "source_field": "ABSTRACT",
+          "supports": "SCOPE",
+          "paraphrase": "Scoping review of food-supply-chain vulnerability to climate change (67 of 1,526 Scopus records)."
+        },
+        {
+          "source_field": "ABSTRACT",
+          "supports": "RISK",
+          "paraphrase": "Match comes from 'evidence' and literature-review vocabulary; 'adaptation' refers to climate adaptation."
+        }
+      ],
+      "rationale": "The paper is a domain study unrelated to scholarly search, recommendation or bibliographic evidence selection; its match to the role is lexical. It is out of scope.",
+      "confidence": "HIGH",
+      "flags": [
+        "POSSIBLE_FALSE_MATCH"
+      ],
+      "follow_up": {
+        "required": true,
+        "priority": "ROUTINE",
+        "reasons": [
+          "AI_PROXY_REQUIRES_HUMAN_CONFIRMATION"
+        ],
+        "recommended_action": "HUMAN_CHECK"
+      },
+      "task_specific": {
+        "scope_decision": null,
+        "group_decision": null,
+        "corrected_group": null,
+        "literature_decision": "REMOVE"
+      }
+    },
+    {
+      "review_row_id": "round0-085",
+      "corpus_or_project": "qss_self_hosting",
+      "source_group": "bibliography_as_research_state",
+      "paper": {
+        "title": "Considering methodological options for reviews of theory: illustrated by a review of theories linking income and health",
+        "doi": "https://doi.org/10.1186/2046-4053-3-114",
+        "openalex_id": "https://openalex.org/W2154053145"
+      },
+      "normalized_decision": "INCLUDE",
+      "scope_fit": "IN_SCOPE",
+      "role_fit": "PARTIAL",
+      "evidence_sufficiency": "SUFFICIENT_ABSTRACT",
+      "primary_reason_code": "EMPIRICAL_PRECEDENT",
+      "secondary_reason_codes": [
+        "BRIDGE_REFERENCE"
+      ],
+      "assigned_label": "bibliography_as_research_state",
+      "corrected_label": null,
+      "evidence": [
+        {
+          "source_field": "ABSTRACT",
+          "supports": "ROLE",
+          "paraphrase": "Reports that inclusion criteria for a review of theory had to be set iteratively, and that electronic citation tracking followed how theories developed."
+        },
+        {
+          "source_field": "ABSTRACT",
+          "supports": "ROLE",
+          "paraphrase": "Subject specialists were involved to ensure principal papers were found; reviews of theory involve iterations and inductive processes throughout."
+        },
+        {
+          "source_field": "ABSTRACT",
+          "supports": "RISK",
+          "paraphrase": "It is a reflective methods account from one review rather than a formal analysis of path dependence."
+        }
+      ],
+      "rationale": "The paper documents a review in which the literature set and its inclusion boundary evolved iteratively through citation tracking and expert input, which is a practical precedent for treating a bibliography as an adaptive research state. The evidence is experiential rather than formal, so the fit is partial.",
+      "confidence": "MEDIUM",
+      "flags": [
+        "NONE"
+      ],
+      "follow_up": {
+        "required": true,
+        "priority": "ROUTINE",
+        "reasons": [
+          "AI_PROXY_REQUIRES_HUMAN_CONFIRMATION"
+        ],
+        "recommended_action": "HUMAN_CHECK"
+      },
+      "task_specific": {
+        "scope_decision": null,
+        "group_decision": null,
+        "corrected_group": null,
+        "literature_decision": "KEEP"
+      }
+    },
+    {
+      "review_row_id": "round0-086",
+      "corpus_or_project": "qss_self_hosting",
+      "source_group": "bibliography_as_research_state",
+      "paper": {
+        "title": "Text mining of cancer-related information: Review of current status and future directions",
+        "doi": "https://doi.org/10.1016/j.ijmedinf.2014.06.009",
+        "openalex_id": "https://openalex.org/W2012560661"
+      },
+      "normalized_decision": "EXCLUDE",
+      "scope_fit": "OUT_OF_SCOPE",
+      "role_fit": "MISMATCH",
+      "evidence_sufficiency": "SUFFICIENT_ABSTRACT",
+      "primary_reason_code": "WRONG_DOMAIN_OR_POPULATION",
+      "secondary_reason_codes": [
+        "FALSE_LEXICAL_OR_SEMANTIC_MATCH"
+      ],
+      "assigned_label": "bibliography_as_research_state",
+      "corrected_label": null,
+      "evidence": [
+        {
+          "source_field": "ABSTRACT",
+          "supports": "SCOPE",
+          "paraphrase": "Review of text mining of cancer-related clinical narratives (NER, information extraction)."
+        },
+        {
+          "source_field": "ABSTRACT",
+          "supports": "RISK",
+          "paraphrase": "The literature search is only the review's own method; nothing concerns adaptive literature sets."
+        }
+      ],
+      "rationale": "The paper is a domain study unrelated to scholarly search, recommendation or bibliographic evidence selection; its match to the role is lexical. It is out of scope.",
+      "confidence": "HIGH",
+      "flags": [
+        "POSSIBLE_FALSE_MATCH"
+      ],
+      "follow_up": {
+        "required": true,
+        "priority": "ROUTINE",
+        "reasons": [
+          "AI_PROXY_REQUIRES_HUMAN_CONFIRMATION"
+        ],
+        "recommended_action": "HUMAN_CHECK"
+      },
+      "task_specific": {
+        "scope_decision": null,
+        "group_decision": null,
+        "corrected_group": null,
+        "literature_decision": "REMOVE"
+      }
+    },
+    {
+      "review_row_id": "round0-087",
+      "corpus_or_project": "qss_self_hosting",
+      "source_group": "bibliography_as_research_state",
+      "paper": {
+        "title": "Mapping the evolution and current trends in climate change adaptation science",
+        "doi": "https://doi.org/10.1016/j.crm.2021.100290",
+        "openalex_id": "https://openalex.org/W3129371263"
+      },
+      "normalized_decision": "EXCLUDE",
+      "scope_fit": "OUT_OF_SCOPE",
+      "role_fit": "MISMATCH",
+      "evidence_sufficiency": "SUFFICIENT_ABSTRACT",
+      "primary_reason_code": "FALSE_LEXICAL_OR_SEMANTIC_MATCH",
+      "secondary_reason_codes": [
+        "TOO_GENERIC_FOR_CLAIM"
+      ],
+      "assigned_label": "bibliography_as_research_state",
+      "corrected_label": null,
+      "evidence": [
+        {
+          "source_field": "ABSTRACT",
+          "supports": "SCOPE",
+          "paraphrase": "Bibliometric review of climate-change adaptation science from 1978 to 2020, mapping authors, themes and growth."
+        },
+        {
+          "source_field": "ABSTRACT",
+          "supports": "RISK",
+          "paraphrase": "Describes how a research field evolved over time, not how a bibliography's discovery path depends on earlier selections; 'adaptation' and 'adaptive capacity' are climate terms."
+        }
+      ],
+      "rationale": "Field-level bibliometric evolution is distinct from treating a curated bibliography as an adaptive state shaped by prior selections; the match is largely lexical. Out of scope.",
+      "confidence": "HIGH",
+      "flags": [
+        "POSSIBLE_FALSE_MATCH"
+      ],
+      "follow_up": {
+        "required": true,
+        "priority": "ROUTINE",
+        "reasons": [
+          "AI_PROXY_REQUIRES_HUMAN_CONFIRMATION"
+        ],
+        "recommended_action": "HUMAN_CHECK"
+      },
+      "task_specific": {
+        "scope_decision": null,
+        "group_decision": null,
+        "corrected_group": null,
+        "literature_decision": "REMOVE"
+      }
+    },
+    {
+      "review_row_id": "round0-088",
+      "corpus_or_project": "qss_self_hosting",
+      "source_group": "bibliography_as_research_state",
+      "paper": {
+        "title": "Deep learning modelling techniques: current progress, applications, advantages, and challenges",
+        "doi": "https://doi.org/10.1007/s10462-023-10466-8",
+        "openalex_id": "https://openalex.org/W4366091323"
+      },
+      "normalized_decision": "EXCLUDE",
+      "scope_fit": "OUT_OF_SCOPE",
+      "role_fit": "MISMATCH",
+      "evidence_sufficiency": "SUFFICIENT_ABSTRACT",
+      "primary_reason_code": "TOO_GENERIC_FOR_CLAIM",
+      "secondary_reason_codes": [
+        "FALSE_LEXICAL_OR_SEMANTIC_MATCH"
+      ],
+      "assigned_label": "bibliography_as_research_state",
+      "corrected_label": null,
+      "evidence": [
+        {
+          "source_field": "ABSTRACT",
+          "supports": "SCOPE",
+          "paraphrase": "General review of deep-learning architectures (CNN, GAN, RNN, recursive networks, autoencoders), advantages and challenges."
+        },
+        {
+          "source_field": "ABSTRACT",
+          "supports": "RISK",
+          "paraphrase": "'Evidence-based decision-making' and 'recursive neural networks' are generic ML phrases unrelated to literature state."
+        }
+      ],
+      "rationale": "A broad deep-learning survey does not address bibliographies or iterative literature discovery; it is too generic and matched lexically. Out of scope.",
+      "confidence": "HIGH",
+      "flags": [
+        "POSSIBLE_FALSE_MATCH"
+      ],
+      "follow_up": {
+        "required": true,
+        "priority": "ROUTINE",
+        "reasons": [
+          "AI_PROXY_REQUIRES_HUMAN_CONFIRMATION"
+        ],
+        "recommended_action": "HUMAN_CHECK"
+      },
+      "task_specific": {
+        "scope_decision": null,
+        "group_decision": null,
+        "corrected_group": null,
+        "literature_decision": "REMOVE"
+      }
+    }
+  ]
+}

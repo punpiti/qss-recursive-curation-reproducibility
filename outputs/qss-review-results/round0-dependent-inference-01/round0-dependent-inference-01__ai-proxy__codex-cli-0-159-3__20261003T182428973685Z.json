@@ -1,0 +1,270 @@
+{
+  "schema_version": "qss-review-response-v1",
+  "batch_id": "round0-dependent-inference-01",
+  "review_type": "ROUND0_LITERATURE_REVIEW",
+  "rubric_version": "qss-review-rubric-v3",
+  "reviewer": {
+    "type": "AI_PROXY",
+    "id": "codex-cli-0-159-3",
+    "role": "PRIMARY_REVIEWER",
+    "review_status": "AI_FIRST_PASS",
+    "reviewed_at": "2026-10-03T18:24:28.973685Z"
+  },
+  "reviews": [
+    {
+      "review_row_id": "round0-049",
+      "corpus_or_project": "qss_self_hosting",
+      "source_group": "dependent_inference",
+      "paper": {
+        "title": "Evaluating the evidence for biotypes of depression: Methodological replication and extension of",
+        "doi": "https://doi.org/10.1016/j.nicl.2019.101796",
+        "openalex_id": "https://openalex.org/W2923495490"
+      },
+      "normalized_decision": "EXCLUDE",
+      "scope_fit": "OUT_OF_SCOPE",
+      "role_fit": "MISMATCH",
+      "evidence_sufficiency": "SUFFICIENT_ABSTRACT",
+      "primary_reason_code": "WRONG_METHOD_OR_OUTCOME",
+      "secondary_reason_codes": [
+        "FALSE_LEXICAL_OR_SEMANTIC_MATCH"
+      ],
+      "assigned_label": "dependent_inference",
+      "corrected_label": null,
+      "evidence": [
+        {
+          "source_field": "ABSTRACT",
+          "supports": "ROLE",
+          "paraphrase": "The study uses resampling to examine the stability of canonical correlations and depression subtypes, not to correct inference for dependence among repeated resamples or folds."
+        },
+        {
+          "source_field": "ABSTRACT",
+          "supports": "DECISION",
+          "paraphrase": "Its methodological question is whether a neuroimaging subtype analysis replicates and yields significant, reliable clusters."
+        }
+      ],
+      "rationale": "Resampling is used as a stability check within a depression-subtyping replication. The abstract does not address correlated folds, clustered resampling, or valid inference from statistically dependent evaluation repetitions, so it does not support the assigned evidence role.",
+      "confidence": "HIGH",
+      "flags": [
+        "NONE"
+      ],
+      "follow_up": {
+        "required": true,
+        "priority": "ROUTINE",
+        "reasons": [
+          "AI_PROXY_REQUIRES_HUMAN_CONFIRMATION"
+        ],
+        "recommended_action": "HUMAN_CHECK"
+      },
+      "task_specific": {
+        "scope_decision": null,
+        "group_decision": null,
+        "corrected_group": null,
+        "literature_decision": "REMOVE"
+      }
+    },
+    {
+      "review_row_id": "round0-050",
+      "corpus_or_project": "qss_self_hosting",
+      "source_group": "dependent_inference",
+      "paper": {
+        "title": "Comparison of integrated clustering methods for accurate and stable prediction of building energy consumption data",
+        "doi": "https://doi.org/10.1016/j.apenergy.2015.08.126",
+        "openalex_id": "https://openalex.org/W1817814880"
+      },
+      "normalized_decision": "EXCLUDE",
+      "scope_fit": "OUT_OF_SCOPE",
+      "role_fit": "MISMATCH",
+      "evidence_sufficiency": "SUFFICIENT_ABSTRACT",
+      "primary_reason_code": "WRONG_METHOD_OR_OUTCOME",
+      "secondary_reason_codes": [
+        "FALSE_LEXICAL_OR_SEMANTIC_MATCH"
+      ],
+      "assigned_label": "dependent_inference",
+      "corrected_label": null,
+      "evidence": [
+        {
+          "source_field": "ABSTRACT",
+          "supports": "ROLE",
+          "paraphrase": "Twenty-fold cross-validation measures predictive accuracy, while Jaccard similarity measures the stability of clusters after perturbation."
+        },
+        {
+          "source_field": "ABSTRACT",
+          "supports": "DECISION",
+          "paraphrase": "The contribution compares clustering and regression approaches for building-energy prediction and discusses an accuracy-stability tradeoff."
+        }
+      ],
+      "rationale": "Although the evaluation uses cross-validation and perturbations, the abstract does not treat folds or perturbations as dependent observations or provide corrected inference for them. The contribution therefore mismatches the dependent-inference role.",
+      "confidence": "HIGH",
+      "flags": [
+        "NONE"
+      ],
+      "follow_up": {
+        "required": true,
+        "priority": "ROUTINE",
+        "reasons": [
+          "AI_PROXY_REQUIRES_HUMAN_CONFIRMATION"
+        ],
+        "recommended_action": "HUMAN_CHECK"
+      },
+      "task_specific": {
+        "scope_decision": null,
+        "group_decision": null,
+        "corrected_group": null,
+        "literature_decision": "REMOVE"
+      }
+    },
+    {
+      "review_row_id": "round0-051",
+      "corpus_or_project": "qss_self_hosting",
+      "source_group": "dependent_inference",
+      "paper": {
+        "title": "How to remove or control confounds in predictive models, with applications to brain biomarkers",
+        "doi": "https://doi.org/10.1093/gigascience/giac014",
+        "openalex_id": "https://openalex.org/W4220876827"
+      },
+      "normalized_decision": "EXCLUDE",
+      "scope_fit": "OUT_OF_SCOPE",
+      "role_fit": "MISMATCH",
+      "evidence_sufficiency": "SUFFICIENT_ABSTRACT",
+      "primary_reason_code": "WRONG_METHOD_OR_OUTCOME",
+      "secondary_reason_codes": [
+        "FALSE_LEXICAL_OR_SEMANTIC_MATCH"
+      ],
+      "assigned_label": "dependent_inference",
+      "corrected_label": null,
+      "evidence": [
+        {
+          "source_field": "ABSTRACT",
+          "supports": "ROLE",
+          "paraphrase": "The proposed cross-validation modification isolates nuisance effects by fitting confound handling on training data rather than jointly on training and test data."
+        },
+        {
+          "source_field": "ABSTRACT",
+          "supports": "DECISION",
+          "paraphrase": "The target outcome is unbiased confound-free predictive accuracy for brain biomarkers, not uncertainty estimates under correlated folds."
+        }
+      ],
+      "rationale": "This paper addresses confounding and train-test contamination in predictive modeling. Its cross-validation modification does not address statistical dependence among repeated folds or resamples, so the apparent connection to the assigned role is semantic rather than substantive.",
+      "confidence": "HIGH",
+      "flags": [
+        "NONE"
+      ],
+      "follow_up": {
+        "required": true,
+        "priority": "ROUTINE",
+        "reasons": [
+          "AI_PROXY_REQUIRES_HUMAN_CONFIRMATION"
+        ],
+        "recommended_action": "HUMAN_CHECK"
+      },
+      "task_specific": {
+        "scope_decision": null,
+        "group_decision": null,
+        "corrected_group": null,
+        "literature_decision": "REMOVE"
+      }
+    },
+    {
+      "review_row_id": "round0-052",
+      "corpus_or_project": "qss_self_hosting",
+      "source_group": "dependent_inference",
+      "paper": {
+        "title": "Bootstrap Enhanced Penalized Regression for Variable Selection with Neuroimaging Data",
+        "doi": "https://doi.org/10.3389/fnins.2016.00344",
+        "openalex_id": "https://openalex.org/W2482743998"
+      },
+      "normalized_decision": "EXCLUDE",
+      "scope_fit": "OUT_OF_SCOPE",
+      "role_fit": "MISMATCH",
+      "evidence_sufficiency": "SUFFICIENT_ABSTRACT",
+      "primary_reason_code": "WRONG_METHOD_OR_OUTCOME",
+      "secondary_reason_codes": [
+        "FALSE_LEXICAL_OR_SEMANTIC_MATCH"
+      ],
+      "assigned_label": "dependent_inference",
+      "corrected_label": null,
+      "evidence": [
+        {
+          "source_field": "ABSTRACT",
+          "supports": "ROLE",
+          "paraphrase": "The paper proposes a nonparametric bootstrap-quantile procedure for selecting variables in penalized neuroimaging regression."
+        },
+        {
+          "source_field": "ABSTRACT",
+          "supports": "DECISION",
+          "paraphrase": "Correlated neural predictors motivate penalized regression, but the abstract does not analyze dependence among bootstrap replicates or evaluation observations."
+        }
+      ],
+      "rationale": "The bootstrap is used to support variable selection, and predictor multicollinearity is the dependence discussed. That is distinct from correcting inference when repeated resamples or evaluation units are statistically dependent, so the paper does not fill the assigned role.",
+      "confidence": "HIGH",
+      "flags": [
+        "NONE"
+      ],
+      "follow_up": {
+        "required": true,
+        "priority": "ROUTINE",
+        "reasons": [
+          "AI_PROXY_REQUIRES_HUMAN_CONFIRMATION"
+        ],
+        "recommended_action": "HUMAN_CHECK"
+      },
+      "task_specific": {
+        "scope_decision": null,
+        "group_decision": null,
+        "corrected_group": null,
+        "literature_decision": "REMOVE"
+      }
+    },
+    {
+      "review_row_id": "round0-053",
+      "corpus_or_project": "qss_self_hosting",
+      "source_group": "dependent_inference",
+      "paper": {
+        "title": "Outcome prediction based on microarray analysis: a critical perspective on methods",
+        "doi": "https://doi.org/10.1186/1471-2105-10-53",
+        "openalex_id": "https://openalex.org/W1987485110"
+      },
+      "normalized_decision": "EXCLUDE",
+      "scope_fit": "OUT_OF_SCOPE",
+      "role_fit": "MISMATCH",
+      "evidence_sufficiency": "SUFFICIENT_ABSTRACT",
+      "primary_reason_code": "WRONG_METHOD_OR_OUTCOME",
+      "secondary_reason_codes": [
+        "TOO_GENERIC_FOR_CLAIM"
+      ],
+      "assigned_label": "dependent_inference",
+      "corrected_label": null,
+      "evidence": [
+        {
+          "source_field": "ABSTRACT",
+          "supports": "ROLE",
+          "paraphrase": "The study compares independent test-set and ten-fold cross-validation strategies and examines gene-selection consistency across training-set changes."
+        },
+        {
+          "source_field": "ABSTRACT",
+          "supports": "DECISION",
+          "paraphrase": "Its conclusions concern validation bias, outliers, and stability of selected gene signatures rather than corrected inference for dependent cross-validation results."
+        }
+      ],
+      "rationale": "The abstract is relevant to validation design and stability in a broad sense, but it does not model correlation among folds or repeated evaluations and does not offer a dependence-aware inferential method. This is too generic to support the specific dependent-inference claim.",
+      "confidence": "HIGH",
+      "flags": [
+        "NONE"
+      ],
+      "follow_up": {
+        "required": true,
+        "priority": "ROUTINE",
+        "reasons": [
+          "AI_PROXY_REQUIRES_HUMAN_CONFIRMATION"
+        ],
+        "recommended_action": "HUMAN_CHECK"
+      },
+      "task_specific": {
+        "scope_decision": null,
+        "group_decision": null,
+        "corrected_group": null,
+        "literature_decision": "REMOVE"
+      }
+    }
+  ]
+}

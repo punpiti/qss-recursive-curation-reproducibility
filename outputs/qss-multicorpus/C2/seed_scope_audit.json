@@ -1,0 +1,142 @@
+{
+  "schema_version": 1,
+  "audit": "qss_seed_scope_coverage",
+  "bib": "<REDACTED_LOCAL_PATH>/references_raw.bib",
+  "study": "<REDACTED_LOCAL_PATH>/qss_C2_temporal_frozen.json",
+  "evidence_threshold": 0.75,
+  "minimum_entries_per_group": 2,
+  "future_holdout_access": "counts_only; holdout identities and text are not used to define or tune groups",
+  "canonical_bib_modified": false,
+  "cutoffs": [
+    {
+      "cutoff": 2022,
+      "historical_seed_count": 28,
+      "historical_abstract_count": 16,
+      "historical_abstract_coverage": 0.571429,
+      "future_holdout_count_not_used_for_audit": 17,
+      "coverage_model": "multi_label_all_frozen_anchor_families_plus_discriminator_term",
+      "represented_group_count": 3,
+      "frozen_group_count": 4,
+      "seed_group_coverage": 0.75,
+      "minimum_eligible_entries_across_groups": 0,
+      "groups_below_minimum": [
+        "gauge_field_reconstruction",
+        "continuity_residual_diagnostic"
+      ],
+      "group_counts": [
+        {
+          "group": "gauge_field_reconstruction",
+          "eligible_seed_entries": 1,
+          "minimum_required": 2,
+          "needs_expansion": true
+        },
+        {
+          "group": "convective_growth_classification",
+          "eligible_seed_entries": 9,
+          "minimum_required": 2,
+          "needs_expansion": false
+        },
+        {
+          "group": "advection_motion_nowcasting",
+          "eligible_seed_entries": 5,
+          "minimum_required": 2,
+          "needs_expansion": false
+        },
+        {
+          "group": "continuity_residual_diagnostic",
+          "eligible_seed_entries": 0,
+          "minimum_required": 2,
+          "needs_expansion": true
+        }
+      ],
+      "decision": "scope_conditioned_seed_expansion_required"
+    },
+    {
+      "cutoff": 2023,
+      "historical_seed_count": 31,
+      "historical_abstract_count": 18,
+      "historical_abstract_coverage": 0.580645,
+      "future_holdout_count_not_used_for_audit": 14,
+      "coverage_model": "multi_label_all_frozen_anchor_families_plus_discriminator_term",
+      "represented_group_count": 3,
+      "frozen_group_count": 4,
+      "seed_group_coverage": 0.75,
+      "minimum_eligible_entries_across_groups": 0,
+      "groups_below_minimum": [
+        "gauge_field_reconstruction",
+        "continuity_residual_diagnostic"
+      ],
+      "group_counts": [
+        {
+          "group": "gauge_field_reconstruction",
+          "eligible_seed_entries": 1,
+          "minimum_required": 2,
+          "needs_expansion": true
+        },
+        {
+          "group": "convective_growth_classification",
+          "eligible_seed_entries": 10,
+          "minimum_required": 2,
+          "needs_expansion": false
+        },
+        {
+          "group": "advection_motion_nowcasting",
+          "eligible_seed_entries": 5,
+          "minimum_required": 2,
+          "needs_expansion": false
+        },
+        {
+          "group": "continuity_residual_diagnostic",
+          "eligible_seed_entries": 0,
+          "minimum_required": 2,
+          "needs_expansion": true
+        }
+      ],
+      "decision": "scope_conditioned_seed_expansion_required"
+    },
+    {
+      "cutoff": 2024,
+      "historical_seed_count": 39,
+      "historical_abstract_count": 19,
+      "historical_abstract_coverage": 0.487179,
+      "future_holdout_count_not_used_for_audit": 6,
+      "coverage_model": "multi_label_all_frozen_anchor_families_plus_discriminator_term",
+      "represented_group_count": 3,
+      "frozen_group_count": 4,
+      "seed_group_coverage": 0.75,
+      "minimum_eligible_entries_across_groups": 0,
+      "groups_below_minimum": [
+        "gauge_field_reconstruction",
+        "continuity_residual_diagnostic"
+      ],
+      "group_counts": [
+        {
+          "group": "gauge_field_reconstruction",
+          "eligible_seed_entries": 1,
+          "minimum_required": 2,
+          "needs_expansion": true
+        },
+        {
+          "group": "convective_growth_classification",
+          "eligible_seed_entries": 12,
+          "minimum_required": 2,
+          "needs_expansion": false
+        },
+        {
+          "group": "advection_motion_nowcasting",
+          "eligible_seed_entries": 7,
+          "minimum_required": 2,
+          "needs_expansion": false
+        },
+        {
+          "group": "continuity_residual_diagnostic",
+          "eligible_seed_entries": 0,
+          "minimum_required": 2,
+          "needs_expansion": true
+        }
+      ],
+      "decision": "scope_conditioned_seed_expansion_required"
+    }
+  ],
+  "overall_decision": "scope_conditioned_seed_expansion_required"
+}

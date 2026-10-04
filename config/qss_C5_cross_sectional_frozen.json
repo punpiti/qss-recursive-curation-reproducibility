@@ -1,0 +1,182 @@
+{
+  "schema_version": 1,
+  "study_id": "qss-C5-cross-sectional-v1",
+  "status": "frozen_before_candidate_retrieval",
+  "frozen_on": "2026-08-28",
+  "evaluation_mode": "cross_sectional_scope_robustness",
+  "snapshot_through_year": 2023,
+  "candidate_years": [
+    2024,
+    2026
+  ],
+  "scope": "Occlusion-robust vehicle make recognition from video using semantic-part evidence accumulated across time, with branch-first versus frame-first fusion as the main controlled comparison.",
+  "canonical_inputs": {
+    "bib": "<REDACTED_LOCAL_PATH>/references.bib",
+    "bib_sha256": "53ec5ec09e2cf94d4e51f6bb7100a882f851d49d29fa302842a793233ad6e462",
+    "scope_file": "<REDACTED_LOCAL_PATH>/mock_final_proposal_newsol_rewrite.md",
+    "scope_sha256": "2fd4056838c8fb1757237fee794250bd44e3b30a6eb4e88119167b06be5e9a5e"
+  },
+  "interpretation_boundary": {
+    "allowed": "Describe scope representation, convergence, bag stability, and Core/Coverage separation under the already-frozen v2 policy.",
+    "forbidden": "Do not report temporal recall, exact-paper non-inferiority, accuracy, or future-prediction performance; this bibliography has no viable positive holdout cutoff.",
+    "h3_boundary": "Adaptive observation or part acquisition remains secondary and exploratory; it is not required evidence for the main H1-H2 scope."
+  },
+  "candidate_admission": {
+    "rule": "Title and abstract must explicitly fit at least one frozen evidence group and add a citable method, dataset, evaluation, limitation, or mechanism role.",
+    "abstract_required": true,
+    "unselected_candidates": "unlabeled, not negatives"
+  },
+  "legacy_group_key_note": "The runner currently reads kbs_frozen_evidence_groups; these groups are independently frozen for C5 and do not reuse the KBS definitions.",
+  "kbs_frozen_evidence_groups": [
+    {
+      "id": "vehicle_make_model_scope",
+      "purpose": "Fine-grained vehicle make, model, or brand recognition in traffic, CCTV, or surveillance settings, including datasets and evaluation protocols that bound the target task.",
+      "capacity": 3,
+      "query": "vehicle make model recognition surveillance video fine grained classification dataset",
+      "terms": [
+        "vehicle make and model recognition",
+        "vehicle make model",
+        "vmmr",
+        "fine-grained vehicle",
+        "vehicle recognition",
+        "car recognition",
+        "brand recognition",
+        "dataset"
+      ],
+      "anchor_families": [
+        [
+          "vehicle",
+          "car",
+          "automobile"
+        ],
+        [
+          "make and model",
+          "make model",
+          "vmmr",
+          "brand",
+          "fine-grained",
+          "vehicle recognition",
+          "vehicle classification"
+        ]
+      ]
+    },
+    {
+      "id": "semantic_parts_occlusion",
+      "purpose": "Semantic vehicle-part or local-region evidence for fine-grained recognition when views or discriminative parts are missing, partial, or occluded.",
+      "capacity": 3,
+      "query": "vehicle recognition semantic parts occlusion part based local feature attention",
+      "terms": [
+        "semantic part",
+        "part-based",
+        "vehicle part",
+        "local feature",
+        "occlusion",
+        "occluded",
+        "attention",
+        "headlight",
+        "bumper",
+        "mirror",
+        "wheel",
+        "taillight"
+      ],
+      "anchor_families": [
+        [
+          "vehicle",
+          "car",
+          "automobile",
+          "fine-grained"
+        ],
+        [
+          "part",
+          "local feature",
+          "region",
+          "attention",
+          "occlusion",
+          "occluded",
+          "headlight",
+          "bumper",
+          "mirror",
+          "wheel",
+          "taillight"
+        ]
+      ]
+    },
+    {
+      "id": "temporal_evidence_fusion",
+      "purpose": "Multi-frame, track-level, or set-level temporal aggregation that preserves complementary, quality-varying, or intermittently missing recognition evidence.",
+      "capacity": 3,
+      "query": "video vehicle recognition temporal evidence fusion multi frame set aggregation missing observations",
+      "terms": [
+        "temporal",
+        "multi-frame",
+        "video",
+        "set-to-set",
+        "evidence fusion",
+        "aggregation",
+        "quality aware",
+        "sequence",
+        "snippet",
+        "probability"
+      ],
+      "anchor_families": [
+        [
+          "video",
+          "temporal",
+          "track",
+          "sequence",
+          "frame",
+          "set",
+          "snippet"
+        ],
+        [
+          "fusion",
+          "aggregation",
+          "probability",
+          "evidence",
+          "attention",
+          "quality",
+          "missing",
+          "recognition",
+          "re-identification"
+        ]
+      ]
+    },
+    {
+      "id": "detection_tracking_pipeline",
+      "purpose": "Vehicle detection, tracking, and identity-association evidence needed to bound end-to-end recognition failures under occlusion and track fragmentation.",
+      "capacity": 3,
+      "query": "vehicle video detection tracking data association occlusion recognition pipeline evaluation",
+      "terms": [
+        "vehicle detection",
+        "tracking",
+        "tracker",
+        "tracklet",
+        "data association",
+        "multi-object tracking",
+        "identity switch",
+        "occlusion",
+        "surveillance"
+      ],
+      "anchor_families": [
+        [
+          "detection",
+          "detector",
+          "tracking",
+          "tracker",
+          "tracklet",
+          "data association",
+          "multi-object"
+        ],
+        [
+          "vehicle",
+          "car",
+          "object",
+          "recognition",
+          "occlusion",
+          "surveillance",
+          "identity"
+        ]
+      ]
+    }
+  ]
+}

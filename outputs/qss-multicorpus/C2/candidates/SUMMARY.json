@@ -1,0 +1,54 @@
+{
+  "schema_version": 1,
+  "evaluation_mode": "temporal_positive_holdout",
+  "openalex_requests": 5,
+  "cache_hits": 57,
+  "cache_misses": 1,
+  "request_budget_exhausted": false,
+  "retrieval_complete": true,
+  "seed_resolution_coverage": 0.97619,
+  "minimum_seed_resolution_coverage": 0.8,
+  "seed_resolution_failures": [
+    {
+      "bibtex_key": "BMA_DDS_2005_RainGauge",
+      "reason": "OpenAlex request failed after 5 attempts: /works?filter=title.search%3AOperation+and+performance+of+water-level+instruments+of+the+Flood+Control+Center%2C+final+part%3A+rainfall+measurement&per-page=5&select=id%2Cdoi%2Ctitle%2Cdisplay_name%2Cpublication_year%2Cpublication_date%2Ctype%2Ccited_by_count%2Ccited_by_percentile_year%2Creferenced_works%2Crelated_works%2Ctopics%2Cauthorships%2Cprimary_location%2Cabstract_inverted_index%2Cids"
+    }
+  ],
+  "group_query_failures": [],
+  "cutoff_retrieval_failures": [],
+  "pools": [
+    {
+      "cutoff": 2022,
+      "training_seed_count": 31,
+      "resolved_training_seed_count": 30,
+      "holdout_count": 17,
+      "candidate_count_before_abstract_gate": 1066,
+      "candidate_count": 740,
+      "missing_abstract_removed": 326,
+      "reachable_holdout_count": 3,
+      "candidate_pool_ceiling": 0.176471
+    },
+    {
+      "cutoff": 2023,
+      "training_seed_count": 34,
+      "resolved_training_seed_count": 33,
+      "holdout_count": 14,
+      "candidate_count_before_abstract_gate": 999,
+      "candidate_count": 679,
+      "missing_abstract_removed": 320,
+      "reachable_holdout_count": 2,
+      "candidate_pool_ceiling": 0.142857
+    },
+    {
+      "cutoff": 2024,
+      "training_seed_count": 42,
+      "resolved_training_seed_count": 41,
+      "holdout_count": 6,
+      "candidate_count_before_abstract_gate": 944,
+      "candidate_count": 639,
+      "missing_abstract_removed": 305,
+      "reachable_holdout_count": 1,
+      "candidate_pool_ceiling": 0.166667
+    }
+  ]
+}

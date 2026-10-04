@@ -1,0 +1,273 @@
+{
+  "schema_version": "qss-review-response-v1",
+  "batch_id": "round0-dependent-inference-02",
+  "review_type": "ROUND0_LITERATURE_REVIEW",
+  "rubric_version": "qss-review-rubric-v3",
+  "reviewer": {
+    "type": "AI_PROXY",
+    "id": "claude-opus-5-5",
+    "role": "PRIMARY_REVIEWER",
+    "review_status": "AI_FIRST_PASS",
+    "reviewed_at": "2026-10-03T17:09:20.140779Z"
+  },
+  "reviews": [
+    {
+      "review_row_id": "round0-054",
+      "corpus_or_project": "qss_self_hosting",
+      "source_group": "dependent_inference",
+      "paper": {
+        "title": "Fast leave-one-cluster-out cross-validation using clustered network information criterion",
+        "doi": "https://doi.org/10.1177/09622802251345486",
+        "openalex_id": "https://openalex.org/W4399317008"
+      },
+      "normalized_decision": "INCLUDE",
+      "scope_fit": "IN_SCOPE",
+      "role_fit": "DIRECT",
+      "evidence_sufficiency": "SUFFICIENT_ABSTRACT",
+      "primary_reason_code": "DIRECT_METHOD",
+      "secondary_reason_codes": [],
+      "assigned_label": "dependent_inference",
+      "corrected_label": null,
+      "evidence": [
+        {
+          "source_field": "ABSTRACT",
+          "supports": "ROLE",
+          "paraphrase": "Argues that prediction models on clustered data need cluster-based validation and derives a clustered network information criterion approximating leave-one-cluster-out deviance."
+        },
+        {
+          "source_field": "ABSTRACT",
+          "supports": "SCOPE",
+          "paraphrase": "Replaces the Fisher information with a clustering-adjusted estimator, penalising more strongly as within-cluster dependence grows."
+        },
+        {
+          "source_field": "ABSTRACT",
+          "supports": "RISK",
+          "paraphrase": "Focus is model selection in clinical regression rather than comparing ranking systems, so transfer to bag/query dependence needs argument."
+        }
+      ],
+      "rationale": "The paper directly addresses evaluation validity when observations are clustered rather than independent, matching the dependent_inference role's purpose. It is a methods anchor for cluster-aware validation, though its use case is model selection rather than significance testing across resampled bags.",
+      "confidence": "MEDIUM",
+      "flags": [
+        "NONE"
+      ],
+      "follow_up": {
+        "required": true,
+        "priority": "ROUTINE",
+        "reasons": [
+          "AI_PROXY_REQUIRES_HUMAN_CONFIRMATION"
+        ],
+        "recommended_action": "HUMAN_CHECK"
+      },
+      "task_specific": {
+        "scope_decision": null,
+        "group_decision": null,
+        "corrected_group": null,
+        "literature_decision": "KEEP"
+      }
+    },
+    {
+      "review_row_id": "round0-055",
+      "corpus_or_project": "qss_self_hosting",
+      "source_group": "dependent_inference",
+      "paper": {
+        "title": "Error processing and gender-shared and -specific neural predictors of relapse in cocaine dependence",
+        "doi": "https://doi.org/10.1093/brain/awt040",
+        "openalex_id": "https://openalex.org/W2115873479"
+      },
+      "normalized_decision": "EXCLUDE",
+      "scope_fit": "OUT_OF_SCOPE",
+      "role_fit": "MISMATCH",
+      "evidence_sufficiency": "SUFFICIENT_ABSTRACT",
+      "primary_reason_code": "FALSE_LEXICAL_OR_SEMANTIC_MATCH",
+      "secondary_reason_codes": [
+        "WRONG_DOMAIN_OR_POPULATION"
+      ],
+      "assigned_label": "dependent_inference",
+      "corrected_label": null,
+      "evidence": [
+        {
+          "source_field": "ABSTRACT",
+          "supports": "SCOPE",
+          "paraphrase": "fMRI study of error-processing activations predicting relapse in 97 cocaine-dependent individuals, by gender."
+        },
+        {
+          "source_field": "ABSTRACT",
+          "supports": "RISK",
+          "paraphrase": "'Dependence' refers to drug dependence; resampling is used only to validate regional predictors."
+        }
+      ],
+      "rationale": "The match is driven by the word 'dependence' (cocaine dependence). The paper has no content on statistically dependent evaluation units and is out of scope.",
+      "confidence": "HIGH",
+      "flags": [
+        "POSSIBLE_FALSE_MATCH"
+      ],
+      "follow_up": {
+        "required": true,
+        "priority": "ROUTINE",
+        "reasons": [
+          "AI_PROXY_REQUIRES_HUMAN_CONFIRMATION"
+        ],
+        "recommended_action": "HUMAN_CHECK"
+      },
+      "task_specific": {
+        "scope_decision": null,
+        "group_decision": null,
+        "corrected_group": null,
+        "literature_decision": "REMOVE"
+      }
+    },
+    {
+      "review_row_id": "round0-056",
+      "corpus_or_project": "qss_self_hosting",
+      "source_group": "dependent_inference",
+      "paper": {
+        "title": "Explainable Machine Learning for Early Assessment of COVID-19 Risk Prediction in Emergency Departments",
+        "doi": "https://doi.org/10.1109/access.2020.3034032",
+        "openalex_id": "https://openalex.org/W3096413426"
+      },
+      "normalized_decision": "EXCLUDE",
+      "scope_fit": "OUT_OF_SCOPE",
+      "role_fit": "MISMATCH",
+      "evidence_sufficiency": "SUFFICIENT_ABSTRACT",
+      "primary_reason_code": "WRONG_DOMAIN_OR_POPULATION",
+      "secondary_reason_codes": [
+        "FALSE_LEXICAL_OR_SEMANTIC_MATCH"
+      ],
+      "assigned_label": "dependent_inference",
+      "corrected_label": null,
+      "evidence": [
+        {
+          "source_field": "ABSTRACT",
+          "supports": "SCOPE",
+          "paraphrase": "Explainable random-forest system for COVID-19 risk prediction in emergency departments using Boruta variable selection in 10-fold CV."
+        },
+        {
+          "source_field": "ABSTRACT",
+          "supports": "RISK",
+          "paraphrase": "Cross-validation is used for variable importance; no dependence among folds or clustered evaluation is addressed."
+        }
+      ],
+      "rationale": "The paper is a domain study unrelated to scholarly search, recommendation or bibliographic evidence selection; its match to the role is lexical. It is out of scope.",
+      "confidence": "HIGH",
+      "flags": [
+        "POSSIBLE_FALSE_MATCH"
+      ],
+      "follow_up": {
+        "required": true,
+        "priority": "ROUTINE",
+        "reasons": [
+          "AI_PROXY_REQUIRES_HUMAN_CONFIRMATION"
+        ],
+        "recommended_action": "HUMAN_CHECK"
+      },
+      "task_specific": {
+        "scope_decision": null,
+        "group_decision": null,
+        "corrected_group": null,
+        "literature_decision": "REMOVE"
+      }
+    },
+    {
+      "review_row_id": "round0-057",
+      "corpus_or_project": "qss_self_hosting",
+      "source_group": "dependent_inference",
+      "paper": {
+        "title": "Importance of regional variation in conservation planning: a rangewide example of the Greater Sage‐Grouse",
+        "doi": "https://doi.org/10.1002/ecs2.1462",
+        "openalex_id": "https://openalex.org/W2530607760"
+      },
+      "normalized_decision": "EXCLUDE",
+      "scope_fit": "OUT_OF_SCOPE",
+      "role_fit": "MISMATCH",
+      "evidence_sufficiency": "SUFFICIENT_ABSTRACT",
+      "primary_reason_code": "WRONG_DOMAIN_OR_POPULATION",
+      "secondary_reason_codes": [
+        "FALSE_LEXICAL_OR_SEMANTIC_MATCH"
+      ],
+      "assigned_label": "dependent_inference",
+      "corrected_label": null,
+      "evidence": [
+        {
+          "source_field": "ABSTRACT",
+          "supports": "SCOPE",
+          "paraphrase": "Random-forest habitat and population models for Greater Sage-Grouse conservation planning across management zones."
+        },
+        {
+          "source_field": "ABSTRACT",
+          "supports": "RISK",
+          "paraphrase": "'Clustering' describes spatial clustering of bird abundance; cross-validation statistics are reported without addressing dependence."
+        }
+      ],
+      "rationale": "The paper is a domain study unrelated to scholarly search, recommendation or bibliographic evidence selection; its match to the role is lexical. It is out of scope.",
+      "confidence": "HIGH",
+      "flags": [
+        "POSSIBLE_FALSE_MATCH"
+      ],
+      "follow_up": {
+        "required": true,
+        "priority": "ROUTINE",
+        "reasons": [
+          "AI_PROXY_REQUIRES_HUMAN_CONFIRMATION"
+        ],
+        "recommended_action": "HUMAN_CHECK"
+      },
+      "task_specific": {
+        "scope_decision": null,
+        "group_decision": null,
+        "corrected_group": null,
+        "literature_decision": "REMOVE"
+      }
+    },
+    {
+      "review_row_id": "round0-058",
+      "corpus_or_project": "qss_self_hosting",
+      "source_group": "dependent_inference",
+      "paper": {
+        "title": "An Evolutionary-Network Model Reveals Stratified Interactions in the V3 Loop of the HIV-1 Envelope",
+        "doi": "https://doi.org/10.1371/journal.pcbi.0030231",
+        "openalex_id": "https://openalex.org/W2056265093"
+      },
+      "normalized_decision": "EXCLUDE",
+      "scope_fit": "OUT_OF_SCOPE",
+      "role_fit": "PARTIAL",
+      "evidence_sufficiency": "SUFFICIENT_ABSTRACT",
+      "primary_reason_code": "WRONG_DOMAIN_OR_POPULATION",
+      "secondary_reason_codes": [
+        "BRIDGE_REFERENCE"
+      ],
+      "assigned_label": "dependent_inference",
+      "corrected_label": null,
+      "evidence": [
+        {
+          "source_field": "ABSTRACT",
+          "supports": "SCOPE",
+          "paraphrase": "Phylogenetically aware Bayesian graphical model to detect residue interactions in the HIV-1 V3 loop."
+        },
+        {
+          "source_field": "ABSTRACT",
+          "supports": "ROLE",
+          "paraphrase": "Shows that ignoring shared evolutionary history (non-independent sequences) inflates false positives to 20-40%, a conceptual analogue of dependent observations."
+        }
+      ],
+      "rationale": "The paper makes the general point that treating dependent observations as independent inflates false positives, which is analogous to the role's concern, but it is a molecular-evolution study with no evaluation-resampling content. Out of scope; at most a distant analogue.",
+      "confidence": "MEDIUM",
+      "flags": [
+        "NONE"
+      ],
+      "follow_up": {
+        "required": true,
+        "priority": "ROUTINE",
+        "reasons": [
+          "AI_PROXY_REQUIRES_HUMAN_CONFIRMATION"
+        ],
+        "recommended_action": "HUMAN_CHECK"
+      },
+      "task_specific": {
+        "scope_decision": null,
+        "group_decision": null,
+        "corrected_group": null,
+        "literature_decision": "REMOVE"
+      }
+    }
+  ]
+}

@@ -1,0 +1,235 @@
+{
+  "schema_version": "qss-review-response-v1",
+  "batch_id": "round0-dependent-inference-02",
+  "review_type": "ROUND0_LITERATURE_REVIEW",
+  "rubric_version": "qss-review-rubric-v3",
+  "reviewer": {
+    "type": "AI_PROXY",
+    "id": "gemini-3-flash",
+    "role": "PRIMARY_REVIEWER",
+    "review_status": "AI_FIRST_PASS",
+    "reviewed_at": null
+  },
+  "reviews": [
+    {
+      "review_row_id": "round0-054",
+      "corpus_or_project": "qss_self_hosting",
+      "source_group": "dependent_inference",
+      "paper": {
+        "title": "Fast leave-one-cluster-out cross-validation using clustered network information criterion",
+        "doi": "https://doi.org/10.1177/09622802251345486",
+        "openalex_id": "https://openalex.org/W4399317008"
+      },
+      "normalized_decision": "EXCLUDE",
+      "scope_fit": "OUT_OF_SCOPE",
+      "role_fit": "MISMATCH",
+      "evidence_sufficiency": "SUFFICIENT_ABSTRACT",
+      "primary_reason_code": "WRONG_DOMAIN_OR_POPULATION",
+      "secondary_reason_codes": [],
+      "assigned_label": "dependent_inference",
+      "corrected_label": null,
+      "evidence": [
+        {
+          "source_field": "ABSTRACT",
+          "supports": "SCOPE",
+          "paraphrase": "Derives a clustered network information criterion to approximate leave-one-cluster-out deviance in regression models."
+        }
+      ],
+      "rationale": "The method is developed for general clustered regression and medical statistical applications without integration into scholarly search or bibliographic systems.",
+      "confidence": "HIGH",
+      "flags": [
+        "NONE"
+      ],
+      "follow_up": {
+        "required": true,
+        "priority": "ROUTINE",
+        "reasons": [
+          "AI_PROXY_REQUIRES_HUMAN_CONFIRMATION"
+        ],
+        "recommended_action": "HUMAN_CHECK"
+      },
+      "task_specific": {
+        "scope_decision": null,
+        "group_decision": null,
+        "corrected_group": null,
+        "literature_decision": "REMOVE"
+      }
+    },
+    {
+      "review_row_id": "round0-055",
+      "corpus_or_project": "qss_self_hosting",
+      "source_group": "dependent_inference",
+      "paper": {
+        "title": "Error processing and gender-shared and -specific neural predictors of relapse in cocaine dependence",
+        "doi": "https://doi.org/10.1093/brain/awt040",
+        "openalex_id": "https://openalex.org/W2115873479"
+      },
+      "normalized_decision": "EXCLUDE",
+      "scope_fit": "OUT_OF_SCOPE",
+      "role_fit": "MISMATCH",
+      "evidence_sufficiency": "SUFFICIENT_ABSTRACT",
+      "primary_reason_code": "WRONG_DOMAIN_OR_POPULATION",
+      "secondary_reason_codes": [],
+      "assigned_label": "dependent_inference",
+      "corrected_label": null,
+      "evidence": [
+        {
+          "source_field": "ABSTRACT",
+          "supports": "SCOPE",
+          "paraphrase": "Identifies brain activations predicting cocaine relapse using fMRI and logistic/Cox regressions."
+        }
+      ],
+      "rationale": "The paper investigates clinical and neural predictors of drug addiction, which is outside the scholarly search and recommendation scope.",
+      "confidence": "HIGH",
+      "flags": [
+        "NONE"
+      ],
+      "follow_up": {
+        "required": true,
+        "priority": "ROUTINE",
+        "reasons": [
+          "AI_PROXY_REQUIRES_HUMAN_CONFIRMATION"
+        ],
+        "recommended_action": "HUMAN_CHECK"
+      },
+      "task_specific": {
+        "scope_decision": null,
+        "group_decision": null,
+        "corrected_group": null,
+        "literature_decision": "REMOVE"
+      }
+    },
+    {
+      "review_row_id": "round0-056",
+      "corpus_or_project": "qss_self_hosting",
+      "source_group": "dependent_inference",
+      "paper": {
+        "title": "Explainable Machine Learning for Early Assessment of COVID-19 Risk Prediction in Emergency Departments",
+        "doi": "https://doi.org/10.1109/access.2020.3034032",
+        "openalex_id": "https://openalex.org/W3096413426"
+      },
+      "normalized_decision": "EXCLUDE",
+      "scope_fit": "OUT_OF_SCOPE",
+      "role_fit": "MISMATCH",
+      "evidence_sufficiency": "SUFFICIENT_ABSTRACT",
+      "primary_reason_code": "WRONG_DOMAIN_OR_POPULATION",
+      "secondary_reason_codes": [],
+      "assigned_label": "dependent_inference",
+      "corrected_label": null,
+      "evidence": [
+        {
+          "source_field": "ABSTRACT",
+          "supports": "SCOPE",
+          "paraphrase": "Develops an explainable machine learning system combining Boruta and Random Forest for COVID-19 risk assessment in emergency departments."
+        }
+      ],
+      "rationale": "The work focuses on emergency clinical risk prediction for COVID-19 and does not relate to bibliographic selection or literature search.",
+      "confidence": "HIGH",
+      "flags": [
+        "NONE"
+      ],
+      "follow_up": {
+        "required": true,
+        "priority": "ROUTINE",
+        "reasons": [
+          "AI_PROXY_REQUIRES_HUMAN_CONFIRMATION"
+        ],
+        "recommended_action": "HUMAN_CHECK"
+      },
+      "task_specific": {
+        "scope_decision": null,
+        "group_decision": null,
+        "corrected_group": null,
+        "literature_decision": "REMOVE"
+      }
+    },
+    {
+      "review_row_id": "round0-057",
+      "corpus_or_project": "qss_self_hosting",
+      "source_group": "dependent_inference",
+      "paper": {
+        "title": "Importance of regional variation in conservation planning: a rangewide example of the Greater Sage‐Grouse",
+        "doi": "https://doi.org/10.1002/ecs2.1462",
+        "openalex_id": "https://openalex.org/W2530607760"
+      },
+      "normalized_decision": "EXCLUDE",
+      "scope_fit": "OUT_OF_SCOPE",
+      "role_fit": "MISMATCH",
+      "evidence_sufficiency": "SUFFICIENT_ABSTRACT",
+      "primary_reason_code": "WRONG_DOMAIN_OR_POPULATION",
+      "secondary_reason_codes": [],
+      "assigned_label": "dependent_inference",
+      "corrected_label": null,
+      "evidence": [
+        {
+          "source_field": "ABSTRACT",
+          "supports": "SCOPE",
+          "paraphrase": "Models population and habitat distributions for Greater Sage-Grouse in wildlife conservation planning."
+        }
+      ],
+      "rationale": "The paper belongs to ecological habitat modeling and is completely outside the scholarly search and bibliographic curation boundary.",
+      "confidence": "HIGH",
+      "flags": [
+        "NONE"
+      ],
+      "follow_up": {
+        "required": true,
+        "priority": "ROUTINE",
+        "reasons": [
+          "AI_PROXY_REQUIRES_HUMAN_CONFIRMATION"
+        ],
+        "recommended_action": "HUMAN_CHECK"
+      },
+      "task_specific": {
+        "scope_decision": null,
+        "group_decision": null,
+        "corrected_group": null,
+        "literature_decision": "REMOVE"
+      }
+    },
+    {
+      "review_row_id": "round0-058",
+      "corpus_or_project": "qss_self_hosting",
+      "source_group": "dependent_inference",
+      "paper": {
+        "title": "An Evolutionary-Network Model Reveals Stratified Interactions in the V3 Loop of the HIV-1 Envelope",
+        "doi": "https://doi.org/10.1371/journal.pcbi.0030231",
+        "openalex_id": "https://openalex.org/W2056265093"
+      },
+      "normalized_decision": "EXCLUDE",
+      "scope_fit": "OUT_OF_SCOPE",
+      "role_fit": "MISMATCH",
+      "evidence_sufficiency": "SUFFICIENT_ABSTRACT",
+      "primary_reason_code": "WRONG_DOMAIN_OR_POPULATION",
+      "secondary_reason_codes": [],
+      "assigned_label": "dependent_inference",
+      "corrected_label": null,
+      "evidence": [
+        {
+          "source_field": "ABSTRACT",
+          "supports": "SCOPE",
+          "paraphrase": "Constructs Bayesian graphical models on phylogenetic trees to detect residue interactions in HIV-1 envelope sequences."
+        }
+      ],
+      "rationale": "The study concerns evolutionary biology and viral sequence interactions, which is unrelated to bibliographic state representations or literature curation.",
+      "confidence": "HIGH",
+      "flags": [
+        "NONE"
+      ],
+      "follow_up": {
+        "required": true,
+        "priority": "ROUTINE",
+        "reasons": [
+          "AI_PROXY_REQUIRES_HUMAN_CONFIRMATION"
+        ],
+        "recommended_action": "HUMAN_CHECK"
+      },
+      "task_specific": {
+        "scope_decision": null,
+        "group_decision": null,
+        "corrected_group": null,
+        "literature_decision": "REMOVE"
+      }
+    }
+  ]
+}

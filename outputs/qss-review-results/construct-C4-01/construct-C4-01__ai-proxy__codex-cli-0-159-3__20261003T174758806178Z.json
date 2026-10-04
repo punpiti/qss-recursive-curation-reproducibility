@@ -1,0 +1,194 @@
+{
+  "schema_version": "qss-review-response-v1",
+  "batch_id": "construct-C4-01",
+  "review_type": "CONSTRUCT_AUDIT",
+  "rubric_version": "qss-review-rubric-v3",
+  "reviewer": {
+    "type": "AI_PROXY",
+    "id": "codex-cli-0-159-3",
+    "role": "PRIMARY_REVIEWER",
+    "review_status": "AI_FIRST_PASS",
+    "reviewed_at": "2026-10-03T17:47:58.806178Z"
+  },
+  "reviews": [
+    {
+      "review_row_id": "C4-2024-01",
+      "corpus_or_project": "C4",
+      "source_group": "defect_risk_taxonomy",
+      "paper": {
+        "title": "Beyond BLEU: Ethical Risks of Misleading Evaluation in Domain-Specific QA with LLMs",
+        "doi": "https://doi.org/10.26615/978-954-452-102-8-009",
+        "openalex_id": "https://openalex.org/W7131639106"
+      },
+      "normalized_decision": "EXCLUDE",
+      "scope_fit": "OUT_OF_SCOPE",
+      "role_fit": "PARTIAL",
+      "evidence_sufficiency": "SUFFICIENT_ABSTRACT",
+      "primary_reason_code": "OUTSIDE_FROZEN_BOUNDARY",
+      "secondary_reason_codes": [
+        "BRIDGE_REFERENCE",
+        "WRONG_DOMAIN_OR_POPULATION"
+      ],
+      "assigned_label": "defect_risk_taxonomy",
+      "corrected_label": null,
+      "evidence": [
+        {
+          "source_field": "METADATA",
+          "supports": "DECISION",
+          "paraphrase": "The supplied publication year is 2025, which is later than the batch's frozen 2024 cutoff."
+        },
+        {
+          "source_field": "ABSTRACT",
+          "supports": "ROLE",
+          "paraphrase": "The study evaluates QA responses for accuracy, completeness, relevance, fluency, and terminology and identifies factual errors and omissions missed by standard metrics."
+        },
+        {
+          "source_field": "ABSTRACT",
+          "supports": "SCOPE",
+          "paraphrase": "The empirical domain is botanical and biodiversity QA rather than Thai legal QA."
+        }
+      ],
+      "rationale": "The paper is excluded because its supplied year falls outside the frozen 2024 boundary. Its omission- and completeness-focused evaluation is a useful cross-domain analogue for defect-risk taxonomy, but the botanical population makes the group fit partial rather than direct.",
+      "confidence": "HIGH",
+      "flags": [
+        "BOUNDARY_CASE"
+      ],
+      "follow_up": {
+        "required": true,
+        "priority": "MEDIUM",
+        "reasons": [
+          "AI_PROXY_REQUIRES_HUMAN_CONFIRMATION",
+          "BOUNDARY_CASE"
+        ],
+        "recommended_action": "HUMAN_CHECK"
+      },
+      "task_specific": {
+        "scope_decision": "REMOVE_OUT_OF_SCOPE",
+        "group_decision": "PARTIAL_ANALOGUE",
+        "corrected_group": null,
+        "literature_decision": null
+      }
+    },
+    {
+      "review_row_id": "C4-2024-02",
+      "corpus_or_project": "C4",
+      "source_group": "statutory_evidence_grounding",
+      "paper": {
+        "title": "Benchmarking Normative AI Assistants Under Inconsistent Evidence with Paraconsistent Trace Semantics",
+        "doi": "https://doi.org/10.3390/ai7080321",
+        "openalex_id": "https://openalex.org/W7203823360"
+      },
+      "normalized_decision": "EXCLUDE",
+      "scope_fit": "OUT_OF_SCOPE",
+      "role_fit": "DIRECT",
+      "evidence_sufficiency": "SUFFICIENT_ABSTRACT",
+      "primary_reason_code": "OUTSIDE_FROZEN_BOUNDARY",
+      "secondary_reason_codes": [
+        "DIRECT_METHOD_OR_EVIDENCE_ROLE"
+      ],
+      "assigned_label": "statutory_evidence_grounding",
+      "corrected_label": null,
+      "evidence": [
+        {
+          "source_field": "METADATA",
+          "supports": "DECISION",
+          "paraphrase": "The supplied publication year is 2026, which is later than the batch's frozen 2024 cutoff."
+        },
+        {
+          "source_field": "ABSTRACT",
+          "supports": "ROLE",
+          "paraphrase": "ParaTraceBench evaluates evidence-grounded normative conclusions, contradiction localization, priorities, and gold diagnostic traces over fixed evidence packages."
+        },
+        {
+          "source_field": "ABSTRACT",
+          "supports": "SCOPE",
+          "paraphrase": "The external evaluation uses Russian Federation and EAEU normative materials rather than Thai legal QA resources."
+        }
+      ],
+      "rationale": "The evidence role directly matches statutory evidence grounding because the framework tests evidence-supported normative conclusions and auditable traces. Nevertheless, the paper is excluded from this frozen batch because its supplied year is 2026, beyond the 2024 boundary.",
+      "confidence": "HIGH",
+      "flags": [
+        "BOUNDARY_CASE"
+      ],
+      "follow_up": {
+        "required": true,
+        "priority": "MEDIUM",
+        "reasons": [
+          "AI_PROXY_REQUIRES_HUMAN_CONFIRMATION",
+          "BOUNDARY_CASE"
+        ],
+        "recommended_action": "HUMAN_CHECK"
+      },
+      "task_specific": {
+        "scope_decision": "REMOVE_OUT_OF_SCOPE",
+        "group_decision": "CORRECT_GROUP",
+        "corrected_group": null,
+        "literature_decision": null
+      }
+    },
+    {
+      "review_row_id": "C4-2024-03",
+      "corpus_or_project": "C4",
+      "source_group": "thai_legal_qa_resources",
+      "paper": {
+        "title": "Ai Voice Agent For Noisy Indian Telephony Calls",
+        "doi": "https://doi.org/10.25258/ijddt.16.29s.8",
+        "openalex_id": "https://openalex.org/W7161586260"
+      },
+      "normalized_decision": "EXCLUDE",
+      "scope_fit": "OUT_OF_SCOPE",
+      "role_fit": "MISMATCH",
+      "evidence_sufficiency": "PARTIAL_ABSTRACT",
+      "primary_reason_code": "FALSE_LEXICAL_OR_SEMANTIC_MATCH",
+      "secondary_reason_codes": [
+        "OUTSIDE_FROZEN_BOUNDARY",
+        "WRONG_DOMAIN_OR_POPULATION",
+        "VALID_CONTEXT_BUT_WRONG_GROUP"
+      ],
+      "assigned_label": "thai_legal_qa_resources",
+      "corrected_label": "statutory_evidence_grounding",
+      "evidence": [
+        {
+          "source_field": "TITLE",
+          "supports": "RISK",
+          "paraphrase": "The title identifies a noisy Indian telephony voice-agent study, which conflicts with the legal knowledge-graph abstract."
+        },
+        {
+          "source_field": "ABSTRACT",
+          "supports": "ROLE",
+          "paraphrase": "The abstract describes grounding legal assertions in statutory rules, case-law links, jurisdiction constraints, and citation-aware knowledge-graph evidence."
+        },
+        {
+          "source_field": "METADATA",
+          "supports": "DECISION",
+          "paraphrase": "The supplied publication year is 2026, beyond the frozen 2024 cutoff, and the abstract does not concern Thai legal QA resources."
+        }
+      ],
+      "rationale": "The title and abstract appear to describe different studies, so the record is an unsafe semantic match and requires metadata checking; its supplied year is also outside the frozen cutoff. If the abstract belongs to the record, its evidence role fits statutory evidence grounding rather than the Thai legal QA resources group, but that correction remains conditional on resolving the mismatch.",
+      "confidence": "MEDIUM",
+      "flags": [
+        "METADATA_ISSUE",
+        "POSSIBLE_FALSE_MATCH",
+        "POSSIBLE_WRONG_GROUP",
+        "BOUNDARY_CASE"
+      ],
+      "follow_up": {
+        "required": true,
+        "priority": "HIGH",
+        "reasons": [
+          "AI_PROXY_REQUIRES_HUMAN_CONFIRMATION",
+          "METADATA_ISSUE",
+          "GROUP_DISAGREEMENT",
+          "BOUNDARY_CASE"
+        ],
+        "recommended_action": "CHECK_METADATA"
+      },
+      "task_specific": {
+        "scope_decision": "REMOVE_OUT_OF_SCOPE",
+        "group_decision": "WRONG_GROUP",
+        "corrected_group": "statutory_evidence_grounding",
+        "literature_decision": null
+      }
+    }
+  ]
+}

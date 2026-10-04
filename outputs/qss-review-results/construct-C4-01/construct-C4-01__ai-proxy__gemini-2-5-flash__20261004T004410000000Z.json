@@ -1,0 +1,150 @@
+{
+  "schema_version": "qss-review-response-v1",
+  "batch_id": "construct-C4-01",
+  "review_type": "CONSTRUCT_AUDIT",
+  "rubric_version": "qss-review-rubric-v3",
+  "reviewer": {
+    "type": "AI_PROXY",
+    "id": "gemini-2-5-flash",
+    "role": "PRIMARY_REVIEWER",
+    "review_status": "AI_FIRST_PASS",
+    "reviewed_at": null
+  },
+  "reviews": [
+    {
+      "review_row_id": "C4-2024-01",
+      "corpus_or_project": "C4",
+      "source_group": "defect_risk_taxonomy",
+      "paper": {
+        "title": "Beyond BLEU: Ethical Risks of Misleading Evaluation in Domain-Specific QA with LLMs",
+        "doi": "https://doi.org/10.26615/978-954-452-102-8-009",
+        "openalex_id": "https://openalex.org/W7131639106"
+      },
+      "normalized_decision": "INCLUDE",
+      "scope_fit": "IN_SCOPE",
+      "role_fit": "BRIDGE",
+      "evidence_sufficiency": "SUFFICIENT_ABSTRACT",
+      "primary_reason_code": "BRIDGE_REFERENCE",
+      "secondary_reason_codes": [],
+      "assigned_label": "defect_risk_taxonomy",
+      "corrected_label": null,
+      "evidence": [
+        {
+          "source_field": "ABSTRACT",
+          "supports": "ROLE",
+          "paraphrase": "Investigates gaps between automated metrics and expert ratings regarding omissions and errors in domain-specific QA."
+        }
+      ],
+      "rationale": "Serves as a methodological bridge for defect risk taxonomy and error evaluation in domain-specific QA systems.",
+      "confidence": "HIGH",
+      "flags": [
+        "NONE"
+      ],
+      "follow_up": {
+        "required": true,
+        "priority": "ROUTINE",
+        "reasons": [
+          "AI_PROXY_REQUIRES_HUMAN_CONFIRMATION"
+        ],
+        "recommended_action": "HUMAN_CHECK"
+      },
+      "task_specific": {
+        "scope_decision": "KEEP_IN_SCOPE",
+        "group_decision": "CORRECT_GROUP",
+        "corrected_group": null,
+        "literature_decision": null
+      }
+    },
+    {
+      "review_row_id": "C4-2024-02",
+      "corpus_or_project": "C4",
+      "source_group": "statutory_evidence_grounding",
+      "paper": {
+        "title": "Benchmarking Normative AI Assistants Under Inconsistent Evidence with Paraconsistent Trace Semantics",
+        "doi": "https://doi.org/10.3390/ai7080321",
+        "openalex_id": "https://openalex.org/W7203823360"
+      },
+      "normalized_decision": "INCLUDE",
+      "scope_fit": "IN_SCOPE",
+      "role_fit": "BRIDGE",
+      "evidence_sufficiency": "SUFFICIENT_ABSTRACT",
+      "primary_reason_code": "BRIDGE_REFERENCE",
+      "secondary_reason_codes": [],
+      "assigned_label": "statutory_evidence_grounding",
+      "corrected_label": null,
+      "evidence": [
+        {
+          "source_field": "ABSTRACT",
+          "supports": "ROLE",
+          "paraphrase": "Introduces ParaTraceBench for evidence-grounded normative reasoning and diagnostic trace semantics."
+        }
+      ],
+      "rationale": "Provides a trace-based benchmarking methodology for normative reasoning and statutory evidence grounding.",
+      "confidence": "HIGH",
+      "flags": [
+        "NONE"
+      ],
+      "follow_up": {
+        "required": true,
+        "priority": "ROUTINE",
+        "reasons": [
+          "AI_PROXY_REQUIRES_HUMAN_CONFIRMATION"
+        ],
+        "recommended_action": "HUMAN_CHECK"
+      },
+      "task_specific": {
+        "scope_decision": "KEEP_IN_SCOPE",
+        "group_decision": "CORRECT_GROUP",
+        "corrected_group": null,
+        "literature_decision": null
+      }
+    },
+    {
+      "review_row_id": "C4-2024-03",
+      "corpus_or_project": "C4",
+      "source_group": "thai_legal_qa_resources",
+      "paper": {
+        "title": "Ai Voice Agent For Noisy Indian Telephony Calls",
+        "doi": "https://doi.org/10.25258/ijddt.16.29s.8",
+        "openalex_id": "https://openalex.org/W7161586260"
+      },
+      "normalized_decision": "EXCLUDE",
+      "scope_fit": "OUT_OF_SCOPE",
+      "role_fit": "MISMATCH",
+      "evidence_sufficiency": "SUFFICIENT_ABSTRACT",
+      "primary_reason_code": "FALSE_LEXICAL_OR_SEMANTIC_MATCH",
+      "secondary_reason_codes": [
+        "WRONG_DOMAIN_OR_POPULATION"
+      ],
+      "assigned_label": "thai_legal_qa_resources",
+      "corrected_label": null,
+      "evidence": [
+        {
+          "source_field": "TITLE",
+          "supports": "RISK",
+          "paraphrase": "Title specifies 'Ai Voice Agent For Noisy Indian Telephony Calls' while abstract describes Jurisgraph."
+        }
+      ],
+      "rationale": "Contains a severe metadata mismatch between title and abstract content, and does not focus on Thai legal QA resources.",
+      "confidence": "HIGH",
+      "flags": [
+        "METADATA_ISSUE",
+        "POSSIBLE_FALSE_MATCH"
+      ],
+      "follow_up": {
+        "required": true,
+        "priority": "HIGH",
+        "reasons": [
+          "AI_PROXY_REQUIRES_HUMAN_CONFIRMATION"
+        ],
+        "recommended_action": "CHECK_METADATA"
+      },
+      "task_specific": {
+        "scope_decision": "REMOVE_OUT_OF_SCOPE",
+        "group_decision": "WRONG_GROUP",
+        "corrected_group": null,
+        "literature_decision": null
+      }
+    }
+  ]
+}

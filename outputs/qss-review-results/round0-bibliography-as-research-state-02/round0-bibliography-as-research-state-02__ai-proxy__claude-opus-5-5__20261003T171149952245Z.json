@@ -1,0 +1,278 @@
+{
+  "schema_version": "qss-review-response-v1",
+  "batch_id": "round0-bibliography-as-research-state-02",
+  "review_type": "ROUND0_LITERATURE_REVIEW",
+  "rubric_version": "qss-review-rubric-v3",
+  "reviewer": {
+    "type": "AI_PROXY",
+    "id": "claude-opus-5-5",
+    "role": "PRIMARY_REVIEWER",
+    "review_status": "AI_FIRST_PASS",
+    "reviewed_at": "2026-10-03T17:11:49.952245Z"
+  },
+  "reviews": [
+    {
+      "review_row_id": "round0-079",
+      "corpus_or_project": "qss_self_hosting",
+      "source_group": "bibliography_as_research_state",
+      "paper": {
+        "title": "Practical RAG Evaluation: A Rarity-Aware Set-Based Metric and Cost-Latency-Quality Trade-offs",
+        "doi": "https://doi.org/10.48550/arxiv.2511.09545",
+        "openalex_id": "https://openalex.org/W4416236809"
+      },
+      "normalized_decision": "EXCLUDE",
+      "scope_fit": "IN_SCOPE",
+      "role_fit": "MISMATCH",
+      "evidence_sufficiency": "SUFFICIENT_ABSTRACT",
+      "primary_reason_code": "WRONG_METHOD_OR_OUTCOME",
+      "secondary_reason_codes": [
+        "DIRECT_METHOD"
+      ],
+      "assigned_label": "bibliography_as_research_state",
+      "corrected_label": "search_validation_reachability",
+      "evidence": [
+        {
+          "source_field": "ABSTRACT",
+          "supports": "ROLE",
+          "paraphrase": "Proposes a set-based metric for whether the top-K passages contain decisive evidence, plus a pool-restricted oracle ceiling that separates retrieval headroom from ordering headroom."
+        },
+        {
+          "source_field": "ABSTRACT",
+          "supports": "SCOPE",
+          "paraphrase": "Builds auditable golden sets with iterative listwise refinement and benchmarks retrieval on a scientific-papers corpus."
+        },
+        {
+          "source_field": "ABSTRACT",
+          "supports": "RISK",
+          "paraphrase": "Does not treat the evidence set as an adaptive state whose later discovery depends on prior selections."
+        }
+      ],
+      "rationale": "The paper is highly relevant to the project's stage-localisation and reachability analysis (pool-restricted ceilings, set-level top-K evidence), but it does not support the bibliography_as_research_state role. It should be considered under search_validation_reachability rather than discarded from the review.",
+      "confidence": "MEDIUM",
+      "flags": [
+        "POSSIBLE_WRONG_GROUP",
+        "CLAIM_CRITICAL"
+      ],
+      "follow_up": {
+        "required": true,
+        "priority": "HIGH",
+        "reasons": [
+          "AI_PROXY_REQUIRES_HUMAN_CONFIRMATION",
+          "GROUP_DISAGREEMENT",
+          "CLAIM_CRITICAL"
+        ],
+        "recommended_action": "HUMAN_CHECK"
+      },
+      "task_specific": {
+        "scope_decision": null,
+        "group_decision": null,
+        "corrected_group": null,
+        "literature_decision": "REMOVE"
+      }
+    },
+    {
+      "review_row_id": "round0-080",
+      "corpus_or_project": "qss_self_hosting",
+      "source_group": "bibliography_as_research_state",
+      "paper": {
+        "title": "A Survey of Contrastive and Counterfactual Explanation Generation Methods for Explainable Artificial Intelligence",
+        "doi": "https://doi.org/10.1109/access.2021.3051315",
+        "openalex_id": "https://openalex.org/W3125997628"
+      },
+      "normalized_decision": "EXCLUDE",
+      "scope_fit": "OUT_OF_SCOPE",
+      "role_fit": "MISMATCH",
+      "evidence_sufficiency": "SUFFICIENT_ABSTRACT",
+      "primary_reason_code": "TOO_GENERIC_FOR_CLAIM",
+      "secondary_reason_codes": [
+        "FALSE_LEXICAL_OR_SEMANTIC_MATCH"
+      ],
+      "assigned_label": "bibliography_as_research_state",
+      "corrected_label": null,
+      "evidence": [
+        {
+          "source_field": "ABSTRACT",
+          "supports": "SCOPE",
+          "paraphrase": "Systematic review of contrastive and counterfactual explanation methods in XAI."
+        },
+        {
+          "source_field": "ABSTRACT",
+          "supports": "RISK",
+          "paraphrase": "'Evidence-based explanations' refers to factual model explanations, not an evidence base for literature discovery."
+        }
+      ],
+      "rationale": "General XAI explanation theory has no bearing on bibliographies as adaptive research states; the match is lexical. Out of scope.",
+      "confidence": "HIGH",
+      "flags": [
+        "POSSIBLE_FALSE_MATCH"
+      ],
+      "follow_up": {
+        "required": true,
+        "priority": "ROUTINE",
+        "reasons": [
+          "AI_PROXY_REQUIRES_HUMAN_CONFIRMATION"
+        ],
+        "recommended_action": "HUMAN_CHECK"
+      },
+      "task_specific": {
+        "scope_decision": null,
+        "group_decision": null,
+        "corrected_group": null,
+        "literature_decision": "REMOVE"
+      }
+    },
+    {
+      "review_row_id": "round0-081",
+      "corpus_or_project": "qss_self_hosting",
+      "source_group": "bibliography_as_research_state",
+      "paper": {
+        "title": "Deep Machine Learning for Medical Diagnosis, Application to Lung Cancer Detection: A Review",
+        "doi": "https://doi.org/10.3390/biomedinformatics4010015",
+        "openalex_id": "https://openalex.org/W4391025999"
+      },
+      "normalized_decision": "EXCLUDE",
+      "scope_fit": "OUT_OF_SCOPE",
+      "role_fit": "MISMATCH",
+      "evidence_sufficiency": "SUFFICIENT_ABSTRACT",
+      "primary_reason_code": "WRONG_DOMAIN_OR_POPULATION",
+      "secondary_reason_codes": [
+        "FALSE_LEXICAL_OR_SEMANTIC_MATCH"
+      ],
+      "assigned_label": "bibliography_as_research_state",
+      "corrected_label": null,
+      "evidence": [
+        {
+          "source_field": "ABSTRACT",
+          "supports": "SCOPE",
+          "paraphrase": "Review of deep-learning methods for lung-cancer detection in CT imaging."
+        },
+        {
+          "source_field": "ABSTRACT",
+          "supports": "RISK",
+          "paraphrase": "'Model dependence on training data' and validation language are clinical-ML concerns unrelated to literature state."
+        }
+      ],
+      "rationale": "The paper is a domain study unrelated to scholarly search, recommendation or bibliographic evidence selection; its match to the role is lexical. It is out of scope.",
+      "confidence": "HIGH",
+      "flags": [
+        "POSSIBLE_FALSE_MATCH"
+      ],
+      "follow_up": {
+        "required": true,
+        "priority": "ROUTINE",
+        "reasons": [
+          "AI_PROXY_REQUIRES_HUMAN_CONFIRMATION"
+        ],
+        "recommended_action": "HUMAN_CHECK"
+      },
+      "task_specific": {
+        "scope_decision": null,
+        "group_decision": null,
+        "corrected_group": null,
+        "literature_decision": "REMOVE"
+      }
+    },
+    {
+      "review_row_id": "round0-082",
+      "corpus_or_project": "qss_self_hosting",
+      "source_group": "bibliography_as_research_state",
+      "paper": {
+        "title": "The Case for Adaptive Security Interventions",
+        "doi": "https://doi.org/10.1145/3471930",
+        "openalex_id": "https://openalex.org/W3178592347"
+      },
+      "normalized_decision": "EXCLUDE",
+      "scope_fit": "OUT_OF_SCOPE",
+      "role_fit": "MISMATCH",
+      "evidence_sufficiency": "SUFFICIENT_ABSTRACT",
+      "primary_reason_code": "FALSE_LEXICAL_OR_SEMANTIC_MATCH",
+      "secondary_reason_codes": [
+        "WRONG_DOMAIN_OR_POPULATION"
+      ],
+      "assigned_label": "bibliography_as_research_state",
+      "corrected_label": null,
+      "evidence": [
+        {
+          "source_field": "ABSTRACT",
+          "supports": "SCOPE",
+          "paraphrase": "Interdisciplinary study of developers' secure-coding decisions proposing adaptive security interventions."
+        },
+        {
+          "source_field": "ABSTRACT",
+          "supports": "RISK",
+          "paraphrase": "'Adaptive' refers to interventions tailored to developers; the literature meta-analysis is the study's method, not its object."
+        }
+      ],
+      "rationale": "The match comes from 'adaptive' and literature meta-analysis vocabulary; the paper is about software-security behaviour, not adaptive literature discovery. Out of scope.",
+      "confidence": "HIGH",
+      "flags": [
+        "POSSIBLE_FALSE_MATCH"
+      ],
+      "follow_up": {
+        "required": true,
+        "priority": "ROUTINE",
+        "reasons": [
+          "AI_PROXY_REQUIRES_HUMAN_CONFIRMATION"
+        ],
+        "recommended_action": "HUMAN_CHECK"
+      },
+      "task_specific": {
+        "scope_decision": null,
+        "group_decision": null,
+        "corrected_group": null,
+        "literature_decision": "REMOVE"
+      }
+    },
+    {
+      "review_row_id": "round0-083",
+      "corpus_or_project": "qss_self_hosting",
+      "source_group": "bibliography_as_research_state",
+      "paper": {
+        "title": "A Survey on Event Extraction for Natural Language Understanding: Riding the Biomedical Literature Wave",
+        "doi": "https://doi.org/10.1109/access.2021.3130956",
+        "openalex_id": "https://openalex.org/W3216626696"
+      },
+      "normalized_decision": "EXCLUDE",
+      "scope_fit": "OUT_OF_SCOPE",
+      "role_fit": "MISMATCH",
+      "evidence_sufficiency": "SUFFICIENT_ABSTRACT",
+      "primary_reason_code": "WRONG_METHOD_OR_OUTCOME",
+      "secondary_reason_codes": [
+        "FALSE_LEXICAL_OR_SEMANTIC_MATCH"
+      ],
+      "assigned_label": "bibliography_as_research_state",
+      "corrected_label": null,
+      "evidence": [
+        {
+          "source_field": "ABSTRACT",
+          "supports": "SCOPE",
+          "paraphrase": "Survey of biomedical event extraction from scientific text for natural-language understanding."
+        },
+        {
+          "source_field": "ABSTRACT",
+          "supports": "RISK",
+          "paraphrase": "Literature is the input to information extraction; there is no selection, curation or path-dependent discovery of a literature set."
+        }
+      ],
+      "rationale": "Information extraction from biomedical literature addresses literature overload but not bibliographies as adaptive states shaped by prior selections. Out of scope for this role.",
+      "confidence": "HIGH",
+      "flags": [
+        "NONE"
+      ],
+      "follow_up": {
+        "required": true,
+        "priority": "ROUTINE",
+        "reasons": [
+          "AI_PROXY_REQUIRES_HUMAN_CONFIRMATION"
+        ],
+        "recommended_action": "HUMAN_CHECK"
+      },
+      "task_specific": {
+        "scope_decision": null,
+        "group_decision": null,
+        "corrected_group": null,
+        "literature_decision": "REMOVE"
+      }
+    }
+  ]
+}

@@ -1,0 +1,41 @@
+{
+  "schema_version": 1,
+  "bib": "<REDACTED_LOCAL_PATH>/ejmste-43711-references.bib",
+  "bib_sha256": "9bed3598351e4bbbb8a10a66b9349197521b1f69725be1291ab3fd01447b4f5f",
+  "study": "<REDACTED_LOCAL_PATH>/qss_C6_cross_sectional_frozen.json",
+  "cutoffs": [
+    2024
+  ],
+  "through_year": 2026,
+  "retrieval_since_year": 2025,
+  "cache_dir": "<REDACTED_LOCAL_PATH>/openalex",
+  "allow_network": true,
+  "max_network_requests": 20,
+  "retrieval_mode": "group_queries_citing",
+  "evaluation_mode": "cross_sectional_scope_robustness",
+  "candidate_rule": "complete frozen bibliography through snapshot year is the scope seed; no temporal positive holdout; exclude seed identities",
+  "abstract_required": true,
+  "planned_group_queries": [
+    {
+      "group": "computational_thinking_construct",
+      "query": "computational thinking assessment abstraction decomposition algorithmic reasoning K-12 STEM",
+      "since_year": 2025
+    },
+    {
+      "group": "stem_motivation_self_efficacy",
+      "query": "STEM attitudes computational self efficacy motivation expectancy value students",
+      "since_year": 2025
+    },
+    {
+      "group": "scientific_reasoning_problem_solving",
+      "query": "scientific reasoning problem solving computational thinking students evidence evaluation",
+      "since_year": 2025
+    },
+    {
+      "group": "gender_multigroup_equity",
+      "query": "gender computational thinking STEM attitudes multi group path analysis measurement invariance equity",
+      "since_year": 2025
+    }
+  ],
+  "request_journal": "<REDACTED_LOCAL_PATH>/OPENALEX_REQUESTS.jsonl"
+}

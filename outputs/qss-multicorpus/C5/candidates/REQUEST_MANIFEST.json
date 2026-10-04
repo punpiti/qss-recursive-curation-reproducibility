@@ -1,0 +1,41 @@
+{
+  "schema_version": 1,
+  "bib": "<REDACTED_LOCAL_PATH>/references.bib",
+  "bib_sha256": "53ec5ec09e2cf94d4e51f6bb7100a882f851d49d29fa302842a793233ad6e462",
+  "study": "<REDACTED_LOCAL_PATH>/qss_C5_cross_sectional_frozen.json",
+  "cutoffs": [
+    2023
+  ],
+  "through_year": 2026,
+  "retrieval_since_year": 2024,
+  "cache_dir": "<REDACTED_LOCAL_PATH>/openalex",
+  "allow_network": true,
+  "max_network_requests": 20,
+  "retrieval_mode": "group_queries_citing",
+  "evaluation_mode": "cross_sectional_scope_robustness",
+  "candidate_rule": "complete frozen bibliography through snapshot year is the scope seed; no temporal positive holdout; exclude seed identities",
+  "abstract_required": true,
+  "planned_group_queries": [
+    {
+      "group": "vehicle_make_model_scope",
+      "query": "vehicle make model recognition surveillance video fine grained classification dataset",
+      "since_year": 2024
+    },
+    {
+      "group": "semantic_parts_occlusion",
+      "query": "vehicle recognition semantic parts occlusion part based local feature attention",
+      "since_year": 2024
+    },
+    {
+      "group": "temporal_evidence_fusion",
+      "query": "video vehicle recognition temporal evidence fusion multi frame set aggregation missing observations",
+      "since_year": 2024
+    },
+    {
+      "group": "detection_tracking_pipeline",
+      "query": "vehicle video detection tracking data association occlusion recognition pipeline evaluation",
+      "since_year": 2024
+    }
+  ],
+  "request_journal": "<REDACTED_LOCAL_PATH>/OPENALEX_REQUESTS.jsonl"
+}

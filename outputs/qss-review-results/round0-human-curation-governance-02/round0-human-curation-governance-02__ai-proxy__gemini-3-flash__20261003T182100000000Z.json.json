@@ -1,0 +1,235 @@
+{
+  "schema_version": "qss-review-response-v1",
+  "batch_id": "round0-human-curation-governance-02",
+  "review_type": "ROUND0_LITERATURE_REVIEW",
+  "rubric_version": "qss-review-rubric-v3",
+  "reviewer": {
+    "type": "AI_PROXY",
+    "id": "gemini-3-flash",
+    "role": "PRIMARY_REVIEWER",
+    "review_status": "AI_FIRST_PASS",
+    "reviewed_at": null
+  },
+  "reviews": [
+    {
+      "review_row_id": "round0-064",
+      "corpus_or_project": "qss_self_hosting",
+      "source_group": "human_curation_governance",
+      "paper": {
+        "title": "Mapping the AI Landscape in Food Science and Engineering: A Bibliometric Analysis Enhanced with Interactive Digital Tools and Company Case Studies",
+        "doi": "https://doi.org/10.1007/s12393-025-09413-w",
+        "openalex_id": "https://openalex.org/W4411888862"
+      },
+      "normalized_decision": "EXCLUDE",
+      "scope_fit": "OUT_OF_SCOPE",
+      "role_fit": "MISMATCH",
+      "evidence_sufficiency": "SUFFICIENT_ABSTRACT",
+      "primary_reason_code": "WRONG_DOMAIN_OR_POPULATION",
+      "secondary_reason_codes": [],
+      "assigned_label": "human_curation_governance",
+      "corrected_label": null,
+      "evidence": [
+        {
+          "source_field": "ABSTRACT",
+          "supports": "SCOPE",
+          "paraphrase": "Presents a bibliometric mapping and dashboard of AI applications in food science and engineering."
+        }
+      ],
+      "rationale": "While it includes an interactive bibliometric dashboard for food science articles, its primary core contribution is a domain-specific survey in food engineering rather than general algorithmic governance of scholarly curation.",
+      "confidence": "HIGH",
+      "flags": [
+        "NONE"
+      ],
+      "follow_up": {
+        "required": true,
+        "priority": "ROUTINE",
+        "reasons": [
+          "AI_PROXY_REQUIRES_HUMAN_CONFIRMATION"
+        ],
+        "recommended_action": "HUMAN_CHECK"
+      },
+      "task_specific": {
+        "scope_decision": null,
+        "group_decision": null,
+        "corrected_group": null,
+        "literature_decision": "REMOVE"
+      }
+    },
+    {
+      "review_row_id": "round0-065",
+      "corpus_or_project": "qss_self_hosting",
+      "source_group": "human_curation_governance",
+      "paper": {
+        "title": "Explainable artificial intelligence in the talent recruitment process-a literature review",
+        "doi": "https://doi.org/10.1080/23311975.2025.2570881",
+        "openalex_id": "https://openalex.org/W4415132431"
+      },
+      "normalized_decision": "EXCLUDE",
+      "scope_fit": "OUT_OF_SCOPE",
+      "role_fit": "MISMATCH",
+      "evidence_sufficiency": "SUFFICIENT_ABSTRACT",
+      "primary_reason_code": "WRONG_DOMAIN_OR_POPULATION",
+      "secondary_reason_codes": [],
+      "assigned_label": "human_curation_governance",
+      "corrected_label": null,
+      "evidence": [
+        {
+          "source_field": "ABSTRACT",
+          "supports": "SCOPE",
+          "paraphrase": "Reviews XAI applications in talent recruitment, resume parsing, and person-job recommendation."
+        }
+      ],
+      "rationale": "The focus is on HR recruitment and resume processing, which is outside the scholarly search and literature curation domain.",
+      "confidence": "HIGH",
+      "flags": [
+        "NONE"
+      ],
+      "follow_up": {
+        "required": true,
+        "priority": "ROUTINE",
+        "reasons": [
+          "AI_PROXY_REQUIRES_HUMAN_CONFIRMATION"
+        ],
+        "recommended_action": "HUMAN_CHECK"
+      },
+      "task_specific": {
+        "scope_decision": null,
+        "group_decision": null,
+        "corrected_group": null,
+        "literature_decision": "REMOVE"
+      }
+    },
+    {
+      "review_row_id": "round0-066",
+      "corpus_or_project": "qss_self_hosting",
+      "source_group": "human_curation_governance",
+      "paper": {
+        "title": "Governing Adaptive News Curation: Sequential Optimization, Cumulative Exposure Allocation, and Societal Accountability",
+        "doi": "https://doi.org/10.3390/socsci15080496",
+        "openalex_id": "https://openalex.org/W7170135979"
+      },
+      "normalized_decision": "EXCLUDE",
+      "scope_fit": "OUT_OF_SCOPE",
+      "role_fit": "MISMATCH",
+      "evidence_sufficiency": "SUFFICIENT_ABSTRACT",
+      "primary_reason_code": "WRONG_DOMAIN_OR_POPULATION",
+      "secondary_reason_codes": [],
+      "assigned_label": "human_curation_governance",
+      "corrected_label": null,
+      "evidence": [
+        {
+          "source_field": "ABSTRACT",
+          "supports": "SCOPE",
+          "paraphrase": "Analyzes algorithmic governance, exposure allocation, and gatekeeping in adaptive news curation systems."
+        }
+      ],
+      "rationale": "The paper deals with news media curation and societal accountability rather than scholarly information retrieval or bibliographic state management.",
+      "confidence": "HIGH",
+      "flags": [
+        "NONE"
+      ],
+      "follow_up": {
+        "required": true,
+        "priority": "ROUTINE",
+        "reasons": [
+          "AI_PROXY_REQUIRES_HUMAN_CONFIRMATION"
+        ],
+        "recommended_action": "HUMAN_CHECK"
+      },
+      "task_specific": {
+        "scope_decision": null,
+        "group_decision": null,
+        "corrected_group": null,
+        "literature_decision": "REMOVE"
+      }
+    },
+    {
+      "review_row_id": "round0-067",
+      "corpus_or_project": "qss_self_hosting",
+      "source_group": "human_curation_governance",
+      "paper": {
+        "title": "Cyborg Workflows Merging Human Judgment and Agentic AI for Digital Media Transformation",
+        "doi": "https://doi.org/10.20944/preprints202603.2004.v1",
+        "openalex_id": "https://openalex.org/W7140315910"
+      },
+      "normalized_decision": "EXCLUDE",
+      "scope_fit": "OUT_OF_SCOPE",
+      "role_fit": "MISMATCH",
+      "evidence_sufficiency": "SUFFICIENT_ABSTRACT",
+      "primary_reason_code": "WRONG_DOMAIN_OR_POPULATION",
+      "secondary_reason_codes": [],
+      "assigned_label": "human_curation_governance",
+      "corrected_label": null,
+      "evidence": [
+        {
+          "source_field": "ABSTRACT",
+          "supports": "SCOPE",
+          "paraphrase": "Proposes cyborg workflows combining human judgment and agentic AI for digital media content creation and news curation."
+        }
+      ],
+      "rationale": "The paper focuses on digital media production and news curation workflows, falling outside the scholarly literature governance boundary.",
+      "confidence": "HIGH",
+      "flags": [
+        "NONE"
+      ],
+      "follow_up": {
+        "required": true,
+        "priority": "ROUTINE",
+        "reasons": [
+          "AI_PROXY_REQUIRES_HUMAN_CONFIRMATION"
+        ],
+        "recommended_action": "HUMAN_CHECK"
+      },
+      "task_specific": {
+        "scope_decision": null,
+        "group_decision": null,
+        "corrected_group": null,
+        "literature_decision": "REMOVE"
+      }
+    },
+    {
+      "review_row_id": "round0-068",
+      "corpus_or_project": "qss_self_hosting",
+      "source_group": "human_curation_governance",
+      "paper": {
+        "title": "A comprehensive taxonomy for explainable artificial intelligence: a systematic survey of surveys on methods and concepts",
+        "doi": "https://doi.org/10.1007/s10618-022-00867-8",
+        "openalex_id": "https://openalex.org/W4313650676"
+      },
+      "normalized_decision": "EXCLUDE",
+      "scope_fit": "OUT_OF_SCOPE",
+      "role_fit": "MISMATCH",
+      "evidence_sufficiency": "SUFFICIENT_ABSTRACT",
+      "primary_reason_code": "WRONG_DOMAIN_OR_POPULATION",
+      "secondary_reason_codes": [],
+      "assigned_label": "human_curation_governance",
+      "corrected_label": null,
+      "evidence": [
+        {
+          "source_field": "ABSTRACT",
+          "supports": "SCOPE",
+          "paraphrase": "Merges terminologies and concepts across XAI surveys into a unified taxonomy for general machine learning."
+        }
+      ],
+      "rationale": "The paper provides a meta-survey and taxonomy of XAI in general AI/ML, lacking direct connection to scholarly recommendation or literature governance.",
+      "confidence": "HIGH",
+      "flags": [
+        "NONE"
+      ],
+      "follow_up": {
+        "required": true,
+        "priority": "ROUTINE",
+        "reasons": [
+          "AI_PROXY_REQUIRES_HUMAN_CONFIRMATION"
+        ],
+        "recommended_action": "HUMAN_CHECK"
+      },
+      "task_specific": {
+        "scope_decision": null,
+        "group_decision": null,
+        "corrected_group": null,
+        "literature_decision": "REMOVE"
+      }
+    }
+  ]
+}

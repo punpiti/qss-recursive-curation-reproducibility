@@ -1,0 +1,275 @@
+{
+  "schema_version": "qss-review-response-v1",
+  "batch_id": "round0-coverage-diversity-stability-03",
+  "review_type": "ROUND0_LITERATURE_REVIEW",
+  "rubric_version": "qss-review-rubric-v3",
+  "reviewer": {
+    "type": "AI_PROXY",
+    "id": "claude-opus-5-5",
+    "role": "PRIMARY_REVIEWER",
+    "review_status": "AI_FIRST_PASS",
+    "reviewed_at": "2026-10-03T17:08:20.124646Z"
+  },
+  "reviews": [
+    {
+      "review_row_id": "round0-044",
+      "corpus_or_project": "qss_self_hosting",
+      "source_group": "coverage_diversity_stability",
+      "paper": {
+        "title": "Strategies for protection against adversarial attacks in AI models: An in-depth review",
+        "doi": "https://doi.org/10.1515/jisys-2024-0277",
+        "openalex_id": "https://openalex.org/W4411027142"
+      },
+      "normalized_decision": "EXCLUDE",
+      "scope_fit": "OUT_OF_SCOPE",
+      "role_fit": "MISMATCH",
+      "evidence_sufficiency": "SUFFICIENT_ABSTRACT",
+      "primary_reason_code": "WRONG_DOMAIN_OR_POPULATION",
+      "secondary_reason_codes": [
+        "FALSE_LEXICAL_OR_SEMANTIC_MATCH"
+      ],
+      "assigned_label": "coverage_diversity_stability",
+      "corrected_label": null,
+      "evidence": [
+        {
+          "source_field": "ABSTRACT",
+          "supports": "SCOPE",
+          "paraphrase": "Systematic review of defence strategies against adversarial attacks on AI models."
+        },
+        {
+          "source_field": "ABSTRACT",
+          "supports": "RISK",
+          "paraphrase": "'Robustness' and 'stable' refer to model security under adversarial input alterations, not ranking stability or query perturbation."
+        }
+      ],
+      "rationale": "The paper is a domain study unrelated to scholarly search, recommendation or bibliographic evidence selection; its match to the role is lexical. It is out of scope.",
+      "confidence": "HIGH",
+      "flags": [
+        "POSSIBLE_FALSE_MATCH"
+      ],
+      "follow_up": {
+        "required": true,
+        "priority": "ROUTINE",
+        "reasons": [
+          "AI_PROXY_REQUIRES_HUMAN_CONFIRMATION"
+        ],
+        "recommended_action": "HUMAN_CHECK"
+      },
+      "task_specific": {
+        "scope_decision": null,
+        "group_decision": null,
+        "corrected_group": null,
+        "literature_decision": "REMOVE"
+      }
+    },
+    {
+      "review_row_id": "round0-045",
+      "corpus_or_project": "qss_self_hosting",
+      "source_group": "coverage_diversity_stability",
+      "paper": {
+        "title": "Research Review on Workshop Scheduling for Intelligent Manufacturing: Digital Twin Modeling, Optimization Algorithm, and System Architecture",
+        "doi": "https://doi.org/10.3390/machines13111021",
+        "openalex_id": "https://openalex.org/W4415928599"
+      },
+      "normalized_decision": "EXCLUDE",
+      "scope_fit": "OUT_OF_SCOPE",
+      "role_fit": "MISMATCH",
+      "evidence_sufficiency": "SUFFICIENT_ABSTRACT",
+      "primary_reason_code": "WRONG_DOMAIN_OR_POPULATION",
+      "secondary_reason_codes": [
+        "FALSE_LEXICAL_OR_SEMANTIC_MATCH"
+      ],
+      "assigned_label": "coverage_diversity_stability",
+      "corrected_label": null,
+      "evidence": [
+        {
+          "source_field": "ABSTRACT",
+          "supports": "SCOPE",
+          "paraphrase": "Review of digital-twin modelling and scheduling algorithms for intelligent manufacturing workshops."
+        },
+        {
+          "source_field": "ABSTRACT",
+          "supports": "RISK",
+          "paraphrase": "'Robustness' refers to scheduling under dynamic disturbances; there is no retrieval or ranking evaluation."
+        }
+      ],
+      "rationale": "The paper is a domain study unrelated to scholarly search, recommendation or bibliographic evidence selection; its match to the role is lexical. It is out of scope.",
+      "confidence": "HIGH",
+      "flags": [
+        "POSSIBLE_FALSE_MATCH"
+      ],
+      "follow_up": {
+        "required": true,
+        "priority": "ROUTINE",
+        "reasons": [
+          "AI_PROXY_REQUIRES_HUMAN_CONFIRMATION"
+        ],
+        "recommended_action": "HUMAN_CHECK"
+      },
+      "task_specific": {
+        "scope_decision": null,
+        "group_decision": null,
+        "corrected_group": null,
+        "literature_decision": "REMOVE"
+      }
+    },
+    {
+      "review_row_id": "round0-046",
+      "corpus_or_project": "qss_self_hosting",
+      "source_group": "coverage_diversity_stability",
+      "paper": {
+        "title": "Digital Twins for Sustainable and Low-Carbon Supply Chains in Industry X.0: Crossing the Fragmented Bridge Between Academic Research and Industrial Adoption",
+        "doi": "https://doi.org/10.31387/oscm0640504",
+        "openalex_id": "https://openalex.org/W7119138696"
+      },
+      "normalized_decision": "EXCLUDE",
+      "scope_fit": "OUT_OF_SCOPE",
+      "role_fit": "MISMATCH",
+      "evidence_sufficiency": "SUFFICIENT_ABSTRACT",
+      "primary_reason_code": "WRONG_DOMAIN_OR_POPULATION",
+      "secondary_reason_codes": [
+        "FALSE_LEXICAL_OR_SEMANTIC_MATCH"
+      ],
+      "assigned_label": "coverage_diversity_stability",
+      "corrected_label": null,
+      "evidence": [
+        {
+          "source_field": "ABSTRACT",
+          "supports": "SCOPE",
+          "paraphrase": "Bibliometric and thematic analysis of 229 digital-twin articles on sustainable supply chains."
+        },
+        {
+          "source_field": "ABSTRACT",
+          "supports": "RISK",
+          "paraphrase": "'Robustness' describes the review's database compilation; no ranking diversity, coverage or stability is evaluated."
+        }
+      ],
+      "rationale": "The paper is a domain study unrelated to scholarly search, recommendation or bibliographic evidence selection; its match to the role is lexical. It is out of scope.",
+      "confidence": "HIGH",
+      "flags": [
+        "POSSIBLE_FALSE_MATCH"
+      ],
+      "follow_up": {
+        "required": true,
+        "priority": "ROUTINE",
+        "reasons": [
+          "AI_PROXY_REQUIRES_HUMAN_CONFIRMATION"
+        ],
+        "recommended_action": "HUMAN_CHECK"
+      },
+      "task_specific": {
+        "scope_decision": null,
+        "group_decision": null,
+        "corrected_group": null,
+        "literature_decision": "REMOVE"
+      }
+    },
+    {
+      "review_row_id": "round0-047",
+      "corpus_or_project": "qss_self_hosting",
+      "source_group": "coverage_diversity_stability",
+      "paper": {
+        "title": "Machine learning applications in microbial ecology, human microbiome studies, and environmental monitoring",
+        "doi": "https://doi.org/10.1016/j.csbj.2021.01.028",
+        "openalex_id": "https://openalex.org/W3122216490"
+      },
+      "normalized_decision": "EXCLUDE",
+      "scope_fit": "OUT_OF_SCOPE",
+      "role_fit": "MISMATCH",
+      "evidence_sufficiency": "SUFFICIENT_ABSTRACT",
+      "primary_reason_code": "WRONG_DOMAIN_OR_POPULATION",
+      "secondary_reason_codes": [
+        "FALSE_LEXICAL_OR_SEMANTIC_MATCH"
+      ],
+      "assigned_label": "coverage_diversity_stability",
+      "corrected_label": null,
+      "evidence": [
+        {
+          "source_field": "ABSTRACT",
+          "supports": "SCOPE",
+          "paraphrase": "Review of machine-learning applications to microbial community data in ecology, microbiome and environmental monitoring."
+        },
+        {
+          "source_field": "ABSTRACT",
+          "supports": "RISK",
+          "paraphrase": "'Diversity' refers to microbial taxonomic and functional diversity, not ranking diversity."
+        }
+      ],
+      "rationale": "The paper is a domain study unrelated to scholarly search, recommendation or bibliographic evidence selection; its match to the role is lexical. It is out of scope.",
+      "confidence": "HIGH",
+      "flags": [
+        "POSSIBLE_FALSE_MATCH"
+      ],
+      "follow_up": {
+        "required": true,
+        "priority": "ROUTINE",
+        "reasons": [
+          "AI_PROXY_REQUIRES_HUMAN_CONFIRMATION"
+        ],
+        "recommended_action": "HUMAN_CHECK"
+      },
+      "task_specific": {
+        "scope_decision": null,
+        "group_decision": null,
+        "corrected_group": null,
+        "literature_decision": "REMOVE"
+      }
+    },
+    {
+      "review_row_id": "round0-048",
+      "corpus_or_project": "qss_self_hosting",
+      "source_group": "coverage_diversity_stability",
+      "paper": {
+        "title": "Large Language Models: A Comprehensive Survey of its Applications, Challenges, Limitations, and Future Prospects",
+        "doi": "https://doi.org/10.36227/techrxiv.23589741.v8",
+        "openalex_id": "https://openalex.org/W4407303428"
+      },
+      "normalized_decision": "EXCLUDE",
+      "scope_fit": "OUT_OF_SCOPE",
+      "role_fit": "MISMATCH",
+      "evidence_sufficiency": "SUFFICIENT_ABSTRACT",
+      "primary_reason_code": "TOO_GENERIC_FOR_CLAIM",
+      "secondary_reason_codes": [
+        "FALSE_LEXICAL_OR_SEMANTIC_MATCH"
+      ],
+      "assigned_label": "coverage_diversity_stability",
+      "corrected_label": null,
+      "evidence": [
+        {
+          "source_field": "ABSTRACT",
+          "supports": "SCOPE",
+          "paraphrase": "Broad survey of large language models: history, architecture, training, applications and challenges."
+        },
+        {
+          "source_field": "ABSTRACT",
+          "supports": "RISK",
+          "paraphrase": "Mentions robustness and controllability of LLMs generically; nothing on ranking diversity, coverage or result stability."
+        },
+        {
+          "source_field": "METADATA",
+          "supports": "RISK",
+          "paraphrase": "Venue is blank; the record is a TechRxiv preprint version (v8)."
+        }
+      ],
+      "rationale": "A general LLM survey is too broad to support evaluation of ranking diversity or stability and falls under the frozen exclusion for generic LLM work without bibliographic curation. Out of scope.",
+      "confidence": "HIGH",
+      "flags": [
+        "POSSIBLE_FALSE_MATCH"
+      ],
+      "follow_up": {
+        "required": true,
+        "priority": "ROUTINE",
+        "reasons": [
+          "AI_PROXY_REQUIRES_HUMAN_CONFIRMATION"
+        ],
+        "recommended_action": "HUMAN_CHECK"
+      },
+      "task_specific": {
+        "scope_decision": null,
+        "group_decision": null,
+        "corrected_group": null,
+        "literature_decision": "REMOVE"
+      }
+    }
+  ]
+}

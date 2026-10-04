@@ -1,0 +1,309 @@
+{
+  "schema_version": "qss-review-response-v1",
+  "batch_id": "construct-C5-01",
+  "review_type": "CONSTRUCT_AUDIT",
+  "rubric_version": "qss-review-rubric-v3",
+  "reviewer": {
+    "type": "AI_PROXY",
+    "id": "claude-opus-5-5",
+    "role": "PRIMARY_REVIEWER",
+    "review_status": "AI_FIRST_PASS",
+    "reviewed_at": "2026-10-03T17:04:02.843127Z"
+  },
+  "reviews": [
+    {
+      "review_row_id": "C5-2023-01",
+      "corpus_or_project": "C5",
+      "source_group": "vehicle_make_model_scope",
+      "paper": {
+        "title": "Fine-Grained Vehicle Make and Model Recognition Framework Based on Magnetic Fingerprint",
+        "doi": "https://doi.org/10.1109/tits.2024.3374888",
+        "openalex_id": "https://openalex.org/W4393241264"
+      },
+      "normalized_decision": "INCLUDE",
+      "scope_fit": "IN_SCOPE",
+      "role_fit": "DIRECT",
+      "evidence_sufficiency": "SUFFICIENT_ABSTRACT",
+      "primary_reason_code": "DIRECT_METHOD_OR_EVIDENCE_ROLE",
+      "secondary_reason_codes": [
+        "BRIDGE_REFERENCE"
+      ],
+      "assigned_label": "vehicle_make_model_scope",
+      "corrected_label": null,
+      "evidence": [
+        {
+          "source_field": "ABSTRACT",
+          "supports": "ROLE",
+          "paraphrase": "Proposes fine-grained vehicle make and model recognition over 36 models for traffic perception."
+        },
+        {
+          "source_field": "ABSTRACT",
+          "supports": "SCOPE",
+          "paraphrase": "Uses magnetic-sensor fingerprints instead of surveillance video, motivated by vision failures in low-visibility scenes."
+        },
+        {
+          "source_field": "ABSTRACT",
+          "supports": "RISK",
+          "paraphrase": "Sensor modality differs from the video-based target task, so it bounds the task rather than sharing its method."
+        }
+      ],
+      "rationale": "The paper is a fine-grained VMMR study and fits vehicle_make_model_scope, which is defined around the task and its evaluation boundary. Its non-visual modality makes it contrastive context, but the group assignment is sound and the group's omission from 27/150 bags is a genuine loss of task-bounding evidence.",
+      "confidence": "MEDIUM",
+      "flags": [
+        "BOUNDARY_CASE",
+        "CLAIM_CRITICAL"
+      ],
+      "follow_up": {
+        "required": true,
+        "priority": "MEDIUM",
+        "reasons": [
+          "AI_PROXY_REQUIRES_HUMAN_CONFIRMATION",
+          "BOUNDARY_CASE",
+          "CLAIM_CRITICAL"
+        ],
+        "recommended_action": "HUMAN_CHECK"
+      },
+      "task_specific": {
+        "scope_decision": "KEEP_IN_SCOPE",
+        "group_decision": "CORRECT_GROUP",
+        "corrected_group": null,
+        "literature_decision": null
+      }
+    },
+    {
+      "review_row_id": "C5-2023-02",
+      "corpus_or_project": "C5",
+      "source_group": "detection_tracking_pipeline",
+      "paper": {
+        "title": "RESEARCH ON MULTI-OBJECT TRACKING OF PIGS BASED ON IMPROVED BYTE TRACK",
+        "doi": "https://doi.org/10.35633/inmateh-79-22",
+        "openalex_id": "https://openalex.org/W7204204548"
+      },
+      "normalized_decision": "EXCLUDE",
+      "scope_fit": "OUT_OF_SCOPE",
+      "role_fit": "PARTIAL",
+      "evidence_sufficiency": "SUFFICIENT_ABSTRACT",
+      "primary_reason_code": "WRONG_DOMAIN_OR_POPULATION",
+      "secondary_reason_codes": [
+        "FALSE_LEXICAL_OR_SEMANTIC_MATCH"
+      ],
+      "assigned_label": "detection_tracking_pipeline",
+      "corrected_label": null,
+      "evidence": [
+        {
+          "source_field": "ABSTRACT",
+          "supports": "SCOPE",
+          "paraphrase": "Tracks pigs on livestock farms with YOLOv8 and an improved ByteTrack plus EMA trajectory smoothing."
+        },
+        {
+          "source_field": "ABSTRACT",
+          "supports": "ROLE",
+          "paraphrase": "Addresses trajectory interruption under frequent occlusion and reports MOTA/IDF1, which only analogises the vehicle detection-tracking pipeline group."
+        },
+        {
+          "source_field": "ABSTRACT",
+          "supports": "RISK",
+          "paraphrase": "No vehicles, surveillance traffic scenes or recognition task appear in the abstract."
+        }
+      ],
+      "rationale": "The paper is generic multi-object tracking in an animal-farming domain; its overlap with the vehicle pipeline group is limited to occlusion-robust tracking vocabulary. It is out of scope for vehicle make recognition, and its frequent selection where the target group was absent points to a lexical/semantic attraction rather than a valid substitute.",
+      "confidence": "HIGH",
+      "flags": [
+        "POSSIBLE_FALSE_MATCH",
+        "CLAIM_CRITICAL"
+      ],
+      "follow_up": {
+        "required": true,
+        "priority": "MEDIUM",
+        "reasons": [
+          "AI_PROXY_REQUIRES_HUMAN_CONFIRMATION",
+          "CLAIM_CRITICAL"
+        ],
+        "recommended_action": "HUMAN_CHECK"
+      },
+      "task_specific": {
+        "scope_decision": "REMOVE_OUT_OF_SCOPE",
+        "group_decision": "PARTIAL_ANALOGUE",
+        "corrected_group": null,
+        "literature_decision": null
+      }
+    },
+    {
+      "review_row_id": "C5-2023-03",
+      "corpus_or_project": "C5",
+      "source_group": "semantic_parts_occlusion",
+      "paper": {
+        "title": "Vehicle Classification Algorithm Based on Improved Vision Transformer",
+        "doi": "https://doi.org/10.3390/wevj15080344",
+        "openalex_id": "https://openalex.org/W4401111520"
+      },
+      "normalized_decision": "INCLUDE",
+      "scope_fit": "UNCERTAIN",
+      "role_fit": "PARTIAL",
+      "evidence_sufficiency": "SUFFICIENT_ABSTRACT",
+      "primary_reason_code": "BRIDGE_REFERENCE",
+      "secondary_reason_codes": [
+        "WRONG_METHOD_OR_OUTCOME"
+      ],
+      "assigned_label": "semantic_parts_occlusion",
+      "corrected_label": null,
+      "evidence": [
+        {
+          "source_field": "ABSTRACT",
+          "supports": "ROLE",
+          "paraphrase": "Adds a CNN branch for local features and a sparse attention module that screens discriminative regions to separate similar vehicles."
+        },
+        {
+          "source_field": "ABSTRACT",
+          "supports": "SCOPE",
+          "paraphrase": "Task is vehicle type classification (BIT-Vehicles) plus generic image datasets, not make recognition."
+        },
+        {
+          "source_field": "ABSTRACT",
+          "supports": "RISK",
+          "paraphrase": "No semantic vehicle parts or occlusion handling are described."
+        }
+      ],
+      "rationale": "Local-region attention for discriminating similar vehicles is an analogue of part-based evidence, but the paper neither names semantic parts nor addresses occlusion or missing views. It is a partial analogue for semantic_parts_occlusion; as the group's most-explored candidate, its weak fit indicates limited direct coverage in the pool.",
+      "confidence": "MEDIUM",
+      "flags": [
+        "BOUNDARY_CASE",
+        "ROLE_COVERAGE_RISK",
+        "CLAIM_CRITICAL"
+      ],
+      "follow_up": {
+        "required": true,
+        "priority": "HIGH",
+        "reasons": [
+          "AI_PROXY_REQUIRES_HUMAN_CONFIRMATION",
+          "BOUNDARY_CASE",
+          "ROLE_COVERAGE_RISK",
+          "CLAIM_CRITICAL"
+        ],
+        "recommended_action": "HUMAN_CHECK"
+      },
+      "task_specific": {
+        "scope_decision": "KEEP_IN_SCOPE",
+        "group_decision": "PARTIAL_ANALOGUE",
+        "corrected_group": null,
+        "literature_decision": null
+      }
+    },
+    {
+      "review_row_id": "C5-2023-04",
+      "corpus_or_project": "C5",
+      "source_group": "detection_tracking_pipeline",
+      "paper": {
+        "title": "RESEARCH ON MULTI-OBJECT TRACKING OF PIGS BASED ON IMPROVED BYTE TRACK",
+        "doi": "https://doi.org/10.35633/inmateh-79-22",
+        "openalex_id": "https://openalex.org/W7204204548"
+      },
+      "normalized_decision": "EXCLUDE",
+      "scope_fit": "OUT_OF_SCOPE",
+      "role_fit": "PARTIAL",
+      "evidence_sufficiency": "SUFFICIENT_ABSTRACT",
+      "primary_reason_code": "WRONG_DOMAIN_OR_POPULATION",
+      "secondary_reason_codes": [
+        "FALSE_LEXICAL_OR_SEMANTIC_MATCH"
+      ],
+      "assigned_label": "detection_tracking_pipeline",
+      "corrected_label": null,
+      "evidence": [
+        {
+          "source_field": "ABSTRACT",
+          "supports": "SCOPE",
+          "paraphrase": "Tracks pigs on livestock farms with YOLOv8 and an improved ByteTrack plus EMA trajectory smoothing."
+        },
+        {
+          "source_field": "ABSTRACT",
+          "supports": "ROLE",
+          "paraphrase": "Addresses trajectory interruption under frequent occlusion and reports MOTA/IDF1, which only analogises the vehicle detection-tracking pipeline group."
+        },
+        {
+          "source_field": "ABSTRACT",
+          "supports": "RISK",
+          "paraphrase": "No vehicles, surveillance traffic scenes or recognition task appear in the abstract."
+        }
+      ],
+      "rationale": "The paper is generic multi-object tracking in an animal-farming domain; its overlap with the vehicle pipeline group is limited to occlusion-robust tracking vocabulary. It is out of scope for vehicle make recognition, and its frequent selection where the target group was absent points to a lexical/semantic attraction rather than a valid substitute.",
+      "confidence": "HIGH",
+      "flags": [
+        "POSSIBLE_FALSE_MATCH",
+        "CLAIM_CRITICAL"
+      ],
+      "follow_up": {
+        "required": true,
+        "priority": "MEDIUM",
+        "reasons": [
+          "AI_PROXY_REQUIRES_HUMAN_CONFIRMATION",
+          "CLAIM_CRITICAL"
+        ],
+        "recommended_action": "HUMAN_CHECK"
+      },
+      "task_specific": {
+        "scope_decision": "REMOVE_OUT_OF_SCOPE",
+        "group_decision": "PARTIAL_ANALOGUE",
+        "corrected_group": null,
+        "literature_decision": null
+      }
+    },
+    {
+      "review_row_id": "C5-2023-05",
+      "corpus_or_project": "C5",
+      "source_group": "temporal_evidence_fusion",
+      "paper": {
+        "title": "Exploring Multi-Modal Spatial–Temporal Contexts for High-Performance RGB-T Tracking",
+        "doi": "https://doi.org/10.1109/tip.2024.3428316",
+        "openalex_id": "https://openalex.org/W4400810524"
+      },
+      "normalized_decision": "EXCLUDE",
+      "scope_fit": "OUT_OF_SCOPE",
+      "role_fit": "PARTIAL",
+      "evidence_sufficiency": "SUFFICIENT_ABSTRACT",
+      "primary_reason_code": "WRONG_METHOD_OR_OUTCOME",
+      "secondary_reason_codes": [
+        "FALSE_LEXICAL_OR_SEMANTIC_MATCH"
+      ],
+      "assigned_label": "temporal_evidence_fusion",
+      "corrected_label": null,
+      "evidence": [
+        {
+          "source_field": "ABSTRACT",
+          "supports": "SCOPE",
+          "paraphrase": "Proposes a transformer network for generic RGB-thermal single-object tracking evaluated on RGB-T tracking benchmarks."
+        },
+        {
+          "source_field": "ABSTRACT",
+          "supports": "ROLE",
+          "paraphrase": "A quality-aware decoder propagates cues from historical frames, which resembles quality-aware temporal aggregation."
+        },
+        {
+          "source_field": "ABSTRACT",
+          "supports": "RISK",
+          "paraphrase": "The temporal propagation serves target localisation, not accumulation of recognition evidence, and vehicles are not mentioned."
+        }
+      ],
+      "rationale": "Temporal propagation in the tracker is a methodological analogue of quality-aware temporal fusion, but the task is object localisation in RGB-T video rather than recognising vehicle make from accumulated evidence. It is out of scope and a semantic false match, consistent with its use as a boundary example.",
+      "confidence": "MEDIUM",
+      "flags": [
+        "POSSIBLE_FALSE_MATCH",
+        "BOUNDARY_CASE"
+      ],
+      "follow_up": {
+        "required": true,
+        "priority": "MEDIUM",
+        "reasons": [
+          "AI_PROXY_REQUIRES_HUMAN_CONFIRMATION",
+          "BOUNDARY_CASE"
+        ],
+        "recommended_action": "HUMAN_CHECK"
+      },
+      "task_specific": {
+        "scope_decision": "REMOVE_OUT_OF_SCOPE",
+        "group_decision": "PARTIAL_ANALOGUE",
+        "corrected_group": null,
+        "literature_decision": null
+      }
+    }
+  ]
+}

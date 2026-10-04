@@ -1,0 +1,132 @@
+{
+  "schema_version": "qss-review-response-v1",
+  "batch_id": "construct-C6-01",
+  "review_type": "CONSTRUCT_AUDIT",
+  "rubric_version": "qss-review-rubric-v3",
+  "reviewer": {
+    "type": "AI_PROXY",
+    "id": "claude-opus-5-5",
+    "role": "PRIMARY_REVIEWER",
+    "review_status": "AI_FIRST_PASS",
+    "reviewed_at": "2026-10-03T17:03:43.786481Z"
+  },
+  "reviews": [
+    {
+      "review_row_id": "C6-2024-01",
+      "corpus_or_project": "C6",
+      "source_group": "gender_multigroup_equity",
+      "paper": {
+        "title": "Unpacking teachers' value beliefs about computational thinking and programming",
+        "doi": "https://doi.org/10.31681/jetol.1497284",
+        "openalex_id": "https://openalex.org/W4406971498"
+      },
+      "normalized_decision": "INCLUDE",
+      "scope_fit": "IN_SCOPE",
+      "role_fit": "PARTIAL",
+      "evidence_sufficiency": "SUFFICIENT_ABSTRACT",
+      "primary_reason_code": "BRIDGE_REFERENCE",
+      "secondary_reason_codes": [
+        "WRONG_METHOD_OR_OUTCOME"
+      ],
+      "assigned_label": "gender_multigroup_equity",
+      "corrected_label": null,
+      "evidence": [
+        {
+          "source_field": "ABSTRACT",
+          "supports": "SCOPE",
+          "paraphrase": "Adapts a teacher-beliefs scale on coding and computational thinking into Turkish with CFA and examines 417 teachers' value beliefs and programming self-efficacy."
+        },
+        {
+          "source_field": "ABSTRACT",
+          "supports": "ROLE",
+          "paraphrase": "Gender is analysed with t-tests, ANOVA and MANOVA on mean scores, finding male-female differences in programming and teaching efficacy."
+        },
+        {
+          "source_field": "ABSTRACT",
+          "supports": "RISK",
+          "paraphrase": "No multi-group path model or measurement-invariance test is reported, and the population is teachers rather than students."
+        }
+      ],
+      "rationale": "The paper is relevant computational-thinking and self-efficacy context with a gender comparison, but its gender evidence is mean-difference testing rather than the multi-group path or invariance analysis the group is defined around. It is a partial analogue for gender_multigroup_equity, so the group's omission from 77/150 bags is a softer loss than a direct-method omission would be.",
+      "confidence": "MEDIUM",
+      "flags": [
+        "BOUNDARY_CASE",
+        "ROLE_COVERAGE_RISK",
+        "CLAIM_CRITICAL"
+      ],
+      "follow_up": {
+        "required": true,
+        "priority": "HIGH",
+        "reasons": [
+          "AI_PROXY_REQUIRES_HUMAN_CONFIRMATION",
+          "BOUNDARY_CASE",
+          "ROLE_COVERAGE_RISK",
+          "CLAIM_CRITICAL"
+        ],
+        "recommended_action": "HUMAN_CHECK"
+      },
+      "task_specific": {
+        "scope_decision": "KEEP_IN_SCOPE",
+        "group_decision": "PARTIAL_ANALOGUE",
+        "corrected_group": null,
+        "literature_decision": null
+      }
+    },
+    {
+      "review_row_id": "C6-2024-02",
+      "corpus_or_project": "C6",
+      "source_group": "stem_motivation_self_efficacy",
+      "paper": {
+        "title": "Fostering students’ motivation and self-efficacy in science, technology, engineering, and design through design thinking and making in project-based learning: a gender-perspective study in primary education",
+        "doi": "https://doi.org/10.1007/s10798-025-10001-6",
+        "openalex_id": "https://openalex.org/W4411118296"
+      },
+      "normalized_decision": "INCLUDE",
+      "scope_fit": "IN_SCOPE",
+      "role_fit": "DIRECT",
+      "evidence_sufficiency": "SUFFICIENT_ABSTRACT",
+      "primary_reason_code": "DIRECT_METHOD_OR_EVIDENCE_ROLE",
+      "secondary_reason_codes": [
+        "BRIDGE_REFERENCE"
+      ],
+      "assigned_label": "stem_motivation_self_efficacy",
+      "corrected_label": null,
+      "evidence": [
+        {
+          "source_field": "ABSTRACT",
+          "supports": "ROLE",
+          "paraphrase": "Measures primary students' self-efficacy and motivation in science, technology and design before and after design-thinking/maker PBL, grounded in Bandura's social cognitive theory."
+        },
+        {
+          "source_field": "ABSTRACT",
+          "supports": "SCOPE",
+          "paraphrase": "Reports larger self-efficacy gains among girls and frames results around gender disparities in STEM engagement."
+        },
+        {
+          "source_field": "ABSTRACT",
+          "supports": "RISK",
+          "paraphrase": "Gender evidence is descriptive pre-post comparison, not multi-group structural modelling."
+        }
+      ],
+      "rationale": "The study directly provides STEM self-efficacy and motivation evidence, matching stem_motivation_self_efficacy. Its gender findings make it a useful bridge to equity discussion but not a substitute for multi-group path evidence.",
+      "confidence": "HIGH",
+      "flags": [
+        "NONE"
+      ],
+      "follow_up": {
+        "required": true,
+        "priority": "ROUTINE",
+        "reasons": [
+          "AI_PROXY_REQUIRES_HUMAN_CONFIRMATION"
+        ],
+        "recommended_action": "HUMAN_CHECK"
+      },
+      "task_specific": {
+        "scope_decision": "KEEP_IN_SCOPE",
+        "group_decision": "CORRECT_GROUP",
+        "corrected_group": null,
+        "literature_decision": null
+      }
+    }
+  ]
+}

@@ -1,0 +1,178 @@
+{
+  "schema_version": "qss-review-response-v1",
+  "batch_id": "round0-temporal-evaluation-observability-01",
+  "review_type": "ROUND0_LITERATURE_REVIEW",
+  "rubric_version": "qss-review-rubric-v3",
+  "reviewer": {
+    "type": "AI_PROXY",
+    "id": "codex-cli-0-159-3",
+    "role": "PRIMARY_REVIEWER",
+    "review_status": "AI_FIRST_PASS",
+    "reviewed_at": "2026-10-03T18:15:21.912905Z"
+  },
+  "reviews": [
+    {
+      "review_row_id": "round0-031",
+      "corpus_or_project": "qss_self_hosting",
+      "source_group": "temporal_evaluation_observability",
+      "paper": {
+        "title": "Efficient Learning Machines: Theories, Concepts, and Applications for Engineers and System Designers",
+        "doi": "https://doi.org/10.1007/978-1-4302-5990-9",
+        "openalex_id": "https://openalex.org/W2473394283"
+      },
+      "normalized_decision": "EXCLUDE",
+      "scope_fit": "OUT_OF_SCOPE",
+      "role_fit": "MISMATCH",
+      "evidence_sufficiency": "SUFFICIENT_ABSTRACT",
+      "primary_reason_code": "TOO_GENERIC_FOR_CLAIM",
+      "secondary_reason_codes": [
+        "WRONG_METHOD_OR_OUTCOME"
+      ],
+      "assigned_label": "temporal_evaluation_observability",
+      "corrected_label": null,
+      "evidence": [
+        {
+          "source_field": "ABSTRACT",
+          "supports": "SCOPE",
+          "paraphrase": "The book surveys broad machine-learning theory, algorithms, and engineering applications rather than a scholarly search or evidence-selection workflow."
+        },
+        {
+          "source_field": "ABSTRACT",
+          "supports": "ROLE",
+          "paraphrase": "Its evaluation discussion concerns aggregate multi-objective performance and does not address temporal splits, offline recommender evaluation, look-ahead leakage, holdouts, or unreachable positives."
+        }
+      ],
+      "rationale": "The abstract describes a general machine-learning textbook and provides no contribution to temporal or offline evaluation of retrieval or recommender systems. The occurrence of hierarchical temporal memory does not establish the assigned evidence role.",
+      "confidence": "HIGH",
+      "flags": [
+        "POSSIBLE_FALSE_MATCH"
+      ],
+      "follow_up": {
+        "required": true,
+        "priority": "ROUTINE",
+        "reasons": [
+          "AI_PROXY_REQUIRES_HUMAN_CONFIRMATION"
+        ],
+        "recommended_action": "HUMAN_CHECK"
+      },
+      "task_specific": {
+        "scope_decision": null,
+        "group_decision": null,
+        "corrected_group": null,
+        "literature_decision": "REMOVE"
+      }
+    },
+    {
+      "review_row_id": "round0-032",
+      "corpus_or_project": "qss_self_hosting",
+      "source_group": "temporal_evaluation_observability",
+      "paper": {
+        "title": "A systematic literature review of recent advances on context-aware recommender systems",
+        "doi": "https://doi.org/10.1007/s10462-024-10939-4",
+        "openalex_id": "https://openalex.org/W4404432903"
+      },
+      "normalized_decision": "INCLUDE",
+      "scope_fit": "IN_SCOPE",
+      "role_fit": "BRIDGE",
+      "evidence_sufficiency": "SUFFICIENT_ABSTRACT",
+      "primary_reason_code": "BRIDGE_REFERENCE",
+      "secondary_reason_codes": [],
+      "assigned_label": "temporal_evaluation_observability",
+      "corrected_label": null,
+      "evidence": [
+        {
+          "source_field": "ABSTRACT",
+          "supports": "SCOPE",
+          "paraphrase": "The review concerns context-aware recommender systems and explicitly includes temporal context among the contextual components studied."
+        },
+        {
+          "source_field": "ABSTRACT",
+          "supports": "ROLE",
+          "paraphrase": "It reviews evaluation in terms of reproducibility and effectiveness and examines datasets, metrics, and code implementations, supporting broad offline-evaluation observability."
+        },
+        {
+          "source_field": "ABSTRACT",
+          "supports": "RISK",
+          "paraphrase": "The abstract does not state that the review analyzes temporal splits, future holdouts, look-ahead leakage, or unreachable items."
+        }
+      ],
+      "rationale": "The abstract supports inclusion as a bridge reference for evaluation practice and observability in recommender systems, with temporal context also within its scope. It is not direct evidence for leakage prevention or temporal holdout design, so it should not be used alone for those claims.",
+      "confidence": "MEDIUM",
+      "flags": [
+        "ROLE_COVERAGE_RISK"
+      ],
+      "follow_up": {
+        "required": true,
+        "priority": "MEDIUM",
+        "reasons": [
+          "AI_PROXY_REQUIRES_HUMAN_CONFIRMATION",
+          "ROLE_COVERAGE_RISK"
+        ],
+        "recommended_action": "HUMAN_CHECK"
+      },
+      "task_specific": {
+        "scope_decision": null,
+        "group_decision": null,
+        "corrected_group": null,
+        "literature_decision": "KEEP"
+      }
+    },
+    {
+      "review_row_id": "round0-033",
+      "corpus_or_project": "qss_self_hosting",
+      "source_group": "temporal_evaluation_observability",
+      "paper": {
+        "title": "Improving Estimates of Gross Primary Productivity by Assimilating Solar‐Induced Fluorescence Satellite Retrievals in a Terrestrial Biosphere Model Using a Process‐Based SIF Model",
+        "doi": "https://doi.org/10.1029/2019jg005040",
+        "openalex_id": "https://openalex.org/W2979987213"
+      },
+      "normalized_decision": "EXCLUDE",
+      "scope_fit": "OUT_OF_SCOPE",
+      "role_fit": "MISMATCH",
+      "evidence_sufficiency": "SUFFICIENT_ABSTRACT",
+      "primary_reason_code": "FALSE_LEXICAL_OR_SEMANTIC_MATCH",
+      "secondary_reason_codes": [
+        "WRONG_DOMAIN_OR_POPULATION",
+        "WRONG_METHOD_OR_OUTCOME"
+      ],
+      "assigned_label": "temporal_evaluation_observability",
+      "corrected_label": null,
+      "evidence": [
+        {
+          "source_field": "TITLE",
+          "supports": "DECISION",
+          "paraphrase": "The title uses retrievals to mean satellite-derived fluorescence observations used in a terrestrial biosphere model."
+        },
+        {
+          "source_field": "ABSTRACT",
+          "supports": "SCOPE",
+          "paraphrase": "The study assimilates OCO-2 fluorescence products to optimize photosynthesis and phenological parameters and evaluate gross primary productivity estimates."
+        },
+        {
+          "source_field": "ABSTRACT",
+          "supports": "ROLE",
+          "paraphrase": "No scholarly retrieval, recommender evaluation, temporal split, leakage control, holdout protocol, or unreachable-positive analysis is described."
+        }
+      ],
+      "rationale": "This is a terrestrial-biosphere data-assimilation study, and satellite retrievals are not information-retrieval results. Its spatiotemporal model evaluation is outside both the frozen boundary and the assigned evidence role.",
+      "confidence": "HIGH",
+      "flags": [
+        "POSSIBLE_FALSE_MATCH"
+      ],
+      "follow_up": {
+        "required": true,
+        "priority": "ROUTINE",
+        "reasons": [
+          "AI_PROXY_REQUIRES_HUMAN_CONFIRMATION"
+        ],
+        "recommended_action": "HUMAN_CHECK"
+      },
+      "task_specific": {
+        "scope_decision": null,
+        "group_decision": null,
+        "corrected_group": null,
+        "literature_decision": "REMOVE"
+      }
+    }
+  ]
+}

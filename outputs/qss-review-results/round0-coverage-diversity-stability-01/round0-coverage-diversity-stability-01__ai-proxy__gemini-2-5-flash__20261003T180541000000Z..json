@@ -1,0 +1,241 @@
+{
+  "schema_version": "qss-review-response-v1",
+  "batch_id": "round0-coverage-diversity-stability-01",
+  "review_type": "ROUND0_LITERATURE_REVIEW",
+  "rubric_version": "qss-review-rubric-v3",
+  "reviewer": {
+    "type": "AI_PROXY",
+    "id": "gemini-2.5-flash",
+    "role": "PRIMARY_REVIEWER",
+    "review_status": "AI_FIRST_PASS",
+    "reviewed_at": null
+  },
+  "reviews": [
+    {
+      "review_row_id": "round0-034",
+      "corpus_or_project": "qss_self_hosting",
+      "source_group": "coverage_diversity_stability",
+      "paper": {
+        "title": "A Novel Discriminating and Relative Global Spatial Image Representation with Applications in CBIR",
+        "doi": "https://doi.org/10.3390/app8112242",
+        "openalex_id": "https://openalex.org/W2900637511"
+      },
+      "normalized_decision": "EXCLUDE",
+      "scope_fit": "OUT_OF_SCOPE",
+      "role_fit": "MISMATCH",
+      "evidence_sufficiency": "SUFFICIENT_ABSTRACT",
+      "primary_reason_code": "WRONG_DOMAIN_OR_POPULATION",
+      "secondary_reason_codes": [
+        "WRONG_METHOD_OR_OUTCOME"
+      ],
+      "assigned_label": "coverage_diversity_stability",
+      "corrected_label": null,
+      "evidence": [
+        {
+          "source_field": "ABSTRACT",
+          "supports": "SCOPE",
+          "paraphrase": "Focuses on content-based image retrieval (CBIR) using Bag of Visual Words and Spatial Pyramid Matching for computer vision applications."
+        }
+      ],
+      "rationale": "The paper investigates content-based image retrieval in computer vision rather than scholarly literature search, information retrieval, or bibliographic recommendation.",
+      "confidence": "HIGH",
+      "flags": [
+        "NONE"
+      ],
+      "follow_up": {
+        "required": true,
+        "priority": "ROUTINE",
+        "reasons": [
+          "AI_PROXY_REQUIRES_HUMAN_CONFIRMATION"
+        ],
+        "recommended_action": "HUMAN_CHECK"
+      },
+      "task_specific": {
+        "scope_decision": null,
+        "group_decision": null,
+        "corrected_group": null,
+        "literature_decision": "REMOVE"
+      }
+    },
+    {
+      "review_row_id": "round0-035",
+      "corpus_or_project": "qss_self_hosting",
+      "source_group": "coverage_diversity_stability",
+      "paper": {
+        "title": "Heterogeneous ensemble approach with discriminative features and modified-SMOTEbagging for pre-miRNA classification",
+        "doi": "https://doi.org/10.1093/nar/gks878",
+        "openalex_id": "https://openalex.org/W2094686600"
+      },
+      "normalized_decision": "EXCLUDE",
+      "scope_fit": "OUT_OF_SCOPE",
+      "role_fit": "MISMATCH",
+      "evidence_sufficiency": "SUFFICIENT_ABSTRACT",
+      "primary_reason_code": "WRONG_DOMAIN_OR_POPULATION",
+      "secondary_reason_codes": [],
+      "assigned_label": "coverage_diversity_stability",
+      "corrected_label": null,
+      "evidence": [
+        {
+          "source_field": "ABSTRACT",
+          "supports": "SCOPE",
+          "paraphrase": "Proposes an ensemble classifier for microRNA precursor (pre-miRNA) classification in bioinformatics."
+        }
+      ],
+      "rationale": "This work is in bioinformatics and gene/sequence classification (pre-miRNA), completely outside the domain of scholarly retrieval and bibliographic search.",
+      "confidence": "HIGH",
+      "flags": [
+        "NONE"
+      ],
+      "follow_up": {
+        "required": true,
+        "priority": "ROUTINE",
+        "reasons": [
+          "AI_PROXY_REQUIRES_HUMAN_CONFIRMATION"
+        ],
+        "recommended_action": "HUMAN_CHECK"
+      },
+      "task_specific": {
+        "scope_decision": null,
+        "group_decision": null,
+        "corrected_group": null,
+        "literature_decision": "REMOVE"
+      }
+    },
+    {
+      "review_row_id": "round0-036",
+      "corpus_or_project": "qss_self_hosting",
+      "source_group": "coverage_diversity_stability",
+      "paper": {
+        "title": "From Brochures to Bytes: Destination Branding through Social, Mobile, and AI—A Systematic Narrative Review with Meta-Analysis",
+        "doi": "https://doi.org/10.3390/admsci15090371",
+        "openalex_id": "https://openalex.org/W4414358807"
+      },
+      "normalized_decision": "EXCLUDE",
+      "scope_fit": "OUT_OF_SCOPE",
+      "role_fit": "MISMATCH",
+      "evidence_sufficiency": "SUFFICIENT_ABSTRACT",
+      "primary_reason_code": "WRONG_DOMAIN_OR_POPULATION",
+      "secondary_reason_codes": [],
+      "assigned_label": "coverage_diversity_stability",
+      "corrected_label": null,
+      "evidence": [
+        {
+          "source_field": "ABSTRACT",
+          "supports": "SCOPE",
+          "paraphrase": "A systematic review and meta-analysis on digital transformation and tourism destination branding."
+        }
+      ],
+      "rationale": "The paper is a domain review on tourism marketing and destination branding, not a study of scholarly search algorithms or evidence selection systems.",
+      "confidence": "HIGH",
+      "flags": [
+        "NONE"
+      ],
+      "follow_up": {
+        "required": true,
+        "priority": "ROUTINE",
+        "reasons": [
+          "AI_PROXY_REQUIRES_HUMAN_CONFIRMATION"
+        ],
+        "recommended_action": "HUMAN_CHECK"
+      },
+      "task_specific": {
+        "scope_decision": null,
+        "group_decision": null,
+        "corrected_group": null,
+        "literature_decision": "REMOVE"
+      }
+    },
+    {
+      "review_row_id": "round0-037",
+      "corpus_or_project": "qss_self_hosting",
+      "source_group": "coverage_diversity_stability",
+      "paper": {
+        "title": "Threats and vulnerabilities in artificial intelligence and agentic AI models",
+        "doi": "https://doi.org/10.3389/frai.2026.1731566",
+        "openalex_id": "https://openalex.org/W7128813993"
+      },
+      "normalized_decision": "EXCLUDE",
+      "scope_fit": "OUT_OF_SCOPE",
+      "role_fit": "MISMATCH",
+      "evidence_sufficiency": "SUFFICIENT_ABSTRACT",
+      "primary_reason_code": "WRONG_DOMAIN_OR_POPULATION",
+      "secondary_reason_codes": [
+        "TOO_GENERIC_FOR_CLAIM"
+      ],
+      "assigned_label": "coverage_diversity_stability",
+      "corrected_label": null,
+      "evidence": [
+        {
+          "source_field": "ABSTRACT",
+          "supports": "SCOPE",
+          "paraphrase": "Develops a threat-model framework for agentic AI adversarial vulnerabilities across perceptual, cognitive, and executive layers."
+        }
+      ],
+      "rationale": "Focuses on AI security, agentic AI adversarial vulnerabilities, and control-theoretic defense mechanisms, without any scholarly search, retrieval, or bibliographic selection workflow.",
+      "confidence": "HIGH",
+      "flags": [
+        "NONE"
+      ],
+      "follow_up": {
+        "required": true,
+        "priority": "ROUTINE",
+        "reasons": [
+          "AI_PROXY_REQUIRES_HUMAN_CONFIRMATION"
+        ],
+        "recommended_action": "HUMAN_CHECK"
+      },
+      "task_specific": {
+        "scope_decision": null,
+        "group_decision": null,
+        "corrected_group": null,
+        "literature_decision": "REMOVE"
+      }
+    },
+    {
+      "review_row_id": "round0-038",
+      "corpus_or_project": "qss_self_hosting",
+      "source_group": "coverage_diversity_stability",
+      "paper": {
+        "title": "Image Matching from Handcrafted to Deep Features: A Survey",
+        "doi": "https://doi.org/10.1007/s11263-020-01359-2",
+        "openalex_id": "https://openalex.org/W3047057232"
+      },
+      "normalized_decision": "EXCLUDE",
+      "scope_fit": "OUT_OF_SCOPE",
+      "role_fit": "MISMATCH",
+      "evidence_sufficiency": "SUFFICIENT_ABSTRACT",
+      "primary_reason_code": "WRONG_DOMAIN_OR_POPULATION",
+      "secondary_reason_codes": [
+        "FALSE_LEXICAL_OR_SEMANTIC_MATCH"
+      ],
+      "assigned_label": "coverage_diversity_stability",
+      "corrected_label": null,
+      "evidence": [
+        {
+          "source_field": "ABSTRACT",
+          "supports": "SCOPE",
+          "paraphrase": "Surveys image matching pipelines, feature detection, description, and matching algorithms in computer vision."
+        }
+      ],
+      "rationale": "The paper surveys feature detection and matching for computer vision images. Terms like 'matching' and 'robustness' present a false lexical match with bibliographic search and recommendation.",
+      "confidence": "HIGH",
+      "flags": [
+        "NONE"
+      ],
+      "follow_up": {
+        "required": true,
+        "priority": "ROUTINE",
+        "reasons": [
+          "AI_PROXY_REQUIRES_HUMAN_CONFIRMATION"
+        ],
+        "recommended_action": "HUMAN_CHECK"
+      },
+      "task_specific": {
+        "scope_decision": null,
+        "group_decision": null,
+        "corrected_group": null,
+        "literature_decision": "REMOVE"
+      }
+    }
+  ]
+}

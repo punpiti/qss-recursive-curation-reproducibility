@@ -1,0 +1,251 @@
+{
+  "schema_version": "qss-review-response-v1",
+  "batch_id": "round0-dependent-inference-02",
+  "review_type": "ROUND0_LITERATURE_REVIEW",
+  "rubric_version": "qss-review-rubric-v3",
+  "reviewer": {
+    "type": "AI_PROXY",
+    "id": "codex-cli-0-159-3",
+    "role": "PRIMARY_REVIEWER",
+    "review_status": "AI_FIRST_PASS",
+    "reviewed_at": "2026-10-03T18:27:34.547266Z"
+  },
+  "reviews": [
+    {
+      "review_row_id": "round0-054",
+      "corpus_or_project": "qss_self_hosting",
+      "source_group": "dependent_inference",
+      "paper": {
+        "title": "Fast leave-one-cluster-out cross-validation using clustered network information criterion",
+        "doi": "https://doi.org/10.1177/09622802251345486",
+        "openalex_id": "https://openalex.org/W4399317008"
+      },
+      "normalized_decision": "INCLUDE",
+      "scope_fit": "IN_SCOPE",
+      "role_fit": "DIRECT",
+      "evidence_sufficiency": "SUFFICIENT_ABSTRACT",
+      "primary_reason_code": "DIRECT_METHOD",
+      "secondary_reason_codes": [],
+      "assigned_label": "dependent_inference",
+      "corrected_label": null,
+      "evidence": [
+        {
+          "source_field": "TITLE",
+          "supports": "ROLE",
+          "paraphrase": "The title identifies leave-one-cluster-out cross-validation and a criterion designed around clustered observations."
+        },
+        {
+          "source_field": "ABSTRACT",
+          "supports": "DECISION",
+          "paraphrase": "The method replaces an independence-based information estimate with a clustering-adjusted estimator and is evaluated against cluster-based cross-validation."
+        }
+      ],
+      "rationale": "The paper directly addresses validation when observations are clustered and therefore not adequately represented by an i.i.d. validation assumption. Its cluster-adjusted approximation to leave-one-cluster-out validation supports the dependent-inference role from the abstract alone.",
+      "confidence": "HIGH",
+      "flags": [
+        "NONE"
+      ],
+      "follow_up": {
+        "required": true,
+        "priority": "ROUTINE",
+        "reasons": [
+          "AI_PROXY_REQUIRES_HUMAN_CONFIRMATION"
+        ],
+        "recommended_action": "HUMAN_CHECK"
+      },
+      "task_specific": {
+        "scope_decision": null,
+        "group_decision": null,
+        "corrected_group": null,
+        "literature_decision": "KEEP"
+      }
+    },
+    {
+      "review_row_id": "round0-055",
+      "corpus_or_project": "qss_self_hosting",
+      "source_group": "dependent_inference",
+      "paper": {
+        "title": "Error processing and gender-shared and -specific neural predictors of relapse in cocaine dependence",
+        "doi": "https://doi.org/10.1093/brain/awt040",
+        "openalex_id": "https://openalex.org/W2115873479"
+      },
+      "normalized_decision": "EXCLUDE",
+      "scope_fit": "OUT_OF_SCOPE",
+      "role_fit": "MISMATCH",
+      "evidence_sufficiency": "SUFFICIENT_ABSTRACT",
+      "primary_reason_code": "FALSE_LEXICAL_OR_SEMANTIC_MATCH",
+      "secondary_reason_codes": [
+        "WRONG_DOMAIN_OR_POPULATION",
+        "WRONG_METHOD_OR_OUTCOME"
+      ],
+      "assigned_label": "dependent_inference",
+      "corrected_label": null,
+      "evidence": [
+        {
+          "source_field": "ABSTRACT",
+          "supports": "DECISION",
+          "paraphrase": "The study uses resampling only to validate neuroimaging predictors of cocaine relapse; it does not analyze dependence among resampled evaluation units."
+        }
+      ],
+      "rationale": "The occurrence of data resampling is incidental to a clinical prediction study. The abstract supplies no method or inference correction for correlated folds, repeated resamples, clustered units, or dependent perturbations.",
+      "confidence": "HIGH",
+      "flags": [
+        "POSSIBLE_FALSE_MATCH"
+      ],
+      "follow_up": {
+        "required": true,
+        "priority": "ROUTINE",
+        "reasons": [
+          "AI_PROXY_REQUIRES_HUMAN_CONFIRMATION"
+        ],
+        "recommended_action": "HUMAN_CHECK"
+      },
+      "task_specific": {
+        "scope_decision": null,
+        "group_decision": null,
+        "corrected_group": null,
+        "literature_decision": "REMOVE"
+      }
+    },
+    {
+      "review_row_id": "round0-056",
+      "corpus_or_project": "qss_self_hosting",
+      "source_group": "dependent_inference",
+      "paper": {
+        "title": "Explainable Machine Learning for Early Assessment of COVID-19 Risk Prediction in Emergency Departments",
+        "doi": "https://doi.org/10.1109/access.2020.3034032",
+        "openalex_id": "https://openalex.org/W3096413426"
+      },
+      "normalized_decision": "EXCLUDE",
+      "scope_fit": "OUT_OF_SCOPE",
+      "role_fit": "MISMATCH",
+      "evidence_sufficiency": "SUFFICIENT_ABSTRACT",
+      "primary_reason_code": "WRONG_METHOD_OR_OUTCOME",
+      "secondary_reason_codes": [
+        "WRONG_DOMAIN_OR_POPULATION"
+      ],
+      "assigned_label": "dependent_inference",
+      "corrected_label": null,
+      "evidence": [
+        {
+          "source_field": "ABSTRACT",
+          "supports": "DECISION",
+          "paraphrase": "The paper applies ordinary 10-fold cross-validation for variable selection in COVID-19 risk prediction without identifying or correcting dependence among folds or observations."
+        }
+      ],
+      "rationale": "Using cross-validation does not by itself support the dependent-inference role. The abstract presents a clinical prediction workflow and gives no dependent-resampling, clustered, or repeated-measures inference method.",
+      "confidence": "HIGH",
+      "flags": [
+        "POSSIBLE_FALSE_MATCH"
+      ],
+      "follow_up": {
+        "required": true,
+        "priority": "ROUTINE",
+        "reasons": [
+          "AI_PROXY_REQUIRES_HUMAN_CONFIRMATION"
+        ],
+        "recommended_action": "HUMAN_CHECK"
+      },
+      "task_specific": {
+        "scope_decision": null,
+        "group_decision": null,
+        "corrected_group": null,
+        "literature_decision": "REMOVE"
+      }
+    },
+    {
+      "review_row_id": "round0-057",
+      "corpus_or_project": "qss_self_hosting",
+      "source_group": "dependent_inference",
+      "paper": {
+        "title": "Importance of regional variation in conservation planning: a rangewide example of the Greater Sage‐Grouse",
+        "doi": "https://doi.org/10.1002/ecs2.1462",
+        "openalex_id": "https://openalex.org/W2530607760"
+      },
+      "normalized_decision": "EXCLUDE",
+      "scope_fit": "OUT_OF_SCOPE",
+      "role_fit": "MISMATCH",
+      "evidence_sufficiency": "SUFFICIENT_ABSTRACT",
+      "primary_reason_code": "FALSE_LEXICAL_OR_SEMANTIC_MATCH",
+      "secondary_reason_codes": [
+        "WRONG_DOMAIN_OR_POPULATION",
+        "WRONG_METHOD_OR_OUTCOME"
+      ],
+      "assigned_label": "dependent_inference",
+      "corrected_label": null,
+      "evidence": [
+        {
+          "source_field": "ABSTRACT",
+          "supports": "DECISION",
+          "paraphrase": "Cross-validation is reported as a model-performance statistic, while clustering refers to spatial concentration of bird abundance rather than dependence-aware resampling inference."
+        }
+      ],
+      "rationale": "The apparent match comes from unrelated uses of cross-validation and clustering in ecological habitat modeling. The abstract does not contribute a method for valid inference under dependent folds, resamples, topics, or perturbations.",
+      "confidence": "HIGH",
+      "flags": [
+        "POSSIBLE_FALSE_MATCH"
+      ],
+      "follow_up": {
+        "required": true,
+        "priority": "ROUTINE",
+        "reasons": [
+          "AI_PROXY_REQUIRES_HUMAN_CONFIRMATION"
+        ],
+        "recommended_action": "HUMAN_CHECK"
+      },
+      "task_specific": {
+        "scope_decision": null,
+        "group_decision": null,
+        "corrected_group": null,
+        "literature_decision": "REMOVE"
+      }
+    },
+    {
+      "review_row_id": "round0-058",
+      "corpus_or_project": "qss_self_hosting",
+      "source_group": "dependent_inference",
+      "paper": {
+        "title": "An Evolutionary-Network Model Reveals Stratified Interactions in the V3 Loop of the HIV-1 Envelope",
+        "doi": "https://doi.org/10.1371/journal.pcbi.0030231",
+        "openalex_id": "https://openalex.org/W2056265093"
+      },
+      "normalized_decision": "EXCLUDE",
+      "scope_fit": "OUT_OF_SCOPE",
+      "role_fit": "MISMATCH",
+      "evidence_sufficiency": "SUFFICIENT_ABSTRACT",
+      "primary_reason_code": "WRONG_METHOD_OR_OUTCOME",
+      "secondary_reason_codes": [
+        "FALSE_LEXICAL_OR_SEMANTIC_MATCH",
+        "WRONG_DOMAIN_OR_POPULATION"
+      ],
+      "assigned_label": "dependent_inference",
+      "corrected_label": null,
+      "evidence": [
+        {
+          "source_field": "ABSTRACT",
+          "supports": "DECISION",
+          "paraphrase": "The method models substitutions on phylogenetic branches and uses a parametric bootstrap for uncertainty in ancestral substitution mapping, not dependence among repeated evaluation samples."
+        }
+      ],
+      "rationale": "Although the study accounts for evolutionary history and uses a bootstrap, its target is residue interaction detection in HIV sequences. It does not address inference from correlated folds, repeated resampling, clustered evaluation units, or corpus perturbations in the specified role.",
+      "confidence": "HIGH",
+      "flags": [
+        "POSSIBLE_FALSE_MATCH"
+      ],
+      "follow_up": {
+        "required": true,
+        "priority": "ROUTINE",
+        "reasons": [
+          "AI_PROXY_REQUIRES_HUMAN_CONFIRMATION"
+        ],
+        "recommended_action": "HUMAN_CHECK"
+      },
+      "task_specific": {
+        "scope_decision": null,
+        "group_decision": null,
+        "corrected_group": null,
+        "literature_decision": "REMOVE"
+      }
+    }
+  ]
+}

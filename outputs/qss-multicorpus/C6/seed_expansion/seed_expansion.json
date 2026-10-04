@@ -1,0 +1,352 @@
+{
+  "schema_version": 1,
+  "method": "cutoff_safe_scope_conditioned_seed_expansion",
+  "status": "insufficient_or_invalid_reviewed_expansion",
+  "canonical_bib": "<REDACTED_LOCAL_PATH>/ejmste-43711-references.bib",
+  "canonical_bib_sha256": "9bed3598351e4bbbb8a10a66b9349197521b1f69725be1291ab3fd01447b4f5f",
+  "canonical_bib_modified": false,
+  "expanded_bib": "<REDACTED_LOCAL_PATH>/expanded_seed.bib",
+  "expanded_bib_sha256": "0d784801e5a4af4148e70aa4e79dea4e8dfa940a4044ea91174dc5caa64485e7",
+  "cutoff": 2024,
+  "future_holdout_access": "none",
+  "abstract_required": true,
+  "selection_rule": "frozen query + publication year <= cutoff + abstract + frozen anchors + fit >= threshold; rank fit, citations, recency, OpenAlex ID",
+  "selection_mode": "automatic_shortlist_not_admissible",
+  "additions_are_discovery_outcomes": false,
+  "network_requests": 0,
+  "cache_hits": 1,
+  "cache_misses": 0,
+  "before": {
+    "cutoff": 2024,
+    "historical_seed_count": 27,
+    "historical_abstract_count": 27,
+    "historical_abstract_coverage": 1.0,
+    "future_holdout_count_not_used_for_audit": 0,
+    "coverage_model": "multi_label_frozen_fit_and_anchor_gate",
+    "represented_group_count": 4,
+    "frozen_group_count": 4,
+    "seed_group_coverage": 1.0,
+    "minimum_eligible_entries_across_groups": 1,
+    "groups_below_minimum": [
+      "stem_motivation_self_efficacy"
+    ],
+    "group_counts": [
+      {
+        "group": "computational_thinking_construct",
+        "eligible_seed_entries": 4,
+        "minimum_required": 2,
+        "needs_expansion": false
+      },
+      {
+        "group": "stem_motivation_self_efficacy",
+        "eligible_seed_entries": 1,
+        "minimum_required": 2,
+        "needs_expansion": true
+      },
+      {
+        "group": "scientific_reasoning_problem_solving",
+        "eligible_seed_entries": 5,
+        "minimum_required": 2,
+        "needs_expansion": false
+      },
+      {
+        "group": "gender_multigroup_equity",
+        "eligible_seed_entries": 2,
+        "minimum_required": 2,
+        "needs_expansion": false
+      }
+    ],
+    "decision": "scope_conditioned_seed_expansion_required"
+  },
+  "deficient_groups": {
+    "stem_motivation_self_efficacy": 1
+  },
+  "eligible_candidate_counts": {
+    "stem_motivation_self_efficacy": 11
+  },
+  "eligible_shortlist": {
+    "stem_motivation_self_efficacy": [
+      {
+        "openalex_id": "https://openalex.org/W3158874761",
+        "title": "Factors Influencing Student STEM Learning: Self-Efficacy and Outcome Expectancy, 21st Century Skills, and Career Awareness",
+        "abstract": null,
+        "abstract_sha256": "b63fd8ef283c889191198d8f042149f5c1fa35f5631cec16d082a068fe7e80c6",
+        "abstract_chars": 1335,
+        "year": 2021,
+        "doi": "https://doi.org/10.1007/s41979-021-00053-3",
+        "venue": "Journal for STEM Education Research",
+        "authors": [
+          "Jung H. Han",
+          "Todd R. Kelley",
+          "J. Geoff Knowles"
+        ],
+        "cited_by_count": 143,
+        "queried_for_group": "stem_motivation_self_efficacy",
+        "assigned_group": "stem_motivation_self_efficacy",
+        "frozen_fit": 1.0
+      },
+      {
+        "openalex_id": "https://openalex.org/W4387123036",
+        "title": "Leveraging computer vision for adaptive learning in STEM education: effect of engagement and self-efficacy",
+        "abstract": null,
+        "abstract_sha256": "9721cae88d020173928f5bf89800429da7a53562e397307d614e3b5a408dc971",
+        "abstract_chars": 1389,
+        "year": 2023,
+        "doi": "https://doi.org/10.1186/s41239-023-00422-5",
+        "venue": "International Journal of Educational Technology in Higher Education",
+        "authors": [
+          "Ting‐Ting Wu",
+          "Hsin‐Yu Lee",
+          "Wei‐Sheng Wang",
+          "Chia‐Ju Lin",
+          "Yueh‐Min Huang"
+        ],
+        "cited_by_count": 69,
+        "queried_for_group": "stem_motivation_self_efficacy",
+        "assigned_group": "stem_motivation_self_efficacy",
+        "frozen_fit": 0.91294469
+      },
+      {
+        "openalex_id": "https://openalex.org/W3035636822",
+        "title": "Development and validation of the Computer Science Attitudes Scale for middle school students (MG-CS attitudes)",
+        "abstract": null,
+        "abstract_sha256": "03f41af7b8d3af9c87eb1217425a55ed3273746a391af2952449fc3b3652dc66",
+        "abstract_chars": 1155,
+        "year": 2020,
+        "doi": "https://doi.org/10.1016/j.chbr.2020.100018",
+        "venue": "Computers in Human Behavior Reports",
+        "authors": [
+          "Arif Rachmatullah",
+          "Eric Wiebe",
+          "Danielle Boulden",
+          "Bradford Mott",
+          "Kristy Elizabeth Boyer",
+          "James C. Lester"
+        ],
+        "cited_by_count": 19,
+        "queried_for_group": "stem_motivation_self_efficacy",
+        "assigned_group": "stem_motivation_self_efficacy",
+        "frozen_fit": 0.87856961
+      },
+      {
+        "openalex_id": "https://openalex.org/W4403342687",
+        "title": "Exploring career interest and STEM self-efficacy: implications for promoting gender equity",
+        "abstract": null,
+        "abstract_sha256": "bf36622632dccc2dba2c2563f67e9441c81e3873052dfbbef02ce300353d1a28",
+        "abstract_chars": 1335,
+        "year": 2024,
+        "doi": "https://doi.org/10.3389/fpsyg.2024.1402933",
+        "venue": "Frontiers in Psychology",
+        "authors": [
+          "Niam Yamani",
+          "Hiya Almazroa"
+        ],
+        "cited_by_count": 12,
+        "queried_for_group": "stem_motivation_self_efficacy",
+        "assigned_group": "stem_motivation_self_efficacy",
+        "frozen_fit": 0.86726245
+      },
+      {
+        "openalex_id": "https://openalex.org/W4291473038",
+        "title": "Exploring the relationship between computational thinking and learning satisfaction for non-STEM college students",
+        "abstract": null,
+        "abstract_sha256": "5dadd874a57bfa11f32dbd1548d6815116c69bd02fe6e13c97a3d4509de3d160",
+        "abstract_chars": 1280,
+        "year": 2022,
+        "doi": "https://doi.org/10.1186/s41239-022-00347-5",
+        "venue": "International Journal of Educational Technology in Higher Education",
+        "authors": [
+          "Chien Hsiang Liao",
+          "Chang‐Tang Chiang",
+          "I‐Chuan Chen",
+          "Kevin R. Parker"
+        ],
+        "cited_by_count": 42,
+        "queried_for_group": "stem_motivation_self_efficacy",
+        "assigned_group": "stem_motivation_self_efficacy",
+        "frozen_fit": 0.85
+      },
+      {
+        "openalex_id": "https://openalex.org/W4361208622",
+        "title": "Gender-moderated effects of academic self-concept on achievement, motivation, performance, and self-efficacy: A systematic review",
+        "abstract": null,
+        "abstract_sha256": "81accfdc1163c3615101b5d710771f281ce863ca2dd8fb0ea2844f6455eca938",
+        "abstract_chars": 1531,
+        "year": 2023,
+        "doi": "https://doi.org/10.3389/fpsyg.2023.1136141",
+        "venue": "Frontiers in Psychology",
+        "authors": [
+          "Leihong Wang",
+          "Zhonggen Yu"
+        ],
+        "cited_by_count": 74,
+        "queried_for_group": "stem_motivation_self_efficacy",
+        "assigned_group": "stem_motivation_self_efficacy",
+        "frozen_fit": 0.80950586
+      },
+      {
+        "openalex_id": "https://openalex.org/W2754990463",
+        "title": "Preparing Teachers to Engage Rural Students in Computational Thinking Through Robotics, Game Design, and Culturally Responsive Teaching",
+        "abstract": null,
+        "abstract_sha256": "f1c9a609b16aec35d33c1be63d60ee121a03ec91b4a9b11d271b3e005ed295a9",
+        "abstract_chars": 1131,
+        "year": 2017,
+        "doi": "https://doi.org/10.1177/0022487117732317",
+        "venue": "Journal of Teacher Education",
+        "authors": [
+          "Jacqueline Leonard",
+          "Monica Mitchell",
+          "Joy Barnes‐Johnson",
+          "Adrienne Unertl",
+          "Jill Outka-Hill",
+          "R A Robinson",
+          "Carla Hester-Croff"
+        ],
+        "cited_by_count": 131,
+        "queried_for_group": "stem_motivation_self_efficacy",
+        "assigned_group": "stem_motivation_self_efficacy",
+        "frozen_fit": 0.79841601
+      },
+      {
+        "openalex_id": "https://openalex.org/W4377287963",
+        "title": "Preservice Elementary Teachers Conceptions and Self-Efficacy for Integrated STEM",
+        "abstract": null,
+        "abstract_sha256": "c13c64ff054a80537e8f950be28f64bcf785c88c03f5714cb252f8c4f2ae4087",
+        "abstract_chars": 1539,
+        "year": 2023,
+        "doi": "https://doi.org/10.3390/educsci13050529",
+        "venue": "Education Sciences",
+        "authors": [
+          "Deepika Menon",
+          "Deef Al Shorman",
+          "Derek Cox",
+          "Amanda Thomas"
+        ],
+        "cited_by_count": 20,
+        "queried_for_group": "stem_motivation_self_efficacy",
+        "assigned_group": "stem_motivation_self_efficacy",
+        "frozen_fit": 0.79837706
+      },
+      {
+        "openalex_id": "https://openalex.org/W4224109757",
+        "title": "A Conceptual Model of Teaching Efficacy and Beliefs, Teaching Outcome Expectancy, Student Technology Use, Student Engagement, and 21st-Century Learning Attitudes: A STEM Education Study",
+        "abstract": null,
+        "abstract_sha256": "e60074462de640e77257dc9b2b60416b5f02d67c5a976b6b63955063a8744bb4",
+        "abstract_chars": 1464,
+        "year": 2022,
+        "doi": "https://doi.org/10.21601/ijese/12025",
+        "venue": "Interdisciplinary Journal of Environmental and Science Education",
+        "authors": [
+          "Jacqueline Kareem",
+          "Rebecca Susan Thomas",
+          "Valluri Nandini"
+        ],
+        "cited_by_count": 29,
+        "queried_for_group": "stem_motivation_self_efficacy",
+        "assigned_group": "stem_motivation_self_efficacy",
+        "frozen_fit": 0.79804947
+      },
+      {
+        "openalex_id": "https://openalex.org/W4225522863",
+        "title": "Adaptation of T-STEM CT Scale to Turkish: Teacher Self-Efficacy and Outcome Expectancy for Teaching Computational Thinking",
+        "abstract": null,
+        "abstract_sha256": "b9fb68c848278f0ab7e54ce7f885e7330ee8a15d6dc6c44227581b86288aedae",
+        "abstract_chars": 1125,
+        "year": 2022,
+        "doi": "https://doi.org/10.54535/rep.1080132",
+        "venue": "Research on Education and Psychology",
+        "authors": [
+          "Mustafa Sarıtepeci",
+          "Aykut Durak"
+        ],
+        "cited_by_count": 7,
+        "queried_for_group": "stem_motivation_self_efficacy",
+        "assigned_group": "stem_motivation_self_efficacy",
+        "frozen_fit": 0.76760741
+      },
+      {
+        "openalex_id": "https://openalex.org/W3160361444",
+        "title": "Student test-taking effort in low-stakes assessments: evidence from the English version of the PISA 2015 science test",
+        "abstract": null,
+        "abstract_sha256": "c6e5972e762d5574d0922890a32673eaea7cb7871005b53401c9474db6685870",
+        "abstract_chars": 2031,
+        "year": 2021,
+        "doi": "https://doi.org/10.1186/s40536-021-00104-6",
+        "venue": "Large-scale Assessments in Education",
+        "authors": [
+          "Élodie Pools",
+          "Christian Monseur"
+        ],
+        "cited_by_count": 39,
+        "queried_for_group": "stem_motivation_self_efficacy",
+        "assigned_group": "stem_motivation_self_efficacy",
+        "frozen_fit": 0.7669181
+      }
+    ]
+  },
+  "selected": [
+    {
+      "openalex_id": "https://openalex.org/W3158874761",
+      "title": "Factors Influencing Student STEM Learning: Self-Efficacy and Outcome Expectancy, 21st Century Skills, and Career Awareness",
+      "abstract": null,
+      "abstract_sha256": "b63fd8ef283c889191198d8f042149f5c1fa35f5631cec16d082a068fe7e80c6",
+      "abstract_chars": 1335,
+      "year": 2021,
+      "doi": "https://doi.org/10.1007/s41979-021-00053-3",
+      "venue": "Journal for STEM Education Research",
+      "authors": [
+        "Jung H. Han",
+        "Todd R. Kelley",
+        "J. Geoff Knowles"
+      ],
+      "cited_by_count": 143,
+      "queried_for_group": "stem_motivation_self_efficacy",
+      "assigned_group": "stem_motivation_self_efficacy",
+      "frozen_fit": 1.0
+    }
+  ],
+  "after": {
+    "cutoff": 2024,
+    "historical_seed_count": 28,
+    "historical_abstract_count": 28,
+    "historical_abstract_coverage": 1.0,
+    "future_holdout_count_not_used_for_audit": 0,
+    "coverage_model": "multi_label_frozen_fit_and_anchor_gate",
+    "represented_group_count": 4,
+    "frozen_group_count": 4,
+    "seed_group_coverage": 1.0,
+    "minimum_eligible_entries_across_groups": 1,
+    "groups_below_minimum": [
+      "gender_multigroup_equity"
+    ],
+    "group_counts": [
+      {
+        "group": "computational_thinking_construct",
+        "eligible_seed_entries": 4,
+        "minimum_required": 2,
+        "needs_expansion": false
+      },
+      {
+        "group": "stem_motivation_self_efficacy",
+        "eligible_seed_entries": 2,
+        "minimum_required": 2,
+        "needs_expansion": false
+      },
+      {
+        "group": "scientific_reasoning_problem_solving",
+        "eligible_seed_entries": 5,
+        "minimum_required": 2,
+        "needs_expansion": false
+      },
+      {
+        "group": "gender_multigroup_equity",
+        "eligible_seed_entries": 1,
+        "minimum_required": 2,
+        "needs_expansion": true
+      }
+    ],
+    "decision": "scope_conditioned_seed_expansion_required"
+  },
+  "unmet_groups": [],
+  "selection_errors": []
+}

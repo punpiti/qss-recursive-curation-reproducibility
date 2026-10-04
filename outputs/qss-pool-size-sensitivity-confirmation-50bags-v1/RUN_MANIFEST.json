@@ -1,0 +1,14 @@
+{
+  "schema_version": 1,
+  "analysis_id": "qss-pool-size-screening-confirmation-50bags-v1",
+  "selection_rule": "all 75%-pool rows",
+  "screening_results": "<REDACTED_LOCAL_PATH>/pool_size_sensitivity_results.csv",
+  "screening_sha256": "676af67712a75e3c6da2d18bc9aa0877bf5ba8cd687d64cb008702871546ae3b",
+  "full50_results": "<REDACTED_LOCAL_PATH>/sensitivity_results.csv",
+  "full50_sha256": "f196140688b96e540e1ad70fcaa690c36e12873b401bff8d05493fcc7888994f",
+  "fraction": 0.75,
+  "selected_rows": 240,
+  "bags_per_seed_fraction": 50,
+  "openalex_requests": 0,
+  "cache_only": true
+}

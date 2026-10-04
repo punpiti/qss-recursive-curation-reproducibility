@@ -1,0 +1,241 @@
+{
+  "schema_version": "qss-review-response-v1",
+  "batch_id": "round0-coverage-diversity-stability-02",
+  "review_type": "ROUND0_LITERATURE_REVIEW",
+  "rubric_version": "qss-review-rubric-v3",
+  "reviewer": {
+    "type": "AI_PROXY",
+    "id": "gemini-2.5-flash",
+    "role": "PRIMARY_REVIEWER",
+    "review_status": "AI_FIRST_PASS",
+    "reviewed_at": null
+  },
+  "reviews": [
+    {
+      "review_row_id": "round0-039",
+      "corpus_or_project": "qss_self_hosting",
+      "source_group": "coverage_diversity_stability",
+      "paper": {
+        "title": "Set-based design: a review and new directions",
+        "doi": "https://doi.org/10.1017/dsj.2020.16",
+        "openalex_id": "https://openalex.org/W3040286910"
+      },
+      "normalized_decision": "EXCLUDE",
+      "scope_fit": "OUT_OF_SCOPE",
+      "role_fit": "MISMATCH",
+      "evidence_sufficiency": "SUFFICIENT_ABSTRACT",
+      "primary_reason_code": "FALSE_LEXICAL_OR_SEMANTIC_MATCH",
+      "secondary_reason_codes": [
+        "WRONG_DOMAIN_OR_POPULATION"
+      ],
+      "assigned_label": "coverage_diversity_stability",
+      "corrected_label": null,
+      "evidence": [
+        {
+          "source_field": "ABSTRACT",
+          "supports": "SCOPE",
+          "paraphrase": "Reviews set-based design (SBD) engineering methodologies in lean product development."
+        }
+      ],
+      "rationale": "The article reviews set-based concurrent engineering (SBD/SBCE) in manufacturing and product development. 'Set-based design' represents a false lexical match with information retrieval result sets.",
+      "confidence": "HIGH",
+      "flags": [
+        "NONE"
+      ],
+      "follow_up": {
+        "required": true,
+        "priority": "ROUTINE",
+        "reasons": [
+          "AI_PROXY_REQUIRES_HUMAN_CONFIRMATION"
+        ],
+        "recommended_action": "HUMAN_CHECK"
+      },
+      "task_specific": {
+        "scope_decision": null,
+        "group_decision": null,
+        "corrected_group": null,
+        "literature_decision": "REMOVE"
+      }
+    },
+    {
+      "review_row_id": "round0-040",
+      "corpus_or_project": "qss_self_hosting",
+      "source_group": "coverage_diversity_stability",
+      "paper": {
+        "title": "Sustainability in Software Engineering: A Systematic Literature Review for Building up a Knowledge Base",
+        "doi": "",
+        "openalex_id": "https://openalex.org/W2759113892"
+      },
+      "normalized_decision": "EXCLUDE",
+      "scope_fit": "OUT_OF_SCOPE",
+      "role_fit": "MISMATCH",
+      "evidence_sufficiency": "SUFFICIENT_ABSTRACT",
+      "primary_reason_code": "WRONG_DOMAIN_OR_POPULATION",
+      "secondary_reason_codes": [
+        "WRONG_METHOD_OR_OUTCOME"
+      ],
+      "assigned_label": "coverage_diversity_stability",
+      "corrected_label": null,
+      "evidence": [
+        {
+          "source_field": "ABSTRACT",
+          "supports": "SCOPE",
+          "paraphrase": "Conducts a systematic literature review on sustainability topics and methods in software engineering."
+        }
+      ],
+      "rationale": "The paper performs an SLR on sustainable software engineering. Systematic literature review is used merely as a manual review protocol rather than developing computational literature search or recommendation algorithms.",
+      "confidence": "HIGH",
+      "flags": [
+        "NONE"
+      ],
+      "follow_up": {
+        "required": true,
+        "priority": "ROUTINE",
+        "reasons": [
+          "AI_PROXY_REQUIRES_HUMAN_CONFIRMATION"
+        ],
+        "recommended_action": "HUMAN_CHECK"
+      },
+      "task_specific": {
+        "scope_decision": null,
+        "group_decision": null,
+        "corrected_group": null,
+        "literature_decision": "REMOVE"
+      }
+    },
+    {
+      "review_row_id": "round0-041",
+      "corpus_or_project": "qss_self_hosting",
+      "source_group": "coverage_diversity_stability",
+      "paper": {
+        "title": "Multi-objective genetic programming strategies for topic-based search with a focus on diversity and global recall",
+        "doi": "https://doi.org/10.7717/peerj-cs.1710",
+        "openalex_id": "https://openalex.org/W4389204705"
+      },
+      "normalized_decision": "INCLUDE",
+      "scope_fit": "IN_SCOPE",
+      "role_fit": "DIRECT",
+      "evidence_sufficiency": "SUFFICIENT_ABSTRACT",
+      "primary_reason_code": "DIRECT_METHOD",
+      "secondary_reason_codes": [],
+      "assigned_label": "coverage_diversity_stability",
+      "corrected_label": null,
+      "evidence": [
+        {
+          "source_field": "ABSTRACT",
+          "supports": "ROLE",
+          "paraphrase": "Proposes multi-objective genetic programming to generate topic-based queries that maximize precision and global recall while optimizing result set diversity."
+        }
+      ],
+      "rationale": "Directly addresses topic-based search query generation and IR ranking diversity/global recall optimization, aligning directly with the coverage, diversity, and stability evidence role.",
+      "confidence": "HIGH",
+      "flags": [
+        "NONE"
+      ],
+      "follow_up": {
+        "required": true,
+        "priority": "ROUTINE",
+        "reasons": [
+          "AI_PROXY_REQUIRES_HUMAN_CONFIRMATION"
+        ],
+        "recommended_action": "HUMAN_CHECK"
+      },
+      "task_specific": {
+        "scope_decision": null,
+        "group_decision": null,
+        "corrected_group": null,
+        "literature_decision": "KEEP"
+      }
+    },
+    {
+      "review_row_id": "round0-042",
+      "corpus_or_project": "qss_self_hosting",
+      "source_group": "coverage_diversity_stability",
+      "paper": {
+        "title": "When AI Meets Wall Street: A Survey on Trustworthy AI in Fintech",
+        "doi": "",
+        "openalex_id": "https://openalex.org/W7163287474"
+      },
+      "normalized_decision": "EXCLUDE",
+      "scope_fit": "OUT_OF_SCOPE",
+      "role_fit": "MISMATCH",
+      "evidence_sufficiency": "SUFFICIENT_ABSTRACT",
+      "primary_reason_code": "WRONG_DOMAIN_OR_POPULATION",
+      "secondary_reason_codes": [],
+      "assigned_label": "coverage_diversity_stability",
+      "corrected_label": null,
+      "evidence": [
+        {
+          "source_field": "ABSTRACT",
+          "supports": "SCOPE",
+          "paraphrase": "Surveys financial AI security, poisoning attacks, prompt injection, and adversarial robustness in fintech."
+        }
+      ],
+      "rationale": "The paper focuses on trustworthy AI and adversarial robustness in financial technology (Fintech), falling outside the domain of scholarly IR and literature search systems.",
+      "confidence": "HIGH",
+      "flags": [
+        "NONE"
+      ],
+      "follow_up": {
+        "required": true,
+        "priority": "ROUTINE",
+        "reasons": [
+          "AI_PROXY_REQUIRES_HUMAN_CONFIRMATION"
+        ],
+        "recommended_action": "HUMAN_CHECK"
+      },
+      "task_specific": {
+        "scope_decision": null,
+        "group_decision": null,
+        "corrected_group": null,
+        "literature_decision": "REMOVE"
+      }
+    },
+    {
+      "review_row_id": "round0-043",
+      "corpus_or_project": "qss_self_hosting",
+      "source_group": "coverage_diversity_stability",
+      "paper": {
+        "title": "A systematic review of fuzzing based on machine learning techniques",
+        "doi": "https://doi.org/10.1371/journal.pone.0237749",
+        "openalex_id": "https://openalex.org/W3072699177"
+      },
+      "normalized_decision": "EXCLUDE",
+      "scope_fit": "OUT_OF_SCOPE",
+      "role_fit": "MISMATCH",
+      "evidence_sufficiency": "SUFFICIENT_ABSTRACT",
+      "primary_reason_code": "WRONG_DOMAIN_OR_POPULATION",
+      "secondary_reason_codes": [
+        "WRONG_METHOD_OR_OUTCOME"
+      ],
+      "assigned_label": "coverage_diversity_stability",
+      "corrected_label": null,
+      "evidence": [
+        {
+          "source_field": "ABSTRACT",
+          "supports": "SCOPE",
+          "paraphrase": "Reviews ML-based fuzz testing and vulnerability discovery in software security."
+        }
+      ],
+      "rationale": "The paper investigates machine learning techniques for software vulnerability fuzzing, which is unrelated to scholarly search, ranking diversity, or bibliographic evaluation.",
+      "confidence": "HIGH",
+      "flags": [
+        "NONE"
+      ],
+      "follow_up": {
+        "required": true,
+        "priority": "ROUTINE",
+        "reasons": [
+          "AI_PROXY_REQUIRES_HUMAN_CONFIRMATION"
+        ],
+        "recommended_action": "HUMAN_CHECK"
+      },
+      "task_specific": {
+        "scope_decision": null,
+        "group_decision": null,
+        "corrected_group": null,
+        "literature_decision": "REMOVE"
+      }
+    }
+  ]
+}

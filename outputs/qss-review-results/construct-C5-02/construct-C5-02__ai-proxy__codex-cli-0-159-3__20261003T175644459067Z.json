@@ -1,0 +1,74 @@
+{
+  "schema_version": "qss-review-response-v1",
+  "batch_id": "construct-C5-02",
+  "review_type": "CONSTRUCT_AUDIT",
+  "rubric_version": "qss-review-rubric-v3",
+  "reviewer": {
+    "type": "AI_PROXY",
+    "id": "codex-cli-0-159-3",
+    "role": "PRIMARY_REVIEWER",
+    "review_status": "AI_FIRST_PASS",
+    "reviewed_at": "2026-10-03T17:56:44.459067Z"
+  },
+  "reviews": [
+    {
+      "review_row_id": "C5-2023-06",
+      "corpus_or_project": "C5",
+      "source_group": "semantic_parts_occlusion",
+      "paper": {
+        "title": "Fine-Grained Soybean Variety Recognition Using Swin Transformer with Differential Attention and Dynamic Channel Aggregation",
+        "doi": "https://doi.org/10.3390/agriculture16141509",
+        "openalex_id": "https://openalex.org/W7168208703"
+      },
+      "normalized_decision": "EXCLUDE",
+      "scope_fit": "OUT_OF_SCOPE",
+      "role_fit": "MISMATCH",
+      "evidence_sufficiency": "SUFFICIENT_ABSTRACT",
+      "primary_reason_code": "WRONG_DOMAIN_OR_POPULATION",
+      "secondary_reason_codes": [
+        "FALSE_LEXICAL_OR_SEMANTIC_MATCH",
+        "WRONG_METHOD_OR_OUTCOME"
+      ],
+      "assigned_label": "semantic_parts_occlusion",
+      "corrected_label": null,
+      "evidence": [
+        {
+          "source_field": "TITLE",
+          "supports": "SCOPE",
+          "paraphrase": "The title identifies fine-grained soybean variety recognition, not vehicle make recognition."
+        },
+        {
+          "source_field": "ABSTRACT",
+          "supports": "DECISION",
+          "paraphrase": "The study classifies 25 soybean varieties from standardized cropped soybean seed images after YOLO-based localization and manual verification."
+        },
+        {
+          "source_field": "ABSTRACT",
+          "supports": "ROLE",
+          "paraphrase": "Local feature reuse and differential attention improve soybean classification, but the abstract does not study semantic vehicle parts, missing vehicle views, or occlusion robustness."
+        }
+      ],
+      "rationale": "The paper is about fine-grained soybean seed classification and therefore falls outside the vehicle make recognition population and outcome. Its local-feature and attention terminology creates partial lexical overlap, but it does not provide the semantic vehicle-part or occlusion evidence required by the assigned group.",
+      "confidence": "HIGH",
+      "flags": [
+        "POSSIBLE_FALSE_MATCH",
+        "POSSIBLE_WRONG_GROUP"
+      ],
+      "follow_up": {
+        "required": true,
+        "priority": "ROUTINE",
+        "reasons": [
+          "AI_PROXY_REQUIRES_HUMAN_CONFIRMATION",
+          "GROUP_DISAGREEMENT"
+        ],
+        "recommended_action": "HUMAN_CHECK"
+      },
+      "task_specific": {
+        "scope_decision": "REMOVE_OUT_OF_SCOPE",
+        "group_decision": "WRONG_GROUP",
+        "corrected_group": null,
+        "literature_decision": null
+      }
+    }
+  ]
+}

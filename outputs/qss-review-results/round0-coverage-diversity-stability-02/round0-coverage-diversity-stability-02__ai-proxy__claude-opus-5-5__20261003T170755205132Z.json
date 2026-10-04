@@ -1,0 +1,290 @@
+{
+  "schema_version": "qss-review-response-v1",
+  "batch_id": "round0-coverage-diversity-stability-02",
+  "review_type": "ROUND0_LITERATURE_REVIEW",
+  "rubric_version": "qss-review-rubric-v3",
+  "reviewer": {
+    "type": "AI_PROXY",
+    "id": "claude-opus-5-5",
+    "role": "PRIMARY_REVIEWER",
+    "review_status": "AI_FIRST_PASS",
+    "reviewed_at": "2026-10-03T17:07:55.205132Z"
+  },
+  "reviews": [
+    {
+      "review_row_id": "round0-039",
+      "corpus_or_project": "qss_self_hosting",
+      "source_group": "coverage_diversity_stability",
+      "paper": {
+        "title": "Set-based design: a review and new directions",
+        "doi": "https://doi.org/10.1017/dsj.2020.16",
+        "openalex_id": "https://openalex.org/W3040286910"
+      },
+      "normalized_decision": "EXCLUDE",
+      "scope_fit": "OUT_OF_SCOPE",
+      "role_fit": "MISMATCH",
+      "evidence_sufficiency": "SUFFICIENT_ABSTRACT",
+      "primary_reason_code": "WRONG_DOMAIN_OR_POPULATION",
+      "secondary_reason_codes": [
+        "FALSE_LEXICAL_OR_SEMANTIC_MATCH"
+      ],
+      "assigned_label": "coverage_diversity_stability",
+      "corrected_label": null,
+      "evidence": [
+        {
+          "source_field": "ABSTRACT",
+          "supports": "SCOPE",
+          "paraphrase": "Review of set-based design and lean product development in engineering."
+        },
+        {
+          "source_field": "ABSTRACT",
+          "supports": "RISK",
+          "paraphrase": "'Coverage' refers to coverage of design-process stages and 'diversity' to diversity of contributions, not ranking diversity or result-set coverage."
+        }
+      ],
+      "rationale": "The paper is a domain study unrelated to scholarly search, recommendation or bibliographic evidence selection; its match to the role is lexical. It is out of scope.",
+      "confidence": "HIGH",
+      "flags": [
+        "POSSIBLE_FALSE_MATCH"
+      ],
+      "follow_up": {
+        "required": true,
+        "priority": "ROUTINE",
+        "reasons": [
+          "AI_PROXY_REQUIRES_HUMAN_CONFIRMATION"
+        ],
+        "recommended_action": "HUMAN_CHECK"
+      },
+      "task_specific": {
+        "scope_decision": null,
+        "group_decision": null,
+        "corrected_group": null,
+        "literature_decision": "REMOVE"
+      }
+    },
+    {
+      "review_row_id": "round0-040",
+      "corpus_or_project": "qss_self_hosting",
+      "source_group": "coverage_diversity_stability",
+      "paper": {
+        "title": "Sustainability in Software Engineering: A Systematic Literature Review for Building up a Knowledge Base",
+        "doi": "",
+        "openalex_id": "https://openalex.org/W2759113892"
+      },
+      "normalized_decision": "EXCLUDE",
+      "scope_fit": "OUT_OF_SCOPE",
+      "role_fit": "MISMATCH",
+      "evidence_sufficiency": "SUFFICIENT_ABSTRACT",
+      "primary_reason_code": "TOO_GENERIC_FOR_CLAIM",
+      "secondary_reason_codes": [
+        "FALSE_LEXICAL_OR_SEMANTIC_MATCH"
+      ],
+      "assigned_label": "coverage_diversity_stability",
+      "corrected_label": null,
+      "evidence": [
+        {
+          "source_field": "ABSTRACT",
+          "supports": "SCOPE",
+          "paraphrase": "Systematic literature review of sustainability in software engineering (96 relevant of 500 classified)."
+        },
+        {
+          "source_field": "ABSTRACT",
+          "supports": "ROLE",
+          "paraphrase": "Notes that it screened the top 100 relevance-ordered results per database and that many exclusions came from term misuse, but does not evaluate coverage or stability."
+        },
+        {
+          "source_field": "METADATA",
+          "supports": "RISK",
+          "paraphrase": "DOI field is empty."
+        }
+      ],
+      "rationale": "The review's search remarks are incidental procedure, and 'research coverage' refers to how much the topic has been studied. It does not support evaluation of ranking diversity, coverage or stability.",
+      "confidence": "HIGH",
+      "flags": [
+        "POSSIBLE_FALSE_MATCH",
+        "METADATA_ISSUE"
+      ],
+      "follow_up": {
+        "required": true,
+        "priority": "ROUTINE",
+        "reasons": [
+          "AI_PROXY_REQUIRES_HUMAN_CONFIRMATION",
+          "METADATA_ISSUE"
+        ],
+        "recommended_action": "HUMAN_CHECK"
+      },
+      "task_specific": {
+        "scope_decision": null,
+        "group_decision": null,
+        "corrected_group": null,
+        "literature_decision": "REMOVE"
+      }
+    },
+    {
+      "review_row_id": "round0-041",
+      "corpus_or_project": "qss_self_hosting",
+      "source_group": "coverage_diversity_stability",
+      "paper": {
+        "title": "Multi-objective genetic programming strategies for topic-based search with a focus on diversity and global recall",
+        "doi": "https://doi.org/10.7717/peerj-cs.1710",
+        "openalex_id": "https://openalex.org/W4389204705"
+      },
+      "normalized_decision": "INCLUDE",
+      "scope_fit": "IN_SCOPE",
+      "role_fit": "DIRECT",
+      "evidence_sufficiency": "SUFFICIENT_ABSTRACT",
+      "primary_reason_code": "DIRECT_METHOD",
+      "secondary_reason_codes": [
+        "EMPIRICAL_PRECEDENT"
+      ],
+      "assigned_label": "coverage_diversity_stability",
+      "corrected_label": null,
+      "evidence": [
+        {
+          "source_field": "ABSTRACT",
+          "supports": "ROLE",
+          "paraphrase": "Generates multiple topic-based queries with multi-objective genetic programming to balance precision, recall and diversity, minimising similarity among retrieved results."
+        },
+        {
+          "source_field": "ABSTRACT",
+          "supports": "SCOPE",
+          "paraphrase": "Identifies loss of diversity and low global recall when merging results from multiple queries, and evaluates strategies against these criteria."
+        },
+        {
+          "source_field": "ABSTRACT",
+          "supports": "RISK",
+          "paraphrase": "The setting is topic-based search over text resources generally, not explicitly scholarly literature."
+        }
+      ],
+      "rationale": "The paper directly evaluates result diversity and global recall across an evolving set of generated queries, which matches the coverage_diversity_stability role and relates to iterative query expansion. The text-search setting is not specifically scholarly, but the method and evaluation transfer directly.",
+      "confidence": "MEDIUM",
+      "flags": [
+        "BOUNDARY_CASE"
+      ],
+      "follow_up": {
+        "required": true,
+        "priority": "MEDIUM",
+        "reasons": [
+          "AI_PROXY_REQUIRES_HUMAN_CONFIRMATION",
+          "BOUNDARY_CASE"
+        ],
+        "recommended_action": "HUMAN_CHECK"
+      },
+      "task_specific": {
+        "scope_decision": null,
+        "group_decision": null,
+        "corrected_group": null,
+        "literature_decision": "KEEP"
+      }
+    },
+    {
+      "review_row_id": "round0-042",
+      "corpus_or_project": "qss_self_hosting",
+      "source_group": "coverage_diversity_stability",
+      "paper": {
+        "title": "When AI Meets Wall Street: A Survey on Trustworthy AI in Fintech",
+        "doi": "",
+        "openalex_id": "https://openalex.org/W7163287474"
+      },
+      "normalized_decision": "EXCLUDE",
+      "scope_fit": "OUT_OF_SCOPE",
+      "role_fit": "MISMATCH",
+      "evidence_sufficiency": "SUFFICIENT_ABSTRACT",
+      "primary_reason_code": "WRONG_DOMAIN_OR_POPULATION",
+      "secondary_reason_codes": [
+        "FALSE_LEXICAL_OR_SEMANTIC_MATCH"
+      ],
+      "assigned_label": "coverage_diversity_stability",
+      "corrected_label": null,
+      "evidence": [
+        {
+          "source_field": "ABSTRACT",
+          "supports": "SCOPE",
+          "paraphrase": "Survey of security and robustness threats to AI pipelines in financial technology."
+        },
+        {
+          "source_field": "ABSTRACT",
+          "supports": "RISK",
+          "paraphrase": "'Perturbations' and 'robustness' refer to adversarial attacks on financial models, not query or seed perturbation of a ranking."
+        },
+        {
+          "source_field": "METADATA",
+          "supports": "RISK",
+          "paraphrase": "DOI field is empty."
+        }
+      ],
+      "rationale": "The paper is a domain study unrelated to scholarly search, recommendation or bibliographic evidence selection; its match to the role is lexical. It is out of scope.",
+      "confidence": "HIGH",
+      "flags": [
+        "POSSIBLE_FALSE_MATCH",
+        "METADATA_ISSUE"
+      ],
+      "follow_up": {
+        "required": true,
+        "priority": "ROUTINE",
+        "reasons": [
+          "AI_PROXY_REQUIRES_HUMAN_CONFIRMATION",
+          "METADATA_ISSUE"
+        ],
+        "recommended_action": "HUMAN_CHECK"
+      },
+      "task_specific": {
+        "scope_decision": null,
+        "group_decision": null,
+        "corrected_group": null,
+        "literature_decision": "REMOVE"
+      }
+    },
+    {
+      "review_row_id": "round0-043",
+      "corpus_or_project": "qss_self_hosting",
+      "source_group": "coverage_diversity_stability",
+      "paper": {
+        "title": "A systematic review of fuzzing based on machine learning techniques",
+        "doi": "https://doi.org/10.1371/journal.pone.0237749",
+        "openalex_id": "https://openalex.org/W3072699177"
+      },
+      "normalized_decision": "EXCLUDE",
+      "scope_fit": "OUT_OF_SCOPE",
+      "role_fit": "MISMATCH",
+      "evidence_sufficiency": "SUFFICIENT_ABSTRACT",
+      "primary_reason_code": "WRONG_DOMAIN_OR_POPULATION",
+      "secondary_reason_codes": [
+        "FALSE_LEXICAL_OR_SEMANTIC_MATCH"
+      ],
+      "assigned_label": "coverage_diversity_stability",
+      "corrected_label": null,
+      "evidence": [
+        {
+          "source_field": "ABSTRACT",
+          "supports": "SCOPE",
+          "paraphrase": "Systematic review of machine-learning-based fuzz testing for vulnerability discovery."
+        },
+        {
+          "source_field": "ABSTRACT",
+          "supports": "RISK",
+          "paraphrase": "'Seed files' and 'code coverage' are fuzzing terms, unrelated to seed bibliographies or subtopic coverage."
+        }
+      ],
+      "rationale": "The paper is a domain study unrelated to scholarly search, recommendation or bibliographic evidence selection; its match to the role is lexical. It is out of scope.",
+      "confidence": "HIGH",
+      "flags": [
+        "POSSIBLE_FALSE_MATCH"
+      ],
+      "follow_up": {
+        "required": true,
+        "priority": "ROUTINE",
+        "reasons": [
+          "AI_PROXY_REQUIRES_HUMAN_CONFIRMATION"
+        ],
+        "recommended_action": "HUMAN_CHECK"
+      },
+      "task_specific": {
+        "scope_decision": null,
+        "group_decision": null,
+        "corrected_group": null,
+        "literature_decision": "REMOVE"
+      }
+    }
+  ]
+}

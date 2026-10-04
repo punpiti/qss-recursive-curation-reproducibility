@@ -1,0 +1,255 @@
+{
+  "schema_version": 1,
+  "study": "qss-recursive-curation-v1",
+  "defaults": {
+    "minimum_dated_entries": 24,
+    "minimum_future_holdout_entries": 5,
+    "abstracts_required_for_automatic_admission": true
+  },
+  "corpora": {
+    "C1": {
+      "status": "ready_for_preflight",
+      "bib": "<REDACTED_LOCAL_PATH>/C1.bib",
+      "scope_files": [
+        "<REDACTED_LOCAL_PATH>/PROJECT_STATE.md",
+        "<REDACTED_LOCAL_PATH>/kbs-v2-paper-direction-for-som.th.md",
+        "<REDACTED_LOCAL_PATH>/research-structure-v2.th.md"
+      ],
+      "qss_validation": {
+        "status": "ready_cached",
+        "study_config": "config/qss_recursive_curation_study.json",
+        "cutoffs": [
+          2022,
+          2023,
+          2024
+        ],
+        "development_cutoff": 2022,
+        "through_year": 2026,
+        "retrieval_mode": "group_queries_citing",
+        "candidate_pools": {
+          "2022": "outputs/qss-temporal-candidate-pools-citing/qss_candidates_2022.json",
+          "2023": "outputs/qss-temporal-candidate-pools-citing-2023/qss_candidates_2023.json",
+          "2024": "outputs/qss-temporal-candidate-pools-citing-2024/qss_candidates_2024.json"
+        },
+        "evaluation_outputs": {
+          "2022": "outputs/qss-late-pruner-v2-2022",
+          "2023": "outputs/qss-late-pruner-v2-2023",
+          "2024": "outputs/qss-late-pruner-v2-2024"
+        }
+      },
+      "abstract_preparation": "cache_enrichment_recommended",
+      "notes": "Primary KBS pilot; four frozen evidence groups are defined in qss_recursive_curation_study.json."
+    },
+    "C2": {
+      "status": "ready_for_preflight",
+      "bib": "<REDACTED_LOCAL_PATH>/amt.bib",
+      "scope_files": [
+        "<REDACTED_LOCAL_PATH>/amt.tex"
+      ],
+      "qss_validation": {
+        "status": "ready_for_retrieval",
+        "study_config": "config/qss_C2_temporal_frozen.json",
+        "evaluation_bib": "outputs/qss-multicorpus/C2/seed_expansion/expanded_seed.bib",
+        "seed_scope_audit": "outputs/qss-multicorpus/C2/seed_scope_audit_expanded.json",
+        "seed_expansion_manifest": "outputs/qss-multicorpus/C2/seed_expansion/seed_expansion.json",
+        "evaluation_mode": "temporal_positive_holdout",
+        "cutoffs": [
+          2022,
+          2023,
+          2024
+        ],
+        "through_year": 2026,
+        "retrieval_mode": "group_queries_citing",
+        "blockers": []
+      },
+      "abstract_preparation": "cache_enrichment_required",
+      "notes": "A distinct rainfall-observation corpus with AMT-specific frozen groups and temporal cutoffs 2022-2024. This QSS bibliography test does not reopen the rejected latent temporal-transition model."
+    },
+    "C3": {
+      "status": "ready_for_preflight",
+      "bib": "<REDACTED_LOCAL_PATH>/bmc_rebuild_with_abstracts.bib",
+      "scope_files": [
+        "<REDACTED_LOCAL_PATH>/manuscript.tex"
+      ],
+      "qss_validation": {
+        "status": "ready_for_retrieval",
+        "study_config": "config/qss_C3_temporal_frozen.json",
+        "seed_scope_audit": "outputs/qss-multicorpus/C3/seed_scope_audit.json",
+        "evaluation_mode": "temporal_positive_holdout",
+        "cutoffs": [
+          2022,
+          2023,
+          2024
+        ],
+        "through_year": 2026,
+        "retrieval_mode": "group_queries_citing",
+        "blockers": []
+      },
+      "abstract_preparation": "inspect_on_registration",
+      "notes": "The active English BMC manuscript is the registered authoritative scope. Frozen groups retain the paper's organelle/small-genome, low-depth, divergent-reference boundary and exclude whole-genome reconstruction claims."
+    },
+    "C5": {
+      "status": "ready_for_preflight",
+      "study_role": "planned_confirmatory",
+      "evaluation_mode": "cross_sectional_scope_robustness_unless_history_expands",
+      "bib": "<REDACTED_LOCAL_PATH>/references.bib",
+      "scope_files": [
+        "<REDACTED_LOCAL_PATH>/mock_final_proposal_newsol_rewrite.md"
+      ],
+      "qss_validation": {
+        "status": "ready_for_retrieval",
+        "study_config": "config/qss_C5_cross_sectional_frozen.json",
+        "evaluation_mode": "cross_sectional_scope_robustness",
+        "cutoffs": [
+          2023
+        ],
+        "through_year": 2026,
+        "retrieval_mode": "group_queries_citing",
+        "blockers": []
+      },
+      "reference_pdf_dirs": [
+        "<REDACTED_LOCAL_PATH>/pdf"
+      ],
+      "reference_text_sources": [
+        {
+          "path": "<REDACTED_LOCAL_PATH>/extracted_md",
+          "kind": "full_text_pdf_extraction",
+          "reference_file_count": 23,
+          "non_reference_files": [
+            "README.md",
+            "proposal-v2.md"
+          ]
+        }
+      ],
+      "abstract_preparation": "complete_in_registered_snapshot",
+      "fulltext_preparation": "local_reference_pdfs_available",
+      "notes": "C5/Jay proposal corpus. The registered Bib has 25 abstract-bearing entries and is byte-identical to references/proposal-2026-07-28/proposal-references.bib; its registered reference directory currently contains 23 PDFs. Do not mix it with the older MTAP manuscript bibliography. Preflight found no viable temporal positive-holdout cutoff, so the frozen 2023 snapshot is evaluated only for cross-sectional scope/convergence robustness with 2024-2026 candidates."
+    },
+    "C6": {
+      "status": "ready_for_preflight",
+      "study_role": "planned_confirmatory",
+      "evaluation_mode": "cross_sectional_scope_robustness_unless_history_expands",
+      "bib": "<REDACTED_LOCAL_PATH>/ejmste-43711-references.bib",
+      "scope_files": [
+        "<REDACTED_LOCAL_PATH>/revised_manuscript_2026-08-06_pdf.txt"
+      ],
+      "qss_validation": {
+        "status": "ready_for_retrieval",
+        "study_config": "config/qss_C6_cross_sectional_frozen.json",
+        "seed_scope_audit": "outputs/qss-multicorpus/C6/seed_scope_audit.json",
+        "evaluation_mode": "cross_sectional_scope_robustness",
+        "cutoffs": [
+          2024
+        ],
+        "through_year": 2026,
+        "retrieval_mode": "group_queries_citing",
+        "blockers": []
+      },
+      "reference_pdf_dirs": [
+        "<REDACTED_LOCAL_PATH>/pdf"
+      ],
+      "reference_text_sources": [
+        {
+          "path": "<REDACTED_LOCAL_PATH>/fulltext_md",
+          "kind": "full_text_pdf_extraction",
+          "reference_file_count": 27,
+          "canonical_matching_rule": "PDF basename plus .md",
+          "non_reference_files": [
+            "README.md"
+          ],
+          "legacy_noncanonical_file_count": 10,
+          "note": "All 27 registered PDFs now have basename-matched Markdown. Ten older extracts with numbering from an earlier reference revision are preserved as legacy evidence and are not counted twice."
+        },
+        {
+          "path": "<REDACTED_LOCAL_PATH>/extracted_md",
+          "kind": "identity_or_first_page_evidence_note",
+          "reference_file_count": 19,
+          "warning": "These short notes are not complete paper text and must not be treated as full-text evidence."
+        }
+      ],
+      "abstract_preparation": "complete_in_registered_snapshot",
+      "fulltext_preparation": "local_reference_pdfs_available",
+      "notes": "C6/Tey computational-thinking and STEM-attitudes manuscript corpus. The registered Bib has 27 abstract-bearing entries; all 27 local PDFs now have basename-matched full-text Markdown. No viable temporal holdout exists, so the frozen 2024 snapshot is evaluated only for cross-sectional scope/convergence robustness with 2025-2026 candidates."
+    },
+    "C4": {
+      "status": "ready_for_preflight",
+      "study_role": "planned_confirmatory",
+      "evaluation_mode": "temporal_positive_holdout",
+      "provisional_cutoffs": [
+        2024
+      ],
+      "bib": "<REDACTED_LOCAL_PATH>/pk-proposal-v002-with-abstracts.bib",
+      "scope_files": [
+        "<REDACTED_LOCAL_PATH>/proposal.md"
+      ],
+      "qss_validation": {
+        "status": "ready_for_retrieval",
+        "study_config": "config/qss_C4_temporal_frozen.json",
+        "seed_scope_audit": "outputs/qss-multicorpus/C4/seed_scope_audit.json",
+        "evaluation_mode": "temporal_positive_holdout",
+        "cutoffs": [
+          2024
+        ],
+        "through_year": 2026,
+        "retrieval_mode": "group_queries_citing",
+        "blockers": []
+      },
+      "reference_pdf_dirs": [
+        "<REDACTED_LOCAL_PATH>/pdfs"
+      ],
+      "reference_text_sources": [
+        {
+          "path": "<REDACTED_LOCAL_PATH>/extracted-md",
+          "kind": "full_text_pdf_extraction",
+          "reference_file_count": 34,
+          "non_reference_files": [
+            "00_proposal-v002.md"
+          ]
+        }
+      ],
+      "abstract_preparation": "complete_in_registered_snapshot",
+      "fulltext_preparation": "local_reference_pdfs_available",
+      "notes": "C4/PK legal-QA proposal corpus. The v004 scope contains 39 numbered references, the registered proposal Bib has 39 abstract-bearing entries, and its registered reference directory currently contains 34 PDFs. Keep the ACM TALLIP paper workstream separate. Frozen cutoff 2024 leaves seven dated future positives."
+    },
+    "C7": {
+      "status": "topic_formulation",
+      "study_role": "exploratory_pre_retrieval_boundary_case",
+      "research_document_stage": "new_masters_student_topic_search",
+      "concept_state": "diffuse_not_frozen",
+      "evaluation_mode": "topic_formulation_scope_diagnostic",
+      "bib": "<REDACTED_LOCAL_PATH>/references_30_matching_enriched.bib",
+      "source_bib": "<REDACTED_LOCAL_PATH>/references_30_matching.bib",
+      "scope_files": [
+        "<REDACTED_LOCAL_PATH>/README.md",
+        "<REDACTED_LOCAL_PATH>/initial_research_assignment_to_ai_2026-06-28.md",
+        "<REDACTED_LOCAL_PATH>/C7_literature_survey_brief_2026-08-24.md",
+        "<REDACTED_LOCAL_PATH>/literature_taxonomy.md"
+      ],
+      "qss_validation": {
+        "status": "blocked",
+        "study_config": "config/qss_C7_topic_formulation.json",
+        "evaluation_mode": "topic_formulation_scope_diagnostic",
+        "cutoffs": [],
+        "retrieval_mode": "none_until_scope_freeze",
+        "blockers": [
+          "research question and supported user decision are not frozen",
+          "query and candidate entity types are not frozen",
+          "similarity, complementarity, evidence, and exclusion constructs are not frozen",
+          "no frozen evidence groups or evaluation boundary exist",
+          "do not retrieve candidates or run fixed-v2 evaluation in this version"
+        ]
+      },
+      "abstract_preparation": "complete_in_registered_snapshot",
+      "notes": "C7/Ai is a new master's student still selecting a topic. The enriched working Bib has 30/30 abstracts and DOI fields, all from 2024-2026, but mixes advisor/expert assignment, collaborator/team matching, and paper/citation recommendation. Register it as an F0 topic-formulation boundary case, not as a thirteenth confirmatory ranking case."
+    },
+    "madlab_template": {
+      "status": "awaiting_bib_and_scope",
+      "bib": "${MADLAB_BIB}",
+      "scope_files": [
+        "${MADLAB_SCOPE_FILE}"
+      ],
+      "abstract_preparation": "cache_enrichment_required",
+      "notes": "One student project per corpus. Set MADLAB_BIB and MADLAB_SCOPE_FILE explicitly; avoid a mixed lab-wide Bib because it has no single research boundary."
+    }
+  }
+}

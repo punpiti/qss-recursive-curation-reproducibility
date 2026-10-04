@@ -1,0 +1,235 @@
+{
+  "schema_version": "qss-review-response-v1",
+  "batch_id": "round0-search-validation-reachability-02",
+  "review_type": "ROUND0_LITERATURE_REVIEW",
+  "rubric_version": "qss-review-rubric-v3",
+  "reviewer": {
+    "type": "AI_PROXY",
+    "id": "gemini-2-5-flash",
+    "role": "PRIMARY_REVIEWER",
+    "review_status": "AI_FIRST_PASS",
+    "reviewed_at": null
+  },
+  "reviews": [
+    {
+      "review_row_id": "round0-006",
+      "corpus_or_project": "qss_self_hosting",
+      "source_group": "search_validation_reachability",
+      "paper": {
+        "title": "Graph-based interactive bibliographic information retrieval systems",
+        "doi": "https://doi.org/10.17918/etd-7224",
+        "openalex_id": "https://openalex.org/W2623111144"
+      },
+      "normalized_decision": "INCLUDE",
+      "scope_fit": "IN_SCOPE",
+      "role_fit": "BRIDGE",
+      "evidence_sufficiency": "SUFFICIENT_ABSTRACT",
+      "primary_reason_code": "BRIDGE_REFERENCE",
+      "secondary_reason_codes": [],
+      "assigned_label": "search_validation_reachability",
+      "corrected_label": null,
+      "evidence": [
+        {
+          "source_field": "ABSTRACT",
+          "supports": "ROLE",
+          "paraphrase": "Proposes graph-based interactive bibliographic IR systems for complex bibliographic queries like co-citation and bibliographic coupling."
+        }
+      ],
+      "rationale": "Proposes interactive graph-based retrieval models for complex bibliographic queries, serving as a structural IR baseline for search and reachability.",
+      "confidence": "HIGH",
+      "flags": [
+        "POSSIBLE_WRONG_GROUP"
+      ],
+      "follow_up": {
+        "required": true,
+        "priority": "ROUTINE",
+        "reasons": [
+          "AI_PROXY_REQUIRES_HUMAN_CONFIRMATION"
+        ],
+        "recommended_action": "HUMAN_CHECK"
+      },
+      "task_specific": {
+        "scope_decision": null,
+        "group_decision": null,
+        "corrected_group": null,
+        "literature_decision": "KEEP"
+      }
+    },
+    {
+      "review_row_id": "round0-007",
+      "corpus_or_project": "qss_self_hosting",
+      "source_group": "search_validation_reachability",
+      "paper": {
+        "title": "How to Write Effective Prompts for Screening Biomedical Literature Using Large Language Models",
+        "doi": "https://doi.org/10.20944/preprints202502.0396.v1",
+        "openalex_id": "https://openalex.org/W4407206494"
+      },
+      "normalized_decision": "INCLUDE",
+      "scope_fit": "IN_SCOPE",
+      "role_fit": "DIRECT",
+      "evidence_sufficiency": "SUFFICIENT_ABSTRACT",
+      "primary_reason_code": "DIRECT_METHOD",
+      "secondary_reason_codes": [],
+      "assigned_label": "search_validation_reachability",
+      "corrected_label": null,
+      "evidence": [
+        {
+          "source_field": "ABSTRACT",
+          "supports": "ROLE",
+          "paraphrase": "Analyzes trade-offs between prompt designs for LLM literature screening and evaluates recall, precision, and screening efficiency."
+        }
+      ],
+      "rationale": "Evaluates LLM prompt design impact on sensitivity, precision, and recall in literature screening workflows.",
+      "confidence": "HIGH",
+      "flags": [
+        "NONE"
+      ],
+      "follow_up": {
+        "required": true,
+        "priority": "ROUTINE",
+        "reasons": [
+          "AI_PROXY_REQUIRES_HUMAN_CONFIRMATION"
+        ],
+        "recommended_action": "HUMAN_CHECK"
+      },
+      "task_specific": {
+        "scope_decision": null,
+        "group_decision": null,
+        "corrected_group": null,
+        "literature_decision": "KEEP"
+      }
+    },
+    {
+      "review_row_id": "round0-008",
+      "corpus_or_project": "qss_self_hosting",
+      "source_group": "search_validation_reachability",
+      "paper": {
+        "title": "Diagnosis of Cervical Cancer and Pre-Cancerous Lesions by Artificial Intelligence: A Systematic Review",
+        "doi": "https://doi.org/10.3390/diagnostics12112771",
+        "openalex_id": "https://openalex.org/W4309002538"
+      },
+      "normalized_decision": "EXCLUDE",
+      "scope_fit": "OUT_OF_SCOPE",
+      "role_fit": "MISMATCH",
+      "evidence_sufficiency": "SUFFICIENT_ABSTRACT",
+      "primary_reason_code": "WRONG_DOMAIN_OR_POPULATION",
+      "secondary_reason_codes": [],
+      "assigned_label": "search_validation_reachability",
+      "corrected_label": null,
+      "evidence": [
+        {
+          "source_field": "ABSTRACT",
+          "supports": "SCOPE",
+          "paraphrase": "Evaluates diagnostic performance of AI for cervical cancer screening and clinical diagnosis."
+        }
+      ],
+      "rationale": "A medical systematic review evaluating AI in clinical cervical cancer diagnosis, completely outside information retrieval and literature search validation.",
+      "confidence": "HIGH",
+      "flags": [
+        "NONE"
+      ],
+      "follow_up": {
+        "required": true,
+        "priority": "ROUTINE",
+        "reasons": [
+          "AI_PROXY_REQUIRES_HUMAN_CONFIRMATION"
+        ],
+        "recommended_action": "HUMAN_CHECK"
+      },
+      "task_specific": {
+        "scope_decision": null,
+        "group_decision": null,
+        "corrected_group": null,
+        "literature_decision": "REMOVE"
+      }
+    },
+    {
+      "review_row_id": "round0-009",
+      "corpus_or_project": "qss_self_hosting",
+      "source_group": "search_validation_reachability",
+      "paper": {
+        "title": "The emergence of large language models as tools in literature reviews: a large language model-assisted systematic review",
+        "doi": "https://doi.org/10.1093/jamia/ocaf063",
+        "openalex_id": "https://openalex.org/W4410157139"
+      },
+      "normalized_decision": "INCLUDE",
+      "scope_fit": "IN_SCOPE",
+      "role_fit": "DIRECT",
+      "evidence_sufficiency": "SUFFICIENT_ABSTRACT",
+      "primary_reason_code": "EMPIRICAL_PRECEDENT",
+      "secondary_reason_codes": [],
+      "assigned_label": "search_validation_reachability",
+      "corrected_label": null,
+      "evidence": [
+        {
+          "source_field": "ABSTRACT",
+          "supports": "ROLE",
+          "paraphrase": "Summarizes LLM usage across review stages (searching, extraction) and compares precision and recall performance."
+        }
+      ],
+      "rationale": "Evaluates empirical performance (precision and recall) of LLM tools during search and data extraction stages in systematic literature reviews.",
+      "confidence": "HIGH",
+      "flags": [
+        "NONE"
+      ],
+      "follow_up": {
+        "required": true,
+        "priority": "ROUTINE",
+        "reasons": [
+          "AI_PROXY_REQUIRES_HUMAN_CONFIRMATION"
+        ],
+        "recommended_action": "HUMAN_CHECK"
+      },
+      "task_specific": {
+        "scope_decision": null,
+        "group_decision": null,
+        "corrected_group": null,
+        "literature_decision": "KEEP"
+      }
+    },
+    {
+      "review_row_id": "round0-010",
+      "corpus_or_project": "qss_self_hosting",
+      "source_group": "search_validation_reachability",
+      "paper": {
+        "title": "ADVANCED COMPUTING APPLICATIONS IN BI DASHBOARDS: IMPROVING REAL-TIME DECISION SUPPORT FOR GLOBAL ENTERPRISES",
+        "doi": "https://doi.org/10.63125/3x6vpb92",
+        "openalex_id": "https://openalex.org/W4414518606"
+      },
+      "normalized_decision": "EXCLUDE",
+      "scope_fit": "OUT_OF_SCOPE",
+      "role_fit": "MISMATCH",
+      "evidence_sufficiency": "SUFFICIENT_ABSTRACT",
+      "primary_reason_code": "WRONG_DOMAIN_OR_POPULATION",
+      "secondary_reason_codes": [],
+      "assigned_label": "search_validation_reachability",
+      "corrected_label": null,
+      "evidence": [
+        {
+          "source_field": "ABSTRACT",
+          "supports": "SCOPE",
+          "paraphrase": "Synthesizes advanced computing architectures for real-time Business Intelligence (BI) dashboards."
+        }
+      ],
+      "rationale": "Focuses on enterprise BI dashboards and computing architectures rather than scholarly retrieval or search reachability evaluation.",
+      "confidence": "HIGH",
+      "flags": [
+        "NONE"
+      ],
+      "follow_up": {
+        "required": true,
+        "priority": "ROUTINE",
+        "reasons": [
+          "AI_PROXY_REQUIRES_HUMAN_CONFIRMATION"
+        ],
+        "recommended_action": "HUMAN_CHECK"
+      },
+      "task_specific": {
+        "scope_decision": null,
+        "group_decision": null,
+        "corrected_group": null,
+        "literature_decision": "REMOVE"
+      }
+    }
+  ]
+}

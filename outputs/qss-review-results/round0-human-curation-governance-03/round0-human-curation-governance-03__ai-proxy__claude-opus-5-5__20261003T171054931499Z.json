@@ -1,0 +1,281 @@
+{
+  "schema_version": "qss-review-response-v1",
+  "batch_id": "round0-human-curation-governance-03",
+  "review_type": "ROUND0_LITERATURE_REVIEW",
+  "rubric_version": "qss-review-rubric-v3",
+  "reviewer": {
+    "type": "AI_PROXY",
+    "id": "claude-opus-5-5",
+    "role": "PRIMARY_REVIEWER",
+    "review_status": "AI_FIRST_PASS",
+    "reviewed_at": "2026-10-03T17:10:54.931499Z"
+  },
+  "reviews": [
+    {
+      "review_row_id": "round0-069",
+      "corpus_or_project": "qss_self_hosting",
+      "source_group": "human_curation_governance",
+      "paper": {
+        "title": "The enlightening role of explainable artificial intelligence in medical & healthcare domains: A systematic literature review",
+        "doi": "https://doi.org/10.1016/j.compbiomed.2023.107555",
+        "openalex_id": "https://openalex.org/W4387336518"
+      },
+      "normalized_decision": "EXCLUDE",
+      "scope_fit": "OUT_OF_SCOPE",
+      "role_fit": "MISMATCH",
+      "evidence_sufficiency": "SUFFICIENT_ABSTRACT",
+      "primary_reason_code": "WRONG_DOMAIN_OR_POPULATION",
+      "secondary_reason_codes": [
+        "TOO_GENERIC_FOR_CLAIM"
+      ],
+      "assigned_label": "human_curation_governance",
+      "corrected_label": null,
+      "evidence": [
+        {
+          "source_field": "ABSTRACT",
+          "supports": "SCOPE",
+          "paraphrase": "Systematic review of XAI techniques (LIME, SHAP) applied to medical and healthcare ML models (93 of 454 articles)."
+        },
+        {
+          "source_field": "ABSTRACT",
+          "supports": "RISK",
+          "paraphrase": "Explainability concerns clinical model predictions, not literature selection or curation."
+        }
+      ],
+      "rationale": "Medical XAI does not address human control, provenance or explainable selection in literature curation. Out of scope for this role.",
+      "confidence": "HIGH",
+      "flags": [
+        "NONE"
+      ],
+      "follow_up": {
+        "required": true,
+        "priority": "ROUTINE",
+        "reasons": [
+          "AI_PROXY_REQUIRES_HUMAN_CONFIRMATION"
+        ],
+        "recommended_action": "HUMAN_CHECK"
+      },
+      "task_specific": {
+        "scope_decision": null,
+        "group_decision": null,
+        "corrected_group": null,
+        "literature_decision": "REMOVE"
+      }
+    },
+    {
+      "review_row_id": "round0-070",
+      "corpus_or_project": "qss_self_hosting",
+      "source_group": "human_curation_governance",
+      "paper": {
+        "title": "IdeaSynth: Iterative Research Idea Development Through Evolving and Composing Idea Facets with Literature-Grounded Feedback",
+        "doi": "https://doi.org/10.48550/arxiv.2410.04025",
+        "openalex_id": "https://openalex.org/W4403322359"
+      },
+      "normalized_decision": "INCLUDE",
+      "scope_fit": "IN_SCOPE",
+      "role_fit": "PARTIAL",
+      "evidence_sufficiency": "SUFFICIENT_ABSTRACT",
+      "primary_reason_code": "EMPIRICAL_PRECEDENT",
+      "secondary_reason_codes": [
+        "BRIDGE_REFERENCE"
+      ],
+      "assigned_label": "human_curation_governance",
+      "corrected_label": null,
+      "evidence": [
+        {
+          "source_field": "ABSTRACT",
+          "supports": "ROLE",
+          "paraphrase": "IdeaSynth gives researchers literature-grounded LLM feedback and lets them iteratively refine, vary and compose idea facets on a canvas under their control."
+        },
+        {
+          "source_field": "ABSTRACT",
+          "supports": "SCOPE",
+          "paraphrase": "Evaluated in a lab study (N=20) against an LLM baseline and a deployment study (N=7) on real research projects."
+        },
+        {
+          "source_field": "ABSTRACT",
+          "supports": "RISK",
+          "paraphrase": "The system supports idea development grounded in literature rather than curating or governing a bibliography."
+        }
+      ],
+      "rationale": "The paper provides empirical evidence on human-in-the-loop, literature-grounded research support with user-controlled iteration, which partially fits the human_curation_governance role. Like similar ideation systems, its target is ideas rather than bibliography curation, so it is a partial fit kept as precedent.",
+      "confidence": "MEDIUM",
+      "flags": [
+        "BOUNDARY_CASE"
+      ],
+      "follow_up": {
+        "required": true,
+        "priority": "ROUTINE",
+        "reasons": [
+          "AI_PROXY_REQUIRES_HUMAN_CONFIRMATION",
+          "BOUNDARY_CASE"
+        ],
+        "recommended_action": "HUMAN_CHECK"
+      },
+      "task_specific": {
+        "scope_decision": null,
+        "group_decision": null,
+        "corrected_group": null,
+        "literature_decision": "KEEP"
+      }
+    },
+    {
+      "review_row_id": "round0-071",
+      "corpus_or_project": "qss_self_hosting",
+      "source_group": "human_curation_governance",
+      "paper": {
+        "title": "REIMAGINING INTELLIGENT INFORMATION SYSTEMS: EMERGING AI PARADIGMS IN LIBRARY AND INFORMATION SCIENCE",
+        "doi": "https://doi.org/10.67662/grelis/2026.1.19",
+        "openalex_id": "https://openalex.org/W7171023435"
+      },
+      "normalized_decision": "EXCLUDE",
+      "scope_fit": "UNCERTAIN",
+      "role_fit": "PARTIAL",
+      "evidence_sufficiency": "SUFFICIENT_ABSTRACT",
+      "primary_reason_code": "TOO_GENERIC_FOR_CLAIM",
+      "secondary_reason_codes": [
+        "BRIDGE_REFERENCE"
+      ],
+      "assigned_label": "human_curation_governance",
+      "corrected_label": null,
+      "evidence": [
+        {
+          "source_field": "ABSTRACT",
+          "supports": "SCOPE",
+          "paraphrase": "Conceptual and integrative review of AI paradigms in library and information science, from symbolic to generative systems."
+        },
+        {
+          "source_field": "ABSTRACT",
+          "supports": "ROLE",
+          "paraphrase": "Argues for human-centred, ethically governed knowledge systems, but specifies no curation, override or provenance mechanism."
+        }
+      ],
+      "rationale": "The paper speaks to governance of AI-driven knowledge systems at a high conceptual level; it is too generic to support claims about human control of literature curation.",
+      "confidence": "MEDIUM",
+      "flags": [
+        "NONE"
+      ],
+      "follow_up": {
+        "required": true,
+        "priority": "ROUTINE",
+        "reasons": [
+          "AI_PROXY_REQUIRES_HUMAN_CONFIRMATION"
+        ],
+        "recommended_action": "HUMAN_CHECK"
+      },
+      "task_specific": {
+        "scope_decision": null,
+        "group_decision": null,
+        "corrected_group": null,
+        "literature_decision": "REMOVE"
+      }
+    },
+    {
+      "review_row_id": "round0-072",
+      "corpus_or_project": "qss_self_hosting",
+      "source_group": "human_curation_governance",
+      "paper": {
+        "title": "Societal collapse: A literature review",
+        "doi": "https://doi.org/10.1016/j.futures.2022.103075",
+        "openalex_id": "https://openalex.org/W4311088171"
+      },
+      "normalized_decision": "EXCLUDE",
+      "scope_fit": "OUT_OF_SCOPE",
+      "role_fit": "MISMATCH",
+      "evidence_sufficiency": "SUFFICIENT_ABSTRACT",
+      "primary_reason_code": "WRONG_DOMAIN_OR_POPULATION",
+      "secondary_reason_codes": [
+        "FALSE_LEXICAL_OR_SEMANTIC_MATCH"
+      ],
+      "assigned_label": "human_curation_governance",
+      "corrected_label": null,
+      "evidence": [
+        {
+          "source_field": "ABSTRACT",
+          "supports": "SCOPE",
+          "paraphrase": "Systematic multidisciplinary review of research on societal (civilisation) collapse."
+        },
+        {
+          "source_field": "ABSTRACT",
+          "supports": "RISK",
+          "paraphrase": "Match comes from 'scholarly conversations' and literature-review vocabulary only."
+        }
+      ],
+      "rationale": "The paper is a domain study unrelated to scholarly search, recommendation or bibliographic evidence selection; its match to the role is lexical. It is out of scope.",
+      "confidence": "HIGH",
+      "flags": [
+        "POSSIBLE_FALSE_MATCH"
+      ],
+      "follow_up": {
+        "required": true,
+        "priority": "ROUTINE",
+        "reasons": [
+          "AI_PROXY_REQUIRES_HUMAN_CONFIRMATION"
+        ],
+        "recommended_action": "HUMAN_CHECK"
+      },
+      "task_specific": {
+        "scope_decision": null,
+        "group_decision": null,
+        "corrected_group": null,
+        "literature_decision": "REMOVE"
+      }
+    },
+    {
+      "review_row_id": "round0-073",
+      "corpus_or_project": "qss_self_hosting",
+      "source_group": "human_curation_governance",
+      "paper": {
+        "title": "A Survey on Conversational Search and Applications in Biomedicine",
+        "doi": "https://doi.org/10.1145/3564746.3587001",
+        "openalex_id": "https://openalex.org/W4380303329"
+      },
+      "normalized_decision": "EXCLUDE",
+      "scope_fit": "UNCERTAIN",
+      "role_fit": "PARTIAL",
+      "evidence_sufficiency": "SUFFICIENT_ABSTRACT",
+      "primary_reason_code": "WRONG_DOMAIN_OR_POPULATION",
+      "secondary_reason_codes": [
+        "BRIDGE_REFERENCE"
+      ],
+      "assigned_label": "human_curation_governance",
+      "corrected_label": null,
+      "evidence": [
+        {
+          "source_field": "ABSTRACT",
+          "supports": "SCOPE",
+          "paraphrase": "Survey of conversational search systems (retrieval, QA, recommender modules) with application to biomedical and healthcare information seeking."
+        },
+        {
+          "source_field": "ABSTRACT",
+          "supports": "ROLE",
+          "paraphrase": "Focuses on interactive dialogue-based information seeking, not on human control, provenance or overrides in literature curation."
+        },
+        {
+          "source_field": "METADATA",
+          "supports": "RISK",
+          "paraphrase": "Venue field is blank for this ACM record."
+        }
+      ],
+      "rationale": "Conversational search is interactive retrieval and adjacent to interactive recommendation, but the survey targets clinical information seeking and offers no curation-governance content. It does not support the role.",
+      "confidence": "MEDIUM",
+      "flags": [
+        "NONE"
+      ],
+      "follow_up": {
+        "required": true,
+        "priority": "ROUTINE",
+        "reasons": [
+          "AI_PROXY_REQUIRES_HUMAN_CONFIRMATION"
+        ],
+        "recommended_action": "HUMAN_CHECK"
+      },
+      "task_specific": {
+        "scope_decision": null,
+        "group_decision": null,
+        "corrected_group": null,
+        "literature_decision": "REMOVE"
+      }
+    }
+  ]
+}

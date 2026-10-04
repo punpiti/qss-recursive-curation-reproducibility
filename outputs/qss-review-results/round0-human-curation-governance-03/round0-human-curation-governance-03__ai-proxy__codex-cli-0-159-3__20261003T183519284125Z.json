@@ -1,0 +1,276 @@
+{
+  "schema_version": "qss-review-response-v1",
+  "batch_id": "round0-human-curation-governance-03",
+  "review_type": "ROUND0_LITERATURE_REVIEW",
+  "rubric_version": "qss-review-rubric-v3",
+  "reviewer": {
+    "type": "AI_PROXY",
+    "id": "codex-cli-0-159-3",
+    "role": "PRIMARY_REVIEWER",
+    "review_status": "AI_FIRST_PASS",
+    "reviewed_at": "2026-10-03T18:35:19.285400Z"
+  },
+  "reviews": [
+    {
+      "review_row_id": "round0-069",
+      "corpus_or_project": "qss_self_hosting",
+      "source_group": "human_curation_governance",
+      "paper": {
+        "title": "The enlightening role of explainable artificial intelligence in medical & healthcare domains: A systematic literature review",
+        "doi": "https://doi.org/10.1016/j.compbiomed.2023.107555",
+        "openalex_id": "https://openalex.org/W4387336518"
+      },
+      "normalized_decision": "EXCLUDE",
+      "scope_fit": "OUT_OF_SCOPE",
+      "role_fit": "MISMATCH",
+      "evidence_sufficiency": "SUFFICIENT_ABSTRACT",
+      "primary_reason_code": "WRONG_DOMAIN_OR_POPULATION",
+      "secondary_reason_codes": [
+        "WRONG_METHOD_OR_OUTCOME"
+      ],
+      "assigned_label": "human_curation_governance",
+      "corrected_label": null,
+      "evidence": [
+        {
+          "source_field": "ABSTRACT",
+          "supports": "SCOPE",
+          "paraphrase": "The review concerns explainability of machine-learning predictions and clinical decisions in medical and healthcare applications."
+        },
+        {
+          "source_field": "ABSTRACT",
+          "supports": "ROLE",
+          "paraphrase": "Its human-facing contribution is trust in model predictions through feature-importance explanations, not control of literature retrieval or curation."
+        }
+      ],
+      "rationale": "The abstract addresses XAI for medical prediction rather than a scholarly search, recommendation, or evidence-selection workflow. Explainability alone does not make it evidence for governance of literature curation.",
+      "confidence": "HIGH",
+      "flags": [
+        "NONE"
+      ],
+      "follow_up": {
+        "required": true,
+        "priority": "ROUTINE",
+        "reasons": [
+          "AI_PROXY_REQUIRES_HUMAN_CONFIRMATION"
+        ],
+        "recommended_action": "HUMAN_CHECK"
+      },
+      "task_specific": {
+        "scope_decision": null,
+        "group_decision": null,
+        "corrected_group": null,
+        "literature_decision": "REMOVE"
+      }
+    },
+    {
+      "review_row_id": "round0-070",
+      "corpus_or_project": "qss_self_hosting",
+      "source_group": "human_curation_governance",
+      "paper": {
+        "title": "IdeaSynth: Iterative Research Idea Development Through Evolving and Composing Idea Facets with Literature-Grounded Feedback",
+        "doi": "https://doi.org/10.48550/arxiv.2410.04025",
+        "openalex_id": "https://openalex.org/W4403322359"
+      },
+      "normalized_decision": "EXCLUDE",
+      "scope_fit": "OUT_OF_SCOPE",
+      "role_fit": "MISMATCH",
+      "evidence_sufficiency": "SUFFICIENT_ABSTRACT",
+      "primary_reason_code": "WRONG_METHOD_OR_OUTCOME",
+      "secondary_reason_codes": [
+        "FALSE_LEXICAL_OR_SEMANTIC_MATCH"
+      ],
+      "assigned_label": "human_curation_governance",
+      "corrected_label": null,
+      "evidence": [
+        {
+          "source_field": "ABSTRACT",
+          "supports": "DECISION",
+          "paraphrase": "IdeaSynth uses literature-grounded feedback to help researchers iteratively develop and compose facets of research ideas."
+        },
+        {
+          "source_field": "ABSTRACT",
+          "supports": "ROLE",
+          "paraphrase": "The reported evaluations measure exploration and elaboration of ideas, not human oversight of literature selection, provenance, or retrieval feedback loops."
+        }
+      ],
+      "rationale": "The contribution is an LLM-supported research-ideation interface, with literature serving as grounding for feedback. The abstract does not describe bibliographic curation, selection overrides, provenance, or governance of a scholarly retrieval state.",
+      "confidence": "HIGH",
+      "flags": [
+        "POSSIBLE_FALSE_MATCH"
+      ],
+      "follow_up": {
+        "required": true,
+        "priority": "ROUTINE",
+        "reasons": [
+          "AI_PROXY_REQUIRES_HUMAN_CONFIRMATION"
+        ],
+        "recommended_action": "HUMAN_CHECK"
+      },
+      "task_specific": {
+        "scope_decision": null,
+        "group_decision": null,
+        "corrected_group": null,
+        "literature_decision": "REMOVE"
+      }
+    },
+    {
+      "review_row_id": "round0-071",
+      "corpus_or_project": "qss_self_hosting",
+      "source_group": "human_curation_governance",
+      "paper": {
+        "title": "REIMAGINING INTELLIGENT INFORMATION SYSTEMS: EMERGING AI PARADIGMS IN LIBRARY AND INFORMATION SCIENCE",
+        "doi": "https://doi.org/10.67662/grelis/2026.1.19",
+        "openalex_id": "https://openalex.org/W7171023435"
+      },
+      "normalized_decision": "EXCLUDE",
+      "scope_fit": "OUT_OF_SCOPE",
+      "role_fit": "PARTIAL",
+      "evidence_sufficiency": "SUFFICIENT_ABSTRACT",
+      "primary_reason_code": "TOO_GENERIC_FOR_CLAIM",
+      "secondary_reason_codes": [
+        "WRONG_METHOD_OR_OUTCOME"
+      ],
+      "assigned_label": "human_curation_governance",
+      "corrected_label": null,
+      "evidence": [
+        {
+          "source_field": "ABSTRACT",
+          "supports": "ROLE",
+          "paraphrase": "The paper broadly advocates human-centred, ethical governance of AI-driven knowledge systems in library and information science."
+        },
+        {
+          "source_field": "ABSTRACT",
+          "supports": "DECISION",
+          "paraphrase": "Its theory synthesis discusses information retrieval and scholarly communication but specifies no interactive literature-selection workflow, provenance control, or feedback-loop safeguard."
+        }
+      ],
+      "rationale": "The paper has broad thematic overlap with human-centred governance in LIS, but the abstract is too general to support the assigned evidence role. It does not evaluate or define human control over literature curation or recommendation.",
+      "confidence": "HIGH",
+      "flags": [
+        "POSSIBLE_FALSE_MATCH"
+      ],
+      "follow_up": {
+        "required": true,
+        "priority": "ROUTINE",
+        "reasons": [
+          "AI_PROXY_REQUIRES_HUMAN_CONFIRMATION"
+        ],
+        "recommended_action": "HUMAN_CHECK"
+      },
+      "task_specific": {
+        "scope_decision": null,
+        "group_decision": null,
+        "corrected_group": null,
+        "literature_decision": "REMOVE"
+      }
+    },
+    {
+      "review_row_id": "round0-072",
+      "corpus_or_project": "qss_self_hosting",
+      "source_group": "human_curation_governance",
+      "paper": {
+        "title": "Societal collapse: A literature review",
+        "doi": "https://doi.org/10.1016/j.futures.2022.103075",
+        "openalex_id": "https://openalex.org/W4311088171"
+      },
+      "normalized_decision": "EXCLUDE",
+      "scope_fit": "OUT_OF_SCOPE",
+      "role_fit": "MISMATCH",
+      "evidence_sufficiency": "SUFFICIENT_ABSTRACT",
+      "primary_reason_code": "WRONG_DOMAIN_OR_POPULATION",
+      "secondary_reason_codes": [
+        "FALSE_LEXICAL_OR_SEMANTIC_MATCH"
+      ],
+      "assigned_label": "human_curation_governance",
+      "corrected_label": null,
+      "evidence": [
+        {
+          "source_field": "ABSTRACT",
+          "supports": "SCOPE",
+          "paraphrase": "The article synthesizes scholarship on past, theoretical, fictional, and climate-related forms of societal collapse."
+        },
+        {
+          "source_field": "ABSTRACT",
+          "supports": "DECISION",
+          "paraphrase": "It uses literature review as a study method but does not study literature search, recommendation, curation, or governance."
+        }
+      ],
+      "rationale": "This is a domain review of societal collapse, not research on the process or governance of bibliographic selection. The phrase literature review is a lexical match only.",
+      "confidence": "HIGH",
+      "flags": [
+        "POSSIBLE_FALSE_MATCH"
+      ],
+      "follow_up": {
+        "required": true,
+        "priority": "ROUTINE",
+        "reasons": [
+          "AI_PROXY_REQUIRES_HUMAN_CONFIRMATION"
+        ],
+        "recommended_action": "HUMAN_CHECK"
+      },
+      "task_specific": {
+        "scope_decision": null,
+        "group_decision": null,
+        "corrected_group": null,
+        "literature_decision": "REMOVE"
+      }
+    },
+    {
+      "review_row_id": "round0-073",
+      "corpus_or_project": "qss_self_hosting",
+      "source_group": "human_curation_governance",
+      "paper": {
+        "title": "A Survey on Conversational Search and Applications in Biomedicine",
+        "doi": "https://doi.org/10.1145/3564746.3587001",
+        "openalex_id": "https://openalex.org/W4380303329"
+      },
+      "normalized_decision": "INCLUDE",
+      "scope_fit": "IN_SCOPE",
+      "role_fit": "BRIDGE",
+      "evidence_sufficiency": "SUFFICIENT_ABSTRACT",
+      "primary_reason_code": "BRIDGE_REFERENCE",
+      "secondary_reason_codes": [
+        "DIRECT_METHOD"
+      ],
+      "assigned_label": "human_curation_governance",
+      "corrected_label": null,
+      "evidence": [
+        {
+          "source_field": "ABSTRACT",
+          "supports": "SCOPE",
+          "paraphrase": "The survey treats conversational search as an information-retrieval process in which users interact through dialogue during information-seeking tasks."
+        },
+        {
+          "source_field": "ABSTRACT",
+          "supports": "ROLE",
+          "paraphrase": "It emphasizes human-interactive characteristics across retrieval, question-answering, and recommender action modules."
+        },
+        {
+          "source_field": "ABSTRACT",
+          "supports": "RISK",
+          "paraphrase": "The abstract situates the application in biomedical and healthcare information seeking rather than explicitly in scholarly literature curation."
+        }
+      ],
+      "rationale": "The human-dialogue control of retrieval and recommendation is a relevant bridge mechanism for interactive curation. Its contribution is not specific to scholarly bibliography governance, so it supports the role indirectly rather than as a direct literature-curation precedent.",
+      "confidence": "MEDIUM",
+      "flags": [
+        "BOUNDARY_CASE"
+      ],
+      "follow_up": {
+        "required": true,
+        "priority": "MEDIUM",
+        "reasons": [
+          "AI_PROXY_REQUIRES_HUMAN_CONFIRMATION",
+          "BOUNDARY_CASE"
+        ],
+        "recommended_action": "HUMAN_CHECK"
+      },
+      "task_specific": {
+        "scope_decision": null,
+        "group_decision": null,
+        "corrected_group": null,
+        "literature_decision": "KEEP"
+      }
+    }
+  ]
+}

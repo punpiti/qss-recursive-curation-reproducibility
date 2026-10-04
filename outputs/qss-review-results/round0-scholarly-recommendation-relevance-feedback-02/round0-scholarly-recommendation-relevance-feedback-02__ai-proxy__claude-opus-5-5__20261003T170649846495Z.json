@@ -1,0 +1,285 @@
+{
+  "schema_version": "qss-review-response-v1",
+  "batch_id": "round0-scholarly-recommendation-relevance-feedback-02",
+  "review_type": "ROUND0_LITERATURE_REVIEW",
+  "rubric_version": "qss-review-rubric-v3",
+  "reviewer": {
+    "type": "AI_PROXY",
+    "id": "claude-opus-5-5",
+    "role": "PRIMARY_REVIEWER",
+    "review_status": "AI_FIRST_PASS",
+    "reviewed_at": "2026-10-03T17:06:49.846495Z"
+  },
+  "reviews": [
+    {
+      "review_row_id": "round0-021",
+      "corpus_or_project": "qss_self_hosting",
+      "source_group": "scholarly_recommendation_relevance_feedback",
+      "paper": {
+        "title": "Digital Scholarly Editing",
+        "doi": "https://doi.org/10.11647/obp.0095",
+        "openalex_id": "https://openalex.org/W2515070191"
+      },
+      "normalized_decision": "EXCLUDE",
+      "scope_fit": "OUT_OF_SCOPE",
+      "role_fit": "MISMATCH",
+      "evidence_sufficiency": "SUFFICIENT_ABSTRACT",
+      "primary_reason_code": "WRONG_DOMAIN_OR_POPULATION",
+      "secondary_reason_codes": [
+        "FALSE_LEXICAL_OR_SEMANTIC_MATCH"
+      ],
+      "assigned_label": "scholarly_recommendation_relevance_feedback",
+      "corrected_label": null,
+      "evidence": [
+        {
+          "source_field": "ABSTRACT",
+          "supports": "SCOPE",
+          "paraphrase": "Edited volume on the theory and practice of producing and reading digital scholarly editions."
+        },
+        {
+          "source_field": "ABSTRACT",
+          "supports": "RISK",
+          "paraphrase": "The match rests on the word 'scholarly'; textual editing has no paper recommendation, relevance feedback or literature-discovery component."
+        }
+      ],
+      "rationale": "The paper is a domain study unrelated to scholarly search, recommendation or bibliographic evidence selection; its match to the role is lexical. It is out of scope.",
+      "confidence": "HIGH",
+      "flags": [
+        "POSSIBLE_FALSE_MATCH"
+      ],
+      "follow_up": {
+        "required": true,
+        "priority": "ROUTINE",
+        "reasons": [
+          "AI_PROXY_REQUIRES_HUMAN_CONFIRMATION"
+        ],
+        "recommended_action": "HUMAN_CHECK"
+      },
+      "task_specific": {
+        "scope_decision": null,
+        "group_decision": null,
+        "corrected_group": null,
+        "literature_decision": "REMOVE"
+      }
+    },
+    {
+      "review_row_id": "round0-022",
+      "corpus_or_project": "qss_self_hosting",
+      "source_group": "scholarly_recommendation_relevance_feedback",
+      "paper": {
+        "title": "3. Modelling Digital Scholarly Editing: From Plato to Heraclitus",
+        "doi": "https://doi.org/10.11647/obp.0095.03",
+        "openalex_id": "https://openalex.org/W2516658632"
+      },
+      "normalized_decision": "EXCLUDE",
+      "scope_fit": "OUT_OF_SCOPE",
+      "role_fit": "MISMATCH",
+      "evidence_sufficiency": "SUFFICIENT_ABSTRACT",
+      "primary_reason_code": "WRONG_DOMAIN_OR_POPULATION",
+      "secondary_reason_codes": [
+        "FALSE_LEXICAL_OR_SEMANTIC_MATCH"
+      ],
+      "assigned_label": "scholarly_recommendation_relevance_feedback",
+      "corrected_label": null,
+      "evidence": [
+        {
+          "source_field": "ABSTRACT",
+          "supports": "SCOPE",
+          "paraphrase": "Book chapter on modelling digital scholarly editing."
+        },
+        {
+          "source_field": "ABSTRACT",
+          "supports": "RISK",
+          "paraphrase": "The match rests on the word 'scholarly'; no recommendation or literature-discovery component."
+        },
+        {
+          "source_field": "METADATA",
+          "supports": "RISK",
+          "paraphrase": "The abstract is the whole volume's blurb, identical to the parent book record, not chapter-specific text."
+        }
+      ],
+      "rationale": "The paper is a domain study unrelated to scholarly search, recommendation or bibliographic evidence selection; its match to the role is lexical. It is out of scope.",
+      "confidence": "HIGH",
+      "flags": [
+        "POSSIBLE_FALSE_MATCH",
+        "METADATA_ISSUE"
+      ],
+      "follow_up": {
+        "required": true,
+        "priority": "ROUTINE",
+        "reasons": [
+          "AI_PROXY_REQUIRES_HUMAN_CONFIRMATION",
+          "METADATA_ISSUE"
+        ],
+        "recommended_action": "HUMAN_CHECK"
+      },
+      "task_specific": {
+        "scope_decision": null,
+        "group_decision": null,
+        "corrected_group": null,
+        "literature_decision": "REMOVE"
+      }
+    },
+    {
+      "review_row_id": "round0-023",
+      "corpus_or_project": "qss_self_hosting",
+      "source_group": "scholarly_recommendation_relevance_feedback",
+      "paper": {
+        "title": "A model of scientists' information seeking and a user-interface design",
+        "doi": "",
+        "openalex_id": "https://openalex.org/W1529311769"
+      },
+      "normalized_decision": "EXCLUDE",
+      "scope_fit": "IN_SCOPE",
+      "role_fit": "PARTIAL",
+      "evidence_sufficiency": "SUFFICIENT_ABSTRACT",
+      "primary_reason_code": "WRONG_METHOD_OR_OUTCOME",
+      "secondary_reason_codes": [
+        "BRIDGE_REFERENCE"
+      ],
+      "assigned_label": "scholarly_recommendation_relevance_feedback",
+      "corrected_label": null,
+      "evidence": [
+        {
+          "source_field": "ABSTRACT",
+          "supports": "SCOPE",
+          "paraphrase": "Models high-energy-physics scientists' information seeking from interviews and 2,100 survey responses, and designs a user interface for the INSPIRE system."
+        },
+        {
+          "source_field": "ABSTRACT",
+          "supports": "ROLE",
+          "paraphrase": "States that scholarly discovery is often cumbersome and incomplete, but contributes personas and interface design rather than recommendation, relevance feedback or citation chaining."
+        },
+        {
+          "source_field": "METADATA",
+          "supports": "RISK",
+          "paraphrase": "DOI field is empty; the record is a thesis in an institutional repository."
+        }
+      ],
+      "rationale": "The thesis is scholarly-search context and could motivate why discovery is incomplete, but it does not supply recommendation, feedback or iterative-discovery methods or evidence. It does not support this role well enough to keep; the decision is a boundary call.",
+      "confidence": "MEDIUM",
+      "flags": [
+        "BOUNDARY_CASE",
+        "METADATA_ISSUE"
+      ],
+      "follow_up": {
+        "required": true,
+        "priority": "ROUTINE",
+        "reasons": [
+          "AI_PROXY_REQUIRES_HUMAN_CONFIRMATION",
+          "BOUNDARY_CASE",
+          "METADATA_ISSUE"
+        ],
+        "recommended_action": "HUMAN_CHECK"
+      },
+      "task_specific": {
+        "scope_decision": null,
+        "group_decision": null,
+        "corrected_group": null,
+        "literature_decision": "REMOVE"
+      }
+    },
+    {
+      "review_row_id": "round0-024",
+      "corpus_or_project": "qss_self_hosting",
+      "source_group": "scholarly_recommendation_relevance_feedback",
+      "paper": {
+        "title": "Leadership Styles and Leadership Behaviors in Family Firms: A Systematic Literature Review",
+        "doi": "https://doi.org/10.1016/j.jfbs.2020.100374",
+        "openalex_id": "https://openalex.org/W3087144351"
+      },
+      "normalized_decision": "EXCLUDE",
+      "scope_fit": "OUT_OF_SCOPE",
+      "role_fit": "MISMATCH",
+      "evidence_sufficiency": "SUFFICIENT_ABSTRACT",
+      "primary_reason_code": "WRONG_DOMAIN_OR_POPULATION",
+      "secondary_reason_codes": [
+        "FALSE_LEXICAL_OR_SEMANTIC_MATCH"
+      ],
+      "assigned_label": "scholarly_recommendation_relevance_feedback",
+      "corrected_label": null,
+      "evidence": [
+        {
+          "source_field": "ABSTRACT",
+          "supports": "SCOPE",
+          "paraphrase": "Systematic literature review of leadership styles and behaviours in family firms."
+        },
+        {
+          "source_field": "ABSTRACT",
+          "supports": "RISK",
+          "paraphrase": "The match comes from the systematic search process and 'scholarly attention' vocabulary only."
+        }
+      ],
+      "rationale": "The paper is a domain study unrelated to scholarly search, recommendation or bibliographic evidence selection; its match to the role is lexical. It is out of scope.",
+      "confidence": "HIGH",
+      "flags": [
+        "POSSIBLE_FALSE_MATCH"
+      ],
+      "follow_up": {
+        "required": true,
+        "priority": "ROUTINE",
+        "reasons": [
+          "AI_PROXY_REQUIRES_HUMAN_CONFIRMATION"
+        ],
+        "recommended_action": "HUMAN_CHECK"
+      },
+      "task_specific": {
+        "scope_decision": null,
+        "group_decision": null,
+        "corrected_group": null,
+        "literature_decision": "REMOVE"
+      }
+    },
+    {
+      "review_row_id": "round0-025",
+      "corpus_or_project": "qss_self_hosting",
+      "source_group": "scholarly_recommendation_relevance_feedback",
+      "paper": {
+        "title": "How can research contribute to the implementation of sustainable development goals? An interpretive review of SDG literature in management",
+        "doi": "https://doi.org/10.1111/ijmr.12331",
+        "openalex_id": "https://openalex.org/W4321373683"
+      },
+      "normalized_decision": "EXCLUDE",
+      "scope_fit": "OUT_OF_SCOPE",
+      "role_fit": "MISMATCH",
+      "evidence_sufficiency": "SUFFICIENT_ABSTRACT",
+      "primary_reason_code": "WRONG_DOMAIN_OR_POPULATION",
+      "secondary_reason_codes": [
+        "FALSE_LEXICAL_OR_SEMANTIC_MATCH"
+      ],
+      "assigned_label": "scholarly_recommendation_relevance_feedback",
+      "corrected_label": null,
+      "evidence": [
+        {
+          "source_field": "ABSTRACT",
+          "supports": "SCOPE",
+          "paraphrase": "Interpretive review linking management literature on the SDGs to practitioner adoption guidance."
+        },
+        {
+          "source_field": "ABSTRACT",
+          "supports": "RISK",
+          "paraphrase": "The match comes from mining highly cited papers and 'scholarly' vocabulary; no recommendation or discovery method is studied."
+        }
+      ],
+      "rationale": "The paper is a domain study unrelated to scholarly search, recommendation or bibliographic evidence selection; its match to the role is lexical. It is out of scope.",
+      "confidence": "HIGH",
+      "flags": [
+        "POSSIBLE_FALSE_MATCH"
+      ],
+      "follow_up": {
+        "required": true,
+        "priority": "ROUTINE",
+        "reasons": [
+          "AI_PROXY_REQUIRES_HUMAN_CONFIRMATION"
+        ],
+        "recommended_action": "HUMAN_CHECK"
+      },
+      "task_specific": {
+        "scope_decision": null,
+        "group_decision": null,
+        "corrected_group": null,
+        "literature_decision": "REMOVE"
+      }
+    }
+  ]
+}

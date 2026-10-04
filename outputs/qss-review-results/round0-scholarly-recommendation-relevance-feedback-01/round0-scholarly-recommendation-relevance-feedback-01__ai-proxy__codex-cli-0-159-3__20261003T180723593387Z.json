@@ -1,0 +1,277 @@
+{
+  "schema_version": "qss-review-response-v1",
+  "batch_id": "round0-scholarly-recommendation-relevance-feedback-01",
+  "review_type": "ROUND0_LITERATURE_REVIEW",
+  "rubric_version": "qss-review-rubric-v3",
+  "reviewer": {
+    "type": "AI_PROXY",
+    "id": "codex-cli-0-159-3",
+    "role": "PRIMARY_REVIEWER",
+    "review_status": "AI_FIRST_PASS",
+    "reviewed_at": "2026-10-03T18:07:23.593387Z"
+  },
+  "reviews": [
+    {
+      "review_row_id": "round0-016",
+      "corpus_or_project": "qss_self_hosting",
+      "source_group": "scholarly_recommendation_relevance_feedback",
+      "paper": {
+        "title": "Scholarly Work in the Humanities and the Evolving Information Environment",
+        "doi": "https://doi.org/10.5281/zenodo.7775851",
+        "openalex_id": "https://openalex.org/W1580896313"
+      },
+      "normalized_decision": "EXCLUDE",
+      "scope_fit": "OUT_OF_SCOPE",
+      "role_fit": "MISMATCH",
+      "evidence_sufficiency": "SUFFICIENT_ABSTRACT",
+      "primary_reason_code": "TOO_GENERIC_FOR_CLAIM",
+      "secondary_reason_codes": [
+        "WRONG_METHOD_OR_OUTCOME"
+      ],
+      "assigned_label": "scholarly_recommendation_relevance_feedback",
+      "corrected_label": null,
+      "evidence": [
+        {
+          "source_field": "ABSTRACT",
+          "supports": "SCOPE",
+          "paraphrase": "The study broadly examines how a small sample of humanities scholars conduct and collate research and how academic libraries can respond."
+        },
+        {
+          "source_field": "ABSTRACT",
+          "supports": "ROLE",
+          "paraphrase": "The abstract does not describe scholarly-paper recommendation, relevance feedback, query expansion, citation chaining, or iterative retrieval."
+        }
+      ],
+      "rationale": "The paper provides broad context on humanities scholars' information practices and library services, but the abstract does not establish a search or recommendation contribution within the frozen boundary. It therefore does not support the assigned evidence role.",
+      "confidence": "HIGH",
+      "flags": [
+        "NONE"
+      ],
+      "follow_up": {
+        "required": true,
+        "priority": "ROUTINE",
+        "reasons": [
+          "AI_PROXY_REQUIRES_HUMAN_CONFIRMATION"
+        ],
+        "recommended_action": "HUMAN_CHECK"
+      },
+      "task_specific": {
+        "scope_decision": null,
+        "group_decision": null,
+        "corrected_group": null,
+        "literature_decision": "REMOVE"
+      }
+    },
+    {
+      "review_row_id": "round0-017",
+      "corpus_or_project": "qss_self_hosting",
+      "source_group": "scholarly_recommendation_relevance_feedback",
+      "paper": {
+        "title": "The Fusion of Multilingual Semantic Search and Large Language Models: A New Paradigm for Enhanced Topic Exploration and Contextual Search",
+        "doi": "https://doi.org/10.22215/etd/2024-15938",
+        "openalex_id": "https://openalex.org/W4396531244"
+      },
+      "normalized_decision": "EXCLUDE",
+      "scope_fit": "OUT_OF_SCOPE",
+      "role_fit": "MISMATCH",
+      "evidence_sufficiency": "SUFFICIENT_ABSTRACT",
+      "primary_reason_code": "WRONG_DOMAIN_OR_POPULATION",
+      "secondary_reason_codes": [
+        "FALSE_LEXICAL_OR_SEMANTIC_MATCH"
+      ],
+      "assigned_label": "scholarly_recommendation_relevance_feedback",
+      "corrected_label": null,
+      "evidence": [
+        {
+          "source_field": "ABSTRACT",
+          "supports": "SCOPE",
+          "paraphrase": "The proposed retrieval system is developed and evaluated for multilingual digital news articles."
+        },
+        {
+          "source_field": "ABSTRACT",
+          "supports": "ROLE",
+          "paraphrase": "Academic research is mentioned only as a possible application; the contribution does not concern scholarly-paper discovery or bibliographic curation."
+        }
+      ],
+      "rationale": "The abstract reports semantic retrieval for a multilingual news corpus, not a scholarly search or evidence-selection workflow. Its general search terminology and mention of academic research do not make it relevant to the assigned role.",
+      "confidence": "HIGH",
+      "flags": [
+        "POSSIBLE_FALSE_MATCH"
+      ],
+      "follow_up": {
+        "required": true,
+        "priority": "ROUTINE",
+        "reasons": [
+          "AI_PROXY_REQUIRES_HUMAN_CONFIRMATION"
+        ],
+        "recommended_action": "HUMAN_CHECK"
+      },
+      "task_specific": {
+        "scope_decision": null,
+        "group_decision": null,
+        "corrected_group": null,
+        "literature_decision": "REMOVE"
+      }
+    },
+    {
+      "review_row_id": "round0-018",
+      "corpus_or_project": "qss_self_hosting",
+      "source_group": "scholarly_recommendation_relevance_feedback",
+      "paper": {
+        "title": "Large language models for automated scholarly paper review: A survey",
+        "doi": "https://doi.org/10.48550/arxiv.2501.10326",
+        "openalex_id": "https://openalex.org/W4406604566"
+      },
+      "normalized_decision": "EXCLUDE",
+      "scope_fit": "OUT_OF_SCOPE",
+      "role_fit": "MISMATCH",
+      "evidence_sufficiency": "SUFFICIENT_ABSTRACT",
+      "primary_reason_code": "WRONG_METHOD_OR_OUTCOME",
+      "secondary_reason_codes": [
+        "FALSE_LEXICAL_OR_SEMANTIC_MATCH"
+      ],
+      "assigned_label": "scholarly_recommendation_relevance_feedback",
+      "corrected_label": null,
+      "evidence": [
+        {
+          "source_field": "ABSTRACT",
+          "supports": "SCOPE",
+          "paraphrase": "The survey concerns the use of large language models to automate manuscript peer review."
+        },
+        {
+          "source_field": "ABSTRACT",
+          "supports": "ROLE",
+          "paraphrase": "Its reviewed methods, datasets, systems, and issues address scholarly paper review rather than paper recommendation or iterative literature retrieval."
+        }
+      ],
+      "rationale": "The scholarly setting is peer review of manuscripts, not retrieval, recommendation, relevance feedback, or bibliographic evidence selection. The shared words 'scholarly paper' therefore represent a semantic mismatch with the assigned role.",
+      "confidence": "HIGH",
+      "flags": [
+        "POSSIBLE_FALSE_MATCH"
+      ],
+      "follow_up": {
+        "required": true,
+        "priority": "ROUTINE",
+        "reasons": [
+          "AI_PROXY_REQUIRES_HUMAN_CONFIRMATION"
+        ],
+        "recommended_action": "HUMAN_CHECK"
+      },
+      "task_specific": {
+        "scope_decision": null,
+        "group_decision": null,
+        "corrected_group": null,
+        "literature_decision": "REMOVE"
+      }
+    },
+    {
+      "review_row_id": "round0-019",
+      "corpus_or_project": "qss_self_hosting",
+      "source_group": "scholarly_recommendation_relevance_feedback",
+      "paper": {
+        "title": "Re-examining and re-conceptualising enterprise search and discovery capability : towards a model for the factors and generative mechanisms for search task outcomes",
+        "doi": "",
+        "openalex_id": "https://openalex.org/W2734210769"
+      },
+      "normalized_decision": "EXCLUDE",
+      "scope_fit": "OUT_OF_SCOPE",
+      "role_fit": "MISMATCH",
+      "evidence_sufficiency": "SUFFICIENT_ABSTRACT",
+      "primary_reason_code": "WRONG_DOMAIN_OR_POPULATION",
+      "secondary_reason_codes": [
+        "WRONG_METHOD_OR_OUTCOME"
+      ],
+      "assigned_label": "scholarly_recommendation_relevance_feedback",
+      "corrected_label": null,
+      "evidence": [
+        {
+          "source_field": "ABSTRACT",
+          "supports": "SCOPE",
+          "paraphrase": "The empirical setting is enterprise search for corporate information, studied with business professionals and industry organizations."
+        },
+        {
+          "source_field": "ABSTRACT",
+          "supports": "ROLE",
+          "paraphrase": "The contribution models socio-technical factors affecting workplace search outcomes rather than scholarly-paper recommendation or iterative literature discovery."
+        }
+      ],
+      "rationale": "Although the study evaluates exploratory search and user feedback, its population, corpus, and outcome are enterprise workplace search. The abstract does not connect that contribution to a scholarly or evidence-selection workflow within the frozen boundary.",
+      "confidence": "HIGH",
+      "flags": [
+        "NONE"
+      ],
+      "follow_up": {
+        "required": true,
+        "priority": "ROUTINE",
+        "reasons": [
+          "AI_PROXY_REQUIRES_HUMAN_CONFIRMATION"
+        ],
+        "recommended_action": "HUMAN_CHECK"
+      },
+      "task_specific": {
+        "scope_decision": null,
+        "group_decision": null,
+        "corrected_group": null,
+        "literature_decision": "REMOVE"
+      }
+    },
+    {
+      "review_row_id": "round0-020",
+      "corpus_or_project": "qss_self_hosting",
+      "source_group": "scholarly_recommendation_relevance_feedback",
+      "paper": {
+        "title": "Qlarify: Recursively Expandable Abstracts for Directed Information Retrieval over Scientific Papers",
+        "doi": "https://doi.org/10.48550/arxiv.2310.07581",
+        "openalex_id": "https://openalex.org/W4387596522"
+      },
+      "normalized_decision": "EXCLUDE",
+      "scope_fit": "IN_SCOPE",
+      "role_fit": "MISMATCH",
+      "evidence_sufficiency": "SUFFICIENT_ABSTRACT",
+      "primary_reason_code": "WRONG_METHOD_OR_OUTCOME",
+      "secondary_reason_codes": [
+        "FALSE_LEXICAL_OR_SEMANTIC_MATCH"
+      ],
+      "assigned_label": "scholarly_recommendation_relevance_feedback",
+      "corrected_label": null,
+      "evidence": [
+        {
+          "source_field": "ABSTRACT",
+          "supports": "SCOPE",
+          "paraphrase": "The system supports scholar-directed information access and verifiable attribution within scientific papers, which fits the broader human-in-the-loop and provenance boundary."
+        },
+        {
+          "source_field": "ABSTRACT",
+          "supports": "ROLE",
+          "paraphrase": "Its recursive interaction expands an abstract with passages retrieved from the same paper's full text rather than recommending or discovering additional papers."
+        },
+        {
+          "source_field": "ABSTRACT",
+          "supports": "DECISION",
+          "paraphrase": "The user studies evaluate exploration of long-form information contexts, not relevance feedback, query expansion, citation chaining, or iterative candidate-paper retrieval."
+        }
+      ],
+      "rationale": "Qlarify is relevant to the broader boundary through human-directed retrieval and source-passage attribution, but its retrieval target is information inside a selected paper. Because it does not alter a scholarly-paper recommendation or literature-discovery state, it does not support this assigned evidence role.",
+      "confidence": "HIGH",
+      "flags": [
+        "BOUNDARY_CASE",
+        "POSSIBLE_WRONG_GROUP"
+      ],
+      "follow_up": {
+        "required": true,
+        "priority": "MEDIUM",
+        "reasons": [
+          "AI_PROXY_REQUIRES_HUMAN_CONFIRMATION",
+          "BOUNDARY_CASE"
+        ],
+        "recommended_action": "HUMAN_CHECK"
+      },
+      "task_specific": {
+        "scope_decision": null,
+        "group_decision": null,
+        "corrected_group": null,
+        "literature_decision": "REMOVE"
+      }
+    }
+  ]
+}

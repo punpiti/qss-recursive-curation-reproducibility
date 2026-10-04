@@ -1,0 +1,237 @@
+{
+  "schema_version": "qss-review-response-v1",
+  "batch_id": "round0-scholarly-recommendation-relevance-feedback-02",
+  "review_type": "ROUND0_LITERATURE_REVIEW",
+  "rubric_version": "qss-review-rubric-v3",
+  "reviewer": {
+    "type": "AI_PROXY",
+    "id": "gemini-2-5-flash",
+    "role": "PRIMARY_REVIEWER",
+    "review_status": "AI_FIRST_PASS",
+    "reviewed_at": null
+  },
+  "reviews": [
+    {
+      "review_row_id": "round0-021",
+      "corpus_or_project": "qss_self_hosting",
+      "source_group": "scholarly_recommendation_relevance_feedback",
+      "paper": {
+        "title": "Digital Scholarly Editing",
+        "doi": "https://doi.org/10.11647/obp.0095",
+        "openalex_id": "https://openalex.org/W2515070191"
+      },
+      "normalized_decision": "EXCLUDE",
+      "scope_fit": "OUT_OF_SCOPE",
+      "role_fit": "MISMATCH",
+      "evidence_sufficiency": "SUFFICIENT_ABSTRACT",
+      "primary_reason_code": "WRONG_DOMAIN_OR_POPULATION",
+      "secondary_reason_codes": [],
+      "assigned_label": "scholarly_recommendation_relevance_feedback",
+      "corrected_label": null,
+      "evidence": [
+        {
+          "source_field": "ABSTRACT",
+          "supports": "SCOPE",
+          "paraphrase": "Presents reflections and theory on producing and reading digital scholarly editions in textual scholarship."
+        }
+      ],
+      "rationale": "Focuses on textual scholarship and editorial practices for digital editions, completely outside scholarly IR or recommendation workflows.",
+      "confidence": "HIGH",
+      "flags": [
+        "NONE"
+      ],
+      "follow_up": {
+        "required": true,
+        "priority": "ROUTINE",
+        "reasons": [
+          "AI_PROXY_REQUIRES_HUMAN_CONFIRMATION"
+        ],
+        "recommended_action": "HUMAN_CHECK"
+      },
+      "task_specific": {
+        "scope_decision": null,
+        "group_decision": null,
+        "corrected_group": null,
+        "literature_decision": "REMOVE"
+      }
+    },
+    {
+      "review_row_id": "round0-022",
+      "corpus_or_project": "qss_self_hosting",
+      "source_group": "scholarly_recommendation_relevance_feedback",
+      "paper": {
+        "title": "3. Modelling Digital Scholarly Editing: From Plato to Heraclitus",
+        "doi": "https://doi.org/10.11647/obp.0095.03",
+        "openalex_id": "https://openalex.org/W2516658632"
+      },
+      "normalized_decision": "EXCLUDE",
+      "scope_fit": "OUT_OF_SCOPE",
+      "role_fit": "MISMATCH",
+      "evidence_sufficiency": "SUFFICIENT_ABSTRACT",
+      "primary_reason_code": "WRONG_DOMAIN_OR_POPULATION",
+      "secondary_reason_codes": [],
+      "assigned_label": "scholarly_recommendation_relevance_feedback",
+      "corrected_label": null,
+      "evidence": [
+        {
+          "source_field": "ABSTRACT",
+          "supports": "SCOPE",
+          "paraphrase": "Book chapter discussing practices and theories involved in digital scholarly editing."
+        }
+      ],
+      "rationale": "Focuses on humanities textual editing rather than bibliographic search, retrieval, or recommendation systems.",
+      "confidence": "HIGH",
+      "flags": [
+        "NONE"
+      ],
+      "follow_up": {
+        "required": true,
+        "priority": "ROUTINE",
+        "reasons": [
+          "AI_PROXY_REQUIRES_HUMAN_CONFIRMATION"
+        ],
+        "recommended_action": "HUMAN_CHECK"
+      },
+      "task_specific": {
+        "scope_decision": null,
+        "group_decision": null,
+        "corrected_group": null,
+        "literature_decision": "REMOVE"
+      }
+    },
+    {
+      "review_row_id": "round0-023",
+      "corpus_or_project": "qss_self_hosting",
+      "source_group": "scholarly_recommendation_relevance_feedback",
+      "paper": {
+        "title": "A model of scientists' information seeking and a user-interface design",
+        "doi": "",
+        "openalex_id": "https://openalex.org/W1529311769"
+      },
+      "normalized_decision": "INCLUDE",
+      "scope_fit": "IN_SCOPE",
+      "role_fit": "BRIDGE",
+      "evidence_sufficiency": "SUFFICIENT_ABSTRACT",
+      "primary_reason_code": "BRIDGE_REFERENCE",
+      "secondary_reason_codes": [
+        "EMPIRICAL_PRECEDENT"
+      ],
+      "assigned_label": "scholarly_recommendation_relevance_feedback",
+      "corrected_label": null,
+      "evidence": [
+        {
+          "source_field": "ABSTRACT",
+          "supports": "ROLE",
+          "paraphrase": "Develops a model of scientists' information seeking behavior and designs a user interface for the INSPIRE system to improve scholarly discovery."
+        }
+      ],
+      "rationale": "Models scholarly search and discovery behaviors and constructs system interfaces to improve academic literature findability.",
+      "confidence": "HIGH",
+      "flags": [
+        "NONE"
+      ],
+      "follow_up": {
+        "required": true,
+        "priority": "ROUTINE",
+        "reasons": [
+          "AI_PROXY_REQUIRES_HUMAN_CONFIRMATION"
+        ],
+        "recommended_action": "HUMAN_CHECK"
+      },
+      "task_specific": {
+        "scope_decision": null,
+        "group_decision": null,
+        "corrected_group": null,
+        "literature_decision": "KEEP"
+      }
+    },
+    {
+      "review_row_id": "round0-024",
+      "corpus_or_project": "qss_self_hosting",
+      "source_group": "scholarly_recommendation_relevance_feedback",
+      "paper": {
+        "title": "Leadership Styles and Leadership Behaviors in Family Firms: A Systematic Literature Review",
+        "doi": "https://doi.org/10.1016/j.jfbs.2020.100374",
+        "openalex_id": "https://openalex.org/W3087144351"
+      },
+      "normalized_decision": "EXCLUDE",
+      "scope_fit": "OUT_OF_SCOPE",
+      "role_fit": "MISMATCH",
+      "evidence_sufficiency": "SUFFICIENT_ABSTRACT",
+      "primary_reason_code": "WRONG_DOMAIN_OR_POPULATION",
+      "secondary_reason_codes": [],
+      "assigned_label": "scholarly_recommendation_relevance_feedback",
+      "corrected_label": null,
+      "evidence": [
+        {
+          "source_field": "ABSTRACT",
+          "supports": "SCOPE",
+          "paraphrase": "Systematic review of leadership styles and behaviors within family business literature."
+        }
+      ],
+      "rationale": "A domain-specific systematic literature review on family business leadership with no relevance to IR or bibliographic recommendation.",
+      "confidence": "HIGH",
+      "flags": [
+        "NONE"
+      ],
+      "follow_up": {
+        "required": true,
+        "priority": "ROUTINE",
+        "reasons": [
+          "AI_PROXY_REQUIRES_HUMAN_CONFIRMATION"
+        ],
+        "recommended_action": "HUMAN_CHECK"
+      },
+      "task_specific": {
+        "scope_decision": null,
+        "group_decision": null,
+        "corrected_group": null,
+        "literature_decision": "REMOVE"
+      }
+    },
+    {
+      "review_row_id": "round0-025",
+      "corpus_or_project": "qss_self_hosting",
+      "source_group": "scholarly_recommendation_relevance_feedback",
+      "paper": {
+        "title": "How can research contribute to the implementation of sustainable development goals? An interpretive review of SDG literature in management",
+        "doi": "https://doi.org/10.1111/ijmr.12331",
+        "openalex_id": "https://openalex.org/W4321373683"
+      },
+      "normalized_decision": "EXCLUDE",
+      "scope_fit": "OUT_OF_SCOPE",
+      "role_fit": "MISMATCH",
+      "evidence_sufficiency": "SUFFICIENT_ABSTRACT",
+      "primary_reason_code": "WRONG_DOMAIN_OR_POPULATION",
+      "secondary_reason_codes": [],
+      "assigned_label": "scholarly_recommendation_relevance_feedback",
+      "corrected_label": null,
+      "evidence": [
+        {
+          "source_field": "ABSTRACT",
+          "supports": "SCOPE",
+          "paraphrase": "Interpretive review examining management literature on Sustainable Development Goals (SDGs) adoption."
+        }
+      ],
+      "rationale": "Focuses on business management frameworks for SDGs rather than information retrieval, search validation, or paper recommendation.",
+      "confidence": "HIGH",
+      "flags": [
+        "NONE"
+      ],
+      "follow_up": {
+        "required": true,
+        "priority": "ROUTINE",
+        "reasons": [
+          "AI_PROXY_REQUIRES_HUMAN_CONFIRMATION"
+        ],
+        "recommended_action": "HUMAN_CHECK"
+      },
+      "task_specific": {
+        "scope_decision": null,
+        "group_decision": null,
+        "corrected_group": null,
+        "literature_decision": "REMOVE"
+      }
+    }
+  ]
+}

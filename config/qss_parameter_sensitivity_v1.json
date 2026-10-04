@@ -1,0 +1,102 @@
+{
+  "schema_version": 1,
+  "analysis_id": "qss-frozen-parameter-sensitivity-v1",
+  "status": "secondary_robustness_not_parameter_selection",
+  "baseline": {
+    "exploration_k": 30,
+    "final_k": 10,
+    "tau_fit": 0.18,
+    "recovery_similarity": 0.1,
+    "group_capacity": 3,
+    "group_semantic_weight": 0.7
+  },
+  "variants": [
+    {
+      "id": "baseline",
+      "label": "Frozen v2 baseline",
+      "overrides": {}
+    },
+    {
+      "id": "m20",
+      "label": "Exploration budget M=20",
+      "overrides": {
+        "exploration_k": 20
+      }
+    },
+    {
+      "id": "m50",
+      "label": "Exploration budget M=50",
+      "overrides": {
+        "exploration_k": 50
+      }
+    },
+    {
+      "id": "k15",
+      "label": "Final budget K=15",
+      "overrides": {
+        "final_k": 15
+      }
+    },
+    {
+      "id": "tau_g_012",
+      "label": "Group gate tau_g=0.12",
+      "overrides": {
+        "tau_fit": 0.12
+      }
+    },
+    {
+      "id": "tau_g_024",
+      "label": "Group gate tau_g=0.24",
+      "overrides": {
+        "tau_fit": 0.24
+      }
+    },
+    {
+      "id": "tau_role_005",
+      "label": "Role similarity tau_role=0.05",
+      "overrides": {
+        "recovery_similarity": 0.05
+      }
+    },
+    {
+      "id": "tau_role_015",
+      "label": "Role similarity tau_role=0.15",
+      "overrides": {
+        "recovery_similarity": 0.15
+      }
+    },
+    {
+      "id": "kappa_2",
+      "label": "Per-group first-pass capacity kappa=2",
+      "overrides": {
+        "group_capacity": 2
+      }
+    },
+    {
+      "id": "kappa_4",
+      "label": "Per-group first-pass capacity kappa=4",
+      "overrides": {
+        "group_capacity": 4
+      }
+    },
+    {
+      "id": "group_blend_060",
+      "label": "Group fit semantic/lexical blend 0.60/0.40",
+      "overrides": {
+        "group_semantic_weight": 0.6
+      }
+    },
+    {
+      "id": "group_blend_080",
+      "label": "Group fit semantic/lexical blend 0.80/0.20",
+      "overrides": {
+        "group_semantic_weight": 0.8
+      }
+    }
+  ],
+  "interpretation": {
+    "rule": "Run one-factor-at-a-time variants against the frozen baseline on every evaluable corpus/cutoff. Never select or retune the confirmatory rule from these results.",
+    "primary_question": "Do the direction and observed stage of exact, evidence-role, or frozen-group gains and losses persist?",
+    "utility_blend": "The 0.50/0.30/0.20 recursive utility blend is intentionally deferred because frozen v2 final pruning uses relevance first and utility only after earlier tie-breakers."
+  }
+}

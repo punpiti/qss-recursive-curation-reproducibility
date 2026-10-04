@@ -1,0 +1,241 @@
+{
+  "schema_version": "qss-review-response-v1",
+  "batch_id": "round0-bibliography-as-research-state-03",
+  "review_type": "ROUND0_LITERATURE_REVIEW",
+  "rubric_version": "qss-review-rubric-v3",
+  "reviewer": {
+    "type": "AI_PROXY",
+    "id": "gemini-2.5-flash",
+    "role": "PRIMARY_REVIEWER",
+    "review_status": "AI_FIRST_PASS",
+    "reviewed_at": null
+  },
+  "reviews": [
+    {
+      "review_row_id": "round0-084",
+      "corpus_or_project": "qss_self_hosting",
+      "source_group": "bibliography_as_research_state",
+      "paper": {
+        "title": "Assessing the vulnerability of food supply chains to climate change-induced disruptions",
+        "doi": "https://doi.org/10.1016/j.scitotenv.2024.171047",
+        "openalex_id": "https://openalex.org/W4391896453"
+      },
+      "normalized_decision": "EXCLUDE",
+      "scope_fit": "OUT_OF_SCOPE",
+      "role_fit": "MISMATCH",
+      "evidence_sufficiency": "SUFFICIENT_ABSTRACT",
+      "primary_reason_code": "WRONG_DOMAIN_OR_POPULATION",
+      "secondary_reason_codes": [],
+      "assigned_label": "bibliography_as_research_state",
+      "corrected_label": null,
+      "evidence": [
+        {
+          "source_field": "ABSTRACT",
+          "supports": "SCOPE",
+          "paraphrase": "A scoping review on food supply chain vulnerability and resilience to climate change."
+        }
+      ],
+      "rationale": "This paper is an applied scoping review on food supply chains and environmental science, completely outside scholarly retrieval and bibliographic state modeling.",
+      "confidence": "HIGH",
+      "flags": [
+        "NONE"
+      ],
+      "follow_up": {
+        "required": true,
+        "priority": "ROUTINE",
+        "reasons": [
+          "AI_PROXY_REQUIRES_HUMAN_CONFIRMATION"
+        ],
+        "recommended_action": "HUMAN_CHECK"
+      },
+      "task_specific": {
+        "scope_decision": null,
+        "group_decision": null,
+        "corrected_group": null,
+        "literature_decision": "REMOVE"
+      }
+    },
+    {
+      "review_row_id": "round0-085",
+      "corpus_or_project": "qss_self_hosting",
+      "source_group": "bibliography_as_research_state",
+      "paper": {
+        "title": "Considering methodological options for reviews of theory: illustrated by a review of theories linking income and health",
+        "doi": "https://doi.org/10.1186/2046-4053-3-114",
+        "openalex_id": "https://openalex.org/W2154053145"
+      },
+      "normalized_decision": "INCLUDE",
+      "scope_fit": "IN_SCOPE",
+      "role_fit": "BRIDGE",
+      "evidence_sufficiency": "SUFFICIENT_ABSTRACT",
+      "primary_reason_code": "BRIDGE_REFERENCE",
+      "secondary_reason_codes": [
+        "DIRECT_METHOD"
+      ],
+      "assigned_label": "bibliography_as_research_state",
+      "corrected_label": null,
+      "evidence": [
+        {
+          "source_field": "ABSTRACT",
+          "supports": "ROLE",
+          "paraphrase": "Analyzes methodological options for theoretical reviews where searching, citation tracking, and determining inclusion criteria are explicitly iterative processes."
+        }
+      ],
+      "rationale": "The paper directly addresses methodology for theoretical literature reviews where search strategies, electronic citation tracking, and inclusion boundaries function as adaptive, iterative processes.",
+      "confidence": "HIGH",
+      "flags": [
+        "NONE"
+      ],
+      "follow_up": {
+        "required": true,
+        "priority": "ROUTINE",
+        "reasons": [
+          "AI_PROXY_REQUIRES_HUMAN_CONFIRMATION"
+        ],
+        "recommended_action": "HUMAN_CHECK"
+      },
+      "task_specific": {
+        "scope_decision": null,
+        "group_decision": null,
+        "corrected_group": null,
+        "literature_decision": "KEEP"
+      }
+    },
+    {
+      "review_row_id": "round0-086",
+      "corpus_or_project": "qss_self_hosting",
+      "source_group": "bibliography_as_research_state",
+      "paper": {
+        "title": "Text mining of cancer-related information: Review of current status and future directions",
+        "doi": "https://doi.org/10.1016/j.ijmedinf.2014.06.009",
+        "openalex_id": "https://openalex.org/W2012560661"
+      },
+      "normalized_decision": "EXCLUDE",
+      "scope_fit": "OUT_OF_SCOPE",
+      "role_fit": "MISMATCH",
+      "evidence_sufficiency": "SUFFICIENT_ABSTRACT",
+      "primary_reason_code": "WRONG_DOMAIN_OR_POPULATION",
+      "secondary_reason_codes": [
+        "WRONG_METHOD_OR_OUTCOME"
+      ],
+      "assigned_label": "bibliography_as_research_state",
+      "corrected_label": null,
+      "evidence": [
+        {
+          "source_field": "ABSTRACT",
+          "supports": "SCOPE",
+          "paraphrase": "Reviews text mining, named entity recognition, and information extraction for clinical cancer records."
+        }
+      ],
+      "rationale": "The paper reviews text mining techniques for extracting clinical data from medical records in cancer research, which is outside the scope of scholarly discovery systems.",
+      "confidence": "HIGH",
+      "flags": [
+        "NONE"
+      ],
+      "follow_up": {
+        "required": true,
+        "priority": "ROUTINE",
+        "reasons": [
+          "AI_PROXY_REQUIRES_HUMAN_CONFIRMATION"
+        ],
+        "recommended_action": "HUMAN_CHECK"
+      },
+      "task_specific": {
+        "scope_decision": null,
+        "group_decision": null,
+        "corrected_group": null,
+        "literature_decision": "REMOVE"
+      }
+    },
+    {
+      "review_row_id": "round0-087",
+      "corpus_or_project": "qss_self_hosting",
+      "source_group": "bibliography_as_research_state",
+      "paper": {
+        "title": "Mapping the evolution and current trends in climate change adaptation science",
+        "doi": "https://doi.org/10.1016/j.crm.2021.100290",
+        "openalex_id": "https://openalex.org/W3129371263"
+      },
+      "normalized_decision": "EXCLUDE",
+      "scope_fit": "OUT_OF_SCOPE",
+      "role_fit": "MISMATCH",
+      "evidence_sufficiency": "SUFFICIENT_ABSTRACT",
+      "primary_reason_code": "WRONG_DOMAIN_OR_POPULATION",
+      "secondary_reason_codes": [],
+      "assigned_label": "bibliography_as_research_state",
+      "corrected_label": null,
+      "evidence": [
+        {
+          "source_field": "ABSTRACT",
+          "supports": "SCOPE",
+          "paraphrase": "A bibliometric analysis mapping publications, key topics, and geographic trends in climate change adaptation science."
+        }
+      ],
+      "rationale": "This paper applies standard bibliometric mapping to climate change adaptation literature. It does not develop or evaluate search algorithms, stateful discovery, or evidence selection mechanisms.",
+      "confidence": "HIGH",
+      "flags": [
+        "NONE"
+      ],
+      "follow_up": {
+        "required": true,
+        "priority": "ROUTINE",
+        "reasons": [
+          "AI_PROXY_REQUIRES_HUMAN_CONFIRMATION"
+        ],
+        "recommended_action": "HUMAN_CHECK"
+      },
+      "task_specific": {
+        "scope_decision": null,
+        "group_decision": null,
+        "corrected_group": null,
+        "literature_decision": "REMOVE"
+      }
+    },
+    {
+      "review_row_id": "round0-088",
+      "corpus_or_project": "qss_self_hosting",
+      "source_group": "bibliography_as_research_state",
+      "paper": {
+        "title": "Deep learning modelling techniques: current progress, applications, advantages, and challenges",
+        "doi": "https://doi.org/10.1007/s10462-023-10466-8",
+        "openalex_id": "https://openalex.org/W4366091323"
+      },
+      "normalized_decision": "EXCLUDE",
+      "scope_fit": "OUT_OF_SCOPE",
+      "role_fit": "MISMATCH",
+      "evidence_sufficiency": "SUFFICIENT_ABSTRACT",
+      "primary_reason_code": "FALSE_LEXICAL_OR_SEMANTIC_MATCH",
+      "secondary_reason_codes": [
+        "TOO_GENERIC_FOR_CLAIM"
+      ],
+      "assigned_label": "bibliography_as_research_state",
+      "corrected_label": null,
+      "evidence": [
+        {
+          "source_field": "ABSTRACT",
+          "supports": "SCOPE",
+          "paraphrase": "Comprehensive survey of deep learning architectures including CNNs, GANs, RNNs, and recursive neural networks."
+        }
+      ],
+      "rationale": "A general survey of deep learning neural architectures. Words like 'recursive neural networks' create a false lexical match with recursive bibliographic state search.",
+      "confidence": "HIGH",
+      "flags": [
+        "NONE"
+      ],
+      "follow_up": {
+        "required": true,
+        "priority": "ROUTINE",
+        "reasons": [
+          "AI_PROXY_REQUIRES_HUMAN_CONFIRMATION"
+        ],
+        "recommended_action": "HUMAN_CHECK"
+      },
+      "task_specific": {
+        "scope_decision": null,
+        "group_decision": null,
+        "corrected_group": null,
+        "literature_decision": "REMOVE"
+      }
+    }
+  ]
+}

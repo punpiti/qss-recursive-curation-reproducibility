@@ -1,0 +1,195 @@
+{
+  "schema_version": "qss-review-response-v1",
+  "batch_id": "construct-C2-02",
+  "review_type": "CONSTRUCT_AUDIT",
+  "rubric_version": "qss-review-rubric-v3",
+  "reviewer": {
+    "type": "AI_PROXY",
+    "id": "gemini-2-5-flash",
+    "role": "PRIMARY_REVIEWER",
+    "review_status": "AI_FIRST_PASS",
+    "reviewed_at": null
+  },
+  "reviews": [
+    {
+      "review_row_id": "C2-2023-06",
+      "corpus_or_project": "C2",
+      "source_group": "continuity_residual_diagnostic",
+      "paper": {
+        "title": "An integrated method for TCWV prediction using deep learning coupled with physical constraints: a physics-aware spatio-temporal attention network",
+        "doi": "https://doi.org/10.1080/20964471.2026.2680809",
+        "openalex_id": "https://openalex.org/W7167021323"
+      },
+      "normalized_decision": "EXCLUDE",
+      "scope_fit": "OUT_OF_SCOPE",
+      "role_fit": "MISMATCH",
+      "evidence_sufficiency": "SUFFICIENT_ABSTRACT",
+      "primary_reason_code": "OUTSIDE_FROZEN_BOUNDARY",
+      "secondary_reason_codes": [
+        "WRONG_DOMAIN_OR_POPULATION"
+      ],
+      "assigned_label": "continuity_residual_diagnostic",
+      "corrected_label": null,
+      "evidence": [
+        {
+          "source_field": "ABSTRACT",
+          "supports": "SCOPE",
+          "paraphrase": "Predicts total column water vapor using neural physical constraints."
+        }
+      ],
+      "rationale": "Focuses on atmospheric water vapor (TCWV) prediction rather than convective rainfall growth diagnosis in urban gauge networks.",
+      "confidence": "HIGH",
+      "flags": [
+        "BOUNDARY_CASE"
+      ],
+      "follow_up": {
+        "required": true,
+        "priority": "ROUTINE",
+        "reasons": [
+          "AI_PROXY_REQUIRES_HUMAN_CONFIRMATION"
+        ],
+        "recommended_action": "HUMAN_CHECK"
+      },
+      "task_specific": {
+        "scope_decision": "REMOVE_OUT_OF_SCOPE",
+        "group_decision": "WRONG_GROUP",
+        "corrected_group": null,
+        "literature_decision": null
+      }
+    },
+    {
+      "review_row_id": "C2-2024-07",
+      "corpus_or_project": "C2",
+      "source_group": "continuity_residual_diagnostic",
+      "paper": {
+        "title": "A physically based neural network for flood routing: The Muskingum-Recurrent neural network",
+        "doi": "https://doi.org/10.1016/j.jhydrol.2026.135403",
+        "openalex_id": "https://openalex.org/W7148539509"
+      },
+      "normalized_decision": "EXCLUDE",
+      "scope_fit": "OUT_OF_SCOPE",
+      "role_fit": "MISMATCH",
+      "evidence_sufficiency": "SUFFICIENT_ABSTRACT",
+      "primary_reason_code": "WRONG_DOMAIN_OR_POPULATION",
+      "secondary_reason_codes": [],
+      "assigned_label": "continuity_residual_diagnostic",
+      "corrected_label": null,
+      "evidence": [
+        {
+          "source_field": "ABSTRACT",
+          "supports": "SCOPE",
+          "paraphrase": "Applies Muskingum routing in RNNs for river channel flood forecasting."
+        }
+      ],
+      "rationale": "The subject matter is river channel flood routing, which is out of scope for urban rainfall growth advection diagnostics.",
+      "confidence": "HIGH",
+      "flags": [
+        "NONE"
+      ],
+      "follow_up": {
+        "required": true,
+        "priority": "ROUTINE",
+        "reasons": [
+          "AI_PROXY_REQUIRES_HUMAN_CONFIRMATION"
+        ],
+        "recommended_action": "HUMAN_CHECK"
+      },
+      "task_specific": {
+        "scope_decision": "REMOVE_OUT_OF_SCOPE",
+        "group_decision": "WRONG_GROUP",
+        "corrected_group": null,
+        "literature_decision": null
+      }
+    },
+    {
+      "review_row_id": "C2-2024-08",
+      "corpus_or_project": "C2",
+      "source_group": "gauge_field_reconstruction",
+      "paper": {
+        "title": "A dense rain-gauge observation framework for advection-consistency diagnosis of urban convective rainfall",
+        "doi": "https://doi.org/10.5194/egusphere-2026-1314",
+        "openalex_id": "https://openalex.org/W7164816061"
+      },
+      "normalized_decision": "INCLUDE",
+      "scope_fit": "IN_SCOPE",
+      "role_fit": "DIRECT",
+      "evidence_sufficiency": "SUFFICIENT_ABSTRACT",
+      "primary_reason_code": "DIRECT_METHOD_OR_EVIDENCE_ROLE",
+      "secondary_reason_codes": [],
+      "assigned_label": "gauge_field_reconstruction",
+      "corrected_label": "continuity_residual_diagnostic",
+      "evidence": [
+        {
+          "source_field": "ABSTRACT",
+          "supports": "SCOPE",
+          "paraphrase": "Reconstructs dense rain-gauge fields in Bangkok and diagnoses convective growth using advection residuals."
+        }
+      ],
+      "rationale": "Direct match for the urban convective rainfall growth diagnosis scope using optical flow advection residuals from high-density rain gauge networks.",
+      "confidence": "HIGH",
+      "flags": [
+        "POSSIBLE_WRONG_GROUP"
+      ],
+      "follow_up": {
+        "required": true,
+        "priority": "ROUTINE",
+        "reasons": [
+          "AI_PROXY_REQUIRES_HUMAN_CONFIRMATION"
+        ],
+        "recommended_action": "HUMAN_CHECK"
+      },
+      "task_specific": {
+        "scope_decision": "KEEP_IN_SCOPE",
+        "group_decision": "PARTIAL_ANALOGUE",
+        "corrected_group": "continuity_residual_diagnostic",
+        "literature_decision": null
+      }
+    },
+    {
+      "review_row_id": "C2-2024-09",
+      "corpus_or_project": "C2",
+      "source_group": "continuity_residual_diagnostic",
+      "paper": {
+        "title": "An integrated method for TCWV prediction using deep learning coupled with physical constraints: a physics-aware spatio-temporal attention network",
+        "doi": "https://doi.org/10.1080/20964471.2026.2680809",
+        "openalex_id": "https://openalex.org/W7167021323"
+      },
+      "normalized_decision": "EXCLUDE",
+      "scope_fit": "OUT_OF_SCOPE",
+      "role_fit": "MISMATCH",
+      "evidence_sufficiency": "SUFFICIENT_ABSTRACT",
+      "primary_reason_code": "OUTSIDE_FROZEN_BOUNDARY",
+      "secondary_reason_codes": [
+        "WRONG_DOMAIN_OR_POPULATION"
+      ],
+      "assigned_label": "continuity_residual_diagnostic",
+      "corrected_label": null,
+      "evidence": [
+        {
+          "source_field": "ABSTRACT",
+          "supports": "SCOPE",
+          "paraphrase": "Studies total column water vapor constraints."
+        }
+      ],
+      "rationale": "Boundary case paper focused on global/regional TCWV dynamics rather than urban surface rainfall gauge field advection residuals.",
+      "confidence": "HIGH",
+      "flags": [
+        "BOUNDARY_CASE"
+      ],
+      "follow_up": {
+        "required": true,
+        "priority": "ROUTINE",
+        "reasons": [
+          "AI_PROXY_REQUIRES_HUMAN_CONFIRMATION"
+        ],
+        "recommended_action": "HUMAN_CHECK"
+      },
+      "task_specific": {
+        "scope_decision": "REMOVE_OUT_OF_SCOPE",
+        "group_decision": "WRONG_GROUP",
+        "corrected_group": null,
+        "literature_decision": null
+      }
+    }
+  ]
+}

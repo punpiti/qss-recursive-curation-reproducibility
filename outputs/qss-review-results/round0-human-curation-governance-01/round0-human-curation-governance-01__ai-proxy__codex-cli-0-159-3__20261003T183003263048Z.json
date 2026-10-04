@@ -1,0 +1,275 @@
+{
+  "schema_version": "qss-review-response-v1",
+  "batch_id": "round0-human-curation-governance-01",
+  "review_type": "ROUND0_LITERATURE_REVIEW",
+  "rubric_version": "qss-review-rubric-v3",
+  "reviewer": {
+    "type": "AI_PROXY",
+    "id": "codex-cli-0-159-3",
+    "role": "PRIMARY_REVIEWER",
+    "review_status": "AI_FIRST_PASS",
+    "reviewed_at": "2026-10-03T18:30:03.263048Z"
+  },
+  "reviews": [
+    {
+      "review_row_id": "round0-059",
+      "corpus_or_project": "qss_self_hosting",
+      "source_group": "human_curation_governance",
+      "paper": {
+        "title": "A Systematic Literature Review of Retrieval-Augmented Generation: Techniques, Metrics, and Challenges",
+        "doi": "https://doi.org/10.3390/bdcc9120320",
+        "openalex_id": "https://openalex.org/W7114889968"
+      },
+      "normalized_decision": "EXCLUDE",
+      "scope_fit": "OUT_OF_SCOPE",
+      "role_fit": "MISMATCH",
+      "evidence_sufficiency": "SUFFICIENT_ABSTRACT",
+      "primary_reason_code": "WRONG_METHOD_OR_OUTCOME",
+      "secondary_reason_codes": [
+        "TOO_GENERIC_FOR_CLAIM"
+      ],
+      "assigned_label": "human_curation_governance",
+      "corrected_label": null,
+      "evidence": [
+        {
+          "source_field": "ABSTRACT",
+          "supports": "SCOPE",
+          "paraphrase": "The review synthesizes general retrieval-augmented text-generation systems across tasks rather than scholarly search or bibliographic evidence selection."
+        },
+        {
+          "source_field": "ABSTRACT",
+          "supports": "ROLE",
+          "paraphrase": "Human judgments and provenance-aware pipelines appear as evaluation practices or broad recommendations, not as mechanisms for human control of literature curation."
+        }
+      ],
+      "rationale": "The abstract concerns general RAG effectiveness and evaluation, not a scholarly recommendation or bibliographic curation workflow. Its mentions of human judgment and provenance are too generic to support the assigned human-curation governance role.",
+      "confidence": "HIGH",
+      "flags": [
+        "NONE"
+      ],
+      "follow_up": {
+        "required": true,
+        "priority": "ROUTINE",
+        "reasons": [
+          "AI_PROXY_REQUIRES_HUMAN_CONFIRMATION"
+        ],
+        "recommended_action": "HUMAN_CHECK"
+      },
+      "task_specific": {
+        "scope_decision": null,
+        "group_decision": null,
+        "corrected_group": null,
+        "literature_decision": "REMOVE"
+      }
+    },
+    {
+      "review_row_id": "round0-060",
+      "corpus_or_project": "qss_self_hosting",
+      "source_group": "human_curation_governance",
+      "paper": {
+        "title": "Human-LLM Compound System for Scientific Ideation through Facet Recombination and Novelty Evaluation",
+        "doi": "https://doi.org/10.48550/arxiv.2409.14634",
+        "openalex_id": "https://openalex.org/W4403780163"
+      },
+      "normalized_decision": "INCLUDE",
+      "scope_fit": "IN_SCOPE",
+      "role_fit": "DIRECT",
+      "evidence_sufficiency": "SUFFICIENT_ABSTRACT",
+      "primary_reason_code": "EMPIRICAL_PRECEDENT",
+      "secondary_reason_codes": [
+        "DIRECT_METHOD"
+      ],
+      "assigned_label": "human_curation_governance",
+      "corrected_label": null,
+      "evidence": [
+        {
+          "source_field": "ABSTRACT",
+          "supports": "ROLE",
+          "paraphrase": "Users interactively select facets from retrieved scientific papers and recombine them, giving researchers direct control over evidence inputs to ideation."
+        },
+        {
+          "source_field": "ABSTRACT",
+          "supports": "SCOPE",
+          "paraphrase": "The system retrieves related papers at controlled distances and uses a retrieve-then-rerank pipeline for novelty checking."
+        },
+        {
+          "source_field": "ABSTRACT",
+          "supports": "DECISION",
+          "paraphrase": "A researcher user study and ablations evaluate the interactive facets and scholarly paper retrieval components."
+        }
+      ],
+      "rationale": "The paper directly studies a human-in-the-loop scholarly workflow in which researchers select facets from retrieved papers and the system retrieves and reranks literature. The abstract provides empirical evidence relevant to interactive human control over literature selection.",
+      "confidence": "HIGH",
+      "flags": [
+        "NONE"
+      ],
+      "follow_up": {
+        "required": true,
+        "priority": "ROUTINE",
+        "reasons": [
+          "AI_PROXY_REQUIRES_HUMAN_CONFIRMATION"
+        ],
+        "recommended_action": "HUMAN_CHECK"
+      },
+      "task_specific": {
+        "scope_decision": null,
+        "group_decision": null,
+        "corrected_group": null,
+        "literature_decision": "KEEP"
+      }
+    },
+    {
+      "review_row_id": "round0-061",
+      "corpus_or_project": "qss_self_hosting",
+      "source_group": "human_curation_governance",
+      "paper": {
+        "title": "Human-centred learning analytics and AI in education: A systematic literature review",
+        "doi": "https://doi.org/10.1016/j.caeai.2024.100215",
+        "openalex_id": "https://openalex.org/W4392769397"
+      },
+      "normalized_decision": "EXCLUDE",
+      "scope_fit": "OUT_OF_SCOPE",
+      "role_fit": "MISMATCH",
+      "evidence_sufficiency": "SUFFICIENT_ABSTRACT",
+      "primary_reason_code": "WRONG_DOMAIN_OR_POPULATION",
+      "secondary_reason_codes": [
+        "FALSE_LEXICAL_OR_SEMANTIC_MATCH"
+      ],
+      "assigned_label": "human_curation_governance",
+      "corrected_label": null,
+      "evidence": [
+        {
+          "source_field": "ABSTRACT",
+          "supports": "SCOPE",
+          "paraphrase": "The review examines stakeholder participation and human control in learning analytics and AI-in-education system design."
+        },
+        {
+          "source_field": "ABSTRACT",
+          "supports": "ROLE",
+          "paraphrase": "Its governance questions concern students and teachers in educational systems, not researcher control over scholarly retrieval or literature curation."
+        }
+      ],
+      "rationale": "Although the paper addresses human control and stakeholder involvement, it does so in educational technology design. The abstract provides no scholarly search, recommendation, or bibliographic evidence-selection workflow.",
+      "confidence": "HIGH",
+      "flags": [
+        "NONE"
+      ],
+      "follow_up": {
+        "required": true,
+        "priority": "ROUTINE",
+        "reasons": [
+          "AI_PROXY_REQUIRES_HUMAN_CONFIRMATION"
+        ],
+        "recommended_action": "HUMAN_CHECK"
+      },
+      "task_specific": {
+        "scope_decision": null,
+        "group_decision": null,
+        "corrected_group": null,
+        "literature_decision": "REMOVE"
+      }
+    },
+    {
+      "review_row_id": "round0-062",
+      "corpus_or_project": "qss_self_hosting",
+      "source_group": "human_curation_governance",
+      "paper": {
+        "title": "Context-Aware Recommender Systems in the Music Domain: A Systematic Literature Review",
+        "doi": "https://doi.org/10.3390/electronics10131555",
+        "openalex_id": "https://openalex.org/W3177004811"
+      },
+      "normalized_decision": "EXCLUDE",
+      "scope_fit": "OUT_OF_SCOPE",
+      "role_fit": "MISMATCH",
+      "evidence_sufficiency": "SUFFICIENT_ABSTRACT",
+      "primary_reason_code": "WRONG_DOMAIN_OR_POPULATION",
+      "secondary_reason_codes": [
+        "WRONG_METHOD_OR_OUTCOME"
+      ],
+      "assigned_label": "human_curation_governance",
+      "corrected_label": null,
+      "evidence": [
+        {
+          "source_field": "TITLE",
+          "supports": "SCOPE",
+          "paraphrase": "The stated domain is context-aware music recommendation."
+        },
+        {
+          "source_field": "ABSTRACT",
+          "supports": "DECISION",
+          "paraphrase": "The review classifies contextual signals and devices used to generate music recommendations, with no scholarly evidence-selection workflow."
+        }
+      ],
+      "rationale": "This is a generic recommender-system review in the music domain, which the frozen boundary explicitly excludes when no scholarly or evidence-selection workflow is present. It does not support the assigned literature-curation governance role.",
+      "confidence": "HIGH",
+      "flags": [
+        "NONE"
+      ],
+      "follow_up": {
+        "required": true,
+        "priority": "ROUTINE",
+        "reasons": [
+          "AI_PROXY_REQUIRES_HUMAN_CONFIRMATION"
+        ],
+        "recommended_action": "HUMAN_CHECK"
+      },
+      "task_specific": {
+        "scope_decision": null,
+        "group_decision": null,
+        "corrected_group": null,
+        "literature_decision": "REMOVE"
+      }
+    },
+    {
+      "review_row_id": "round0-063",
+      "corpus_or_project": "qss_self_hosting",
+      "source_group": "human_curation_governance",
+      "paper": {
+        "title": "Explainability and Interpretability in Concept and Data Drift: A Systematic Literature Review",
+        "doi": "https://doi.org/10.3390/a18070443",
+        "openalex_id": "https://openalex.org/W4415775422"
+      },
+      "normalized_decision": "EXCLUDE",
+      "scope_fit": "OUT_OF_SCOPE",
+      "role_fit": "MISMATCH",
+      "evidence_sufficiency": "SUFFICIENT_ABSTRACT",
+      "primary_reason_code": "WRONG_METHOD_OR_OUTCOME",
+      "secondary_reason_codes": [
+        "FALSE_LEXICAL_OR_SEMANTIC_MATCH"
+      ],
+      "assigned_label": "human_curation_governance",
+      "corrected_label": null,
+      "evidence": [
+        {
+          "source_field": "ABSTRACT",
+          "supports": "SCOPE",
+          "paraphrase": "The review develops a taxonomy of explainable and interpretable machine-learning approaches under concept and data drift."
+        },
+        {
+          "source_field": "ABSTRACT",
+          "supports": "ROLE",
+          "paraphrase": "Its transparency objective concerns model predictions and adaptation, not explanations, provenance, or overrides in literature curation."
+        }
+      ],
+      "rationale": "The explainability terminology is a semantic match outside the frozen scholarly-search boundary. The abstract addresses transparent adaptive machine learning generally and contains no bibliographic curation, evidence selection, or human override mechanism.",
+      "confidence": "HIGH",
+      "flags": [
+        "NONE"
+      ],
+      "follow_up": {
+        "required": true,
+        "priority": "ROUTINE",
+        "reasons": [
+          "AI_PROXY_REQUIRES_HUMAN_CONFIRMATION"
+        ],
+        "recommended_action": "HUMAN_CHECK"
+      },
+      "task_specific": {
+        "scope_decision": null,
+        "group_decision": null,
+        "corrected_group": null,
+        "literature_decision": "REMOVE"
+      }
+    }
+  ]
+}

@@ -1,0 +1,158 @@
+{
+  "schema_version": 1,
+  "study_id": "qss-genome-temporal-v1",
+  "status": "frozen_before_candidate_retrieval",
+  "frozen_on": "2026-08-28",
+  "evaluation_mode": "temporal_positive_holdout",
+  "cutoffs": [
+    2022,
+    2023,
+    2024
+  ],
+  "through_year": 2026,
+  "scope": "Sample-specific reference refinement for mitochondrial, organelle-scale, and similarly small genomes from low-depth short reads and a divergent reference, including local assembly for uncovered intervals but excluding whole-genome de novo assembly claims.",
+  "canonical_inputs": {
+    "bib": "<REDACTED_LOCAL_PATH>/bmc_rebuild_with_abstracts.bib",
+    "bib_sha256": "4ac00d0a0f57e712569f1d142cf41284a49dc87d6238783d0573701889f1ec51",
+    "scope_file": "<REDACTED_LOCAL_PATH>/manuscript.tex",
+    "scope_sha256": "7e6e7e6f56189188ba15c49252fd22a65fca134ce7e62a27bac0a92ffed82709"
+  },
+  "interpretation_boundary": "Groups follow the active English BMC manuscript. Results do not extend the paper to full-genome reconstruction, ancient DNA, or untested sequencing platforms.",
+  "legacy_group_key_note": "The runner reads kbs_frozen_evidence_groups; these are independently frozen genome groups.",
+  "kbs_frozen_evidence_groups": [
+    {
+      "id": "divergent_reference_low_resource",
+      "purpose": "Reference bias, divergent-reference mapping, and low-resource genomics evidence motivating sample-specific reference refinement from low-depth short reads.",
+      "capacity": 3,
+      "query": "divergent reference mapping bias low depth short reads sample specific reference genomics",
+      "terms": [
+        "reference bias",
+        "ascertainment bias",
+        "divergent reference",
+        "low-depth",
+        "low coverage",
+        "short reads",
+        "sample-specific reference",
+        "non-model organism"
+      ],
+      "anchor_families": [
+        [
+          "C3",
+          "genomic",
+          "DNA",
+          "sequence",
+          "reads"
+        ],
+        [
+          "reference",
+          "mapping",
+          "alignment",
+          "low-depth",
+          "low coverage",
+          "divergent"
+        ]
+      ]
+    },
+    {
+      "id": "iterative_alignment_consensus",
+      "purpose": "Iterative alignment, hard assignment, profile-like position counting, and consensus or reference-refinement methods related to ASEM's main loop.",
+      "capacity": 3,
+      "query": "iterative reference refinement read alignment consensus profile sequence hard assignment",
+      "terms": [
+        "iterative refinement",
+        "reference refinement",
+        "read alignment",
+        "consensus sequence",
+        "hard assignment",
+        "profile",
+        "expectation maximization",
+        "position-wise"
+      ],
+      "anchor_families": [
+        [
+          "sequence",
+          "C3",
+          "DNA",
+          "reads"
+        ],
+        [
+          "alignment",
+          "consensus",
+          "refinement",
+          "profile",
+          "expectation maximization",
+          "iterative"
+        ]
+      ]
+    },
+    {
+      "id": "local_assembly_gap_filling",
+      "purpose": "Local de novo assembly, gap filling, unplaced-read recovery, and contig anchoring evidence that bounds the ASEM-Hybrid extension.",
+      "capacity": 3,
+      "query": "local de novo assembly gap filling unplaced reads contig anchoring reference guided",
+      "terms": [
+        "local assembly",
+        "de novo assembly",
+        "gap filling",
+        "unmapped reads",
+        "unplaced reads",
+        "contig",
+        "assembly graph",
+        "reference guided"
+      ],
+      "anchor_families": [
+        [
+          "assembly",
+          "contig",
+          "reads",
+          "sequence",
+          "C3"
+        ],
+        [
+          "gap",
+          "unmapped",
+          "unplaced",
+          "local",
+          "reference-guided",
+          "anchoring"
+        ]
+      ]
+    },
+    {
+      "id": "organelle_low_depth_benchmarking",
+      "purpose": "Mitochondrial or organelle genome reconstruction and reproducible benchmarking across divergence, depth, read length, empirical noise, runtime, memory, and failure modes.",
+      "capacity": 3,
+      "query": "mitochondrial organelle genome assembly benchmarking low coverage read depth divergence",
+      "terms": [
+        "mitochondrial",
+        "mtDNA",
+        "organelle",
+        "chloroplast",
+        "benchmark",
+        "read depth",
+        "coverage",
+        "divergence",
+        "runtime",
+        "memory"
+      ],
+      "anchor_families": [
+        [
+          "mitochondrial",
+          "mtDNA",
+          "organelle",
+          "chloroplast",
+          "small genome"
+        ],
+        [
+          "benchmark",
+          "evaluation",
+          "coverage",
+          "depth",
+          "divergence",
+          "assembly",
+          "refinement"
+        ]
+      ]
+    }
+  ]
+}

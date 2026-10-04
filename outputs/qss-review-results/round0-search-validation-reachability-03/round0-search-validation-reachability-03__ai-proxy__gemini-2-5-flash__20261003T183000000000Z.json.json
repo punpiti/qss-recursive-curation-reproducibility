@@ -1,0 +1,235 @@
+{
+  "schema_version": "qss-review-response-v1",
+  "batch_id": "round0-search-validation-reachability-03",
+  "review_type": "ROUND0_LITERATURE_REVIEW",
+  "rubric_version": "qss-review-rubric-v3",
+  "reviewer": {
+    "type": "AI_PROXY",
+    "id": "gemini-2-5-flash",
+    "role": "PRIMARY_REVIEWER",
+    "review_status": "AI_FIRST_PASS",
+    "reviewed_at": null
+  },
+  "reviews": [
+    {
+      "review_row_id": "round0-011",
+      "corpus_or_project": "qss_self_hosting",
+      "source_group": "search_validation_reachability",
+      "paper": {
+        "title": "Automatic Classification of Cancer Pathology Reports: A Systematic Review",
+        "doi": "https://doi.org/10.1016/j.jpi.2022.100003",
+        "openalex_id": "https://openalex.org/W4225984282"
+      },
+      "normalized_decision": "EXCLUDE",
+      "scope_fit": "OUT_OF_SCOPE",
+      "role_fit": "MISMATCH",
+      "evidence_sufficiency": "SUFFICIENT_ABSTRACT",
+      "primary_reason_code": "WRONG_DOMAIN_OR_POPULATION",
+      "secondary_reason_codes": [],
+      "assigned_label": "search_validation_reachability",
+      "corrected_label": null,
+      "evidence": [
+        {
+          "source_field": "ABSTRACT",
+          "supports": "SCOPE",
+          "paraphrase": "Systematic review benchmarking NLP systems for automated coding and text classification of cancer pathology reports."
+        }
+      ],
+      "rationale": "Focuses on clinical pathology report classification rather than literature search validation, relative recall, or scholarly IR.",
+      "confidence": "HIGH",
+      "flags": [
+        "NONE"
+      ],
+      "follow_up": {
+        "required": true,
+        "priority": "ROUTINE",
+        "reasons": [
+          "AI_PROXY_REQUIRES_HUMAN_CONFIRMATION"
+        ],
+        "recommended_action": "HUMAN_CHECK"
+      },
+      "task_specific": {
+        "scope_decision": null,
+        "group_decision": null,
+        "corrected_group": null,
+        "literature_decision": "REMOVE"
+      }
+    },
+    {
+      "review_row_id": "round0-012",
+      "corpus_or_project": "qss_self_hosting",
+      "source_group": "search_validation_reachability",
+      "paper": {
+        "title": "A review of machine learning algorithms for identification and classification of non-functional requirements",
+        "doi": "https://doi.org/10.1016/j.eswax.2019.100001",
+        "openalex_id": "https://openalex.org/W4251641598"
+      },
+      "normalized_decision": "EXCLUDE",
+      "scope_fit": "OUT_OF_SCOPE",
+      "role_fit": "MISMATCH",
+      "evidence_sufficiency": "SUFFICIENT_ABSTRACT",
+      "primary_reason_code": "WRONG_DOMAIN_OR_POPULATION",
+      "secondary_reason_codes": [],
+      "assigned_label": "search_validation_reachability",
+      "corrected_label": null,
+      "evidence": [
+        {
+          "source_field": "ABSTRACT",
+          "supports": "SCOPE",
+          "paraphrase": "Systematic review of machine learning algorithms for classifying non-functional requirements in software engineering documents."
+        }
+      ],
+      "rationale": "Targeted at software engineering requirements classification, outside the inclusion boundary of scholarly literature retrieval.",
+      "confidence": "HIGH",
+      "flags": [
+        "NONE"
+      ],
+      "follow_up": {
+        "required": true,
+        "priority": "ROUTINE",
+        "reasons": [
+          "AI_PROXY_REQUIRES_HUMAN_CONFIRMATION"
+        ],
+        "recommended_action": "HUMAN_CHECK"
+      },
+      "task_specific": {
+        "scope_decision": null,
+        "group_decision": null,
+        "corrected_group": null,
+        "literature_decision": "REMOVE"
+      }
+    },
+    {
+      "review_row_id": "round0-013",
+      "corpus_or_project": "qss_self_hosting",
+      "source_group": "search_validation_reachability",
+      "paper": {
+        "title": "A systematic review and economic evaluation of new-generation computed tomography scanners for imaging in coronary artery disease and congenital heart disease: Somatom Definition Flash, Aquilion ONE, Brilliance iCT and Discovery CT750 HD",
+        "doi": "https://doi.org/10.3310/hta17090",
+        "openalex_id": "https://openalex.org/W2146653196"
+      },
+      "normalized_decision": "EXCLUDE",
+      "scope_fit": "OUT_OF_SCOPE",
+      "role_fit": "MISMATCH",
+      "evidence_sufficiency": "SUFFICIENT_ABSTRACT",
+      "primary_reason_code": "WRONG_DOMAIN_OR_POPULATION",
+      "secondary_reason_codes": [],
+      "assigned_label": "search_validation_reachability",
+      "corrected_label": null,
+      "evidence": [
+        {
+          "source_field": "ABSTRACT",
+          "supports": "SCOPE",
+          "paraphrase": "Systematic review evaluating clinical effectiveness and cost-effectiveness of CT scanners for diagnosing heart disease."
+        }
+      ],
+      "rationale": "A medical diagnostic technology assessment with no relevance to bibliographic search or recommender evaluation.",
+      "confidence": "HIGH",
+      "flags": [
+        "NONE"
+      ],
+      "follow_up": {
+        "required": true,
+        "priority": "ROUTINE",
+        "reasons": [
+          "AI_PROXY_REQUIRES_HUMAN_CONFIRMATION"
+        ],
+        "recommended_action": "HUMAN_CHECK"
+      },
+      "task_specific": {
+        "scope_decision": null,
+        "group_decision": null,
+        "corrected_group": null,
+        "literature_decision": "REMOVE"
+      }
+    },
+    {
+      "review_row_id": "round0-014",
+      "corpus_or_project": "qss_self_hosting",
+      "source_group": "search_validation_reachability",
+      "paper": {
+        "title": "Drowsiness Detection in Drivers: A Systematic Review of Deep Learning-Based Models",
+        "doi": "https://doi.org/10.3390/app15169018",
+        "openalex_id": "https://openalex.org/W4413377951"
+      },
+      "normalized_decision": "EXCLUDE",
+      "scope_fit": "OUT_OF_SCOPE",
+      "role_fit": "MISMATCH",
+      "evidence_sufficiency": "SUFFICIENT_ABSTRACT",
+      "primary_reason_code": "WRONG_DOMAIN_OR_POPULATION",
+      "secondary_reason_codes": [],
+      "assigned_label": "search_validation_reachability",
+      "corrected_label": null,
+      "evidence": [
+        {
+          "source_field": "ABSTRACT",
+          "supports": "SCOPE",
+          "paraphrase": "Systematic review evaluating deep learning models for detecting driver drowsiness using behavioral and physiological inputs."
+        }
+      ],
+      "rationale": "Focuses on computer vision and physiological driver monitoring systems, completely unrelated to literature search validation.",
+      "confidence": "HIGH",
+      "flags": [
+        "NONE"
+      ],
+      "follow_up": {
+        "required": true,
+        "priority": "ROUTINE",
+        "reasons": [
+          "AI_PROXY_REQUIRES_HUMAN_CONFIRMATION"
+        ],
+        "recommended_action": "HUMAN_CHECK"
+      },
+      "task_specific": {
+        "scope_decision": null,
+        "group_decision": null,
+        "corrected_group": null,
+        "literature_decision": "REMOVE"
+      }
+    },
+    {
+      "review_row_id": "round0-015",
+      "corpus_or_project": "qss_self_hosting",
+      "source_group": "search_validation_reachability",
+      "paper": {
+        "title": "MARKETING CAPSTONE INSIGHTS: LEVERAGING MULTI-CHANNEL STRATEGIES FOR MAXIMUM DIGITAL CONVERSION AND ROI",
+        "doi": "https://doi.org/10.63125/5w76qb87",
+        "openalex_id": "https://openalex.org/W4411761635"
+      },
+      "normalized_decision": "EXCLUDE",
+      "scope_fit": "OUT_OF_SCOPE",
+      "role_fit": "MISMATCH",
+      "evidence_sufficiency": "SUFFICIENT_ABSTRACT",
+      "primary_reason_code": "WRONG_DOMAIN_OR_POPULATION",
+      "secondary_reason_codes": [],
+      "assigned_label": "search_validation_reachability",
+      "corrected_label": null,
+      "evidence": [
+        {
+          "source_field": "ABSTRACT",
+          "supports": "SCOPE",
+          "paraphrase": "Systematic review examining multi-channel marketing, AI personalization, and CRM infrastructure for e-commerce conversions."
+        }
+      ],
+      "rationale": "Focuses on digital marketing, e-commerce ROI, and CRM platforms, outside the boundary for scholarly literature search.",
+      "confidence": "HIGH",
+      "flags": [
+        "NONE"
+      ],
+      "follow_up": {
+        "required": true,
+        "priority": "ROUTINE",
+        "reasons": [
+          "AI_PROXY_REQUIRES_HUMAN_CONFIRMATION"
+        ],
+        "recommended_action": "HUMAN_CHECK"
+      },
+      "task_specific": {
+        "scope_decision": null,
+        "group_decision": null,
+        "corrected_group": null,
+        "literature_decision": "REMOVE"
+      }
+    }
+  ]
+}

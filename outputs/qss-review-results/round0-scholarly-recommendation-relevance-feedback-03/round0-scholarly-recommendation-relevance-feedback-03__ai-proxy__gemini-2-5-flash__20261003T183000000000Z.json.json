@@ -1,0 +1,235 @@
+{
+  "schema_version": "qss-review-response-v1",
+  "batch_id": "round0-scholarly-recommendation-relevance-feedback-03",
+  "review_type": "ROUND0_LITERATURE_REVIEW",
+  "rubric_version": "qss-review-rubric-v3",
+  "reviewer": {
+    "type": "AI_PROXY",
+    "id": "gemini-2-5-flash",
+    "role": "PRIMARY_REVIEWER",
+    "review_status": "AI_FIRST_PASS",
+    "reviewed_at": null
+  },
+  "reviews": [
+    {
+      "review_row_id": "round0-026",
+      "corpus_or_project": "qss_self_hosting",
+      "source_group": "scholarly_recommendation_relevance_feedback",
+      "paper": {
+        "title": "5. Barely Beyond the Book?",
+        "doi": "https://doi.org/10.11647/obp.0095.05",
+        "openalex_id": "https://openalex.org/W2507396010"
+      },
+      "normalized_decision": "EXCLUDE",
+      "scope_fit": "OUT_OF_SCOPE",
+      "role_fit": "MISMATCH",
+      "evidence_sufficiency": "SUFFICIENT_ABSTRACT",
+      "primary_reason_code": "WRONG_DOMAIN_OR_POPULATION",
+      "secondary_reason_codes": [],
+      "assigned_label": "scholarly_recommendation_relevance_feedback",
+      "corrected_label": null,
+      "evidence": [
+        {
+          "source_field": "ABSTRACT",
+          "supports": "SCOPE",
+          "paraphrase": "Discusses technology impact on textual scholarship and digital scholarly editing."
+        }
+      ],
+      "rationale": "Focuses on digital scholarly editing in humanities, completely outside the scope of scholarly IR and recommendation.",
+      "confidence": "HIGH",
+      "flags": [
+        "NONE"
+      ],
+      "follow_up": {
+        "required": true,
+        "priority": "ROUTINE",
+        "reasons": [
+          "AI_PROXY_REQUIRES_HUMAN_CONFIRMATION"
+        ],
+        "recommended_action": "HUMAN_CHECK"
+      },
+      "task_specific": {
+        "scope_decision": null,
+        "group_decision": null,
+        "corrected_group": null,
+        "literature_decision": "REMOVE"
+      }
+    },
+    {
+      "review_row_id": "round0-027",
+      "corpus_or_project": "qss_self_hosting",
+      "source_group": "scholarly_recommendation_relevance_feedback",
+      "paper": {
+        "title": "Exploring LLMs Applications in Law: A Literature Review on Current Legal NLP Approaches",
+        "doi": "https://doi.org/10.1109/access.2025.3533217",
+        "openalex_id": "https://openalex.org/W4406754779"
+      },
+      "normalized_decision": "EXCLUDE",
+      "scope_fit": "OUT_OF_SCOPE",
+      "role_fit": "MISMATCH",
+      "evidence_sufficiency": "SUFFICIENT_ABSTRACT",
+      "primary_reason_code": "WRONG_DOMAIN_OR_POPULATION",
+      "secondary_reason_codes": [],
+      "assigned_label": "scholarly_recommendation_relevance_feedback",
+      "corrected_label": null,
+      "evidence": [
+        {
+          "source_field": "ABSTRACT",
+          "supports": "SCOPE",
+          "paraphrase": "Literature review analyzing LLM applications in legal document analysis, case prediction, and contract review."
+        }
+      ],
+      "rationale": "Focuses on NLP tasks specific to the legal domain without addressing bibliographic curation, evidence selection, or search validation.",
+      "confidence": "HIGH",
+      "flags": [
+        "NONE"
+      ],
+      "follow_up": {
+        "required": true,
+        "priority": "ROUTINE",
+        "reasons": [
+          "AI_PROXY_REQUIRES_HUMAN_CONFIRMATION"
+        ],
+        "recommended_action": "HUMAN_CHECK"
+      },
+      "task_specific": {
+        "scope_decision": null,
+        "group_decision": null,
+        "corrected_group": null,
+        "literature_decision": "REMOVE"
+      }
+    },
+    {
+      "review_row_id": "round0-028",
+      "corpus_or_project": "qss_self_hosting",
+      "source_group": "scholarly_recommendation_relevance_feedback",
+      "paper": {
+        "title": "Critical analysis of Big Data challenges and analytical methods",
+        "doi": "https://doi.org/10.1016/j.jbusres.2016.08.001",
+        "openalex_id": "https://openalex.org/W2487200295"
+      },
+      "normalized_decision": "EXCLUDE",
+      "scope_fit": "OUT_OF_SCOPE",
+      "role_fit": "MISMATCH",
+      "evidence_sufficiency": "SUFFICIENT_ABSTRACT",
+      "primary_reason_code": "WRONG_DOMAIN_OR_POPULATION",
+      "secondary_reason_codes": [],
+      "assigned_label": "scholarly_recommendation_relevance_feedback",
+      "corrected_label": null,
+      "evidence": [
+        {
+          "source_field": "ABSTRACT",
+          "supports": "SCOPE",
+          "paraphrase": "Systematic review analyzing big data challenges and analytics methods for business decisions."
+        }
+      ],
+      "rationale": "Focuses on enterprise big data analytics and business organizational challenges rather than scholarly search or recommendation.",
+      "confidence": "HIGH",
+      "flags": [
+        "NONE"
+      ],
+      "follow_up": {
+        "required": true,
+        "priority": "ROUTINE",
+        "reasons": [
+          "AI_PROXY_REQUIRES_HUMAN_CONFIRMATION"
+        ],
+        "recommended_action": "HUMAN_CHECK"
+      },
+      "task_specific": {
+        "scope_decision": null,
+        "group_decision": null,
+        "corrected_group": null,
+        "literature_decision": "REMOVE"
+      }
+    },
+    {
+      "review_row_id": "round0-029",
+      "corpus_or_project": "qss_self_hosting",
+      "source_group": "scholarly_recommendation_relevance_feedback",
+      "paper": {
+        "title": "AI in Marketing, Consumer Research & Psychology: A Systematic Literature Review and Research Agenda",
+        "doi": "https://doi.org/10.1002/mar.21619",
+        "openalex_id": "https://openalex.org/W3216186631"
+      },
+      "normalized_decision": "EXCLUDE",
+      "scope_fit": "OUT_OF_SCOPE",
+      "role_fit": "MISMATCH",
+      "evidence_sufficiency": "SUFFICIENT_ABSTRACT",
+      "primary_reason_code": "WRONG_DOMAIN_OR_POPULATION",
+      "secondary_reason_codes": [],
+      "assigned_label": "scholarly_recommendation_relevance_feedback",
+      "corrected_label": null,
+      "evidence": [
+        {
+          "source_field": "ABSTRACT",
+          "supports": "SCOPE",
+          "paraphrase": "Systematic literature review on AI applications across marketing, consumer research, and psychology."
+        }
+      ],
+      "rationale": "Focuses on marketing and consumer psychology rather than scholarly recommendation or literature retrieval systems.",
+      "confidence": "HIGH",
+      "flags": [
+        "NONE"
+      ],
+      "follow_up": {
+        "required": true,
+        "priority": "ROUTINE",
+        "reasons": [
+          "AI_PROXY_REQUIRES_HUMAN_CONFIRMATION"
+        ],
+        "recommended_action": "HUMAN_CHECK"
+      },
+      "task_specific": {
+        "scope_decision": null,
+        "group_decision": null,
+        "corrected_group": null,
+        "literature_decision": "REMOVE"
+      }
+    },
+    {
+      "review_row_id": "round0-030",
+      "corpus_or_project": "qss_self_hosting",
+      "source_group": "scholarly_recommendation_relevance_feedback",
+      "paper": {
+        "title": "AI in marketing, consumer research and psychology: A systematic literature review and research agenda",
+        "doi": "https://doi.org/10.1002/mar.21619",
+        "openalex_id": "https://openalex.org/W4200045082"
+      },
+      "normalized_decision": "EXCLUDE",
+      "scope_fit": "OUT_OF_SCOPE",
+      "role_fit": "MISMATCH",
+      "evidence_sufficiency": "SUFFICIENT_ABSTRACT",
+      "primary_reason_code": "WRONG_DOMAIN_OR_POPULATION",
+      "secondary_reason_codes": [],
+      "assigned_label": "scholarly_recommendation_relevance_feedback",
+      "corrected_label": null,
+      "evidence": [
+        {
+          "source_field": "ABSTRACT",
+          "supports": "SCOPE",
+          "paraphrase": "Systematic review mapping AI literature in marketing and consumer psychology."
+        }
+      ],
+      "rationale": "Focuses on consumer research and marketing AI applications, outside the inclusion boundary for scientific search evaluation.",
+      "confidence": "HIGH",
+      "flags": [
+        "NONE"
+      ],
+      "follow_up": {
+        "required": true,
+        "priority": "ROUTINE",
+        "reasons": [
+          "AI_PROXY_REQUIRES_HUMAN_CONFIRMATION"
+        ],
+        "recommended_action": "HUMAN_CHECK"
+      },
+      "task_specific": {
+        "scope_decision": null,
+        "group_decision": null,
+        "corrected_group": null,
+        "literature_decision": "REMOVE"
+      }
+    }
+  ]
+}

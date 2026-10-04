@@ -1,0 +1,405 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "qss-review-response-v1",
+  "title": "QSS human or AI review batch response",
+  "type": "object",
+  "additionalProperties": false,
+  "required": [
+    "schema_version",
+    "batch_id",
+    "review_type",
+    "rubric_version",
+    "reviewer",
+    "reviews"
+  ],
+  "properties": {
+    "schema_version": {
+      "const": "qss-review-response-v1"
+    },
+    "batch_id": {
+      "type": "string",
+      "minLength": 1
+    },
+    "review_type": {
+      "enum": [
+        "CONSTRUCT_AUDIT",
+        "ROUND0_LITERATURE_REVIEW"
+      ]
+    },
+    "rubric_version": {
+      "const": "qss-review-rubric-v3"
+    },
+    "reviewer": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": [
+        "type",
+        "id",
+        "role",
+        "review_status",
+        "reviewed_at"
+      ],
+      "properties": {
+        "type": {
+          "enum": [
+            "HUMAN",
+            "AI_PROXY"
+          ]
+        },
+        "id": {
+          "type": "string",
+          "minLength": 1
+        },
+        "role": {
+          "type": "string",
+          "minLength": 1
+        },
+        "review_status": {
+          "enum": [
+            "INITIAL",
+            "CROSS_CHECKED",
+            "CONSENSUS",
+            "AI_FIRST_PASS"
+          ]
+        },
+        "reviewed_at": {
+          "type": [
+            "string",
+            "null"
+          ],
+          "format": "date-time"
+        }
+      },
+      "allOf": [
+        {
+          "if": {
+            "properties": {
+              "type": {
+                "const": "AI_PROXY"
+              }
+            }
+          },
+          "then": {
+            "properties": {
+              "review_status": {
+                "const": "AI_FIRST_PASS"
+              }
+            }
+          },
+          "else": {
+            "properties": {
+              "review_status": {
+                "enum": [
+                  "INITIAL",
+                  "CROSS_CHECKED",
+                  "CONSENSUS"
+                ]
+              }
+            }
+          }
+        }
+      ]
+    },
+    "reviews": {
+      "type": "array",
+      "minItems": 1,
+      "items": {
+        "$ref": "#/$defs/review"
+      }
+    }
+  },
+  "$defs": {
+    "nullableString": {
+      "type": [
+        "string",
+        "null"
+      ]
+    },
+    "reasonCode": {
+      "enum": [
+        "DIRECT_METHOD_OR_EVIDENCE_ROLE",
+        "BRIDGE_REFERENCE",
+        "WRONG_DOMAIN_OR_POPULATION",
+        "WRONG_METHOD_OR_OUTCOME",
+        "FALSE_LEXICAL_OR_SEMANTIC_MATCH",
+        "TOO_GENERIC_FOR_CLAIM",
+        "INSUFFICIENT_ABSTRACT_EVIDENCE",
+        "OUTSIDE_FROZEN_BOUNDARY",
+        "VALID_CONTEXT_BUT_WRONG_GROUP",
+        "FOUNDATIONAL_ANCHOR",
+        "DIRECT_METHOD",
+        "EMPIRICAL_PRECEDENT"
+      ]
+    },
+    "review": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": [
+        "review_row_id",
+        "corpus_or_project",
+        "source_group",
+        "paper",
+        "normalized_decision",
+        "scope_fit",
+        "role_fit",
+        "evidence_sufficiency",
+        "primary_reason_code",
+        "secondary_reason_codes",
+        "assigned_label",
+        "corrected_label",
+        "evidence",
+        "rationale",
+        "confidence",
+        "flags",
+        "follow_up",
+        "task_specific"
+      ],
+      "properties": {
+        "review_row_id": {
+          "type": "string",
+          "minLength": 1
+        },
+        "corpus_or_project": {
+          "type": "string",
+          "minLength": 1
+        },
+        "source_group": {
+          "type": "string",
+          "minLength": 1
+        },
+        "paper": {
+          "type": "object",
+          "additionalProperties": false,
+          "required": [
+            "title",
+            "doi",
+            "openalex_id"
+          ],
+          "properties": {
+            "title": {
+              "type": "string",
+              "minLength": 1
+            },
+            "doi": {
+              "type": "string"
+            },
+            "openalex_id": {
+              "type": "string"
+            }
+          }
+        },
+        "normalized_decision": {
+          "enum": [
+            "INCLUDE",
+            "EXCLUDE",
+            "DEFER"
+          ]
+        },
+        "scope_fit": {
+          "enum": [
+            "IN_SCOPE",
+            "OUT_OF_SCOPE",
+            "UNCERTAIN"
+          ]
+        },
+        "role_fit": {
+          "enum": [
+            "DIRECT",
+            "BRIDGE",
+            "PARTIAL",
+            "MISMATCH",
+            "UNASSIGNED",
+            "UNCERTAIN"
+          ]
+        },
+        "evidence_sufficiency": {
+          "enum": [
+            "SUFFICIENT_ABSTRACT",
+            "PARTIAL_ABSTRACT",
+            "FULL_TEXT_REQUIRED"
+          ]
+        },
+        "primary_reason_code": {
+          "$ref": "#/$defs/reasonCode"
+        },
+        "secondary_reason_codes": {
+          "type": "array",
+          "uniqueItems": true,
+          "items": {
+            "$ref": "#/$defs/reasonCode"
+          }
+        },
+        "assigned_label": {
+          "type": "string",
+          "minLength": 1
+        },
+        "corrected_label": {
+          "$ref": "#/$defs/nullableString"
+        },
+        "evidence": {
+          "type": "array",
+          "minItems": 1,
+          "maxItems": 3,
+          "items": {
+            "type": "object",
+            "additionalProperties": false,
+            "required": [
+              "source_field",
+              "supports",
+              "paraphrase"
+            ],
+            "properties": {
+              "source_field": {
+                "enum": [
+                  "TITLE",
+                  "ABSTRACT",
+                  "METADATA"
+                ]
+              },
+              "supports": {
+                "enum": [
+                  "SCOPE",
+                  "ROLE",
+                  "DECISION",
+                  "RISK"
+                ]
+              },
+              "paraphrase": {
+                "type": "string",
+                "minLength": 1
+              }
+            }
+          }
+        },
+        "rationale": {
+          "type": "string",
+          "minLength": 1
+        },
+        "confidence": {
+          "enum": [
+            "HIGH",
+            "MEDIUM",
+            "LOW"
+          ]
+        },
+        "flags": {
+          "type": "array",
+          "minItems": 1,
+          "uniqueItems": true,
+          "items": {
+            "enum": [
+              "NONE",
+              "NEEDS_FULL_TEXT",
+              "METADATA_ISSUE",
+              "BOUNDARY_CASE",
+              "POSSIBLE_FALSE_MATCH",
+              "POSSIBLE_WRONG_GROUP",
+              "CLAIM_CRITICAL",
+              "ROLE_COVERAGE_RISK"
+            ]
+          }
+        },
+        "follow_up": {
+          "type": "object",
+          "additionalProperties": false,
+          "required": [
+            "required",
+            "priority",
+            "reasons",
+            "recommended_action"
+          ],
+          "properties": {
+            "required": {
+              "type": "boolean"
+            },
+            "priority": {
+              "enum": [
+                "HIGH",
+                "MEDIUM",
+                "ROUTINE"
+              ]
+            },
+            "reasons": {
+              "type": "array",
+              "uniqueItems": true,
+              "items": {
+                "enum": [
+                  "AI_PROXY_REQUIRES_HUMAN_CONFIRMATION",
+                  "SECOND_REVIEW_REQUIRED",
+                  "LOW_CONFIDENCE",
+                  "FULL_TEXT_REQUIRED",
+                  "BOUNDARY_CASE",
+                  "GROUP_DISAGREEMENT",
+                  "CLAIM_CRITICAL",
+                  "METADATA_ISSUE",
+                  "ROLE_COVERAGE_RISK"
+                ]
+              }
+            },
+            "recommended_action": {
+              "enum": [
+                "HUMAN_CHECK",
+                "SECOND_REVIEW",
+                "READ_FULL_TEXT",
+                "CHECK_METADATA",
+                "NONE"
+              ]
+            }
+          }
+        },
+        "task_specific": {
+          "type": "object",
+          "additionalProperties": false,
+          "required": [
+            "scope_decision",
+            "group_decision",
+            "corrected_group",
+            "literature_decision"
+          ],
+          "properties": {
+            "scope_decision": {
+              "type": [
+                "string",
+                "null"
+              ],
+              "enum": [
+                "KEEP_IN_SCOPE",
+                "REMOVE_OUT_OF_SCOPE",
+                "DEFER_FULL_TEXT",
+                null
+              ]
+            },
+            "group_decision": {
+              "type": [
+                "string",
+                "null"
+              ],
+              "enum": [
+                "CORRECT_GROUP",
+                "WRONG_GROUP",
+                "PARTIAL_ANALOGUE",
+                "UNASSIGNED",
+                null
+              ]
+            },
+            "corrected_group": {
+              "$ref": "#/$defs/nullableString"
+            },
+            "literature_decision": {
+              "type": [
+                "string",
+                "null"
+              ],
+              "enum": [
+                "KEEP",
+                "REMOVE",
+                "DEFER",
+                null
+              ]
+            }
+          }
+        }
+      }
+    }
+  }
+}

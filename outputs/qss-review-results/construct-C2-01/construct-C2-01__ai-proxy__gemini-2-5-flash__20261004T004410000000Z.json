@@ -1,0 +1,241 @@
+{
+  "schema_version": "qss-review-response-v1",
+  "batch_id": "construct-C2-01",
+  "review_type": "CONSTRUCT_AUDIT",
+  "rubric_version": "qss-review-rubric-v3",
+  "reviewer": {
+    "type": "AI_PROXY",
+    "id": "gemini-2-5-flash",
+    "role": "PRIMARY_REVIEWER",
+    "review_status": "AI_FIRST_PASS",
+    "reviewed_at": null
+  },
+  "reviews": [
+    {
+      "review_row_id": "C2-2022-01",
+      "corpus_or_project": "C2",
+      "source_group": "continuity_residual_diagnostic",
+      "paper": {
+        "title": "A physically based neural network for flood routing: The Muskingum-Recurrent neural network",
+        "doi": "https://doi.org/10.1016/j.jhydrol.2026.135403",
+        "openalex_id": "https://openalex.org/W7148539509"
+      },
+      "normalized_decision": "EXCLUDE",
+      "scope_fit": "OUT_OF_SCOPE",
+      "role_fit": "MISMATCH",
+      "evidence_sufficiency": "SUFFICIENT_ABSTRACT",
+      "primary_reason_code": "WRONG_DOMAIN_OR_POPULATION",
+      "secondary_reason_codes": [
+        "WRONG_METHOD_OR_OUTCOME"
+      ],
+      "assigned_label": "continuity_residual_diagnostic",
+      "corrected_label": null,
+      "evidence": [
+        {
+          "source_field": "ABSTRACT",
+          "supports": "SCOPE",
+          "paraphrase": "Focuses on river channel flood routing and Muskingum neural networks rather than convective rainfall growth diagnosis."
+        }
+      ],
+      "rationale": "The paper addresses river basin flood routing and channel flow dynamics, which falls outside the research scope of diagnosing convective rainfall growth from dense urban rain-gauge fields using optical flow advection.",
+      "confidence": "HIGH",
+      "flags": [
+        "NONE"
+      ],
+      "follow_up": {
+        "required": true,
+        "priority": "ROUTINE",
+        "reasons": [
+          "AI_PROXY_REQUIRES_HUMAN_CONFIRMATION"
+        ],
+        "recommended_action": "HUMAN_CHECK"
+      },
+      "task_specific": {
+        "scope_decision": "REMOVE_OUT_OF_SCOPE",
+        "group_decision": "WRONG_GROUP",
+        "corrected_group": null,
+        "literature_decision": null
+      }
+    },
+    {
+      "review_row_id": "C2-2022-02",
+      "corpus_or_project": "C2",
+      "source_group": "advection_motion_nowcasting",
+      "paper": {
+        "title": "A Deep Learning Method Integrating Meteorological Data for Heavy Precipitation Nowcasting in the Alps Region",
+        "doi": "https://doi.org/10.3390/app16094481",
+        "openalex_id": "https://openalex.org/W7160027877"
+      },
+      "normalized_decision": "EXCLUDE",
+      "scope_fit": "OUT_OF_SCOPE",
+      "role_fit": "PARTIAL",
+      "evidence_sufficiency": "SUFFICIENT_ABSTRACT",
+      "primary_reason_code": "WRONG_DOMAIN_OR_POPULATION",
+      "secondary_reason_codes": [],
+      "assigned_label": "advection_motion_nowcasting",
+      "corrected_label": null,
+      "evidence": [
+        {
+          "source_field": "ABSTRACT",
+          "supports": "SCOPE",
+          "paraphrase": "Applies deep learning and radar optical flow for heavy precipitation nowcasting in the Alpine region."
+        }
+      ],
+      "rationale": "While the study employs optical flow for radar echo nowcasting, its application domain is mountain region radar nowcasting rather than dense urban rain-gauge field reconstruction and residual analysis.",
+      "confidence": "HIGH",
+      "flags": [
+        "NONE"
+      ],
+      "follow_up": {
+        "required": true,
+        "priority": "ROUTINE",
+        "reasons": [
+          "AI_PROXY_REQUIRES_HUMAN_CONFIRMATION"
+        ],
+        "recommended_action": "HUMAN_CHECK"
+      },
+      "task_specific": {
+        "scope_decision": "REMOVE_OUT_OF_SCOPE",
+        "group_decision": "CORRECT_GROUP",
+        "corrected_group": null,
+        "literature_decision": null
+      }
+    },
+    {
+      "review_row_id": "C2-2022-03",
+      "corpus_or_project": "C2",
+      "source_group": "continuity_residual_diagnostic",
+      "paper": {
+        "title": "An integrated method for TCWV prediction using deep learning coupled with physical constraints: a physics-aware spatio-temporal attention network",
+        "doi": "https://doi.org/10.1080/20964471.2026.2680809",
+        "openalex_id": "https://openalex.org/W7167021323"
+      },
+      "normalized_decision": "EXCLUDE",
+      "scope_fit": "OUT_OF_SCOPE",
+      "role_fit": "MISMATCH",
+      "evidence_sufficiency": "SUFFICIENT_ABSTRACT",
+      "primary_reason_code": "OUTSIDE_FROZEN_BOUNDARY",
+      "secondary_reason_codes": [
+        "WRONG_DOMAIN_OR_POPULATION"
+      ],
+      "assigned_label": "continuity_residual_diagnostic",
+      "corrected_label": null,
+      "evidence": [
+        {
+          "source_field": "ABSTRACT",
+          "supports": "SCOPE",
+          "paraphrase": "Focuses on Total Column Water Vapor (TCWV) modeling using water vapor continuity equations."
+        }
+      ],
+      "rationale": "The paper studies large-scale total column water vapor (TCWV) rather than convective rainfall growth diagnosis from dense urban rain gauges, serving as a boundary case outside scope.",
+      "confidence": "HIGH",
+      "flags": [
+        "BOUNDARY_CASE"
+      ],
+      "follow_up": {
+        "required": true,
+        "priority": "ROUTINE",
+        "reasons": [
+          "AI_PROXY_REQUIRES_HUMAN_CONFIRMATION"
+        ],
+        "recommended_action": "HUMAN_CHECK"
+      },
+      "task_specific": {
+        "scope_decision": "REMOVE_OUT_OF_SCOPE",
+        "group_decision": "WRONG_GROUP",
+        "corrected_group": null,
+        "literature_decision": null
+      }
+    },
+    {
+      "review_row_id": "C2-2023-04",
+      "corpus_or_project": "C2",
+      "source_group": "continuity_residual_diagnostic",
+      "paper": {
+        "title": "A physically based neural network for flood routing: The Muskingum-Recurrent neural network",
+        "doi": "https://doi.org/10.1016/j.jhydrol.2026.135403",
+        "openalex_id": "https://openalex.org/W7148539509"
+      },
+      "normalized_decision": "EXCLUDE",
+      "scope_fit": "OUT_OF_SCOPE",
+      "role_fit": "MISMATCH",
+      "evidence_sufficiency": "SUFFICIENT_ABSTRACT",
+      "primary_reason_code": "WRONG_DOMAIN_OR_POPULATION",
+      "secondary_reason_codes": [
+        "WRONG_METHOD_OR_OUTCOME"
+      ],
+      "assigned_label": "continuity_residual_diagnostic",
+      "corrected_label": null,
+      "evidence": [
+        {
+          "source_field": "ABSTRACT",
+          "supports": "SCOPE",
+          "paraphrase": "Evaluates river channel hydrologic flood routing."
+        }
+      ],
+      "rationale": "Focuses on river channel flood routing and mass conservation in neural networks rather than diagnosing urban convective rainfall growth.",
+      "confidence": "HIGH",
+      "flags": [
+        "NONE"
+      ],
+      "follow_up": {
+        "required": true,
+        "priority": "ROUTINE",
+        "reasons": [
+          "AI_PROXY_REQUIRES_HUMAN_CONFIRMATION"
+        ],
+        "recommended_action": "HUMAN_CHECK"
+      },
+      "task_specific": {
+        "scope_decision": "REMOVE_OUT_OF_SCOPE",
+        "group_decision": "WRONG_GROUP",
+        "corrected_group": null,
+        "literature_decision": null
+      }
+    },
+    {
+      "review_row_id": "C2-2023-05",
+      "corpus_or_project": "C2",
+      "source_group": "gauge_field_reconstruction",
+      "paper": {
+        "title": "A dense rain-gauge observation framework for advection-consistency diagnosis of urban convective rainfall",
+        "doi": "https://doi.org/10.5194/egusphere-2026-1314",
+        "openalex_id": "https://openalex.org/W7164816061"
+      },
+      "normalized_decision": "INCLUDE",
+      "scope_fit": "IN_SCOPE",
+      "role_fit": "DIRECT",
+      "evidence_sufficiency": "SUFFICIENT_ABSTRACT",
+      "primary_reason_code": "DIRECT_METHOD_OR_EVIDENCE_ROLE",
+      "secondary_reason_codes": [],
+      "assigned_label": "gauge_field_reconstruction",
+      "corrected_label": "continuity_residual_diagnostic",
+      "evidence": [
+        {
+          "source_field": "ABSTRACT",
+          "supports": "SCOPE",
+          "paraphrase": "Proposes a dense urban rain-gauge framework in Bangkok utilizing Horn-Schunck optical flow advection residuals to diagnose convective rainfall growth."
+        }
+      ],
+      "rationale": "Directly matches the core research scope by diagnosing urban convective rainfall from dense gauge networks using optical flow advection reference and residual analysis.",
+      "confidence": "HIGH",
+      "flags": [
+        "POSSIBLE_WRONG_GROUP"
+      ],
+      "follow_up": {
+        "required": true,
+        "priority": "ROUTINE",
+        "reasons": [
+          "AI_PROXY_REQUIRES_HUMAN_CONFIRMATION"
+        ],
+        "recommended_action": "HUMAN_CHECK"
+      },
+      "task_specific": {
+        "scope_decision": "KEEP_IN_SCOPE",
+        "group_decision": "PARTIAL_ANALOGUE",
+        "corrected_group": "continuity_residual_diagnostic",
+        "literature_decision": null
+      }
+    }
+  ]
+}

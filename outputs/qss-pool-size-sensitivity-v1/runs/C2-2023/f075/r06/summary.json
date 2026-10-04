@@ -1,0 +1,113 @@
+{
+  "schema_version": 1,
+  "evaluation_role": "held_out_test",
+  "cutoff": 2023,
+  "fractions": [
+    0.5,
+    0.7,
+    0.85
+  ],
+  "bags": 30,
+  "workers": 2,
+  "candidate_pool": 509,
+  "candidate_with_abstract_count": 509,
+  "candidate_scope_eligible_count": 213,
+  "candidate_scope_ineligible_count": 296,
+  "candidate_scope_eligible_rate": 0.418468,
+  "candidate_scope_eligible_group_counts": {
+    "gauge_field_reconstruction": 42,
+    "convective_growth_classification": 55,
+    "advection_motion_nowcasting": 77,
+    "continuity_residual_diagnostic": 39
+  },
+  "candidate_scope_reachable_group_count": 4,
+  "holdout_count": 14,
+  "reachable_holdout_count": 2,
+  "candidate_pool_ceiling": 0.142857,
+  "openalex_requests": 0,
+  "frozen_rule": {
+    "version": "v2_relevance_soft_capacity",
+    "exploration_k": 30,
+    "final_k": 10,
+    "components": [
+      "relevance",
+      "concept_novelty_gain",
+      "leave_one_out_bagging_confidence"
+    ],
+    "component_combination": "relevance_primary_with_novelty_and_confidence_tie_breaks; capacity_first_pass_then_relevance_backfill",
+    "description": "Explore 30; require frozen scope fit; rank primarily by title/abstract relevance with concept novelty gain and leave-one-bag-out confidence as tie-breakers; prefer at most three papers per group in the first pass, then backfill by relevance to return 10.",
+    "tau_fit": 0.18,
+    "recovery_similarity": 0.1,
+    "group_semantic_weight": 0.7,
+    "group_lexical_weight": 0.30000000000000004,
+    "group_capacities": {
+      "gauge_field_reconstruction": 3,
+      "convective_growth_classification": 3,
+      "advection_motion_nowcasting": 3,
+      "continuity_residual_diagnostic": 3
+    },
+    "label_usage": "none in scoring or threshold selection"
+  },
+  "aggregates": [
+    {
+      "policy": "fixed_top10",
+      "bags": 30,
+      "exact_hits": 28,
+      "bag_positive_denominator": 60,
+      "bag_positive_recall": 0.466667,
+      "mean_group_recall": 0.444444,
+      "mean_frozen_group_coverage": 1.0,
+      "mean_selected": 10.0,
+      "min_selected": 10,
+      "max_selected": 10,
+      "mean_positive_mrr": 0.102103
+    },
+    {
+      "policy": "recursive_first10",
+      "bags": 30,
+      "exact_hits": 28,
+      "bag_positive_denominator": 60,
+      "bag_positive_recall": 0.466667,
+      "mean_group_recall": 0.472222,
+      "mean_frozen_group_coverage": 0.75,
+      "mean_selected": 10.0,
+      "min_selected": 10,
+      "max_selected": 10,
+      "mean_positive_mrr": 0.09756
+    },
+    {
+      "policy": "late_pruned_top10",
+      "bags": 30,
+      "exact_hits": 10,
+      "bag_positive_denominator": 60,
+      "bag_positive_recall": 0.166667,
+      "mean_group_recall": 0.388889,
+      "mean_frozen_group_coverage": 0.75,
+      "mean_selected": 10.0,
+      "min_selected": 10,
+      "max_selected": 10,
+      "mean_positive_mrr": 0.037037
+    }
+  ],
+  "quality_gate": {
+    "passed": false,
+    "decision": "held_out_test_failed_do_not_retune",
+    "checks": [
+      {
+        "name": "exact recovery non-inferiority",
+        "passed": false,
+        "detail": "late 10 versus fixed 28 bag-positive hits"
+      },
+      {
+        "name": "group recall non-inferiority",
+        "passed": false,
+        "detail": "late 0.389 versus fixed 0.444"
+      },
+      {
+        "name": "complete final budget",
+        "passed": true,
+        "detail": "selected range 10–10; required 10"
+      }
+    ]
+  }
+}

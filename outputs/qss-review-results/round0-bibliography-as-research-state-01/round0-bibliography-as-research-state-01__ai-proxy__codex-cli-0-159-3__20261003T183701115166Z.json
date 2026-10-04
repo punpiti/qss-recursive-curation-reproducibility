@@ -1,0 +1,273 @@
+{
+  "schema_version": "qss-review-response-v1",
+  "batch_id": "round0-bibliography-as-research-state-01",
+  "review_type": "ROUND0_LITERATURE_REVIEW",
+  "rubric_version": "qss-review-rubric-v3",
+  "reviewer": {
+    "type": "AI_PROXY",
+    "id": "codex-cli-0-159-3",
+    "role": "PRIMARY_REVIEWER",
+    "review_status": "AI_FIRST_PASS",
+    "reviewed_at": "2026-10-03T18:37:01.115166Z"
+  },
+  "reviews": [
+    {
+      "review_row_id": "round0-074",
+      "corpus_or_project": "qss_self_hosting",
+      "source_group": "bibliography_as_research_state",
+      "paper": {
+        "title": "Classification of Explainable Artificial Intelligence Methods through Their Output Formats",
+        "doi": "https://doi.org/10.3390/make3030032",
+        "openalex_id": "https://openalex.org/W3187293469"
+      },
+      "normalized_decision": "EXCLUDE",
+      "scope_fit": "OUT_OF_SCOPE",
+      "role_fit": "MISMATCH",
+      "evidence_sufficiency": "SUFFICIENT_ABSTRACT",
+      "primary_reason_code": "WRONG_METHOD_OR_OUTCOME",
+      "secondary_reason_codes": [
+        "FALSE_LEXICAL_OR_SEMANTIC_MATCH"
+      ],
+      "assigned_label": "bibliography_as_research_state",
+      "corrected_label": null,
+      "evidence": [
+        {
+          "source_field": "ABSTRACT",
+          "supports": "DECISION",
+          "paraphrase": "The contribution is a classification of explainable-AI methods by explanation output format."
+        },
+        {
+          "source_field": "ABSTRACT",
+          "supports": "ROLE",
+          "paraphrase": "Bibliography checking is described only as a subsequent way to retrieve papers for the review, not as an adaptive research state being evaluated."
+        }
+      ],
+      "rationale": "The abstract mentions iterative bibliography checking, but the paper's contribution concerns an XAI taxonomy rather than how prior literature selections shape later discovery. The match is incidental to the review procedure and does not support the assigned evidence role.",
+      "confidence": "HIGH",
+      "flags": [
+        "POSSIBLE_FALSE_MATCH"
+      ],
+      "follow_up": {
+        "required": true,
+        "priority": "ROUTINE",
+        "reasons": [
+          "AI_PROXY_REQUIRES_HUMAN_CONFIRMATION"
+        ],
+        "recommended_action": "HUMAN_CHECK"
+      },
+      "task_specific": {
+        "scope_decision": null,
+        "group_decision": null,
+        "corrected_group": null,
+        "literature_decision": "REMOVE"
+      }
+    },
+    {
+      "review_row_id": "round0-075",
+      "corpus_or_project": "qss_self_hosting",
+      "source_group": "bibliography_as_research_state",
+      "paper": {
+        "title": "Cognition in multiple sclerosis",
+        "doi": "https://doi.org/10.1212/wnl.0000000000004977",
+        "openalex_id": "https://openalex.org/W2783605273"
+      },
+      "normalized_decision": "EXCLUDE",
+      "scope_fit": "OUT_OF_SCOPE",
+      "role_fit": "MISMATCH",
+      "evidence_sufficiency": "SUFFICIENT_ABSTRACT",
+      "primary_reason_code": "WRONG_DOMAIN_OR_POPULATION",
+      "secondary_reason_codes": [
+        "WRONG_METHOD_OR_OUTCOME"
+      ],
+      "assigned_label": "bibliography_as_research_state",
+      "corrected_label": null,
+      "evidence": [
+        {
+          "source_field": "TITLE",
+          "supports": "SCOPE",
+          "paraphrase": "The paper concerns cognition in multiple sclerosis."
+        },
+        {
+          "source_field": "ABSTRACT",
+          "supports": "DECISION",
+          "paraphrase": "It states guidelines and research priorities for cognitive assessment, neuroimaging, and treatment rather than studying literature discovery or evidence-set evolution."
+        }
+      ],
+      "rationale": "The work addresses clinical and research priorities in multiple-sclerosis cognition. It provides no title or abstract evidence of an adaptive bibliography, iterative scholarly retrieval, or a path-dependent evidence-selection process.",
+      "confidence": "HIGH",
+      "flags": [
+        "POSSIBLE_WRONG_GROUP"
+      ],
+      "follow_up": {
+        "required": true,
+        "priority": "ROUTINE",
+        "reasons": [
+          "AI_PROXY_REQUIRES_HUMAN_CONFIRMATION"
+        ],
+        "recommended_action": "HUMAN_CHECK"
+      },
+      "task_specific": {
+        "scope_decision": null,
+        "group_decision": null,
+        "corrected_group": null,
+        "literature_decision": "REMOVE"
+      }
+    },
+    {
+      "review_row_id": "round0-076",
+      "corpus_or_project": "qss_self_hosting",
+      "source_group": "bibliography_as_research_state",
+      "paper": {
+        "title": "Local understandings and experiences of transitional justice: a review of the evidence",
+        "doi": "",
+        "openalex_id": "https://openalex.org/W1492845829"
+      },
+      "normalized_decision": "DEFER",
+      "scope_fit": "IN_SCOPE",
+      "role_fit": "UNCERTAIN",
+      "evidence_sufficiency": "FULL_TEXT_REQUIRED",
+      "primary_reason_code": "INSUFFICIENT_ABSTRACT_EVIDENCE",
+      "secondary_reason_codes": [
+        "BRIDGE_REFERENCE"
+      ],
+      "assigned_label": "bibliography_as_research_state",
+      "corrected_label": null,
+      "evidence": [
+        {
+          "source_field": "ABSTRACT",
+          "supports": "SCOPE",
+          "paraphrase": "The review combines systematic database, snowball, and peer-led searches and examines shortcomings of its search methodology."
+        },
+        {
+          "source_field": "ABSTRACT",
+          "supports": "RISK",
+          "paraphrase": "The abstract does not explain whether snowball discoveries recursively changed the literature set or later search path."
+        }
+      ],
+      "rationale": "The paper is within a literature-search workflow and may offer a bridge example because it combines database and snowball discovery while discussing search limitations. Full text is required to determine whether prior selections function as an adaptive state that governs later discovery, rather than snowballing being only one independent search channel.",
+      "confidence": "MEDIUM",
+      "flags": [
+        "NEEDS_FULL_TEXT",
+        "BOUNDARY_CASE"
+      ],
+      "follow_up": {
+        "required": true,
+        "priority": "MEDIUM",
+        "reasons": [
+          "AI_PROXY_REQUIRES_HUMAN_CONFIRMATION",
+          "FULL_TEXT_REQUIRED",
+          "BOUNDARY_CASE"
+        ],
+        "recommended_action": "READ_FULL_TEXT"
+      },
+      "task_specific": {
+        "scope_decision": null,
+        "group_decision": null,
+        "corrected_group": null,
+        "literature_decision": "DEFER"
+      }
+    },
+    {
+      "review_row_id": "round0-077",
+      "corpus_or_project": "qss_self_hosting",
+      "source_group": "bibliography_as_research_state",
+      "paper": {
+        "title": "Stochastic Local Search Methods for Highly Constrained Combinatorial Optimisation Problems",
+        "doi": "https://doi.org/10.26083/tuprints-00000595",
+        "openalex_id": "https://openalex.org/W1950711055"
+      },
+      "normalized_decision": "EXCLUDE",
+      "scope_fit": "OUT_OF_SCOPE",
+      "role_fit": "MISMATCH",
+      "evidence_sufficiency": "SUFFICIENT_ABSTRACT",
+      "primary_reason_code": "WRONG_DOMAIN_OR_POPULATION",
+      "secondary_reason_codes": [
+        "FALSE_LEXICAL_OR_SEMANTIC_MATCH"
+      ],
+      "assigned_label": "bibliography_as_research_state",
+      "corrected_label": null,
+      "evidence": [
+        {
+          "source_field": "TITLE",
+          "supports": "SCOPE",
+          "paraphrase": "The work studies stochastic local search for constrained combinatorial optimization."
+        },
+        {
+          "source_field": "ABSTRACT",
+          "supports": "DECISION",
+          "paraphrase": "Its iterative and adaptive methods optimize graph coloring and timetabling solutions, not scholarly search or evidence sets."
+        }
+      ],
+      "rationale": "Terms such as iterative, adaptive, search, and state refer to combinatorial optimization algorithms. The paper neither studies a bibliography as research state nor evaluates a scholarly evidence-discovery workflow.",
+      "confidence": "HIGH",
+      "flags": [
+        "POSSIBLE_FALSE_MATCH"
+      ],
+      "follow_up": {
+        "required": true,
+        "priority": "ROUTINE",
+        "reasons": [
+          "AI_PROXY_REQUIRES_HUMAN_CONFIRMATION"
+        ],
+        "recommended_action": "HUMAN_CHECK"
+      },
+      "task_specific": {
+        "scope_decision": null,
+        "group_decision": null,
+        "corrected_group": null,
+        "literature_decision": "REMOVE"
+      }
+    },
+    {
+      "review_row_id": "round0-078",
+      "corpus_or_project": "qss_self_hosting",
+      "source_group": "bibliography_as_research_state",
+      "paper": {
+        "title": "BioReader: a Retrieval-Enhanced Text-to-Text Transformer for Biomedical Literature",
+        "doi": "https://doi.org/10.18653/v1/2022.emnlp-main.390",
+        "openalex_id": "https://openalex.org/W4385573338"
+      },
+      "normalized_decision": "EXCLUDE",
+      "scope_fit": "OUT_OF_SCOPE",
+      "role_fit": "MISMATCH",
+      "evidence_sufficiency": "SUFFICIENT_ABSTRACT",
+      "primary_reason_code": "WRONG_METHOD_OR_OUTCOME",
+      "secondary_reason_codes": [
+        "FALSE_LEXICAL_OR_SEMANTIC_MATCH"
+      ],
+      "assigned_label": "bibliography_as_research_state",
+      "corrected_label": null,
+      "evidence": [
+        {
+          "source_field": "ABSTRACT",
+          "supports": "SCOPE",
+          "paraphrase": "The model retrieves biomedical literature chunks from a neural database to augment prompts for downstream NLP tasks."
+        },
+        {
+          "source_field": "ABSTRACT",
+          "supports": "ROLE",
+          "paraphrase": "Changing or supplementing domain knowledge alters model predictions, but no bibliography, candidate set, or recursive discovery path is curated or evaluated."
+        }
+      ],
+      "rationale": "This is retrieval-enhanced language modeling over biomedical text, with evaluation focused on downstream predictions. The abstract does not describe bibliographic curation, provenance, iterative literature discovery, or prior selections governing later evidence retrieval.",
+      "confidence": "HIGH",
+      "flags": [
+        "POSSIBLE_FALSE_MATCH"
+      ],
+      "follow_up": {
+        "required": true,
+        "priority": "ROUTINE",
+        "reasons": [
+          "AI_PROXY_REQUIRES_HUMAN_CONFIRMATION"
+        ],
+        "recommended_action": "HUMAN_CHECK"
+      },
+      "task_specific": {
+        "scope_decision": null,
+        "group_decision": null,
+        "corrected_group": null,
+        "literature_decision": "REMOVE"
+      }
+    }
+  ]
+}

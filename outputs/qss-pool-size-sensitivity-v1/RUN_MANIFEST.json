@@ -1,0 +1,22 @@
+{
+  "schema_version": 1,
+  "analysis_id": "qss-deterministic-pool-size-sensitivity-v1",
+  "spec": "<REDACTED_LOCAL_PATH>/qss_pool_size_sensitivity_v1.json",
+  "spec_sha256": "dceee45ccd8e75faef1acd13a2f67b12216307853c8b0f125b201898fc7e4ea8",
+  "registry": "<REDACTED_LOCAL_PATH>/qss_corpus_registry.json",
+  "fractions": [
+    0.25,
+    0.5,
+    0.75,
+    1.0
+  ],
+  "deterministic_replicates": 20,
+  "bags_per_seed_fraction": 10,
+  "case_count": 12,
+  "evaluation_count": 732,
+  "temporary_pool_work_dir": "/tmp/qss-pool-size-sensitivity-v1-pools",
+  "derived_pools_retained": false,
+  "cache_only": true,
+  "openalex_requests": 0,
+  "python": "<REDACTED_LOCAL_PATH>/python"
+}

@@ -1,0 +1,235 @@
+{
+  "schema_version": "qss-review-response-v1",
+  "batch_id": "construct-C1-01",
+  "review_type": "CONSTRUCT_AUDIT",
+  "rubric_version": "qss-review-rubric-v3",
+  "reviewer": {
+    "type": "AI_PROXY",
+    "id": "gemini-2-5-flash",
+    "role": "PRIMARY_REVIEWER",
+    "review_status": "AI_FIRST_PASS",
+    "reviewed_at": null
+  },
+  "reviews": [
+    {
+      "review_row_id": "C1-2022-01",
+      "corpus_or_project": "C1",
+      "source_group": "knowledge_lens_guidance",
+      "paper": {
+        "title": "Providing visual analytics guidance through decision support",
+        "doi": "https://doi.org/10.1177/14738716221147289",
+        "openalex_id": "https://openalex.org/W4313641066"
+      },
+      "normalized_decision": "INCLUDE",
+      "scope_fit": "IN_SCOPE",
+      "role_fit": "BRIDGE",
+      "evidence_sufficiency": "SUFFICIENT_ABSTRACT",
+      "primary_reason_code": "BRIDGE_REFERENCE",
+      "secondary_reason_codes": [],
+      "assigned_label": "knowledge_lens_guidance",
+      "corrected_label": null,
+      "evidence": [
+        {
+          "source_field": "ABSTRACT",
+          "supports": "ROLE",
+          "paraphrase": "Proposes a decision-making framework for providing visual analytics guidance."
+        }
+      ],
+      "rationale": "Provides foundational visual analytics decision-support guidance methodology that serves as a knowledge lens framework.",
+      "confidence": "HIGH",
+      "flags": [
+        "NONE"
+      ],
+      "follow_up": {
+        "required": true,
+        "priority": "ROUTINE",
+        "reasons": [
+          "AI_PROXY_REQUIRES_HUMAN_CONFIRMATION"
+        ],
+        "recommended_action": "HUMAN_CHECK"
+      },
+      "task_specific": {
+        "scope_decision": "KEEP_IN_SCOPE",
+        "group_decision": "CORRECT_GROUP",
+        "corrected_group": null,
+        "literature_decision": null
+      }
+    },
+    {
+      "review_row_id": "C1-2022-02",
+      "corpus_or_project": "C1",
+      "source_group": "rainfall_pattern_evidence",
+      "paper": {
+        "title": "Assessment of Satellite Products in Estimating Tropical Cyclone Remote Precipitation over the Yangtze River Delta Region",
+        "doi": "https://doi.org/10.3390/atmos15060667",
+        "openalex_id": "https://openalex.org/W4399219816"
+      },
+      "normalized_decision": "EXCLUDE",
+      "scope_fit": "OUT_OF_SCOPE",
+      "role_fit": "MISMATCH",
+      "evidence_sufficiency": "SUFFICIENT_ABSTRACT",
+      "primary_reason_code": "WRONG_DOMAIN_OR_POPULATION",
+      "secondary_reason_codes": [],
+      "assigned_label": "rainfall_pattern_evidence",
+      "corrected_label": null,
+      "evidence": [
+        {
+          "source_field": "ABSTRACT",
+          "supports": "SCOPE",
+          "paraphrase": "Assesses satellite precipitation estimation over the Yangtze River Delta without visual analytics or knowledge lens connection."
+        }
+      ],
+      "rationale": "Focuses purely on satellite precipitation accuracy assessment in China without connecting to knowledge-guided visual analytics or Bangkok rainfall evidence.",
+      "confidence": "HIGH",
+      "flags": [
+        "NONE"
+      ],
+      "follow_up": {
+        "required": true,
+        "priority": "ROUTINE",
+        "reasons": [
+          "AI_PROXY_REQUIRES_HUMAN_CONFIRMATION"
+        ],
+        "recommended_action": "HUMAN_CHECK"
+      },
+      "task_specific": {
+        "scope_decision": "REMOVE_OUT_OF_SCOPE",
+        "group_decision": "WRONG_GROUP",
+        "corrected_group": null,
+        "literature_decision": null
+      }
+    },
+    {
+      "review_row_id": "C1-2022-03",
+      "corpus_or_project": "C1",
+      "source_group": "method_evidence_bridge",
+      "paper": {
+        "title": "Data Provenance in Biomedical Research: Scoping Review",
+        "doi": "https://doi.org/10.2196/42289",
+        "openalex_id": "https://openalex.org/W4361000714"
+      },
+      "normalized_decision": "EXCLUDE",
+      "scope_fit": "OUT_OF_SCOPE",
+      "role_fit": "MISMATCH",
+      "evidence_sufficiency": "SUFFICIENT_ABSTRACT",
+      "primary_reason_code": "WRONG_DOMAIN_OR_POPULATION",
+      "secondary_reason_codes": [],
+      "assigned_label": "method_evidence_bridge",
+      "corrected_label": null,
+      "evidence": [
+        {
+          "source_field": "ABSTRACT",
+          "supports": "SCOPE",
+          "paraphrase": "Scoping review of data provenance technologies in biomedical research."
+        }
+      ],
+      "rationale": "Biomedical data provenance scoping review falls outside the rainfall knowledge-guided interpretation domain.",
+      "confidence": "HIGH",
+      "flags": [
+        "NONE"
+      ],
+      "follow_up": {
+        "required": true,
+        "priority": "ROUTINE",
+        "reasons": [
+          "AI_PROXY_REQUIRES_HUMAN_CONFIRMATION"
+        ],
+        "recommended_action": "HUMAN_CHECK"
+      },
+      "task_specific": {
+        "scope_decision": "REMOVE_OUT_OF_SCOPE",
+        "group_decision": "WRONG_GROUP",
+        "corrected_group": null,
+        "literature_decision": null
+      }
+    },
+    {
+      "review_row_id": "C1-2022-04",
+      "corpus_or_project": "C1",
+      "source_group": "provenance_traceability",
+      "paper": {
+        "title": "Guided spiral visualization for periodic time series and residual analysis",
+        "doi": "https://doi.org/10.1016/j.cag.2026.104535",
+        "openalex_id": "https://openalex.org/W7124980387"
+      },
+      "normalized_decision": "INCLUDE",
+      "scope_fit": "IN_SCOPE",
+      "role_fit": "BRIDGE",
+      "evidence_sufficiency": "SUFFICIENT_ABSTRACT",
+      "primary_reason_code": "BRIDGE_REFERENCE",
+      "secondary_reason_codes": [],
+      "assigned_label": "provenance_traceability",
+      "corrected_label": null,
+      "evidence": [
+        {
+          "source_field": "ABSTRACT",
+          "supports": "ROLE",
+          "paraphrase": "Presents a guided time series spiral visualization with residual exploration and a provenance dashboard."
+        }
+      ],
+      "rationale": "Supplies core visual analytics methodology for residual analysis and provenance tracking applicable to periodic time series data.",
+      "confidence": "HIGH",
+      "flags": [
+        "NONE"
+      ],
+      "follow_up": {
+        "required": true,
+        "priority": "ROUTINE",
+        "reasons": [
+          "AI_PROXY_REQUIRES_HUMAN_CONFIRMATION"
+        ],
+        "recommended_action": "HUMAN_CHECK"
+      },
+      "task_specific": {
+        "scope_decision": "KEEP_IN_SCOPE",
+        "group_decision": "CORRECT_GROUP",
+        "corrected_group": null,
+        "literature_decision": null
+      }
+    },
+    {
+      "review_row_id": "C1-2022-05",
+      "corpus_or_project": "C1",
+      "source_group": "rainfall_pattern_evidence",
+      "paper": {
+        "title": "Designing an Interactive Visual Analytics System for Precipitation Data Analysis",
+        "doi": "https://doi.org/10.3390/app15105467",
+        "openalex_id": "https://openalex.org/W4410345768"
+      },
+      "normalized_decision": "INCLUDE",
+      "scope_fit": "IN_SCOPE",
+      "role_fit": "DIRECT",
+      "evidence_sufficiency": "SUFFICIENT_ABSTRACT",
+      "primary_reason_code": "DIRECT_METHOD_OR_EVIDENCE_ROLE",
+      "secondary_reason_codes": [],
+      "assigned_label": "rainfall_pattern_evidence",
+      "corrected_label": null,
+      "evidence": [
+        {
+          "source_field": "ABSTRACT",
+          "supports": "SCOPE",
+          "paraphrase": "Interactive visual analytics system for hourly precipitation data analysis across stations."
+        }
+      ],
+      "rationale": "Directly provides interactive visual analytics techniques for high-resolution precipitation patterns and anomalies.",
+      "confidence": "HIGH",
+      "flags": [
+        "BOUNDARY_CASE"
+      ],
+      "follow_up": {
+        "required": true,
+        "priority": "ROUTINE",
+        "reasons": [
+          "AI_PROXY_REQUIRES_HUMAN_CONFIRMATION"
+        ],
+        "recommended_action": "HUMAN_CHECK"
+      },
+      "task_specific": {
+        "scope_decision": "KEEP_IN_SCOPE",
+        "group_decision": "CORRECT_GROUP",
+        "corrected_group": null,
+        "literature_decision": null
+      }
+    }
+  ]
+}

@@ -1,0 +1,128 @@
+{
+  "schema_version": "qss-review-response-v1",
+  "batch_id": "construct-C6-01",
+  "review_type": "CONSTRUCT_AUDIT",
+  "rubric_version": "qss-review-rubric-v3",
+  "reviewer": {
+    "type": "AI_PROXY",
+    "id": "codex-cli-0-159-3",
+    "role": "PRIMARY_REVIEWER",
+    "review_status": "AI_FIRST_PASS",
+    "reviewed_at": "2026-10-03T17:50:58.476641Z"
+  },
+  "reviews": [
+    {
+      "review_row_id": "C6-2024-01",
+      "corpus_or_project": "C6",
+      "source_group": "gender_multigroup_equity",
+      "paper": {
+        "title": "Unpacking teachers' value beliefs about computational thinking and programming",
+        "doi": "https://doi.org/10.31681/jetol.1497284",
+        "openalex_id": "https://openalex.org/W4406971498"
+      },
+      "normalized_decision": "EXCLUDE",
+      "scope_fit": "OUT_OF_SCOPE",
+      "role_fit": "PARTIAL",
+      "evidence_sufficiency": "SUFFICIENT_ABSTRACT",
+      "primary_reason_code": "WRONG_DOMAIN_OR_POPULATION",
+      "secondary_reason_codes": [
+        "WRONG_METHOD_OR_OUTCOME"
+      ],
+      "assigned_label": "gender_multigroup_equity",
+      "corrected_label": null,
+      "evidence": [
+        {
+          "source_field": "ABSTRACT",
+          "supports": "SCOPE",
+          "paraphrase": "The study population is 417 Turkish primary and secondary school teachers rather than students in an integrated computational-thinking and STEM path model."
+        },
+        {
+          "source_field": "ABSTRACT",
+          "supports": "ROLE",
+          "paraphrase": "Gender differences are tested with independent-samples t-tests, while CFA validates a teacher-beliefs scale; no multi-group structural path or invariance analysis is reported."
+        },
+        {
+          "source_field": "ABSTRACT",
+          "supports": "DECISION",
+          "paraphrase": "The reported outcomes concern programming self-efficacy, teaching-programming efficacy, and teacher professional-development needs."
+        }
+      ],
+      "rationale": "The paper is outside the focal student-level integrated-path scope because it studies teachers' beliefs and efficacy rather than computational self-efficacy, scientific problem solving, or scientific reasoning among students. Its gender comparisons make it a partial analogue for gender-related evidence, but mean-difference tests do not fulfill the defined multi-group path or invariance role.",
+      "confidence": "HIGH",
+      "flags": [
+        "BOUNDARY_CASE",
+        "POSSIBLE_WRONG_GROUP"
+      ],
+      "follow_up": {
+        "required": true,
+        "priority": "MEDIUM",
+        "reasons": [
+          "AI_PROXY_REQUIRES_HUMAN_CONFIRMATION",
+          "BOUNDARY_CASE",
+          "GROUP_DISAGREEMENT"
+        ],
+        "recommended_action": "HUMAN_CHECK"
+      },
+      "task_specific": {
+        "scope_decision": "REMOVE_OUT_OF_SCOPE",
+        "group_decision": "PARTIAL_ANALOGUE",
+        "corrected_group": null,
+        "literature_decision": null
+      }
+    },
+    {
+      "review_row_id": "C6-2024-02",
+      "corpus_or_project": "C6",
+      "source_group": "stem_motivation_self_efficacy",
+      "paper": {
+        "title": "Fostering students’ motivation and self-efficacy in science, technology, engineering, and design through design thinking and making in project-based learning: a gender-perspective study in primary education",
+        "doi": "https://doi.org/10.1007/s10798-025-10001-6",
+        "openalex_id": "https://openalex.org/W4411118296"
+      },
+      "normalized_decision": "INCLUDE",
+      "scope_fit": "IN_SCOPE",
+      "role_fit": "DIRECT",
+      "evidence_sufficiency": "SUFFICIENT_ABSTRACT",
+      "primary_reason_code": "DIRECT_METHOD_OR_EVIDENCE_ROLE",
+      "secondary_reason_codes": [],
+      "assigned_label": "stem_motivation_self_efficacy",
+      "corrected_label": null,
+      "evidence": [
+        {
+          "source_field": "ABSTRACT",
+          "supports": "SCOPE",
+          "paraphrase": "The study examines STEM-related self-efficacy and motivation among 318 students in grades 4–6 using pre- and post-intervention surveys."
+        },
+        {
+          "source_field": "ABSTRACT",
+          "supports": "ROLE",
+          "paraphrase": "The intervention uses project-based design and making activities with Scratch and Makey Makey, and directly measures changes in student self-efficacy and motivation."
+        },
+        {
+          "source_field": "ABSTRACT",
+          "supports": "DECISION",
+          "paraphrase": "Results report improved student self-efficacy, particularly among girls, and interpret the intervention as fostering positive STEM attitudes."
+        }
+      ],
+      "rationale": "The paper directly supplies student-level STEM motivation, attitudes, and self-efficacy evidence, so the machine assignment to stem_motivation_self_efficacy is appropriate. Its gender findings are relevant context, but the abstract does not report multi-group path or measurement-invariance analysis, so it should not be reassigned to the gender_multigroup_equity group.",
+      "confidence": "HIGH",
+      "flags": [
+        "NONE"
+      ],
+      "follow_up": {
+        "required": true,
+        "priority": "ROUTINE",
+        "reasons": [
+          "AI_PROXY_REQUIRES_HUMAN_CONFIRMATION"
+        ],
+        "recommended_action": "HUMAN_CHECK"
+      },
+      "task_specific": {
+        "scope_decision": "KEEP_IN_SCOPE",
+        "group_decision": "CORRECT_GROUP",
+        "corrected_group": null,
+        "literature_decision": null
+      }
+    }
+  ]
+}

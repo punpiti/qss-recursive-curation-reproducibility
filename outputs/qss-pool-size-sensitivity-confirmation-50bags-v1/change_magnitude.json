@@ -1,0 +1,32 @@
+{
+  "definition": "Summarize how far recall differences moved at 75% candidate-pool visibility.",
+  "scale": "recursive minus fixed, percentage points; exact recall uses all held-out references as its denominator, as in Figure 2",
+  "exact": {
+    "jointly_evaluable": 148,
+    "median_abs_change_pp": 0.73,
+    "iqr_abs_change_pp": [
+      0.22,
+      3.96
+    ],
+    "max_abs_change_pp": 11.33,
+    "sign_reversals": 31,
+    "reversals_both_sides_within_2pp": 10,
+    "reversals_either_side_above_10pp": 0,
+    "median_abs_full_pool_pp_at_reversal": 2.57,
+    "median_abs_reduced_pool_pp_at_reversal": 0.71
+  },
+  "role": {
+    "jointly_evaluable": 200,
+    "median_abs_change_pp": 8.52,
+    "iqr_abs_change_pp": [
+      4.31,
+      15.93
+    ],
+    "max_abs_change_pp": 41.56,
+    "sign_reversals": 31,
+    "reversals_both_sides_within_2pp": 0,
+    "reversals_either_side_above_10pp": 26,
+    "median_abs_full_pool_pp_at_reversal": 15.67,
+    "median_abs_reduced_pool_pp_at_reversal": 7.67
+  }
+}

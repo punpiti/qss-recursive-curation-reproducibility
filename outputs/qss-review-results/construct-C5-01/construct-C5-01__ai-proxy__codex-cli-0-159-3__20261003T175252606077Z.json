@@ -1,0 +1,302 @@
+{
+  "schema_version": "qss-review-response-v1",
+  "batch_id": "construct-C5-01",
+  "review_type": "CONSTRUCT_AUDIT",
+  "rubric_version": "qss-review-rubric-v3",
+  "reviewer": {
+    "type": "AI_PROXY",
+    "id": "codex-cli-0-159-3",
+    "role": "PRIMARY_REVIEWER",
+    "review_status": "AI_FIRST_PASS",
+    "reviewed_at": "2026-10-03T17:52:52.606077Z"
+  },
+  "reviews": [
+    {
+      "review_row_id": "C5-2023-01",
+      "corpus_or_project": "C5",
+      "source_group": "vehicle_make_model_scope",
+      "paper": {
+        "title": "Fine-Grained Vehicle Make and Model Recognition Framework Based on Magnetic Fingerprint",
+        "doi": "https://doi.org/10.1109/tits.2024.3374888",
+        "openalex_id": "https://openalex.org/W4393241264"
+      },
+      "normalized_decision": "EXCLUDE",
+      "scope_fit": "OUT_OF_SCOPE",
+      "role_fit": "DIRECT",
+      "evidence_sufficiency": "SUFFICIENT_ABSTRACT",
+      "primary_reason_code": "WRONG_METHOD_OR_OUTCOME",
+      "secondary_reason_codes": [
+        "OUTSIDE_FROZEN_BOUNDARY"
+      ],
+      "assigned_label": "vehicle_make_model_scope",
+      "corrected_label": null,
+      "evidence": [
+        {
+          "source_field": "ABSTRACT",
+          "supports": "ROLE",
+          "paraphrase": "The study directly classifies 36 vehicle makes/models in a traffic setting, so its machine group is substantively correct."
+        },
+        {
+          "source_field": "ABSTRACT",
+          "supports": "DECISION",
+          "paraphrase": "Recognition uses magnetic-field fingerprints from roadside sensors explicitly instead of surveillance-camera video, with no semantic-part or temporal video fusion method."
+        },
+        {
+          "source_field": "METADATA",
+          "supports": "RISK",
+          "paraphrase": "The supplied publication year is 2024, later than the supplied 2023 cutoff."
+        }
+      ],
+      "rationale": "The paper directly studies fine-grained vehicle make/model recognition and therefore fits the assigned evidence group. It is nevertheless outside this video's method scope because the abstract explicitly replaces surveillance video with magnetic sensor data; it also postdates the supplied cutoff.",
+      "confidence": "HIGH",
+      "flags": [
+        "NONE"
+      ],
+      "follow_up": {
+        "required": true,
+        "priority": "ROUTINE",
+        "reasons": [
+          "AI_PROXY_REQUIRES_HUMAN_CONFIRMATION"
+        ],
+        "recommended_action": "HUMAN_CHECK"
+      },
+      "task_specific": {
+        "scope_decision": "REMOVE_OUT_OF_SCOPE",
+        "group_decision": "CORRECT_GROUP",
+        "corrected_group": null,
+        "literature_decision": null
+      }
+    },
+    {
+      "review_row_id": "C5-2023-02",
+      "corpus_or_project": "C5",
+      "source_group": "detection_tracking_pipeline",
+      "paper": {
+        "title": "RESEARCH ON MULTI-OBJECT TRACKING OF PIGS BASED ON IMPROVED BYTE TRACK",
+        "doi": "https://doi.org/10.35633/inmateh-79-22",
+        "openalex_id": "https://openalex.org/W7204204548"
+      },
+      "normalized_decision": "EXCLUDE",
+      "scope_fit": "OUT_OF_SCOPE",
+      "role_fit": "PARTIAL",
+      "evidence_sufficiency": "SUFFICIENT_ABSTRACT",
+      "primary_reason_code": "WRONG_DOMAIN_OR_POPULATION",
+      "secondary_reason_codes": [
+        "VALID_CONTEXT_BUT_WRONG_GROUP",
+        "OUTSIDE_FROZEN_BOUNDARY"
+      ],
+      "assigned_label": "detection_tracking_pipeline",
+      "corrected_label": null,
+      "evidence": [
+        {
+          "source_field": "TITLE",
+          "supports": "SCOPE",
+          "paraphrase": "The target population is pigs rather than vehicles."
+        },
+        {
+          "source_field": "ABSTRACT",
+          "supports": "ROLE",
+          "paraphrase": "YOLOv8 and an improved ByteTrack pipeline address occlusion-related trajectory interruption, so the method is only a cross-domain tracking analogue."
+        },
+        {
+          "source_field": "METADATA",
+          "supports": "RISK",
+          "paraphrase": "The supplied publication year is 2026, later than the supplied 2023 cutoff."
+        }
+      ],
+      "rationale": "The abstract concerns livestock tracking for pig-farm behavior and activity applications, not vehicle make recognition or a vehicle detection/tracking pipeline. Its occlusion-aware multi-object tracking method is a partial methodological analogue, but that does not overcome the wrong population and post-cutoff year.",
+      "confidence": "HIGH",
+      "flags": [
+        "NONE"
+      ],
+      "follow_up": {
+        "required": true,
+        "priority": "ROUTINE",
+        "reasons": [
+          "AI_PROXY_REQUIRES_HUMAN_CONFIRMATION"
+        ],
+        "recommended_action": "HUMAN_CHECK"
+      },
+      "task_specific": {
+        "scope_decision": "REMOVE_OUT_OF_SCOPE",
+        "group_decision": "PARTIAL_ANALOGUE",
+        "corrected_group": null,
+        "literature_decision": null
+      }
+    },
+    {
+      "review_row_id": "C5-2023-03",
+      "corpus_or_project": "C5",
+      "source_group": "semantic_parts_occlusion",
+      "paper": {
+        "title": "Vehicle Classification Algorithm Based on Improved Vision Transformer",
+        "doi": "https://doi.org/10.3390/wevj15080344",
+        "openalex_id": "https://openalex.org/W4401111520"
+      },
+      "normalized_decision": "EXCLUDE",
+      "scope_fit": "OUT_OF_SCOPE",
+      "role_fit": "PARTIAL",
+      "evidence_sufficiency": "SUFFICIENT_ABSTRACT",
+      "primary_reason_code": "WRONG_METHOD_OR_OUTCOME",
+      "secondary_reason_codes": [
+        "TOO_GENERIC_FOR_CLAIM",
+        "VALID_CONTEXT_BUT_WRONG_GROUP",
+        "OUTSIDE_FROZEN_BOUNDARY"
+      ],
+      "assigned_label": "semantic_parts_occlusion",
+      "corrected_label": null,
+      "evidence": [
+        {
+          "source_field": "ABSTRACT",
+          "supports": "ROLE",
+          "paraphrase": "The model extracts local features and uses sparse attention to select discernible image regions, giving a limited analogue to local-region evidence."
+        },
+        {
+          "source_field": "ABSTRACT",
+          "supports": "DECISION",
+          "paraphrase": "The reported task is generic vehicle classification on BIT-Vehicles plus three non-vehicle image datasets; the abstract does not identify semantic vehicle parts, occlusion testing, make/model classes, or video aggregation."
+        },
+        {
+          "source_field": "METADATA",
+          "supports": "RISK",
+          "paraphrase": "The supplied publication year is 2024, later than the supplied 2023 cutoff."
+        }
+      ],
+      "rationale": "Local-feature extraction and attention make this a partial analogue for region-based evidence, but the abstract supports only generic image classification rather than semantic vehicle parts under occlusion or video-based make recognition. The evidence is sufficient to exclude it from the narrow scope, and the supplied year is also beyond the cutoff.",
+      "confidence": "HIGH",
+      "flags": [
+        "POSSIBLE_FALSE_MATCH"
+      ],
+      "follow_up": {
+        "required": true,
+        "priority": "MEDIUM",
+        "reasons": [
+          "AI_PROXY_REQUIRES_HUMAN_CONFIRMATION",
+          "GROUP_DISAGREEMENT"
+        ],
+        "recommended_action": "HUMAN_CHECK"
+      },
+      "task_specific": {
+        "scope_decision": "REMOVE_OUT_OF_SCOPE",
+        "group_decision": "PARTIAL_ANALOGUE",
+        "corrected_group": null,
+        "literature_decision": null
+      }
+    },
+    {
+      "review_row_id": "C5-2023-04",
+      "corpus_or_project": "C5",
+      "source_group": "detection_tracking_pipeline",
+      "paper": {
+        "title": "RESEARCH ON MULTI-OBJECT TRACKING OF PIGS BASED ON IMPROVED BYTE TRACK",
+        "doi": "https://doi.org/10.35633/inmateh-79-22",
+        "openalex_id": "https://openalex.org/W7204204548"
+      },
+      "normalized_decision": "EXCLUDE",
+      "scope_fit": "OUT_OF_SCOPE",
+      "role_fit": "PARTIAL",
+      "evidence_sufficiency": "SUFFICIENT_ABSTRACT",
+      "primary_reason_code": "WRONG_DOMAIN_OR_POPULATION",
+      "secondary_reason_codes": [
+        "VALID_CONTEXT_BUT_WRONG_GROUP",
+        "OUTSIDE_FROZEN_BOUNDARY"
+      ],
+      "assigned_label": "detection_tracking_pipeline",
+      "corrected_label": null,
+      "evidence": [
+        {
+          "source_field": "TITLE",
+          "supports": "SCOPE",
+          "paraphrase": "The target population is pigs rather than vehicles."
+        },
+        {
+          "source_field": "ABSTRACT",
+          "supports": "ROLE",
+          "paraphrase": "YOLOv8 and an improved ByteTrack pipeline address occlusion-related trajectory interruption, so the method is only a cross-domain tracking analogue."
+        },
+        {
+          "source_field": "METADATA",
+          "supports": "RISK",
+          "paraphrase": "The supplied publication year is 2026, later than the supplied 2023 cutoff."
+        }
+      ],
+      "rationale": "The abstract concerns livestock tracking for pig-farm behavior and activity applications, not vehicle make recognition or a vehicle detection/tracking pipeline. Its occlusion-aware multi-object tracking method is a partial methodological analogue, but that does not overcome the wrong population and post-cutoff year.",
+      "confidence": "HIGH",
+      "flags": [
+        "NONE"
+      ],
+      "follow_up": {
+        "required": true,
+        "priority": "ROUTINE",
+        "reasons": [
+          "AI_PROXY_REQUIRES_HUMAN_CONFIRMATION"
+        ],
+        "recommended_action": "HUMAN_CHECK"
+      },
+      "task_specific": {
+        "scope_decision": "REMOVE_OUT_OF_SCOPE",
+        "group_decision": "PARTIAL_ANALOGUE",
+        "corrected_group": null,
+        "literature_decision": null
+      }
+    },
+    {
+      "review_row_id": "C5-2023-05",
+      "corpus_or_project": "C5",
+      "source_group": "temporal_evidence_fusion",
+      "paper": {
+        "title": "Exploring Multi-Modal Spatial–Temporal Contexts for High-Performance RGB-T Tracking",
+        "doi": "https://doi.org/10.1109/tip.2024.3428316",
+        "openalex_id": "https://openalex.org/W4400810524"
+      },
+      "normalized_decision": "EXCLUDE",
+      "scope_fit": "OUT_OF_SCOPE",
+      "role_fit": "BRIDGE",
+      "evidence_sufficiency": "SUFFICIENT_ABSTRACT",
+      "primary_reason_code": "WRONG_METHOD_OR_OUTCOME",
+      "secondary_reason_codes": [
+        "BRIDGE_REFERENCE",
+        "OUTSIDE_FROZEN_BOUNDARY"
+      ],
+      "assigned_label": "temporal_evidence_fusion",
+      "corrected_label": null,
+      "evidence": [
+        {
+          "source_field": "ABSTRACT",
+          "supports": "ROLE",
+          "paraphrase": "A quality-aware decoder propagates tracking cues from historical frames to the current frame, making the study a bridge for temporal evidence handling."
+        },
+        {
+          "source_field": "ABSTRACT",
+          "supports": "DECISION",
+          "paraphrase": "The outcome is generic RGB-thermal object tracking on RGB-T benchmarks, with no vehicle population, make/model classification, semantic vehicle parts, or branch-first versus frame-first fusion comparison."
+        },
+        {
+          "source_field": "METADATA",
+          "supports": "RISK",
+          "paraphrase": "The supplied publication year is 2024, later than the supplied 2023 cutoff."
+        }
+      ],
+      "rationale": "The temporal propagation and quality-aware components provide a legitimate methodological bridge to multi-frame evidence fusion. However, the abstract evaluates generic RGB-T tracking rather than vehicle make recognition, so it is only a partial group analogue and lies outside the research scope; it also postdates the cutoff.",
+      "confidence": "HIGH",
+      "flags": [
+        "BOUNDARY_CASE"
+      ],
+      "follow_up": {
+        "required": true,
+        "priority": "MEDIUM",
+        "reasons": [
+          "AI_PROXY_REQUIRES_HUMAN_CONFIRMATION",
+          "BOUNDARY_CASE"
+        ],
+        "recommended_action": "HUMAN_CHECK"
+      },
+      "task_specific": {
+        "scope_decision": "REMOVE_OUT_OF_SCOPE",
+        "group_decision": "PARTIAL_ANALOGUE",
+        "corrected_group": null,
+        "literature_decision": null
+      }
+    }
+  ]
+}

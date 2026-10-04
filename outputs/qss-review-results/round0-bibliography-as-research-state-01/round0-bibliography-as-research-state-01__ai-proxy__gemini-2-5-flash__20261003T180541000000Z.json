@@ -1,0 +1,243 @@
+{
+  "schema_version": "qss-review-response-v1",
+  "batch_id": "round0-bibliography-as-research-state-01",
+  "review_type": "ROUND0_LITERATURE_REVIEW",
+  "rubric_version": "qss-review-rubric-v3",
+  "reviewer": {
+    "type": "AI_PROXY",
+    "id": "gemini-2.5-flash",
+    "role": "PRIMARY_REVIEWER",
+    "review_status": "AI_FIRST_PASS",
+    "reviewed_at": null
+  },
+  "reviews": [
+    {
+      "review_row_id": "round0-074",
+      "corpus_or_project": "qss_self_hosting",
+      "source_group": "bibliography_as_research_state",
+      "paper": {
+        "title": "Classification of Explainable Artificial Intelligence Methods through Their Output Formats",
+        "doi": "https://doi.org/10.3390/make3030032",
+        "openalex_id": "https://openalex.org/W3187293469"
+      },
+      "normalized_decision": "EXCLUDE",
+      "scope_fit": "OUT_OF_SCOPE",
+      "role_fit": "MISMATCH",
+      "evidence_sufficiency": "SUFFICIENT_ABSTRACT",
+      "primary_reason_code": "WRONG_METHOD_OR_OUTCOME",
+      "secondary_reason_codes": [
+        "WRONG_DOMAIN_OR_POPULATION"
+      ],
+      "assigned_label": "bibliography_as_research_state",
+      "corrected_label": null,
+      "evidence": [
+        {
+          "source_field": "ABSTRACT",
+          "supports": "SCOPE",
+          "paraphrase": "The paper presents a systematic review classifying XAI methods by output formats and uses Google Scholar and iterative bibliography checking solely as a search protocol."
+        }
+      ],
+      "rationale": "The paper uses iterative bibliographic search merely as a manual review methodology to find XAI literature, rather than developing or evaluating stateful bibliographic search, scholarly recommendation, or path-dependent discovery algorithms.",
+      "confidence": "HIGH",
+      "flags": [
+        "NONE"
+      ],
+      "follow_up": {
+        "required": true,
+        "priority": "ROUTINE",
+        "reasons": [
+          "AI_PROXY_REQUIRES_HUMAN_CONFIRMATION"
+        ],
+        "recommended_action": "HUMAN_CHECK"
+      },
+      "task_specific": {
+        "scope_decision": null,
+        "group_decision": null,
+        "corrected_group": null,
+        "literature_decision": "REMOVE"
+      }
+    },
+    {
+      "review_row_id": "round0-075",
+      "corpus_or_project": "qss_self_hosting",
+      "source_group": "bibliography_as_research_state",
+      "paper": {
+        "title": "Cognition in multiple sclerosis",
+        "doi": "https://doi.org/10.1212/wnl.0000000000004977",
+        "openalex_id": "https://openalex.org/W2783605273"
+      },
+      "normalized_decision": "EXCLUDE",
+      "scope_fit": "OUT_OF_SCOPE",
+      "role_fit": "MISMATCH",
+      "evidence_sufficiency": "SUFFICIENT_ABSTRACT",
+      "primary_reason_code": "WRONG_DOMAIN_OR_POPULATION",
+      "secondary_reason_codes": [],
+      "assigned_label": "bibliography_as_research_state",
+      "corrected_label": null,
+      "evidence": [
+        {
+          "source_field": "TITLE",
+          "supports": "SCOPE",
+          "paraphrase": "Focuses on cognitive decline, neuroimaging, and clinical priorities in multiple sclerosis patients."
+        }
+      ],
+      "rationale": "This paper is a clinical guideline/position paper in medicine (multiple sclerosis) and has no relation to scholarly search, information retrieval, or bibliographic state modeling.",
+      "confidence": "HIGH",
+      "flags": [
+        "NONE"
+      ],
+      "follow_up": {
+        "required": true,
+        "priority": "ROUTINE",
+        "reasons": [
+          "AI_PROXY_REQUIRES_HUMAN_CONFIRMATION"
+        ],
+        "recommended_action": "HUMAN_CHECK"
+      },
+      "task_specific": {
+        "scope_decision": null,
+        "group_decision": null,
+        "corrected_group": null,
+        "literature_decision": "REMOVE"
+      }
+    },
+    {
+      "review_row_id": "round0-076",
+      "corpus_or_project": "qss_self_hosting",
+      "source_group": "bibliography_as_research_state",
+      "paper": {
+        "title": "Local understandings and experiences of transitional justice: a review of the evidence",
+        "doi": "",
+        "openalex_id": "https://openalex.org/W1492845829"
+      },
+      "normalized_decision": "EXCLUDE",
+      "scope_fit": "OUT_OF_SCOPE",
+      "role_fit": "MISMATCH",
+      "evidence_sufficiency": "SUFFICIENT_ABSTRACT",
+      "primary_reason_code": "WRONG_DOMAIN_OR_POPULATION",
+      "secondary_reason_codes": [
+        "WRONG_METHOD_OR_OUTCOME"
+      ],
+      "assigned_label": "bibliography_as_research_state",
+      "corrected_label": null,
+      "evidence": [
+        {
+          "source_field": "ABSTRACT",
+          "supports": "SCOPE",
+          "paraphrase": "Examines local effects of transitional justice using a systematic and snowball search methodology."
+        }
+      ],
+      "rationale": "The article is an evidence review in international development and political science. Snowball search is used as a manual literature search method, which falls outside the scope of computational scholarly search systems or stateful bibliographic modeling.",
+      "confidence": "HIGH",
+      "flags": [
+        "NONE"
+      ],
+      "follow_up": {
+        "required": true,
+        "priority": "ROUTINE",
+        "reasons": [
+          "AI_PROXY_REQUIRES_HUMAN_CONFIRMATION"
+        ],
+        "recommended_action": "HUMAN_CHECK"
+      },
+      "task_specific": {
+        "scope_decision": null,
+        "group_decision": null,
+        "corrected_group": null,
+        "literature_decision": "REMOVE"
+      }
+    },
+    {
+      "review_row_id": "round0-077",
+      "corpus_or_project": "qss_self_hosting",
+      "source_group": "bibliography_as_research_state",
+      "paper": {
+        "title": "Stochastic Local Search Methods for Highly Constrained Combinatorial Optimisation Problems",
+        "doi": "https://doi.org/10.26083/tuprints-00000595",
+        "openalex_id": "https://openalex.org/W1950711055"
+      },
+      "normalized_decision": "EXCLUDE",
+      "scope_fit": "OUT_OF_SCOPE",
+      "role_fit": "MISMATCH",
+      "evidence_sufficiency": "SUFFICIENT_ABSTRACT",
+      "primary_reason_code": "FALSE_LEXICAL_OR_SEMANTIC_MATCH",
+      "secondary_reason_codes": [
+        "WRONG_DOMAIN_OR_POPULATION"
+      ],
+      "assigned_label": "bibliography_as_research_state",
+      "corrected_label": null,
+      "evidence": [
+        {
+          "source_field": "ABSTRACT",
+          "supports": "SCOPE",
+          "paraphrase": "Studies stochastic local search algorithms for graph colouring, set T-colouring, and university timetabling."
+        }
+      ],
+      "rationale": "This work is in combinatorial optimization and algorithm engineering for graph problems. Terms like 'local search' and 'iterative improvement' refer to heuristic optimization algorithms, creating a false lexical match.",
+      "confidence": "HIGH",
+      "flags": [
+        "NONE"
+      ],
+      "follow_up": {
+        "required": true,
+        "priority": "ROUTINE",
+        "reasons": [
+          "AI_PROXY_REQUIRES_HUMAN_CONFIRMATION"
+        ],
+        "recommended_action": "HUMAN_CHECK"
+      },
+      "task_specific": {
+        "scope_decision": null,
+        "group_decision": null,
+        "corrected_group": null,
+        "literature_decision": "REMOVE"
+      }
+    },
+    {
+      "review_row_id": "round0-078",
+      "corpus_or_project": "qss_self_hosting",
+      "source_group": "bibliography_as_research_state",
+      "paper": {
+        "title": "BioReader: a Retrieval-Enhanced Text-to-Text Transformer for Biomedical Literature",
+        "doi": "https://doi.org/10.18653/v1/2022.emnlp-main.390",
+        "openalex_id": "https://openalex.org/W4385573338"
+      },
+      "normalized_decision": "EXCLUDE",
+      "scope_fit": "OUT_OF_SCOPE",
+      "role_fit": "MISMATCH",
+      "evidence_sufficiency": "SUFFICIENT_ABSTRACT",
+      "primary_reason_code": "TOO_GENERIC_FOR_CLAIM",
+      "secondary_reason_codes": [
+        "WRONG_METHOD_OR_OUTCOME"
+      ],
+      "assigned_label": "bibliography_as_research_state",
+      "corrected_label": null,
+      "evidence": [
+        {
+          "source_field": "ABSTRACT",
+          "supports": "SCOPE",
+          "paraphrase": "Proposes a retrieval-augmented T5 model fetching PubMed chunks to enhance biomedical NLP task performance."
+        }
+      ],
+      "rationale": "BioReader is a standard Retrieval-Augmented Generation (RAG) architecture for biomedical downstream tasks. Per the exclusion boundary, generic LLM agents or RAG without bibliographic curation, evidence selection, or stateful provenance evaluation are excluded.",
+      "confidence": "HIGH",
+      "flags": [
+        "NONE"
+      ],
+      "follow_up": {
+        "required": true,
+        "priority": "ROUTINE",
+        "reasons": [
+          "AI_PROXY_REQUIRES_HUMAN_CONFIRMATION"
+        ],
+        "recommended_action": "HUMAN_CHECK"
+      },
+      "task_specific": {
+        "scope_decision": null,
+        "group_decision": null,
+        "corrected_group": null,
+        "literature_decision": "REMOVE"
+      }
+    }
+  ]
+}

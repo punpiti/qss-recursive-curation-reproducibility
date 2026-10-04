@@ -1,0 +1,127 @@
+corpus,cutoff,policy,future_index,title,year,doi,matching_candidate_indices,selected_bags,total_bags,selection_frequency
+C1,2022,fixed_top10,2,GeoAuthor: Linking Text and Visualization for Geographic Article Authoring,2026,10.1109/TVCG.2026.3697212,994,0,150,0.0
+C1,2022,recursive_first10,2,GeoAuthor: Linking Text and Visualization for Geographic Article Authoring,2026,10.1109/TVCG.2026.3697212,994,0,150,0.0
+C1,2022,late_pruned_top10,2,GeoAuthor: Linking Text and Visualization for Geographic Article Authoring,2026,10.1109/TVCG.2026.3697212,994,0,150,0.0
+C1,2022,fixed_top10,7,A Multimodal LLM for Chart Understanding and Generation,2025,10.1109/IJCNN64981.2025.11227777,248,0,150,0.0
+C1,2022,recursive_first10,7,A Multimodal LLM for Chart Understanding and Generation,2025,10.1109/IJCNN64981.2025.11227777,248,0,150,0.0
+C1,2022,late_pruned_top10,7,A Multimodal LLM for Chart Understanding and Generation,2025,10.1109/IJCNN64981.2025.11227777,248,0,150,0.0
+C1,2022,fixed_top10,9,"Systemization of Knowledge (SoK): Visualization Insight -- Two Decades of Research, Practice, and Future Directions",2026,10.1145/3788869,1301,0,150,0.0
+C1,2022,recursive_first10,9,"Systemization of Knowledge (SoK): Visualization Insight -- Two Decades of Research, Practice, and Future Directions",2026,10.1145/3788869,1301,0,150,0.0
+C1,2022,late_pruned_top10,9,"Systemization of Knowledge (SoK): Visualization Insight -- Two Decades of Research, Practice, and Future Directions",2026,10.1145/3788869,1301,0,150,0.0
+C1,2022,fixed_top10,11,Designing an Interactive Visual Analytics System for Precipitation Data Analysis,2025,10.3390/app15105467,365,150,150,1.0
+C1,2022,recursive_first10,11,Designing an Interactive Visual Analytics System for Precipitation Data Analysis,2025,10.3390/app15105467,365,150,150,1.0
+C1,2022,late_pruned_top10,11,Designing an Interactive Visual Analytics System for Precipitation Data Analysis,2025,10.3390/app15105467,365,123,150,0.82
+C1,2022,fixed_top10,15,prompt4vis: prompting large language models with example mining for tabular data visualization: S. Li et al.,2025,10.1007/s00778-025-00912-0,580,0,150,0.0
+C1,2022,recursive_first10,15,prompt4vis: prompting large language models with example mining for tabular data visualization: S. Li et al.,2025,10.1007/s00778-025-00912-0,580,0,150,0.0
+C1,2022,late_pruned_top10,15,prompt4vis: prompting large language models with example mining for tabular data visualization: S. Li et al.,2025,10.1007/s00778-025-00912-0,580,0,150,0.0
+C1,2022,fixed_top10,16,A survey of visual insight mining: Connecting data and insights via visualization,2025,https://doi.org/10.1016/j.visinf.2025.100271,257,0,150,0.0
+C1,2022,recursive_first10,16,A survey of visual insight mining: Connecting data and insights via visualization,2025,https://doi.org/10.1016/j.visinf.2025.100271,257,0,150,0.0
+C1,2022,late_pruned_top10,16,A survey of visual insight mining: Connecting data and insights via visualization,2025,https://doi.org/10.1016/j.visinf.2025.100271,257,0,150,0.0
+C1,2022,fixed_top10,18,InsightChaser: Enhancing Visual Reasoning of Sports Tactical Visualization with Visual-Text Linking,2026,10.1109/TVCG.2025.3634639,468,0,150,0.0
+C1,2022,recursive_first10,18,InsightChaser: Enhancing Visual Reasoning of Sports Tactical Visualization with Visual-Text Linking,2026,10.1109/TVCG.2025.3634639,468,0,150,0.0
+C1,2022,late_pruned_top10,18,InsightChaser: Enhancing Visual Reasoning of Sports Tactical Visualization with Visual-Text Linking,2026,10.1109/TVCG.2025.3634639,468,0,150,0.0
+C1,2022,fixed_top10,22,Narrative Player: Reviving Data Narratives With Visuals,2025,10.1109/TVCG.2025.3530512,534,0,150,0.0
+C1,2022,recursive_first10,22,Narrative Player: Reviving Data Narratives With Visuals,2025,10.1109/TVCG.2025.3530512,534,0,150,0.0
+C1,2022,late_pruned_top10,22,Narrative Player: Reviving Data Narratives With Visuals,2025,10.1109/TVCG.2025.3530512,534,0,150,0.0
+C1,2022,fixed_top10,26,VIS+ AI: integrating visualization with artificial intelligence for efficient data analysis,2023,10.1007/s11704-023-2691-y,124,0,150,0.0
+C1,2022,recursive_first10,26,VIS+ AI: integrating visualization with artificial intelligence for efficient data analysis,2023,10.1007/s11704-023-2691-y,124,0,150,0.0
+C1,2022,late_pruned_top10,26,VIS+ AI: integrating visualization with artificial intelligence for efficient data analysis,2023,10.1007/s11704-023-2691-y,124,0,150,0.0
+C1,2022,fixed_top10,30,Data Insights as Data: Quick Overview and Exploration of Automated Data Insights,2025,10.1145/3706599.3719702,350,0,150,0.0
+C1,2022,recursive_first10,30,Data Insights as Data: Quick Overview and Exploration of Automated Data Insights,2025,10.1145/3706599.3719702,350,0,150,0.0
+C1,2022,late_pruned_top10,30,Data Insights as Data: Quick Overview and Exploration of Automated Data Insights,2025,10.1145/3706599.3719702,350,0,150,0.0
+C1,2022,fixed_top10,35,LEVA: Using Large Language Models to Enhance Visual Analytics,2025,10.1109/TVCG.2024.3368060,196,0,150,0.0
+C1,2022,recursive_first10,35,LEVA: Using Large Language Models to Enhance Visual Analytics,2025,10.1109/TVCG.2024.3368060,196,0,150,0.0
+C1,2022,late_pruned_top10,35,LEVA: Using Large Language Models to Enhance Visual Analytics,2025,10.1109/TVCG.2024.3368060,196,0,150,0.0
+C1,2022,fixed_top10,52,Analysis of convective cell evolution with split and merge events using a graph-based methodology,2026,10.5194/amt-19-1853-2026,784,0,150,0.0
+C1,2022,recursive_first10,52,Analysis of convective cell evolution with split and merge events using a graph-based methodology,2026,10.5194/amt-19-1853-2026,784,0,150,0.0
+C1,2022,late_pruned_top10,52,Analysis of convective cell evolution with split and merge events using a graph-based methodology,2026,10.5194/amt-19-1853-2026,784,0,150,0.0
+C1,2022,fixed_top10,55,Clustering the Diurnal Cycle of Precipitation Using Global Satellite Data,2024,10.1029/2024GL111513,150,0,150,0.0
+C1,2022,recursive_first10,55,Clustering the Diurnal Cycle of Precipitation Using Global Satellite Data,2024,10.1029/2024GL111513,150,0,150,0.0
+C1,2022,late_pruned_top10,55,Clustering the Diurnal Cycle of Precipitation Using Global Satellite Data,2024,10.1029/2024GL111513,150,36,150,0.24
+C1,2023,fixed_top10,2,GeoAuthor: Linking Text and Visualization for Geographic Article Authoring,2026,10.1109/TVCG.2026.3697212,842,0,150,0.0
+C1,2023,recursive_first10,2,GeoAuthor: Linking Text and Visualization for Geographic Article Authoring,2026,10.1109/TVCG.2026.3697212,842,0,150,0.0
+C1,2023,late_pruned_top10,2,GeoAuthor: Linking Text and Visualization for Geographic Article Authoring,2026,10.1109/TVCG.2026.3697212,842,0,150,0.0
+C1,2023,fixed_top10,5,A Multimodal LLM for Chart Understanding and Generation,2025,10.1109/IJCNN64981.2025.11227777,119,0,150,0.0
+C1,2023,recursive_first10,5,A Multimodal LLM for Chart Understanding and Generation,2025,10.1109/IJCNN64981.2025.11227777,119,0,150,0.0
+C1,2023,late_pruned_top10,5,A Multimodal LLM for Chart Understanding and Generation,2025,10.1109/IJCNN64981.2025.11227777,119,0,150,0.0
+C1,2023,fixed_top10,7,"Systemization of Knowledge (SoK): Visualization Insight -- Two Decades of Research, Practice, and Future Directions",2026,10.1145/3788869,1161,0,150,0.0
+C1,2023,recursive_first10,7,"Systemization of Knowledge (SoK): Visualization Insight -- Two Decades of Research, Practice, and Future Directions",2026,10.1145/3788869,1161,0,150,0.0
+C1,2023,late_pruned_top10,7,"Systemization of Knowledge (SoK): Visualization Insight -- Two Decades of Research, Practice, and Future Directions",2026,10.1145/3788869,1161,0,150,0.0
+C1,2023,fixed_top10,9,Designing an Interactive Visual Analytics System for Precipitation Data Analysis,2025,10.3390/app15105467,223,150,150,1.0
+C1,2023,recursive_first10,9,Designing an Interactive Visual Analytics System for Precipitation Data Analysis,2025,10.3390/app15105467,223,150,150,1.0
+C1,2023,late_pruned_top10,9,Designing an Interactive Visual Analytics System for Precipitation Data Analysis,2025,10.3390/app15105467,223,147,150,0.98
+C1,2023,fixed_top10,13,prompt4vis: prompting large language models with example mining for tabular data visualization: S. Li et al.,2025,10.1007/s00778-025-00912-0,417,0,150,0.0
+C1,2023,recursive_first10,13,prompt4vis: prompting large language models with example mining for tabular data visualization: S. Li et al.,2025,10.1007/s00778-025-00912-0,417,0,150,0.0
+C1,2023,late_pruned_top10,13,prompt4vis: prompting large language models with example mining for tabular data visualization: S. Li et al.,2025,10.1007/s00778-025-00912-0,417,0,150,0.0
+C1,2023,fixed_top10,14,A survey of visual insight mining: Connecting data and insights via visualization,2025,https://doi.org/10.1016/j.visinf.2025.100271,124,0,150,0.0
+C1,2023,recursive_first10,14,A survey of visual insight mining: Connecting data and insights via visualization,2025,https://doi.org/10.1016/j.visinf.2025.100271,124,0,150,0.0
+C1,2023,late_pruned_top10,14,A survey of visual insight mining: Connecting data and insights via visualization,2025,https://doi.org/10.1016/j.visinf.2025.100271,124,0,150,0.0
+C1,2023,fixed_top10,16,InsightChaser: Enhancing Visual Reasoning of Sports Tactical Visualization with Visual-Text Linking,2026,10.1109/TVCG.2025.3634639,319,0,150,0.0
+C1,2023,recursive_first10,16,InsightChaser: Enhancing Visual Reasoning of Sports Tactical Visualization with Visual-Text Linking,2026,10.1109/TVCG.2025.3634639,319,0,150,0.0
+C1,2023,late_pruned_top10,16,InsightChaser: Enhancing Visual Reasoning of Sports Tactical Visualization with Visual-Text Linking,2026,10.1109/TVCG.2025.3634639,319,0,150,0.0
+C1,2023,fixed_top10,26,Data Insights as Data: Quick Overview and Exploration of Automated Data Insights,2025,10.1145/3706599.3719702,212,0,150,0.0
+C1,2023,recursive_first10,26,Data Insights as Data: Quick Overview and Exploration of Automated Data Insights,2025,10.1145/3706599.3719702,212,0,150,0.0
+C1,2023,late_pruned_top10,26,Data Insights as Data: Quick Overview and Exploration of Automated Data Insights,2025,10.1145/3706599.3719702,212,0,150,0.0
+C1,2023,fixed_top10,31,LEVA: Using Large Language Models to Enhance Visual Analytics,2025,10.1109/TVCG.2024.3368060,68,0,150,0.0
+C1,2023,recursive_first10,31,LEVA: Using Large Language Models to Enhance Visual Analytics,2025,10.1109/TVCG.2024.3368060,68,0,150,0.0
+C1,2023,late_pruned_top10,31,LEVA: Using Large Language Models to Enhance Visual Analytics,2025,10.1109/TVCG.2024.3368060,68,0,150,0.0
+C1,2023,fixed_top10,45,Analysis of convective cell evolution with split and merge events using a graph-based methodology,2026,10.5194/amt-19-1853-2026,624,0,150,0.0
+C1,2023,recursive_first10,45,Analysis of convective cell evolution with split and merge events using a graph-based methodology,2026,10.5194/amt-19-1853-2026,624,0,150,0.0
+C1,2023,late_pruned_top10,45,Analysis of convective cell evolution with split and merge events using a graph-based methodology,2026,10.5194/amt-19-1853-2026,624,0,150,0.0
+C1,2023,fixed_top10,47,Clustering the Diurnal Cycle of Precipitation Using Global Satellite Data,2024,10.1029/2024GL111513,22,0,150,0.0
+C1,2023,recursive_first10,47,Clustering the Diurnal Cycle of Precipitation Using Global Satellite Data,2024,10.1029/2024GL111513,22,0,150,0.0
+C1,2023,late_pruned_top10,47,Clustering the Diurnal Cycle of Precipitation Using Global Satellite Data,2024,10.1029/2024GL111513,22,90,150,0.6
+C1,2024,fixed_top10,0,GeoAuthor: Linking Text and Visualization for Geographic Article Authoring,2026,10.1109/TVCG.2026.3697212,809,0,150,0.0
+C1,2024,recursive_first10,0,GeoAuthor: Linking Text and Visualization for Geographic Article Authoring,2026,10.1109/TVCG.2026.3697212,809,0,150,0.0
+C1,2024,late_pruned_top10,0,GeoAuthor: Linking Text and Visualization for Geographic Article Authoring,2026,10.1109/TVCG.2026.3697212,809,0,150,0.0
+C1,2024,fixed_top10,2,A Multimodal LLM for Chart Understanding and Generation,2025,10.1109/IJCNN64981.2025.11227777,17,0,150,0.0
+C1,2024,recursive_first10,2,A Multimodal LLM for Chart Understanding and Generation,2025,10.1109/IJCNN64981.2025.11227777,17,0,150,0.0
+C1,2024,late_pruned_top10,2,A Multimodal LLM for Chart Understanding and Generation,2025,10.1109/IJCNN64981.2025.11227777,17,0,150,0.0
+C1,2024,fixed_top10,4,"Systemization of Knowledge (SoK): Visualization Insight -- Two Decades of Research, Practice, and Future Directions",2026,10.1145/3788869,1155,0,150,0.0
+C1,2024,recursive_first10,4,"Systemization of Knowledge (SoK): Visualization Insight -- Two Decades of Research, Practice, and Future Directions",2026,10.1145/3788869,1155,0,150,0.0
+C1,2024,late_pruned_top10,4,"Systemization of Knowledge (SoK): Visualization Insight -- Two Decades of Research, Practice, and Future Directions",2026,10.1145/3788869,1155,0,150,0.0
+C1,2024,fixed_top10,5,Designing an Interactive Visual Analytics System for Precipitation Data Analysis,2025,10.3390/app15105467,133,150,150,1.0
+C1,2024,recursive_first10,5,Designing an Interactive Visual Analytics System for Precipitation Data Analysis,2025,10.3390/app15105467,133,150,150,1.0
+C1,2024,late_pruned_top10,5,Designing an Interactive Visual Analytics System for Precipitation Data Analysis,2025,10.3390/app15105467,133,148,150,0.986667
+C1,2024,fixed_top10,7,prompt4vis: prompting large language models with example mining for tabular data visualization: S. Li et al.,2025,10.1007/s00778-025-00912-0,353,0,150,0.0
+C1,2024,recursive_first10,7,prompt4vis: prompting large language models with example mining for tabular data visualization: S. Li et al.,2025,10.1007/s00778-025-00912-0,353,0,150,0.0
+C1,2024,late_pruned_top10,7,prompt4vis: prompting large language models with example mining for tabular data visualization: S. Li et al.,2025,10.1007/s00778-025-00912-0,353,0,150,0.0
+C1,2024,fixed_top10,8,A survey of visual insight mining: Connecting data and insights via visualization,2025,https://doi.org/10.1016/j.visinf.2025.100271,23,0,150,0.0
+C1,2024,recursive_first10,8,A survey of visual insight mining: Connecting data and insights via visualization,2025,https://doi.org/10.1016/j.visinf.2025.100271,23,0,150,0.0
+C1,2024,late_pruned_top10,8,A survey of visual insight mining: Connecting data and insights via visualization,2025,https://doi.org/10.1016/j.visinf.2025.100271,23,0,150,0.0
+C1,2024,fixed_top10,10,InsightChaser: Enhancing Visual Reasoning of Sports Tactical Visualization with Visual-Text Linking,2026,10.1109/TVCG.2025.3634639,243,0,150,0.0
+C1,2024,recursive_first10,10,InsightChaser: Enhancing Visual Reasoning of Sports Tactical Visualization with Visual-Text Linking,2026,10.1109/TVCG.2025.3634639,243,0,150,0.0
+C1,2024,late_pruned_top10,10,InsightChaser: Enhancing Visual Reasoning of Sports Tactical Visualization with Visual-Text Linking,2026,10.1109/TVCG.2025.3634639,243,0,150,0.0
+C1,2024,fixed_top10,26,Analysis of convective cell evolution with split and merge events using a graph-based methodology,2026,10.5194/amt-19-1853-2026,574,0,150,0.0
+C1,2024,recursive_first10,26,Analysis of convective cell evolution with split and merge events using a graph-based methodology,2026,10.5194/amt-19-1853-2026,574,0,150,0.0
+C1,2024,late_pruned_top10,26,Analysis of convective cell evolution with split and merge events using a graph-based methodology,2026,10.5194/amt-19-1853-2026,574,0,150,0.0
+C2,2022,fixed_top10,11,A Deep Learning Model for Precipitation Nowcasting Using Multiple Optical Flow Algorithms,2024,10.1175/waf-d-23-0104.1,1,115,150,0.766667
+C2,2022,recursive_first10,11,A Deep Learning Model for Precipitation Nowcasting Using Multiple Optical Flow Algorithms,2024,10.1175/waf-d-23-0104.1,1,53,150,0.353333
+C2,2022,late_pruned_top10,11,A Deep Learning Model for Precipitation Nowcasting Using Multiple Optical Flow Algorithms,2024,10.1175/waf-d-23-0104.1,1,13,150,0.086667
+C2,2022,fixed_top10,12,Evaluating pySTEPS optical flow algorithms for convection nowcasting over the Maritime Continent using satellite data,2024,10.5194/nhess-24-567-2024,91,0,150,0.0
+C2,2022,recursive_first10,12,Evaluating pySTEPS optical flow algorithms for convection nowcasting over the Maritime Continent using satellite data,2024,10.5194/nhess-24-567-2024,91,0,150,0.0
+C2,2022,late_pruned_top10,12,Evaluating pySTEPS optical flow algorithms for convection nowcasting over the Maritime Continent using satellite data,2024,10.5194/nhess-24-567-2024,91,0,150,0.0
+C2,2022,fixed_top10,14,Analysis of convective cell evolution with split and merge events using a graph-based methodology,2026,10.5194/amt-19-1853-2026,263,0,150,0.0
+C2,2022,recursive_first10,14,Analysis of convective cell evolution with split and merge events using a graph-based methodology,2026,10.5194/amt-19-1853-2026,263,0,150,0.0
+C2,2022,late_pruned_top10,14,Analysis of convective cell evolution with split and merge events using a graph-based methodology,2026,10.5194/amt-19-1853-2026,263,5,150,0.033333
+C2,2023,fixed_top10,10,Evaluating pySTEPS optical flow algorithms for convection nowcasting over the Maritime Continent using satellite data,2024,10.5194/nhess-24-567-2024,25,77,150,0.513333
+C2,2023,recursive_first10,10,Evaluating pySTEPS optical flow algorithms for convection nowcasting over the Maritime Continent using satellite data,2024,10.5194/nhess-24-567-2024,25,27,150,0.18
+C2,2023,late_pruned_top10,10,Evaluating pySTEPS optical flow algorithms for convection nowcasting over the Maritime Continent using satellite data,2024,10.5194/nhess-24-567-2024,25,110,150,0.733333
+C2,2023,fixed_top10,11,Analysis of convective cell evolution with split and merge events using a graph-based methodology,2026,10.5194/amt-19-1853-2026,198,0,150,0.0
+C2,2023,recursive_first10,11,Analysis of convective cell evolution with split and merge events using a graph-based methodology,2026,10.5194/amt-19-1853-2026,198,0,150,0.0
+C2,2023,late_pruned_top10,11,Analysis of convective cell evolution with split and merge events using a graph-based methodology,2026,10.5194/amt-19-1853-2026,198,21,150,0.14
+C2,2024,fixed_top10,3,Analysis of convective cell evolution with split and merge events using a graph-based methodology,2026,10.5194/amt-19-1853-2026,148,0,150,0.0
+C2,2024,recursive_first10,3,Analysis of convective cell evolution with split and merge events using a graph-based methodology,2026,10.5194/amt-19-1853-2026,148,0,150,0.0
+C2,2024,late_pruned_top10,3,Analysis of convective cell evolution with split and merge events using a graph-based methodology,2026,10.5194/amt-19-1853-2026,148,6,150,0.04
+C3,2022,fixed_top10,4,A systematic comparison of human mitochondrial genome assembly tools,2023,10.1186/s12859-023-05445-3,16,0,150,0.0
+C3,2022,recursive_first10,4,A systematic comparison of human mitochondrial genome assembly tools,2023,10.1186/s12859-023-05445-3,16,43,150,0.286667
+C3,2022,late_pruned_top10,4,A systematic comparison of human mitochondrial genome assembly tools,2023,10.1186/s12859-023-05445-3,16,143,150,0.953333
+C4,2024,fixed_top10,1,Aligning LLMs for Thai Legal Question Answering with Efficient Semantic-Similarity Rewards,2025,10.18653/v1/2025.nllp-1.21,28,0,150,0.0
+C4,2024,recursive_first10,1,Aligning LLMs for Thai Legal Question Answering with Efficient Semantic-Similarity Rewards,2025,10.18653/v1/2025.nllp-1.21,28,0,150,0.0
+C4,2024,late_pruned_top10,1,Aligning LLMs for Thai Legal Question Answering with Efficient Semantic-Similarity Rewards,2025,10.18653/v1/2025.nllp-1.21,28,0,150,0.0
+C4,2024,fixed_top10,3,NitiBench: Benchmarking LLM Frameworks on Thai Legal Question Answering Capabilities,2025,10.18653/v1/2025.emnlp-main.1739,116;117,0,150,0.0
+C4,2024,recursive_first10,3,NitiBench: Benchmarking LLM Frameworks on Thai Legal Question Answering Capabilities,2025,10.18653/v1/2025.emnlp-main.1739,116;117,9,150,0.06
+C4,2024,late_pruned_top10,3,NitiBench: Benchmarking LLM Frameworks on Thai Legal Question Answering Capabilities,2025,10.18653/v1/2025.emnlp-main.1739,116;117,119,150,0.793333
+C4,2024,fixed_top10,4,"Natural Language Processing for the Legal Domain: A Survey of Tasks, Datasets, Models, and Challenges",2025,10.1145/3777009,113,0,150,0.0
+C4,2024,recursive_first10,4,"Natural Language Processing for the Legal Domain: A Survey of Tasks, Datasets, Models, and Challenges",2025,10.1145/3777009,113,0,150,0.0
+C4,2024,late_pruned_top10,4,"Natural Language Processing for the Legal Domain: A Survey of Tasks, Datasets, Models, and Challenges",2025,10.1145/3777009,113,0,150,0.0

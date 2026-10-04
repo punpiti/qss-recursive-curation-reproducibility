@@ -1,0 +1,233 @@
+{
+  "schema_version": "qss-review-response-v1",
+  "batch_id": "construct-C2-02",
+  "review_type": "CONSTRUCT_AUDIT",
+  "rubric_version": "qss-review-rubric-v3",
+  "reviewer": {
+    "type": "AI_PROXY",
+    "id": "codex-cli-0-159-3",
+    "role": "PRIMARY_REVIEWER",
+    "review_status": "AI_FIRST_PASS",
+    "reviewed_at": "2026-10-03T17:37:01.221711Z"
+  },
+  "reviews": [
+    {
+      "review_row_id": "C2-2023-06",
+      "corpus_or_project": "C2",
+      "source_group": "continuity_residual_diagnostic",
+      "paper": {
+        "title": "An integrated method for TCWV prediction using deep learning coupled with physical constraints: a physics-aware spatio-temporal attention network",
+        "doi": "https://doi.org/10.1080/20964471.2026.2680809",
+        "openalex_id": "https://openalex.org/W7167021323"
+      },
+      "normalized_decision": "EXCLUDE",
+      "scope_fit": "OUT_OF_SCOPE",
+      "role_fit": "MISMATCH",
+      "evidence_sufficiency": "SUFFICIENT_ABSTRACT",
+      "primary_reason_code": "WRONG_DOMAIN_OR_POPULATION",
+      "secondary_reason_codes": [
+        "WRONG_METHOD_OR_OUTCOME",
+        "FALSE_LEXICAL_OR_SEMANTIC_MATCH"
+      ],
+      "assigned_label": "continuity_residual_diagnostic",
+      "corrected_label": null,
+      "evidence": [
+        {
+          "source_field": "ABSTRACT",
+          "supports": "SCOPE",
+          "paraphrase": "The study predicts total-column water vapor across climatic zones rather than diagnosing the evolution of urban convective rainfall from dense surface gauges."
+        },
+        {
+          "source_field": "ABSTRACT",
+          "supports": "ROLE",
+          "paraphrase": "The vertically integrated water-vapor continuity equation is embedded as a neural-network constraint, not used to separate observed rainfall change from an advection-only reference."
+        }
+      ],
+      "rationale": "The abstract supplies enough evidence to exclude this paper: its object and outcome are TCWV prediction, and continuity serves as an inductive constraint in a deep-learning model. It does not provide the rainfall advection-residual diagnostic role defined for the assigned group.",
+      "confidence": "HIGH",
+      "flags": [
+        "POSSIBLE_FALSE_MATCH",
+        "POSSIBLE_WRONG_GROUP"
+      ],
+      "follow_up": {
+        "required": true,
+        "priority": "ROUTINE",
+        "reasons": [
+          "AI_PROXY_REQUIRES_HUMAN_CONFIRMATION"
+        ],
+        "recommended_action": "HUMAN_CHECK"
+      },
+      "task_specific": {
+        "scope_decision": "REMOVE_OUT_OF_SCOPE",
+        "group_decision": "WRONG_GROUP",
+        "corrected_group": null,
+        "literature_decision": null
+      }
+    },
+    {
+      "review_row_id": "C2-2024-07",
+      "corpus_or_project": "C2",
+      "source_group": "continuity_residual_diagnostic",
+      "paper": {
+        "title": "A physically based neural network for flood routing: The Muskingum-Recurrent neural network",
+        "doi": "https://doi.org/10.1016/j.jhydrol.2026.135403",
+        "openalex_id": "https://openalex.org/W7148539509"
+      },
+      "normalized_decision": "EXCLUDE",
+      "scope_fit": "OUT_OF_SCOPE",
+      "role_fit": "MISMATCH",
+      "evidence_sufficiency": "SUFFICIENT_ABSTRACT",
+      "primary_reason_code": "WRONG_DOMAIN_OR_POPULATION",
+      "secondary_reason_codes": [
+        "WRONG_METHOD_OR_OUTCOME",
+        "FALSE_LEXICAL_OR_SEMANTIC_MATCH"
+      ],
+      "assigned_label": "continuity_residual_diagnostic",
+      "corrected_label": null,
+      "evidence": [
+        {
+          "source_field": "ABSTRACT",
+          "supports": "SCOPE",
+          "paraphrase": "The application is channel and basin flood routing, evaluated on artificial channels, benchmark floods, and Village Creek, rather than urban convective rainfall-field evolution."
+        },
+        {
+          "source_field": "ABSTRACT",
+          "supports": "ROLE",
+          "paraphrase": "Mass conservation is enforced through Muskingum routing equations inside an RNN; the method does not compare observed rainfall with optical-flow advection or interpret a rainfall residual."
+        }
+      ],
+      "rationale": "Although the paper uses a hard water-mass-conservation constraint, the abstract clearly describes flood routing rather than a precipitation source-sink or advection-residual diagnostic. The lexical connection to conservation is therefore insufficient for either scope or the assigned evidence group.",
+      "confidence": "HIGH",
+      "flags": [
+        "POSSIBLE_FALSE_MATCH",
+        "POSSIBLE_WRONG_GROUP"
+      ],
+      "follow_up": {
+        "required": true,
+        "priority": "ROUTINE",
+        "reasons": [
+          "AI_PROXY_REQUIRES_HUMAN_CONFIRMATION"
+        ],
+        "recommended_action": "HUMAN_CHECK"
+      },
+      "task_specific": {
+        "scope_decision": "REMOVE_OUT_OF_SCOPE",
+        "group_decision": "WRONG_GROUP",
+        "corrected_group": null,
+        "literature_decision": null
+      }
+    },
+    {
+      "review_row_id": "C2-2024-08",
+      "corpus_or_project": "C2",
+      "source_group": "gauge_field_reconstruction",
+      "paper": {
+        "title": "A dense rain-gauge observation framework for advection-consistency diagnosis of urban convective rainfall",
+        "doi": "https://doi.org/10.5194/egusphere-2026-1314",
+        "openalex_id": "https://openalex.org/W7164816061"
+      },
+      "normalized_decision": "INCLUDE",
+      "scope_fit": "IN_SCOPE",
+      "role_fit": "PARTIAL",
+      "evidence_sufficiency": "SUFFICIENT_ABSTRACT",
+      "primary_reason_code": "DIRECT_METHOD_OR_EVIDENCE_ROLE",
+      "secondary_reason_codes": [
+        "VALID_CONTEXT_BUT_WRONG_GROUP"
+      ],
+      "assigned_label": "gauge_field_reconstruction",
+      "corrected_label": "continuity_residual_diagnostic",
+      "evidence": [
+        {
+          "source_field": "ABSTRACT",
+          "supports": "SCOPE",
+          "paraphrase": "The study uses a high-density Bangkok rain-gauge network, reconstructs kilometer-scale rainfall fields, and estimates motion with Horn-Schunck optical flow."
+        },
+        {
+          "source_field": "ABSTRACT",
+          "supports": "DECISION",
+          "paraphrase": "It advances the reconstructed field without source or sink terms and interprets the residual from the observed field as non-advective rainfall processes."
+        },
+        {
+          "source_field": "ABSTRACT",
+          "supports": "ROLE",
+          "paraphrase": "Field reconstruction is a necessary component, but the stated contribution and evaluated behavior center on continuity-based advection consistency and residual diagnosis."
+        }
+      ],
+      "rationale": "The abstract directly matches the research scope and supports inclusion. Its evidence role only partially fits gauge-field reconstruction because no sampling, interpolation, smoothing, or reconstruction-uncertainty method is developed in the abstract; the principal role is the continuity/advection-residual diagnostic, so that group is the proposed correction.",
+      "confidence": "HIGH",
+      "flags": [
+        "POSSIBLE_WRONG_GROUP",
+        "ROLE_COVERAGE_RISK"
+      ],
+      "follow_up": {
+        "required": true,
+        "priority": "MEDIUM",
+        "reasons": [
+          "AI_PROXY_REQUIRES_HUMAN_CONFIRMATION",
+          "GROUP_DISAGREEMENT",
+          "ROLE_COVERAGE_RISK"
+        ],
+        "recommended_action": "HUMAN_CHECK"
+      },
+      "task_specific": {
+        "scope_decision": "KEEP_IN_SCOPE",
+        "group_decision": "PARTIAL_ANALOGUE",
+        "corrected_group": "continuity_residual_diagnostic",
+        "literature_decision": null
+      }
+    },
+    {
+      "review_row_id": "C2-2024-09",
+      "corpus_or_project": "C2",
+      "source_group": "continuity_residual_diagnostic",
+      "paper": {
+        "title": "An integrated method for TCWV prediction using deep learning coupled with physical constraints: a physics-aware spatio-temporal attention network",
+        "doi": "https://doi.org/10.1080/20964471.2026.2680809",
+        "openalex_id": "https://openalex.org/W7167021323"
+      },
+      "normalized_decision": "EXCLUDE",
+      "scope_fit": "OUT_OF_SCOPE",
+      "role_fit": "MISMATCH",
+      "evidence_sufficiency": "SUFFICIENT_ABSTRACT",
+      "primary_reason_code": "WRONG_DOMAIN_OR_POPULATION",
+      "secondary_reason_codes": [
+        "WRONG_METHOD_OR_OUTCOME",
+        "FALSE_LEXICAL_OR_SEMANTIC_MATCH"
+      ],
+      "assigned_label": "continuity_residual_diagnostic",
+      "corrected_label": null,
+      "evidence": [
+        {
+          "source_field": "ABSTRACT",
+          "supports": "SCOPE",
+          "paraphrase": "The modeled quantity is total-column water vapor and the reported outcome is predictive performance across climatic zones, not observed urban rainfall growth."
+        },
+        {
+          "source_field": "ABSTRACT",
+          "supports": "ROLE",
+          "paraphrase": "Continuity appears as a vertically integrated water-vapor constraint within a spatio-temporal neural network, without an advection-only rainfall reference or diagnosed rainfall residual."
+        }
+      ],
+      "rationale": "The title and abstract provide sufficient evidence that this is a TCWV forecasting study, outside the defined rainfall diagnostic scope. Its continuity-equation usage does not fulfill the assigned group's source-sink or transport-residual evidence role.",
+      "confidence": "HIGH",
+      "flags": [
+        "POSSIBLE_FALSE_MATCH",
+        "POSSIBLE_WRONG_GROUP"
+      ],
+      "follow_up": {
+        "required": true,
+        "priority": "ROUTINE",
+        "reasons": [
+          "AI_PROXY_REQUIRES_HUMAN_CONFIRMATION"
+        ],
+        "recommended_action": "HUMAN_CHECK"
+      },
+      "task_specific": {
+        "scope_decision": "REMOVE_OUT_OF_SCOPE",
+        "group_decision": "WRONG_GROUP",
+        "corrected_group": null,
+        "literature_decision": null
+      }
+    }
+  ]
+}

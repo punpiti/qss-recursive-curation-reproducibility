@@ -1,0 +1,57 @@
+{
+  "schema_version": 1,
+  "status": "complete",
+  "current_run_cache_only": true,
+  "current_run_openalex_requests": 0,
+  "current_run_cache_hits": 7,
+  "current_run_cache_misses": 0,
+  "retrieval_provenance": {
+    "recorded_network_attempts": 8,
+    "recorded_successful_responses": 7,
+    "recorded_failed_attempts": 1,
+    "unique_network_queries": 7,
+    "transports": [
+      "ssh_curl"
+    ],
+    "first_timestamp_utc": "2026-08-28T02:40:28.565799+00:00",
+    "last_timestamp_utc": "2026-08-28T02:40:52.918314+00:00"
+  },
+  "query_counts": {
+    "search_validation_reachability": 100,
+    "scholarly_recommendation_relevance_feedback": 100,
+    "temporal_evaluation_observability": 0,
+    "coverage_diversity_stability": 22,
+    "dependent_inference": 100,
+    "human_curation_governance": 67,
+    "bibliography_as_research_state": 100
+  },
+  "unique_candidates_before_abstract_gate": 486,
+  "missing_abstract_removed": 39,
+  "abstract_bearing_candidates": 447,
+  "scope_eligible_candidates": 144,
+  "review_queue_count": 88,
+  "eligible_by_role": {
+    "search_validation_reachability": 18,
+    "scholarly_recommendation_relevance_feedback": 18,
+    "temporal_evaluation_observability": 3,
+    "coverage_diversity_stability": 26,
+    "dependent_inference": 10,
+    "human_curation_governance": 37,
+    "bibliography_as_research_state": 32
+  },
+  "queued_by_role": {
+    "search_validation_reachability": 15,
+    "scholarly_recommendation_relevance_feedback": 15,
+    "temporal_evaluation_observability": 3,
+    "coverage_diversity_stability": 15,
+    "dependent_inference": 10,
+    "human_curation_governance": 15,
+    "bibliography_as_research_state": 15
+  },
+  "rejections": {
+    "anchor_or_assignment_failure": 267,
+    "below_group_fit_threshold": 36
+  },
+  "failures": [],
+  "automatic_insertions": 0
+}

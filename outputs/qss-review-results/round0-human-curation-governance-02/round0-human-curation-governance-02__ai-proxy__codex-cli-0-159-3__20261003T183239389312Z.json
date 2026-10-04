@@ -1,0 +1,280 @@
+{
+  "schema_version": "qss-review-response-v1",
+  "batch_id": "round0-human-curation-governance-02",
+  "review_type": "ROUND0_LITERATURE_REVIEW",
+  "rubric_version": "qss-review-rubric-v3",
+  "reviewer": {
+    "type": "AI_PROXY",
+    "id": "codex-cli-0-159-3",
+    "role": "PRIMARY_REVIEWER",
+    "review_status": "AI_FIRST_PASS",
+    "reviewed_at": "2026-10-03T18:32:39.389312Z"
+  },
+  "reviews": [
+    {
+      "review_row_id": "round0-064",
+      "corpus_or_project": "qss_self_hosting",
+      "source_group": "human_curation_governance",
+      "paper": {
+        "title": "Mapping the AI Landscape in Food Science and Engineering: A Bibliometric Analysis Enhanced with Interactive Digital Tools and Company Case Studies",
+        "doi": "https://doi.org/10.1007/s12393-025-09413-w",
+        "openalex_id": "https://openalex.org/W4411888862"
+      },
+      "normalized_decision": "INCLUDE",
+      "scope_fit": "IN_SCOPE",
+      "role_fit": "BRIDGE",
+      "evidence_sufficiency": "SUFFICIENT_ABSTRACT",
+      "primary_reason_code": "BRIDGE_REFERENCE",
+      "secondary_reason_codes": [],
+      "assigned_label": "human_curation_governance",
+      "corrected_label": null,
+      "evidence": [
+        {
+          "source_field": "ABSTRACT",
+          "supports": "SCOPE",
+          "paraphrase": "The review presents an interactive dashboard built around a curated set of review articles and tools for targeted literature interrogation."
+        },
+        {
+          "source_field": "ABSTRACT",
+          "supports": "ROLE",
+          "paraphrase": "The dashboard enables user-driven exploration of research trends and thematic relationships, giving researchers interactive control over literature exploration."
+        },
+        {
+          "source_field": "ABSTRACT",
+          "supports": "RISK",
+          "paraphrase": "The abstract does not describe recommendation overrides, provenance controls, or safeguards against feedback loops, so support for the assigned role is indirect."
+        }
+      ],
+      "rationale": "The paper concerns an interactive, researcher-facing scholarly literature tool and therefore fits the literature-curation boundary. It supports the human-control role as a bridge reference, but the abstract does not establish explicit governance, provenance, override, or feedback-loop mechanisms.",
+      "confidence": "MEDIUM",
+      "flags": [
+        "BOUNDARY_CASE"
+      ],
+      "follow_up": {
+        "required": true,
+        "priority": "MEDIUM",
+        "reasons": [
+          "AI_PROXY_REQUIRES_HUMAN_CONFIRMATION",
+          "BOUNDARY_CASE"
+        ],
+        "recommended_action": "HUMAN_CHECK"
+      },
+      "task_specific": {
+        "scope_decision": null,
+        "group_decision": null,
+        "corrected_group": null,
+        "literature_decision": "KEEP"
+      }
+    },
+    {
+      "review_row_id": "round0-065",
+      "corpus_or_project": "qss_self_hosting",
+      "source_group": "human_curation_governance",
+      "paper": {
+        "title": "Explainable artificial intelligence in the talent recruitment process-a literature review",
+        "doi": "https://doi.org/10.1080/23311975.2025.2570881",
+        "openalex_id": "https://openalex.org/W4415132431"
+      },
+      "normalized_decision": "EXCLUDE",
+      "scope_fit": "OUT_OF_SCOPE",
+      "role_fit": "MISMATCH",
+      "evidence_sufficiency": "SUFFICIENT_ABSTRACT",
+      "primary_reason_code": "WRONG_DOMAIN_OR_POPULATION",
+      "secondary_reason_codes": [
+        "FALSE_LEXICAL_OR_SEMANTIC_MATCH"
+      ],
+      "assigned_label": "human_curation_governance",
+      "corrected_label": null,
+      "evidence": [
+        {
+          "source_field": "TITLE",
+          "supports": "SCOPE",
+          "paraphrase": "The review is about explainable AI in talent recruitment rather than scholarly search or literature curation."
+        },
+        {
+          "source_field": "ABSTRACT",
+          "supports": "DECISION",
+          "paraphrase": "Its recommendation setting is person-job matching, and its transparency and traceability claims concern recruitment decisions."
+        }
+      ],
+      "rationale": "Although the abstract discusses explainability and traceability, these concepts are applied to recruitment and person-job recommendation. It does not address bibliographic curation, scholarly retrieval, evidence selection, or governance of a literature workflow.",
+      "confidence": "HIGH",
+      "flags": [
+        "POSSIBLE_FALSE_MATCH"
+      ],
+      "follow_up": {
+        "required": true,
+        "priority": "ROUTINE",
+        "reasons": [
+          "AI_PROXY_REQUIRES_HUMAN_CONFIRMATION"
+        ],
+        "recommended_action": "HUMAN_CHECK"
+      },
+      "task_specific": {
+        "scope_decision": null,
+        "group_decision": null,
+        "corrected_group": null,
+        "literature_decision": "REMOVE"
+      }
+    },
+    {
+      "review_row_id": "round0-066",
+      "corpus_or_project": "qss_self_hosting",
+      "source_group": "human_curation_governance",
+      "paper": {
+        "title": "Governing Adaptive News Curation: Sequential Optimization, Cumulative Exposure Allocation, and Societal Accountability",
+        "doi": "https://doi.org/10.3390/socsci15080496",
+        "openalex_id": "https://openalex.org/W7170135979"
+      },
+      "normalized_decision": "EXCLUDE",
+      "scope_fit": "OUT_OF_SCOPE",
+      "role_fit": "PARTIAL",
+      "evidence_sufficiency": "SUFFICIENT_ABSTRACT",
+      "primary_reason_code": "WRONG_DOMAIN_OR_POPULATION",
+      "secondary_reason_codes": [
+        "BRIDGE_REFERENCE"
+      ],
+      "assigned_label": "human_curation_governance",
+      "corrected_label": null,
+      "evidence": [
+        {
+          "source_field": "ABSTRACT",
+          "supports": "ROLE",
+          "paraphrase": "The conceptual framework addresses adaptive curation, feedback, human review delay, traceability, accountability, and cumulative exposure over time."
+        },
+        {
+          "source_field": "ABSTRACT",
+          "supports": "SCOPE",
+          "paraphrase": "The objects being ranked and governed are news sources, topics, and population exposure rather than scholarly records or research evidence."
+        },
+        {
+          "source_field": "ABSTRACT",
+          "supports": "DECISION",
+          "paraphrase": "Its evaluation framework targets digital news gatekeeping and societal visibility, not literature-search or bibliographic selection outcomes."
+        }
+      ],
+      "rationale": "The paper is conceptually adjacent to the governance role because it treats feedback, traceability, cumulative exposure, and delayed human review. However, the abstract places all contributions in adaptive news curation, outside the frozen scholarly and research-evidence selection boundary.",
+      "confidence": "MEDIUM",
+      "flags": [
+        "BOUNDARY_CASE"
+      ],
+      "follow_up": {
+        "required": true,
+        "priority": "MEDIUM",
+        "reasons": [
+          "AI_PROXY_REQUIRES_HUMAN_CONFIRMATION",
+          "BOUNDARY_CASE"
+        ],
+        "recommended_action": "HUMAN_CHECK"
+      },
+      "task_specific": {
+        "scope_decision": null,
+        "group_decision": null,
+        "corrected_group": null,
+        "literature_decision": "REMOVE"
+      }
+    },
+    {
+      "review_row_id": "round0-067",
+      "corpus_or_project": "qss_self_hosting",
+      "source_group": "human_curation_governance",
+      "paper": {
+        "title": "Cyborg Workflows Merging Human Judgment and Agentic AI for Digital Media Transformation",
+        "doi": "https://doi.org/10.20944/preprints202603.2004.v1",
+        "openalex_id": "https://openalex.org/W7140315910"
+      },
+      "normalized_decision": "EXCLUDE",
+      "scope_fit": "OUT_OF_SCOPE",
+      "role_fit": "MISMATCH",
+      "evidence_sufficiency": "SUFFICIENT_ABSTRACT",
+      "primary_reason_code": "WRONG_DOMAIN_OR_POPULATION",
+      "secondary_reason_codes": [
+        "WRONG_METHOD_OR_OUTCOME"
+      ],
+      "assigned_label": "human_curation_governance",
+      "corrected_label": null,
+      "evidence": [
+        {
+          "source_field": "ABSTRACT",
+          "supports": "SCOPE",
+          "paraphrase": "The proposed human-agent workflows address digital media production, content generation, news curation, and immersive production."
+        },
+        {
+          "source_field": "ABSTRACT",
+          "supports": "DECISION",
+          "paraphrase": "The stated outcomes are media-production throughput, creative output, bias mitigation, and practitioner adoption rather than scholarly retrieval or evidence-selection quality."
+        }
+      ],
+      "rationale": "Human judgment and oversight are present, but only within a broad agentic digital-media workflow. The abstract provides no bibliographic curation, scholarly search, evidence selection, or provenance contribution relevant to the frozen boundary.",
+      "confidence": "HIGH",
+      "flags": [
+        "NONE"
+      ],
+      "follow_up": {
+        "required": true,
+        "priority": "ROUTINE",
+        "reasons": [
+          "AI_PROXY_REQUIRES_HUMAN_CONFIRMATION"
+        ],
+        "recommended_action": "HUMAN_CHECK"
+      },
+      "task_specific": {
+        "scope_decision": null,
+        "group_decision": null,
+        "corrected_group": null,
+        "literature_decision": "REMOVE"
+      }
+    },
+    {
+      "review_row_id": "round0-068",
+      "corpus_or_project": "qss_self_hosting",
+      "source_group": "human_curation_governance",
+      "paper": {
+        "title": "A comprehensive taxonomy for explainable artificial intelligence: a systematic survey of surveys on methods and concepts",
+        "doi": "https://doi.org/10.1007/s10618-022-00867-8",
+        "openalex_id": "https://openalex.org/W4313650676"
+      },
+      "normalized_decision": "EXCLUDE",
+      "scope_fit": "OUT_OF_SCOPE",
+      "role_fit": "MISMATCH",
+      "evidence_sufficiency": "SUFFICIENT_ABSTRACT",
+      "primary_reason_code": "TOO_GENERIC_FOR_CLAIM",
+      "secondary_reason_codes": [
+        "WRONG_METHOD_OR_OUTCOME"
+      ],
+      "assigned_label": "human_curation_governance",
+      "corrected_label": null,
+      "evidence": [
+        {
+          "source_field": "ABSTRACT",
+          "supports": "SCOPE",
+          "paraphrase": "The paper synthesizes general XAI terminology, methods, metrics, and method traits across surveys."
+        },
+        {
+          "source_field": "ABSTRACT",
+          "supports": "DECISION",
+          "paraphrase": "Its intended use is selecting XAI methods for varied use cases, with no scholarly recommendation or literature-curation workflow described."
+        }
+      ],
+      "rationale": "This is a broad taxonomy of explainable-AI methods rather than evidence about explainable scholarly recommendation or governed literature curation. Its general context-sensitive method-selection contribution is too generic to support the specified evidence role.",
+      "confidence": "HIGH",
+      "flags": [
+        "NONE"
+      ],
+      "follow_up": {
+        "required": true,
+        "priority": "ROUTINE",
+        "reasons": [
+          "AI_PROXY_REQUIRES_HUMAN_CONFIRMATION"
+        ],
+        "recommended_action": "HUMAN_CHECK"
+      },
+      "task_specific": {
+        "scope_decision": null,
+        "group_decision": null,
+        "corrected_group": null,
+        "literature_decision": "REMOVE"
+      }
+    }
+  ]
+}

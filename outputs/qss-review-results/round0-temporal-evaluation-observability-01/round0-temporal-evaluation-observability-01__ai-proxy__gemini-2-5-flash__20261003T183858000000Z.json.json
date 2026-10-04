@@ -1,0 +1,168 @@
+{
+  "schema_version": "qss-review-response-v1",
+  "batch_id": "round0-temporal-evaluation-observability-01",
+  "review_type": "ROUND0_LITERATURE_REVIEW",
+  "rubric_version": "qss-review-rubric-v3",
+  "reviewer": {
+    "type": "AI_PROXY",
+    "id": "gemini-2-5-flash",
+    "role": "PRIMARY_REVIEWER",
+    "review_status": "AI_FIRST_PASS",
+    "reviewed_at": null
+  },
+  "reviews": [
+    {
+      "review_row_id": "round0-031",
+      "corpus_or_project": "qss_self_hosting",
+      "source_group": "temporal_evaluation_observability",
+      "paper": {
+        "title": "Efficient Learning Machines: Theories, Concepts, and Applications for Engineers and System Designers",
+        "doi": "https://doi.org/10.1007/978-1-4302-5990-9",
+        "openalex_id": "https://openalex.org/W2473394283"
+      },
+      "normalized_decision": "EXCLUDE",
+      "scope_fit": "OUT_OF_SCOPE",
+      "role_fit": "MISMATCH",
+      "evidence_sufficiency": "SUFFICIENT_ABSTRACT",
+      "primary_reason_code": "FALSE_LEXICAL_OR_SEMANTIC_MATCH",
+      "secondary_reason_codes": [
+        "WRONG_DOMAIN_OR_POPULATION"
+      ],
+      "assigned_label": "temporal_evaluation_observability",
+      "corrected_label": null,
+      "evidence": [
+        {
+          "source_field": "ABSTRACT",
+          "supports": "SCOPE",
+          "paraphrase": "The book covers general machine learning topics such as neural networks, classification, genetic algorithms, and hierarchical temporal memory for engineering systems."
+        },
+        {
+          "source_field": "TITLE",
+          "supports": "ROLE",
+          "paraphrase": "Focuses broadly on efficient learning machines for engineers rather than scholarly retrieval or recommendation evaluation."
+        }
+      ],
+      "rationale": "This paper is a general machine learning textbook focusing on broad engineering ML applications (e.g., neural networks, SVMs, hierarchical temporal memory). It does not address scholarly search, bibliographic recommendation, or temporal evaluation of retrieval systems. The term 'temporal' in the abstract refers to Hierarchical Temporal Memory, representing a false lexical match.",
+      "confidence": "HIGH",
+      "flags": [
+        "POSSIBLE_FALSE_MATCH"
+      ],
+      "follow_up": {
+        "required": true,
+        "priority": "ROUTINE",
+        "reasons": [
+          "AI_PROXY_REQUIRES_HUMAN_CONFIRMATION"
+        ],
+        "recommended_action": "HUMAN_CHECK"
+      },
+      "task_specific": {
+        "scope_decision": null,
+        "group_decision": null,
+        "corrected_group": null,
+        "literature_decision": "REMOVE"
+      }
+    },
+    {
+      "review_row_id": "round0-032",
+      "corpus_or_project": "qss_self_hosting",
+      "source_group": "temporal_evaluation_observability",
+      "paper": {
+        "title": "A systematic literature review of recent advances on context-aware recommender systems",
+        "doi": "https://doi.org/10.1007/s10462-024-10939-4",
+        "openalex_id": "https://openalex.org/W4404432903"
+      },
+      "normalized_decision": "EXCLUDE",
+      "scope_fit": "OUT_OF_SCOPE",
+      "role_fit": "MISMATCH",
+      "evidence_sufficiency": "SUFFICIENT_ABSTRACT",
+      "primary_reason_code": "WRONG_DOMAIN_OR_POPULATION",
+      "secondary_reason_codes": [
+        "TOO_GENERIC_FOR_CLAIM"
+      ],
+      "assigned_label": "temporal_evaluation_observability",
+      "corrected_label": null,
+      "evidence": [
+        {
+          "source_field": "ABSTRACT",
+          "supports": "SCOPE",
+          "paraphrase": "The systematic review examines context-aware recommender systems for generic entities like products, services, or contacts, incorporating temporal, spatial, or social context."
+        },
+        {
+          "source_field": "ABSTRACT",
+          "supports": "ROLE",
+          "paraphrase": "Focuses on general context representation frameworks and reproducibility/effectiveness evaluation across generic recommendation domains."
+        }
+      ],
+      "rationale": "While the review discusses context-aware recommender systems and temporal context integration, it focuses on general e-commerce and generic entities (products, services, contacts). It falls under the exclusion boundary as a generic recommender system without a scholarly search or evidence-selection workflow.",
+      "confidence": "HIGH",
+      "flags": [
+        "NONE"
+      ],
+      "follow_up": {
+        "required": true,
+        "priority": "ROUTINE",
+        "reasons": [
+          "AI_PROXY_REQUIRES_HUMAN_CONFIRMATION"
+        ],
+        "recommended_action": "HUMAN_CHECK"
+      },
+      "task_specific": {
+        "scope_decision": null,
+        "group_decision": null,
+        "corrected_group": null,
+        "literature_decision": "REMOVE"
+      }
+    },
+    {
+      "review_row_id": "round0-033",
+      "corpus_or_project": "qss_self_hosting",
+      "source_group": "temporal_evaluation_observability",
+      "paper": {
+        "title": "Improving Estimates of Gross Primary Productivity by Assimilating Solar‐Induced Fluorescence Satellite Retrievals in a Terrestrial Biosphere Model Using a Process‐Based SIF Model",
+        "doi": "https://doi.org/10.1029/2019jg005040",
+        "openalex_id": "https://openalex.org/W2979987213"
+      },
+      "normalized_decision": "EXCLUDE",
+      "scope_fit": "OUT_OF_SCOPE",
+      "role_fit": "MISMATCH",
+      "evidence_sufficiency": "SUFFICIENT_ABSTRACT",
+      "primary_reason_code": "FALSE_LEXICAL_OR_SEMANTIC_MATCH",
+      "secondary_reason_codes": [
+        "WRONG_DOMAIN_OR_POPULATION"
+      ],
+      "assigned_label": "temporal_evaluation_observability",
+      "corrected_label": null,
+      "evidence": [
+        {
+          "source_field": "TITLE",
+          "supports": "SCOPE",
+          "paraphrase": "Investigates satellite retrievals of solar-induced fluorescence for terrestrial biosphere modeling."
+        },
+        {
+          "source_field": "ABSTRACT",
+          "supports": "ROLE",
+          "paraphrase": "Uses satellite observations to optimize photosynthesis and phenological parameters in dynamic ecosystem models."
+        }
+      ],
+      "rationale": "This paper belongs to geophysics and biogeosciences, focusing on assimilating satellite remote sensing retrievals into terrestrial biosphere models. The occurrence of 'retrievals' and 'spatio-temporal distribution' is a false lexical match with information retrieval and recommender evaluation.",
+      "confidence": "HIGH",
+      "flags": [
+        "POSSIBLE_FALSE_MATCH"
+      ],
+      "follow_up": {
+        "required": true,
+        "priority": "ROUTINE",
+        "reasons": [
+          "AI_PROXY_REQUIRES_HUMAN_CONFIRMATION"
+        ],
+        "recommended_action": "HUMAN_CHECK"
+      },
+      "task_specific": {
+        "scope_decision": null,
+        "group_decision": null,
+        "corrected_group": null,
+        "literature_decision": "REMOVE"
+      }
+    }
+  ]
+}

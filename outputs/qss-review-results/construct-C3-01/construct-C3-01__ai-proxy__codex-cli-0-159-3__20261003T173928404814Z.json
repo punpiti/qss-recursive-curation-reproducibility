@@ -1,0 +1,291 @@
+{
+  "schema_version": "qss-review-response-v1",
+  "batch_id": "construct-C3-01",
+  "review_type": "CONSTRUCT_AUDIT",
+  "rubric_version": "qss-review-rubric-v3",
+  "reviewer": {
+    "type": "AI_PROXY",
+    "id": "codex-cli-0-159-3",
+    "role": "PRIMARY_REVIEWER",
+    "review_status": "AI_FIRST_PASS",
+    "reviewed_at": "2026-10-03T17:39:28.404814Z"
+  },
+  "reviews": [
+    {
+      "review_row_id": "C3-2022-01",
+      "corpus_or_project": "C3",
+      "source_group": "iterative_alignment_consensus",
+      "paper": {
+        "title": "When less is more: sketching with minimizers in genomics",
+        "doi": "https://doi.org/10.1186/s13059-024-03414-4",
+        "openalex_id": "https://openalex.org/W4403379006"
+      },
+      "normalized_decision": "EXCLUDE",
+      "scope_fit": "OUT_OF_SCOPE",
+      "role_fit": "PARTIAL",
+      "evidence_sufficiency": "SUFFICIENT_ABSTRACT",
+      "primary_reason_code": "WRONG_METHOD_OR_OUTCOME",
+      "secondary_reason_codes": [
+        "TOO_GENERIC_FOR_CLAIM",
+        "FALSE_LEXICAL_OR_SEMANTIC_MATCH"
+      ],
+      "assigned_label": "iterative_alignment_consensus",
+      "corrected_label": null,
+      "evidence": [
+        {
+          "source_field": "ABSTRACT",
+          "supports": "SCOPE",
+          "paraphrase": "The paper is a broad review of minimizer-based data sketching across genomic applications, including de novo assembly, metagenomics, and pangenomes."
+        },
+        {
+          "source_field": "ABSTRACT",
+          "supports": "ROLE",
+          "paraphrase": "Read alignment is listed only as one application; no iterative alignment, position-wise consensus, or sample-specific reference-refinement loop is described."
+        }
+      ],
+      "rationale": "The abstract supports a general genomics-sketching review rather than sample-specific refinement of a small genome from low-depth reads. Its mention of read alignment gives only a partial analogue to the assigned group and does not establish the group's iterative consensus role.",
+      "confidence": "HIGH",
+      "flags": [
+        "POSSIBLE_FALSE_MATCH"
+      ],
+      "follow_up": {
+        "required": true,
+        "priority": "ROUTINE",
+        "reasons": [
+          "AI_PROXY_REQUIRES_HUMAN_CONFIRMATION"
+        ],
+        "recommended_action": "HUMAN_CHECK"
+      },
+      "task_specific": {
+        "scope_decision": "REMOVE_OUT_OF_SCOPE",
+        "group_decision": "PARTIAL_ANALOGUE",
+        "corrected_group": null,
+        "literature_decision": null
+      }
+    },
+    {
+      "review_row_id": "C3-2022-02",
+      "corpus_or_project": "C3",
+      "source_group": "divergent_reference_low_resource",
+      "paper": {
+        "title": "A complete diploid human genome benchmark for personalized genomics",
+        "doi": "https://doi.org/10.1016/j.cell.2026.06.016",
+        "openalex_id": "https://openalex.org/W4414403753"
+      },
+      "normalized_decision": "EXCLUDE",
+      "scope_fit": "OUT_OF_SCOPE",
+      "role_fit": "BRIDGE",
+      "evidence_sufficiency": "SUFFICIENT_ABSTRACT",
+      "primary_reason_code": "WRONG_DOMAIN_OR_POPULATION",
+      "secondary_reason_codes": [
+        "WRONG_METHOD_OR_OUTCOME",
+        "BRIDGE_REFERENCE",
+        "OUTSIDE_FROZEN_BOUNDARY"
+      ],
+      "assigned_label": "divergent_reference_low_resource",
+      "corrected_label": null,
+      "evidence": [
+        {
+          "source_field": "ABSTRACT",
+          "supports": "SCOPE",
+          "paraphrase": "The study builds a telomere-to-telomere benchmark for the complete diploid human genome and evaluates whole-genome reads, variant calls, and assemblies."
+        },
+        {
+          "source_field": "ABSTRACT",
+          "supports": "ROLE",
+          "paraphrase": "It directly identifies technical and reference biases in reference-mapped human resequencing, providing contextual evidence for the divergent-reference group."
+        },
+        {
+          "source_field": "ABSTRACT",
+          "supports": "DECISION",
+          "paraphrase": "The reported solution is genome-based benchmarking and comparison with de novo assembly, not low-depth refinement of mitochondrial or similarly small genomes."
+        }
+      ],
+      "rationale": "Reference-mapping bias makes this a credible bridge for the divergent-reference group. However, the object and outcome are a complete diploid human-genome benchmark and whole-genome assembly performance, which fall outside the frozen small-genome refinement scope and its exclusion of whole-genome de novo claims.",
+      "confidence": "HIGH",
+      "flags": [
+        "BOUNDARY_CASE"
+      ],
+      "follow_up": {
+        "required": true,
+        "priority": "ROUTINE",
+        "reasons": [
+          "AI_PROXY_REQUIRES_HUMAN_CONFIRMATION",
+          "BOUNDARY_CASE"
+        ],
+        "recommended_action": "HUMAN_CHECK"
+      },
+      "task_specific": {
+        "scope_decision": "REMOVE_OUT_OF_SCOPE",
+        "group_decision": "CORRECT_GROUP",
+        "corrected_group": null,
+        "literature_decision": null
+      }
+    },
+    {
+      "review_row_id": "C3-2022-03",
+      "corpus_or_project": "C3",
+      "source_group": "iterative_alignment_consensus",
+      "paper": {
+        "title": "REFCON: Reference-free and robust copy number inference in single-cell tumor transcriptomes",
+        "doi": "https://doi.org/10.64898/2026.08.03.742406",
+        "openalex_id": "https://openalex.org/W7201840246"
+      },
+      "normalized_decision": "EXCLUDE",
+      "scope_fit": "OUT_OF_SCOPE",
+      "role_fit": "MISMATCH",
+      "evidence_sufficiency": "SUFFICIENT_ABSTRACT",
+      "primary_reason_code": "WRONG_DOMAIN_OR_POPULATION",
+      "secondary_reason_codes": [
+        "WRONG_METHOD_OR_OUTCOME",
+        "FALSE_LEXICAL_OR_SEMANTIC_MATCH",
+        "VALID_CONTEXT_BUT_WRONG_GROUP"
+      ],
+      "assigned_label": "iterative_alignment_consensus",
+      "corrected_label": null,
+      "evidence": [
+        {
+          "source_field": "ABSTRACT",
+          "supports": "SCOPE",
+          "paraphrase": "REFCON infers per-cell copy-number profiles from tumor scRNA-seq rather than refining a mitochondrial, organelle-scale, or similarly small DNA reference."
+        },
+        {
+          "source_field": "ABSTRACT",
+          "supports": "ROLE",
+          "paraphrase": "Its deep-learning model estimates copy-number deviations and optimizes genome-wide profiles; it does not iteratively align short reads to build a consensus reference."
+        }
+      ],
+      "rationale": "The abstract provides enough detail to identify a single-cell tumor transcriptomics copy-number method, not sample-specific small-genome reference refinement. Terms such as reference, profile, and refinement describe a different analytical role, so the iterative-alignment group assignment is a semantic mismatch.",
+      "confidence": "HIGH",
+      "flags": [
+        "POSSIBLE_FALSE_MATCH",
+        "POSSIBLE_WRONG_GROUP"
+      ],
+      "follow_up": {
+        "required": true,
+        "priority": "ROUTINE",
+        "reasons": [
+          "AI_PROXY_REQUIRES_HUMAN_CONFIRMATION",
+          "GROUP_DISAGREEMENT"
+        ],
+        "recommended_action": "HUMAN_CHECK"
+      },
+      "task_specific": {
+        "scope_decision": "REMOVE_OUT_OF_SCOPE",
+        "group_decision": "WRONG_GROUP",
+        "corrected_group": null,
+        "literature_decision": null
+      }
+    },
+    {
+      "review_row_id": "C3-2023-04",
+      "corpus_or_project": "C3",
+      "source_group": "iterative_alignment_consensus",
+      "paper": {
+        "title": "REFCON: Reference-free and robust copy number inference in single-cell tumor transcriptomes",
+        "doi": "https://doi.org/10.64898/2026.08.03.742406",
+        "openalex_id": "https://openalex.org/W7201840246"
+      },
+      "normalized_decision": "EXCLUDE",
+      "scope_fit": "OUT_OF_SCOPE",
+      "role_fit": "MISMATCH",
+      "evidence_sufficiency": "SUFFICIENT_ABSTRACT",
+      "primary_reason_code": "WRONG_DOMAIN_OR_POPULATION",
+      "secondary_reason_codes": [
+        "WRONG_METHOD_OR_OUTCOME",
+        "FALSE_LEXICAL_OR_SEMANTIC_MATCH",
+        "VALID_CONTEXT_BUT_WRONG_GROUP"
+      ],
+      "assigned_label": "iterative_alignment_consensus",
+      "corrected_label": null,
+      "evidence": [
+        {
+          "source_field": "ABSTRACT",
+          "supports": "SCOPE",
+          "paraphrase": "REFCON infers per-cell copy-number profiles from tumor scRNA-seq rather than refining a mitochondrial, organelle-scale, or similarly small DNA reference."
+        },
+        {
+          "source_field": "ABSTRACT",
+          "supports": "ROLE",
+          "paraphrase": "Its deep-learning model estimates copy-number deviations and optimizes genome-wide profiles; it does not iteratively align short reads to build a consensus reference."
+        }
+      ],
+      "rationale": "The abstract provides enough detail to identify a single-cell tumor transcriptomics copy-number method, not sample-specific small-genome reference refinement. Terms such as reference, profile, and refinement describe a different analytical role, so the iterative-alignment group assignment is a semantic mismatch.",
+      "confidence": "HIGH",
+      "flags": [
+        "POSSIBLE_FALSE_MATCH",
+        "POSSIBLE_WRONG_GROUP"
+      ],
+      "follow_up": {
+        "required": true,
+        "priority": "ROUTINE",
+        "reasons": [
+          "AI_PROXY_REQUIRES_HUMAN_CONFIRMATION",
+          "GROUP_DISAGREEMENT"
+        ],
+        "recommended_action": "HUMAN_CHECK"
+      },
+      "task_specific": {
+        "scope_decision": "REMOVE_OUT_OF_SCOPE",
+        "group_decision": "WRONG_GROUP",
+        "corrected_group": null,
+        "literature_decision": null
+      }
+    },
+    {
+      "review_row_id": "C3-2024-05",
+      "corpus_or_project": "C3",
+      "source_group": "iterative_alignment_consensus",
+      "paper": {
+        "title": "REFCON: Reference-free and robust copy number inference in single-cell tumor transcriptomes",
+        "doi": "https://doi.org/10.64898/2026.08.03.742406",
+        "openalex_id": "https://openalex.org/W7201840246"
+      },
+      "normalized_decision": "EXCLUDE",
+      "scope_fit": "OUT_OF_SCOPE",
+      "role_fit": "MISMATCH",
+      "evidence_sufficiency": "SUFFICIENT_ABSTRACT",
+      "primary_reason_code": "WRONG_DOMAIN_OR_POPULATION",
+      "secondary_reason_codes": [
+        "WRONG_METHOD_OR_OUTCOME",
+        "FALSE_LEXICAL_OR_SEMANTIC_MATCH",
+        "VALID_CONTEXT_BUT_WRONG_GROUP"
+      ],
+      "assigned_label": "iterative_alignment_consensus",
+      "corrected_label": null,
+      "evidence": [
+        {
+          "source_field": "ABSTRACT",
+          "supports": "SCOPE",
+          "paraphrase": "REFCON infers per-cell copy-number profiles from tumor scRNA-seq rather than refining a mitochondrial, organelle-scale, or similarly small DNA reference."
+        },
+        {
+          "source_field": "ABSTRACT",
+          "supports": "ROLE",
+          "paraphrase": "Its deep-learning model estimates copy-number deviations and optimizes genome-wide profiles; it does not iteratively align short reads to build a consensus reference."
+        }
+      ],
+      "rationale": "The abstract provides enough detail to identify a single-cell tumor transcriptomics copy-number method, not sample-specific small-genome reference refinement. Terms such as reference, profile, and refinement describe a different analytical role, so the iterative-alignment group assignment is a semantic mismatch.",
+      "confidence": "HIGH",
+      "flags": [
+        "POSSIBLE_FALSE_MATCH",
+        "POSSIBLE_WRONG_GROUP"
+      ],
+      "follow_up": {
+        "required": true,
+        "priority": "ROUTINE",
+        "reasons": [
+          "AI_PROXY_REQUIRES_HUMAN_CONFIRMATION",
+          "GROUP_DISAGREEMENT"
+        ],
+        "recommended_action": "HUMAN_CHECK"
+      },
+      "task_specific": {
+        "scope_decision": "REMOVE_OUT_OF_SCOPE",
+        "group_decision": "WRONG_GROUP",
+        "corrected_group": null,
+        "literature_decision": null
+      }
+    }
+  ]
+}

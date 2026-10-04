@@ -1,0 +1,280 @@
+{
+  "schema_version": "qss-review-response-v1",
+  "batch_id": "round0-search-validation-reachability-01",
+  "review_type": "ROUND0_LITERATURE_REVIEW",
+  "rubric_version": "qss-review-rubric-v3",
+  "reviewer": {
+    "type": "AI_PROXY",
+    "id": "codex-cli-0-159-3",
+    "role": "PRIMARY_REVIEWER",
+    "review_status": "AI_FIRST_PASS",
+    "reviewed_at": "2026-10-03T17:58:28.339700Z"
+  },
+  "reviews": [
+    {
+      "review_row_id": "round0-001",
+      "corpus_or_project": "qss_self_hosting",
+      "source_group": "search_validation_reachability",
+      "paper": {
+        "title": "Search strategies to identify observational studies in MEDLINE and Embase",
+        "doi": "https://doi.org/10.1002/14651858.mr000041.pub2",
+        "openalex_id": "https://openalex.org/W1931845227"
+      },
+      "normalized_decision": "INCLUDE",
+      "scope_fit": "IN_SCOPE",
+      "role_fit": "DIRECT",
+      "evidence_sufficiency": "SUFFICIENT_ABSTRACT",
+      "primary_reason_code": "DIRECT_METHOD",
+      "secondary_reason_codes": [
+        "EMPIRICAL_PRECEDENT"
+      ],
+      "assigned_label": "search_validation_reachability",
+      "corrected_label": null,
+      "evidence": [
+        {
+          "source_field": "ABSTRACT",
+          "supports": "ROLE",
+          "paraphrase": "The review assesses search-filter sensitivity and precision against reference standards using a relative-recall approach."
+        },
+        {
+          "source_field": "ABSTRACT",
+          "supports": "DECISION",
+          "paraphrase": "It reports empirical performance for 18 filters and distinguishes limited external validation from unvalidated approaches."
+        }
+      ],
+      "rationale": "The contribution directly evaluates literature-search sensitivity and precision against reference standards, including relative recall and external validation. This is direct evidence for search validation and reachable relevant records.",
+      "confidence": "HIGH",
+      "flags": [
+        "NONE"
+      ],
+      "follow_up": {
+        "required": true,
+        "priority": "ROUTINE",
+        "reasons": [
+          "AI_PROXY_REQUIRES_HUMAN_CONFIRMATION"
+        ],
+        "recommended_action": "HUMAN_CHECK"
+      },
+      "task_specific": {
+        "scope_decision": null,
+        "group_decision": null,
+        "corrected_group": null,
+        "literature_decision": "KEEP"
+      }
+    },
+    {
+      "review_row_id": "round0-002",
+      "corpus_or_project": "qss_self_hosting",
+      "source_group": "search_validation_reachability",
+      "paper": {
+        "title": "A practical guide to evaluating sensitivity of literature search strings for systematic reviews using relative recall",
+        "doi": "https://doi.org/10.1017/rsm.2024.6",
+        "openalex_id": "https://openalex.org/W4408173758"
+      },
+      "normalized_decision": "INCLUDE",
+      "scope_fit": "IN_SCOPE",
+      "role_fit": "DIRECT",
+      "evidence_sufficiency": "SUFFICIENT_ABSTRACT",
+      "primary_reason_code": "DIRECT_METHOD",
+      "secondary_reason_codes": [
+        "FOUNDATIONAL_ANCHOR"
+      ],
+      "assigned_label": "search_validation_reachability",
+      "corrected_label": null,
+      "evidence": [
+        {
+          "source_field": "ABSTRACT",
+          "supports": "ROLE",
+          "paraphrase": "The paper defines a benchmark-publication procedure for estimating relative recall and search-string sensitivity."
+        },
+        {
+          "source_field": "ABSTRACT",
+          "supports": "DECISION",
+          "paraphrase": "Retrieval overlap with a benchmark-targeting search is used to identify low-sensitivity strings that require improvement."
+        }
+      ],
+      "rationale": "The paper is explicitly about validating systematic-review search strings through benchmark sets, relative recall, and sensitivity. Its stated method directly matches the assigned evidence role.",
+      "confidence": "HIGH",
+      "flags": [
+        "NONE"
+      ],
+      "follow_up": {
+        "required": true,
+        "priority": "ROUTINE",
+        "reasons": [
+          "AI_PROXY_REQUIRES_HUMAN_CONFIRMATION"
+        ],
+        "recommended_action": "HUMAN_CHECK"
+      },
+      "task_specific": {
+        "scope_decision": null,
+        "group_decision": null,
+        "corrected_group": null,
+        "literature_decision": "KEEP"
+      }
+    },
+    {
+      "review_row_id": "round0-003",
+      "corpus_or_project": "qss_self_hosting",
+      "source_group": "search_validation_reachability",
+      "paper": {
+        "title": "Introducing PALETTE: an iterative method for conducting a literature search for a review in palliative care",
+        "doi": "https://doi.org/10.1186/s12904-018-0335-z",
+        "openalex_id": "https://openalex.org/W2805708549"
+      },
+      "normalized_decision": "INCLUDE",
+      "scope_fit": "IN_SCOPE",
+      "role_fit": "DIRECT",
+      "evidence_sufficiency": "SUFFICIENT_ABSTRACT",
+      "primary_reason_code": "DIRECT_METHOD",
+      "secondary_reason_codes": [
+        "EMPIRICAL_PRECEDENT"
+      ],
+      "assigned_label": "search_validation_reachability",
+      "corrected_label": null,
+      "evidence": [
+        {
+          "source_field": "ABSTRACT",
+          "supports": "SCOPE",
+          "paraphrase": "PALETTE iteratively changes a literature-search state through expert input, pearl growing, citation tracking, and Boolean searching."
+        },
+        {
+          "source_field": "ABSTRACT",
+          "supports": "ROLE",
+          "paraphrase": "The method repeatedly validates searches against known relevant 'golden bullet' articles and continues until no new articles qualify."
+        },
+        {
+          "source_field": "ABSTRACT",
+          "supports": "DECISION",
+          "paraphrase": "Two review applications compare PALETTE with a recommended intervention-review search and report retrieval of more relevant articles with less screening."
+        }
+      ],
+      "rationale": "The framework directly combines iterative retrieval with validation against known relevant records and an empirical comparison of search results. The abstract therefore supports both the scholarly-search boundary and the search-validation/reachability role.",
+      "confidence": "HIGH",
+      "flags": [
+        "NONE"
+      ],
+      "follow_up": {
+        "required": true,
+        "priority": "ROUTINE",
+        "reasons": [
+          "AI_PROXY_REQUIRES_HUMAN_CONFIRMATION"
+        ],
+        "recommended_action": "HUMAN_CHECK"
+      },
+      "task_specific": {
+        "scope_decision": null,
+        "group_decision": null,
+        "corrected_group": null,
+        "literature_decision": "KEEP"
+      }
+    },
+    {
+      "review_row_id": "round0-004",
+      "corpus_or_project": "qss_self_hosting",
+      "source_group": "search_validation_reachability",
+      "paper": {
+        "title": "Information retrieval in systematic reviews: a case study of the crime prevention literature",
+        "doi": "https://doi.org/10.1007/s11292-015-9243-x",
+        "openalex_id": "https://openalex.org/W1787441490"
+      },
+      "normalized_decision": "INCLUDE",
+      "scope_fit": "IN_SCOPE",
+      "role_fit": "BRIDGE",
+      "evidence_sufficiency": "SUFFICIENT_ABSTRACT",
+      "primary_reason_code": "BRIDGE_REFERENCE",
+      "secondary_reason_codes": [
+        "EMPIRICAL_PRECEDENT"
+      ],
+      "assigned_label": "search_validation_reachability",
+      "corrected_label": null,
+      "evidence": [
+        {
+          "source_field": "ABSTRACT",
+          "supports": "SCOPE",
+          "paraphrase": "The paper uses a systematic search case study to develop guidance for reproducible evidence retrieval."
+        },
+        {
+          "source_field": "ABSTRACT",
+          "supports": "ROLE",
+          "paraphrase": "It reports empirical sensitivity-precision optimization and estimates database overlap for eligible crime-prevention studies."
+        },
+        {
+          "source_field": "ABSTRACT",
+          "supports": "DECISION",
+          "paraphrase": "Its discussion of database limitations and complementary tactics informs which relevant studies are reachable by different search channels."
+        }
+      ],
+      "rationale": "This case study is within systematic-review retrieval and supplies empirical evidence on sensitivity, precision, database overlap, and complementary reachability. It is a useful bridge rather than a dedicated benchmark or relative-recall validation method.",
+      "confidence": "HIGH",
+      "flags": [
+        "NONE"
+      ],
+      "follow_up": {
+        "required": true,
+        "priority": "ROUTINE",
+        "reasons": [
+          "AI_PROXY_REQUIRES_HUMAN_CONFIRMATION"
+        ],
+        "recommended_action": "HUMAN_CHECK"
+      },
+      "task_specific": {
+        "scope_decision": null,
+        "group_decision": null,
+        "corrected_group": null,
+        "literature_decision": "KEEP"
+      }
+    },
+    {
+      "review_row_id": "round0-005",
+      "corpus_or_project": "qss_self_hosting",
+      "source_group": "search_validation_reachability",
+      "paper": {
+        "title": "Data extraction methods for systematic review (semi)automation: Update of a living systematic review",
+        "doi": "https://doi.org/10.12688/f1000research.51117.3",
+        "openalex_id": "https://openalex.org/W4409247985"
+      },
+      "normalized_decision": "EXCLUDE",
+      "scope_fit": "OUT_OF_SCOPE",
+      "role_fit": "MISMATCH",
+      "evidence_sufficiency": "SUFFICIENT_ABSTRACT",
+      "primary_reason_code": "WRONG_METHOD_OR_OUTCOME",
+      "secondary_reason_codes": [
+        "FALSE_LEXICAL_OR_SEMANTIC_MATCH"
+      ],
+      "assigned_label": "search_validation_reachability",
+      "corrected_label": null,
+      "evidence": [
+        {
+          "source_field": "ABSTRACT",
+          "supports": "DECISION",
+          "paraphrase": "The review's stated contribution is automation of data extraction from already included clinical-study reports."
+        },
+        {
+          "source_field": "ABSTRACT",
+          "supports": "RISK",
+          "paraphrase": "Recall is mentioned as a reporting-quality issue for extracted quantitative results, not as literature-search recall or candidate reachability."
+        }
+      ],
+      "rationale": "Although the paper is about systematic-review automation and describes its own database searches, its evaluated method and outcomes concern data extraction after study inclusion. It does not contribute evidence on validating literature searches, retrieval ceilings, or reachable relevant records.",
+      "confidence": "HIGH",
+      "flags": [
+        "POSSIBLE_FALSE_MATCH"
+      ],
+      "follow_up": {
+        "required": true,
+        "priority": "ROUTINE",
+        "reasons": [
+          "AI_PROXY_REQUIRES_HUMAN_CONFIRMATION"
+        ],
+        "recommended_action": "HUMAN_CHECK"
+      },
+      "task_specific": {
+        "scope_decision": null,
+        "group_decision": null,
+        "corrected_group": null,
+        "literature_decision": "REMOVE"
+      }
+    }
+  ]
+}

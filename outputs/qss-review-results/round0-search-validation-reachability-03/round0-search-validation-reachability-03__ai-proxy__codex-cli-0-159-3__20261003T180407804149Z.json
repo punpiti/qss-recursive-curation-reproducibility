@@ -1,0 +1,270 @@
+{
+  "schema_version": "qss-review-response-v1",
+  "batch_id": "round0-search-validation-reachability-03",
+  "review_type": "ROUND0_LITERATURE_REVIEW",
+  "rubric_version": "qss-review-rubric-v3",
+  "reviewer": {
+    "type": "AI_PROXY",
+    "id": "codex-cli-0-159-3",
+    "role": "PRIMARY_REVIEWER",
+    "review_status": "AI_FIRST_PASS",
+    "reviewed_at": "2026-10-03T18:04:07.805014Z"
+  },
+  "reviews": [
+    {
+      "review_row_id": "round0-011",
+      "corpus_or_project": "qss_self_hosting",
+      "source_group": "search_validation_reachability",
+      "paper": {
+        "title": "Automatic Classification of Cancer Pathology Reports: A Systematic Review",
+        "doi": "https://doi.org/10.1016/j.jpi.2022.100003",
+        "openalex_id": "https://openalex.org/W4225984282"
+      },
+      "normalized_decision": "EXCLUDE",
+      "scope_fit": "OUT_OF_SCOPE",
+      "role_fit": "MISMATCH",
+      "evidence_sufficiency": "SUFFICIENT_ABSTRACT",
+      "primary_reason_code": "WRONG_METHOD_OR_OUTCOME",
+      "secondary_reason_codes": [
+        "FALSE_LEXICAL_OR_SEMANTIC_MATCH"
+      ],
+      "assigned_label": "search_validation_reachability",
+      "corrected_label": null,
+      "evidence": [
+        {
+          "source_field": "ABSTRACT",
+          "supports": "SCOPE",
+          "paraphrase": "The review identifies and compares NLP systems that classify unstructured cancer pathology reports."
+        },
+        {
+          "source_field": "ABSTRACT",
+          "supports": "ROLE",
+          "paraphrase": "Its benchmarking concerns prediction-task complexity and model families, not validation of a literature search or reachable relevant records."
+        }
+      ],
+      "rationale": "The paper is a domain review of pathology-report classification systems. The abstract does not evaluate literature-search recall, sensitivity against a benchmark set, retrieval ceilings, or candidate-pool reachability, so it does not support the assigned evidence role.",
+      "confidence": "HIGH",
+      "flags": [
+        "POSSIBLE_FALSE_MATCH"
+      ],
+      "follow_up": {
+        "required": true,
+        "priority": "ROUTINE",
+        "reasons": [
+          "AI_PROXY_REQUIRES_HUMAN_CONFIRMATION"
+        ],
+        "recommended_action": "HUMAN_CHECK"
+      },
+      "task_specific": {
+        "scope_decision": null,
+        "group_decision": null,
+        "corrected_group": null,
+        "literature_decision": "REMOVE"
+      }
+    },
+    {
+      "review_row_id": "round0-012",
+      "corpus_or_project": "qss_self_hosting",
+      "source_group": "search_validation_reachability",
+      "paper": {
+        "title": "A review of machine learning algorithms for identification and classification of non-functional requirements",
+        "doi": "https://doi.org/10.1016/j.eswax.2019.100001",
+        "openalex_id": "https://openalex.org/W4251641598"
+      },
+      "normalized_decision": "EXCLUDE",
+      "scope_fit": "OUT_OF_SCOPE",
+      "role_fit": "MISMATCH",
+      "evidence_sufficiency": "SUFFICIENT_ABSTRACT",
+      "primary_reason_code": "FALSE_LEXICAL_OR_SEMANTIC_MATCH",
+      "secondary_reason_codes": [
+        "WRONG_METHOD_OR_OUTCOME"
+      ],
+      "assigned_label": "search_validation_reachability",
+      "corrected_label": null,
+      "evidence": [
+        {
+          "source_field": "ABSTRACT",
+          "supports": "SCOPE",
+          "paraphrase": "The review synthesizes machine-learning approaches for identifying and classifying non-functional requirements."
+        },
+        {
+          "source_field": "ABSTRACT",
+          "supports": "DECISION",
+          "paraphrase": "Precision and recall are described as metrics for classifier performance, not for measuring the recall or sensitivity of a literature search."
+        }
+      ],
+      "rationale": "The apparent recall match refers to supervised classification of requirements documents. Nothing in the abstract evaluates search validation, benchmark-set recovery, relative recall, or reachable literature records.",
+      "confidence": "HIGH",
+      "flags": [
+        "POSSIBLE_FALSE_MATCH"
+      ],
+      "follow_up": {
+        "required": true,
+        "priority": "ROUTINE",
+        "reasons": [
+          "AI_PROXY_REQUIRES_HUMAN_CONFIRMATION"
+        ],
+        "recommended_action": "HUMAN_CHECK"
+      },
+      "task_specific": {
+        "scope_decision": null,
+        "group_decision": null,
+        "corrected_group": null,
+        "literature_decision": "REMOVE"
+      }
+    },
+    {
+      "review_row_id": "round0-013",
+      "corpus_or_project": "qss_self_hosting",
+      "source_group": "search_validation_reachability",
+      "paper": {
+        "title": "A systematic review and economic evaluation of new-generation computed tomography scanners for imaging in coronary artery disease and congenital heart disease: Somatom Definition Flash, Aquilion ONE, Brilliance iCT and Discovery CT750 HD",
+        "doi": "https://doi.org/10.3310/hta17090",
+        "openalex_id": "https://openalex.org/W2146653196"
+      },
+      "normalized_decision": "EXCLUDE",
+      "scope_fit": "OUT_OF_SCOPE",
+      "role_fit": "MISMATCH",
+      "evidence_sufficiency": "SUFFICIENT_ABSTRACT",
+      "primary_reason_code": "FALSE_LEXICAL_OR_SEMANTIC_MATCH",
+      "secondary_reason_codes": [
+        "WRONG_METHOD_OR_OUTCOME"
+      ],
+      "assigned_label": "search_validation_reachability",
+      "corrected_label": null,
+      "evidence": [
+        {
+          "source_field": "ABSTRACT",
+          "supports": "SCOPE",
+          "paraphrase": "The study reviews diagnostic accuracy and cost-effectiveness of new-generation CT scanners for cardiac imaging."
+        },
+        {
+          "source_field": "ABSTRACT",
+          "supports": "DECISION",
+          "paraphrase": "The reported sensitivity and specificity are diagnostic-test outcomes against invasive coronary angiography, not literature-retrieval outcomes."
+        }
+      ],
+      "rationale": "Although the study reports a systematic database search, its validation target is CT diagnostic accuracy and economic value. Sensitivity here is a clinical-test metric rather than search sensitivity or relative recall, so the assigned evidence role is not supported.",
+      "confidence": "HIGH",
+      "flags": [
+        "POSSIBLE_FALSE_MATCH"
+      ],
+      "follow_up": {
+        "required": true,
+        "priority": "ROUTINE",
+        "reasons": [
+          "AI_PROXY_REQUIRES_HUMAN_CONFIRMATION"
+        ],
+        "recommended_action": "HUMAN_CHECK"
+      },
+      "task_specific": {
+        "scope_decision": null,
+        "group_decision": null,
+        "corrected_group": null,
+        "literature_decision": "REMOVE"
+      }
+    },
+    {
+      "review_row_id": "round0-014",
+      "corpus_or_project": "qss_self_hosting",
+      "source_group": "search_validation_reachability",
+      "paper": {
+        "title": "Drowsiness Detection in Drivers: A Systematic Review of Deep Learning-Based Models",
+        "doi": "https://doi.org/10.3390/app15169018",
+        "openalex_id": "https://openalex.org/W4413377951"
+      },
+      "normalized_decision": "EXCLUDE",
+      "scope_fit": "OUT_OF_SCOPE",
+      "role_fit": "MISMATCH",
+      "evidence_sufficiency": "SUFFICIENT_ABSTRACT",
+      "primary_reason_code": "WRONG_METHOD_OR_OUTCOME",
+      "secondary_reason_codes": [
+        "FALSE_LEXICAL_OR_SEMANTIC_MATCH"
+      ],
+      "assigned_label": "search_validation_reachability",
+      "corrected_label": null,
+      "evidence": [
+        {
+          "source_field": "ABSTRACT",
+          "supports": "SCOPE",
+          "paraphrase": "The review synthesizes deep-learning models for detecting driver drowsiness in simulated and real driving contexts."
+        },
+        {
+          "source_field": "ABSTRACT",
+          "supports": "ROLE",
+          "paraphrase": "Its evaluation focuses on predictive accuracy, F1-score, dataset transparency, and model-validation protocols rather than literature-search validation."
+        }
+      ],
+      "rationale": "This is a systematic review of predictive models in a road-safety application. The abstract gives no evidence about relative recall, benchmark-based search sensitivity, retrieval ceilings, or reachability of relevant literature.",
+      "confidence": "HIGH",
+      "flags": [
+        "POSSIBLE_FALSE_MATCH"
+      ],
+      "follow_up": {
+        "required": true,
+        "priority": "ROUTINE",
+        "reasons": [
+          "AI_PROXY_REQUIRES_HUMAN_CONFIRMATION"
+        ],
+        "recommended_action": "HUMAN_CHECK"
+      },
+      "task_specific": {
+        "scope_decision": null,
+        "group_decision": null,
+        "corrected_group": null,
+        "literature_decision": "REMOVE"
+      }
+    },
+    {
+      "review_row_id": "round0-015",
+      "corpus_or_project": "qss_self_hosting",
+      "source_group": "search_validation_reachability",
+      "paper": {
+        "title": "MARKETING CAPSTONE INSIGHTS: LEVERAGING MULTI-CHANNEL STRATEGIES FOR MAXIMUM DIGITAL CONVERSION AND ROI",
+        "doi": "https://doi.org/10.63125/5w76qb87",
+        "openalex_id": "https://openalex.org/W4411761635"
+      },
+      "normalized_decision": "EXCLUDE",
+      "scope_fit": "OUT_OF_SCOPE",
+      "role_fit": "MISMATCH",
+      "evidence_sufficiency": "SUFFICIENT_ABSTRACT",
+      "primary_reason_code": "WRONG_DOMAIN_OR_POPULATION",
+      "secondary_reason_codes": [
+        "WRONG_METHOD_OR_OUTCOME"
+      ],
+      "assigned_label": "search_validation_reachability",
+      "corrected_label": null,
+      "evidence": [
+        {
+          "source_field": "TITLE",
+          "supports": "SCOPE",
+          "paraphrase": "The title identifies multi-channel digital marketing conversion and return on investment as the subject."
+        },
+        {
+          "source_field": "ABSTRACT",
+          "supports": "ROLE",
+          "paraphrase": "The synthesis concerns channel coordination, AI personalization, customer-data infrastructure, retargeting, and marketing performance."
+        }
+      ],
+      "rationale": "The paper addresses digital marketing strategy rather than scholarly search, recommendation, or evidence-selection workflows. Its abstract contains no literature-search validation method or reachability outcome relevant to the assigned role.",
+      "confidence": "HIGH",
+      "flags": [
+        "NONE"
+      ],
+      "follow_up": {
+        "required": true,
+        "priority": "ROUTINE",
+        "reasons": [
+          "AI_PROXY_REQUIRES_HUMAN_CONFIRMATION"
+        ],
+        "recommended_action": "HUMAN_CHECK"
+      },
+      "task_specific": {
+        "scope_decision": null,
+        "group_decision": null,
+        "corrected_group": null,
+        "literature_decision": "REMOVE"
+      }
+    }
+  ]
+}

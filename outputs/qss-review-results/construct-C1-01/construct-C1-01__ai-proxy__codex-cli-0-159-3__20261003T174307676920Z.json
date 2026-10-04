@@ -1,0 +1,283 @@
+{
+  "schema_version": "qss-review-response-v1",
+  "batch_id": "construct-C1-01",
+  "review_type": "CONSTRUCT_AUDIT",
+  "rubric_version": "qss-review-rubric-v3",
+  "reviewer": {
+    "type": "AI_PROXY",
+    "id": "codex-cli-0-159-3",
+    "role": "PRIMARY_REVIEWER",
+    "review_status": "AI_FIRST_PASS",
+    "reviewed_at": "2026-10-03T17:43:07.676920Z"
+  },
+  "reviews": [
+    {
+      "review_row_id": "C1-2022-01",
+      "corpus_or_project": "C1",
+      "source_group": "knowledge_lens_guidance",
+      "paper": {
+        "title": "Providing visual analytics guidance through decision support",
+        "doi": "https://doi.org/10.1177/14738716221147289",
+        "openalex_id": "https://openalex.org/W4313641066"
+      },
+      "normalized_decision": "INCLUDE",
+      "scope_fit": "IN_SCOPE",
+      "role_fit": "DIRECT",
+      "evidence_sufficiency": "SUFFICIENT_ABSTRACT",
+      "primary_reason_code": "DIRECT_METHOD_OR_EVIDENCE_ROLE",
+      "secondary_reason_codes": [],
+      "assigned_label": "knowledge_lens_guidance",
+      "corrected_label": null,
+      "evidence": [
+        {
+          "source_field": "ABSTRACT",
+          "supports": "SCOPE",
+          "paraphrase": "The study frames guidance as support for users' analytical goals and insight generation in visual analytics."
+        },
+        {
+          "source_field": "ABSTRACT",
+          "supports": "ROLE",
+          "paraphrase": "It provides a concrete three-stage decision-support method for identifying choices, evaluating alternatives, and visualizing them."
+        }
+      ],
+      "rationale": "The paper directly supplies a named guidance method for visual-analytic sensemaking, matching both the scope's knowledge-lens function and the assigned group. The abstract is sufficient even though the illustrated use case concerns clustering rather than rainfall.",
+      "confidence": "HIGH",
+      "flags": [
+        "NONE"
+      ],
+      "follow_up": {
+        "required": true,
+        "priority": "ROUTINE",
+        "reasons": [
+          "AI_PROXY_REQUIRES_HUMAN_CONFIRMATION"
+        ],
+        "recommended_action": "HUMAN_CHECK"
+      },
+      "task_specific": {
+        "scope_decision": "KEEP_IN_SCOPE",
+        "group_decision": "CORRECT_GROUP",
+        "corrected_group": null,
+        "literature_decision": null
+      }
+    },
+    {
+      "review_row_id": "C1-2022-02",
+      "corpus_or_project": "C1",
+      "source_group": "rainfall_pattern_evidence",
+      "paper": {
+        "title": "Assessment of Satellite Products in Estimating Tropical Cyclone Remote Precipitation over the Yangtze River Delta Region",
+        "doi": "https://doi.org/10.3390/atmos15060667",
+        "openalex_id": "https://openalex.org/W4399219816"
+      },
+      "normalized_decision": "INCLUDE",
+      "scope_fit": "IN_SCOPE",
+      "role_fit": "DIRECT",
+      "evidence_sufficiency": "SUFFICIENT_ABSTRACT",
+      "primary_reason_code": "DIRECT_METHOD_OR_EVIDENCE_ROLE",
+      "secondary_reason_codes": [
+        "BRIDGE_REFERENCE"
+      ],
+      "assigned_label": "rainfall_pattern_evidence",
+      "corrected_label": null,
+      "evidence": [
+        {
+          "source_field": "ABSTRACT",
+          "supports": "ROLE",
+          "paraphrase": "The comparison evaluates satellite precipitation products against spatial distributions, temporal distributions, amounts, categories, and precipitation peaks."
+        },
+        {
+          "source_field": "ABSTRACT",
+          "supports": "RISK",
+          "paraphrase": "The empirical setting is tropical-cyclone precipitation in the Yangtze River Delta rather than Bangkok rainfall."
+        }
+      ],
+      "rationale": "The paper directly operationalizes several defined rainfall-pattern dimensions and reports detection uncertainty and bias, so its machine group is appropriate. Its evidence is geographically contextual rather than Bangkok-specific, but the named measurement and uncertainty role makes it a usable bridge rather than generic or unrelated prediction work.",
+      "confidence": "MEDIUM",
+      "flags": [
+        "BOUNDARY_CASE"
+      ],
+      "follow_up": {
+        "required": true,
+        "priority": "ROUTINE",
+        "reasons": [
+          "AI_PROXY_REQUIRES_HUMAN_CONFIRMATION",
+          "BOUNDARY_CASE"
+        ],
+        "recommended_action": "HUMAN_CHECK"
+      },
+      "task_specific": {
+        "scope_decision": "KEEP_IN_SCOPE",
+        "group_decision": "CORRECT_GROUP",
+        "corrected_group": null,
+        "literature_decision": null
+      }
+    },
+    {
+      "review_row_id": "C1-2022-03",
+      "corpus_or_project": "C1",
+      "source_group": "method_evidence_bridge",
+      "paper": {
+        "title": "Data Provenance in Biomedical Research: Scoping Review",
+        "doi": "https://doi.org/10.2196/42289",
+        "openalex_id": "https://openalex.org/W4361000714"
+      },
+      "normalized_decision": "INCLUDE",
+      "scope_fit": "IN_SCOPE",
+      "role_fit": "MISMATCH",
+      "evidence_sufficiency": "SUFFICIENT_ABSTRACT",
+      "primary_reason_code": "VALID_CONTEXT_BUT_WRONG_GROUP",
+      "secondary_reason_codes": [
+        "BRIDGE_REFERENCE"
+      ],
+      "assigned_label": "method_evidence_bridge",
+      "corrected_label": "provenance_traceability",
+      "evidence": [
+        {
+          "source_field": "ABSTRACT",
+          "supports": "SCOPE",
+          "paraphrase": "The review treats provenance as knowledge about data origin, processing, and movement that supports reproducibility and research quality."
+        },
+        {
+          "source_field": "ABSTRACT",
+          "supports": "ROLE",
+          "paraphrase": "It synthesizes provenance capture, storage, retrieval, visualization, analysis, representations, and standards across 44 studies."
+        },
+        {
+          "source_field": "ABSTRACT",
+          "supports": "DECISION",
+          "paraphrase": "The abstract does not connect a visual-analytic method to rainfall evidence, while it directly addresses provenance mechanisms."
+        }
+      ],
+      "rationale": "The provenance mechanisms are relevant bridge context for auditable claims, so the paper remains in scope. However, the evidence directly matches provenance_traceability and lacks the visualization-to-rainfall or visualization-to-claim connection required for method_evidence_bridge.",
+      "confidence": "HIGH",
+      "flags": [
+        "POSSIBLE_WRONG_GROUP",
+        "ROLE_COVERAGE_RISK"
+      ],
+      "follow_up": {
+        "required": true,
+        "priority": "MEDIUM",
+        "reasons": [
+          "AI_PROXY_REQUIRES_HUMAN_CONFIRMATION",
+          "GROUP_DISAGREEMENT",
+          "ROLE_COVERAGE_RISK"
+        ],
+        "recommended_action": "HUMAN_CHECK"
+      },
+      "task_specific": {
+        "scope_decision": "KEEP_IN_SCOPE",
+        "group_decision": "WRONG_GROUP",
+        "corrected_group": "provenance_traceability",
+        "literature_decision": null
+      }
+    },
+    {
+      "review_row_id": "C1-2022-04",
+      "corpus_or_project": "C1",
+      "source_group": "provenance_traceability",
+      "paper": {
+        "title": "Guided spiral visualization for periodic time series and residual analysis",
+        "doi": "https://doi.org/10.1016/j.cag.2026.104535",
+        "openalex_id": "https://openalex.org/W7124980387"
+      },
+      "normalized_decision": "INCLUDE",
+      "scope_fit": "IN_SCOPE",
+      "role_fit": "DIRECT",
+      "evidence_sufficiency": "SUFFICIENT_ABSTRACT",
+      "primary_reason_code": "DIRECT_METHOD_OR_EVIDENCE_ROLE",
+      "secondary_reason_codes": [],
+      "assigned_label": "provenance_traceability",
+      "corrected_label": null,
+      "evidence": [
+        {
+          "source_field": "ABSTRACT",
+          "supports": "SCOPE",
+          "paraphrase": "The guided workflow helps users expose periodic and residual patterns through interactive visual analysis and linked comparisons."
+        },
+        {
+          "source_field": "ABSTRACT",
+          "supports": "ROLE",
+          "paraphrase": "A provenance dashboard records all user interactions and supports comparison of multiple spirals."
+        }
+      ],
+      "rationale": "The paper provides both guided visual sensemaking and an explicit interaction-record mechanism that makes the analytic path inspectable. That provenance function directly matches the assigned evidence group despite the examples spanning generic periodic time series rather than Bangkok rainfall.",
+      "confidence": "HIGH",
+      "flags": [
+        "NONE"
+      ],
+      "follow_up": {
+        "required": true,
+        "priority": "ROUTINE",
+        "reasons": [
+          "AI_PROXY_REQUIRES_HUMAN_CONFIRMATION"
+        ],
+        "recommended_action": "HUMAN_CHECK"
+      },
+      "task_specific": {
+        "scope_decision": "KEEP_IN_SCOPE",
+        "group_decision": "CORRECT_GROUP",
+        "corrected_group": null,
+        "literature_decision": null
+      }
+    },
+    {
+      "review_row_id": "C1-2022-05",
+      "corpus_or_project": "C1",
+      "source_group": "rainfall_pattern_evidence",
+      "paper": {
+        "title": "Designing an Interactive Visual Analytics System for Precipitation Data Analysis",
+        "doi": "https://doi.org/10.3390/app15105467",
+        "openalex_id": "https://openalex.org/W4410345768"
+      },
+      "normalized_decision": "INCLUDE",
+      "scope_fit": "IN_SCOPE",
+      "role_fit": "PARTIAL",
+      "evidence_sufficiency": "SUFFICIENT_ABSTRACT",
+      "primary_reason_code": "DIRECT_METHOD_OR_EVIDENCE_ROLE",
+      "secondary_reason_codes": [
+        "VALID_CONTEXT_BUT_WRONG_GROUP"
+      ],
+      "assigned_label": "rainfall_pattern_evidence",
+      "corrected_label": "method_evidence_bridge",
+      "evidence": [
+        {
+          "source_field": "ABSTRACT",
+          "supports": "SCOPE",
+          "paraphrase": "The system interactively analyzes hourly precipitation through coordinated visualizations of temporal, spatial, and statistical patterns."
+        },
+        {
+          "source_field": "ABSTRACT",
+          "supports": "ROLE",
+          "paraphrase": "It directly combines a visual-analytics method with empirical precipitation evidence, including intensity, duration, frequency, and storm cases."
+        },
+        {
+          "source_field": "ABSTRACT",
+          "supports": "RISK",
+          "paraphrase": "Its rainfall-pattern content fits the assigned group, but the explicit method-to-evidence connection more specifically matches method_evidence_bridge."
+        }
+      ],
+      "rationale": "The paper is clearly in scope and is a genuine rainfall-pattern reference, so the machine assignment is not a false match. Because its central contribution is an interactive visual-analytics system applied to precipitation evidence, method_evidence_bridge is the more specific label; the assigned group is therefore a partial analogue rather than wholly wrong.",
+      "confidence": "MEDIUM",
+      "flags": [
+        "BOUNDARY_CASE",
+        "POSSIBLE_WRONG_GROUP"
+      ],
+      "follow_up": {
+        "required": true,
+        "priority": "MEDIUM",
+        "reasons": [
+          "AI_PROXY_REQUIRES_HUMAN_CONFIRMATION",
+          "BOUNDARY_CASE",
+          "GROUP_DISAGREEMENT"
+        ],
+        "recommended_action": "HUMAN_CHECK"
+      },
+      "task_specific": {
+        "scope_decision": "KEEP_IN_SCOPE",
+        "group_decision": "PARTIAL_ANALOGUE",
+        "corrected_group": "method_evidence_bridge",
+        "literature_decision": null
+      }
+    }
+  ]
+}

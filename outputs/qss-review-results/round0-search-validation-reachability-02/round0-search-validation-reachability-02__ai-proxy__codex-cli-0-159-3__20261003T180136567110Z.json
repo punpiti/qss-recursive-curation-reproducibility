@@ -1,0 +1,266 @@
+{
+  "schema_version": "qss-review-response-v1",
+  "batch_id": "round0-search-validation-reachability-02",
+  "review_type": "ROUND0_LITERATURE_REVIEW",
+  "rubric_version": "qss-review-rubric-v3",
+  "reviewer": {
+    "type": "AI_PROXY",
+    "id": "codex-cli-0-159-3",
+    "role": "PRIMARY_REVIEWER",
+    "review_status": "AI_FIRST_PASS",
+    "reviewed_at": "2026-10-03T18:01:36.567110Z"
+  },
+  "reviews": [
+    {
+      "review_row_id": "round0-006",
+      "corpus_or_project": "qss_self_hosting",
+      "source_group": "search_validation_reachability",
+      "paper": {
+        "title": "Graph-based interactive bibliographic information retrieval systems",
+        "doi": "https://doi.org/10.17918/etd-7224",
+        "openalex_id": "https://openalex.org/W2623111144"
+      },
+      "normalized_decision": "EXCLUDE",
+      "scope_fit": "IN_SCOPE",
+      "role_fit": "MISMATCH",
+      "evidence_sufficiency": "SUFFICIENT_ABSTRACT",
+      "primary_reason_code": "WRONG_METHOD_OR_OUTCOME",
+      "secondary_reason_codes": [],
+      "assigned_label": "search_validation_reachability",
+      "corrected_label": null,
+      "evidence": [
+        {
+          "source_field": "ABSTRACT",
+          "supports": "SCOPE",
+          "paraphrase": "The work develops interactive graph-based systems for retrieving papers and other bibliographic entities with complex queries."
+        },
+        {
+          "source_field": "ABSTRACT",
+          "supports": "ROLE",
+          "paraphrase": "Its evaluations concern query-processing time, query representation, and usability rather than search recall, sensitivity, retrieval ceilings, or reachable relevant records."
+        }
+      ],
+      "rationale": "The paper is within scholarly bibliographic retrieval, but the reported contribution and evaluation do not validate search reachability or recall against a relevant-record benchmark. The abstract is sufficient to exclude it from this evidence role.",
+      "confidence": "HIGH",
+      "flags": [
+        "NONE"
+      ],
+      "follow_up": {
+        "required": true,
+        "priority": "ROUTINE",
+        "reasons": [
+          "AI_PROXY_REQUIRES_HUMAN_CONFIRMATION"
+        ],
+        "recommended_action": "HUMAN_CHECK"
+      },
+      "task_specific": {
+        "scope_decision": null,
+        "group_decision": null,
+        "corrected_group": null,
+        "literature_decision": "REMOVE"
+      }
+    },
+    {
+      "review_row_id": "round0-007",
+      "corpus_or_project": "qss_self_hosting",
+      "source_group": "search_validation_reachability",
+      "paper": {
+        "title": "How to Write Effective Prompts for Screening Biomedical Literature Using Large Language Models",
+        "doi": "https://doi.org/10.20944/preprints202502.0396.v1",
+        "openalex_id": "https://openalex.org/W4407206494"
+      },
+      "normalized_decision": "EXCLUDE",
+      "scope_fit": "IN_SCOPE",
+      "role_fit": "MISMATCH",
+      "evidence_sufficiency": "SUFFICIENT_ABSTRACT",
+      "primary_reason_code": "WRONG_METHOD_OR_OUTCOME",
+      "secondary_reason_codes": [],
+      "assigned_label": "search_validation_reachability",
+      "corrected_label": null,
+      "evidence": [
+        {
+          "source_field": "ABSTRACT",
+          "supports": "SCOPE",
+          "paraphrase": "The paper addresses LLM-assisted abstract screening within systematic reviews and retains expert oversight as part of that evidence-selection workflow."
+        },
+        {
+          "source_field": "ABSTRACT",
+          "supports": "ROLE",
+          "paraphrase": "Recall and precision are used to evaluate inclusion screening under different prompts, not the completeness, sensitivity, ceiling, or reachability of literature retrieval."
+        }
+      ],
+      "rationale": "This is an in-scope evidence-selection workflow, but its evaluated outcome is screening classification rather than validation of the preceding literature search or candidate-pool reachability. It therefore does not support the assigned evidence role.",
+      "confidence": "HIGH",
+      "flags": [
+        "NONE"
+      ],
+      "follow_up": {
+        "required": true,
+        "priority": "ROUTINE",
+        "reasons": [
+          "AI_PROXY_REQUIRES_HUMAN_CONFIRMATION"
+        ],
+        "recommended_action": "HUMAN_CHECK"
+      },
+      "task_specific": {
+        "scope_decision": null,
+        "group_decision": null,
+        "corrected_group": null,
+        "literature_decision": "REMOVE"
+      }
+    },
+    {
+      "review_row_id": "round0-008",
+      "corpus_or_project": "qss_self_hosting",
+      "source_group": "search_validation_reachability",
+      "paper": {
+        "title": "Diagnosis of Cervical Cancer and Pre-Cancerous Lesions by Artificial Intelligence: A Systematic Review",
+        "doi": "https://doi.org/10.3390/diagnostics12112771",
+        "openalex_id": "https://openalex.org/W4309002538"
+      },
+      "normalized_decision": "EXCLUDE",
+      "scope_fit": "OUT_OF_SCOPE",
+      "role_fit": "MISMATCH",
+      "evidence_sufficiency": "SUFFICIENT_ABSTRACT",
+      "primary_reason_code": "WRONG_DOMAIN_OR_POPULATION",
+      "secondary_reason_codes": [
+        "FALSE_LEXICAL_OR_SEMANTIC_MATCH"
+      ],
+      "assigned_label": "search_validation_reachability",
+      "corrected_label": null,
+      "evidence": [
+        {
+          "source_field": "ABSTRACT",
+          "supports": "DECISION",
+          "paraphrase": "The review evaluates AI systems for clinical prediction, screening, and diagnosis of cervical cancer and precancerous lesions."
+        },
+        {
+          "source_field": "ABSTRACT",
+          "supports": "RISK",
+          "paraphrase": "The reported sensitivity and specificity refer to diagnostic detection of cervical lesions, not validation or recall of the literature search."
+        }
+      ],
+      "rationale": "The paper is a clinical diagnostic-performance review rather than a study of scholarly retrieval or evidence-selection methods. Its use of search and sensitivity terminology is not evidence for literature-search reachability.",
+      "confidence": "HIGH",
+      "flags": [
+        "POSSIBLE_FALSE_MATCH"
+      ],
+      "follow_up": {
+        "required": true,
+        "priority": "ROUTINE",
+        "reasons": [
+          "AI_PROXY_REQUIRES_HUMAN_CONFIRMATION"
+        ],
+        "recommended_action": "HUMAN_CHECK"
+      },
+      "task_specific": {
+        "scope_decision": null,
+        "group_decision": null,
+        "corrected_group": null,
+        "literature_decision": "REMOVE"
+      }
+    },
+    {
+      "review_row_id": "round0-009",
+      "corpus_or_project": "qss_self_hosting",
+      "source_group": "search_validation_reachability",
+      "paper": {
+        "title": "The emergence of large language models as tools in literature reviews: a large language model-assisted systematic review",
+        "doi": "https://doi.org/10.1093/jamia/ocaf063",
+        "openalex_id": "https://openalex.org/W4410157139"
+      },
+      "normalized_decision": "EXCLUDE",
+      "scope_fit": "IN_SCOPE",
+      "role_fit": "PARTIAL",
+      "evidence_sufficiency": "SUFFICIENT_ABSTRACT",
+      "primary_reason_code": "TOO_GENERIC_FOR_CLAIM",
+      "secondary_reason_codes": [
+        "WRONG_METHOD_OR_OUTCOME"
+      ],
+      "assigned_label": "search_validation_reachability",
+      "corrected_label": null,
+      "evidence": [
+        {
+          "source_field": "ABSTRACT",
+          "supports": "SCOPE",
+          "paraphrase": "The review surveys LLM use across scientific-review workflows, including projects concerned with searching for publications."
+        },
+        {
+          "source_field": "ABSTRACT",
+          "supports": "ROLE",
+          "paraphrase": "The quantitative performance comparison reported in the abstract concerns data extraction, while searching is described only as a category count without search-validation outcomes."
+        }
+      ],
+      "rationale": "The review is relevant to automated literature-review workflows, but the abstract does not provide a method or result for validating search recall, sensitivity, retrieval ceilings, or reachable records. Mentioning search automation at category level is too generic to fill the assigned role.",
+      "confidence": "HIGH",
+      "flags": [
+        "NONE"
+      ],
+      "follow_up": {
+        "required": true,
+        "priority": "ROUTINE",
+        "reasons": [
+          "AI_PROXY_REQUIRES_HUMAN_CONFIRMATION"
+        ],
+        "recommended_action": "HUMAN_CHECK"
+      },
+      "task_specific": {
+        "scope_decision": null,
+        "group_decision": null,
+        "corrected_group": null,
+        "literature_decision": "REMOVE"
+      }
+    },
+    {
+      "review_row_id": "round0-010",
+      "corpus_or_project": "qss_self_hosting",
+      "source_group": "search_validation_reachability",
+      "paper": {
+        "title": "ADVANCED COMPUTING APPLICATIONS IN BI DASHBOARDS: IMPROVING REAL-TIME DECISION SUPPORT FOR GLOBAL ENTERPRISES",
+        "doi": "https://doi.org/10.63125/3x6vpb92",
+        "openalex_id": "https://openalex.org/W4414518606"
+      },
+      "normalized_decision": "EXCLUDE",
+      "scope_fit": "OUT_OF_SCOPE",
+      "role_fit": "MISMATCH",
+      "evidence_sufficiency": "SUFFICIENT_ABSTRACT",
+      "primary_reason_code": "WRONG_DOMAIN_OR_POPULATION",
+      "secondary_reason_codes": [
+        "FALSE_LEXICAL_OR_SEMANTIC_MATCH"
+      ],
+      "assigned_label": "search_validation_reachability",
+      "corrected_label": null,
+      "evidence": [
+        {
+          "source_field": "ABSTRACT",
+          "supports": "DECISION",
+          "paraphrase": "The review synthesizes computing architectures, latency, freshness, governance, and reliability for enterprise business-intelligence dashboards."
+        },
+        {
+          "source_field": "ABSTRACT",
+          "supports": "RISK",
+          "paraphrase": "Its sensitivity analyses address heterogeneity in dashboard-technology evidence, not the validation, recall, or reachability of a scholarly literature search."
+        }
+      ],
+      "rationale": "The contribution concerns enterprise BI dashboard infrastructure and performance, outside scholarly search and evidence-selection workflows. Systematic-review and sensitivity language does not make it relevant to literature-search validation.",
+      "confidence": "HIGH",
+      "flags": [
+        "POSSIBLE_FALSE_MATCH"
+      ],
+      "follow_up": {
+        "required": true,
+        "priority": "ROUTINE",
+        "reasons": [
+          "AI_PROXY_REQUIRES_HUMAN_CONFIRMATION"
+        ],
+        "recommended_action": "HUMAN_CHECK"
+      },
+      "task_specific": {
+        "scope_decision": null,
+        "group_decision": null,
+        "corrected_group": null,
+        "literature_decision": "REMOVE"
+      }
+    }
+  ]
+}

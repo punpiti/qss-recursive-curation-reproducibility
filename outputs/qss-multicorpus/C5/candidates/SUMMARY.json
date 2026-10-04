@@ -1,0 +1,25 @@
+{
+  "schema_version": 1,
+  "evaluation_mode": "cross_sectional_scope_robustness",
+  "openalex_requests": 13,
+  "cache_hits": 20,
+  "cache_misses": 13,
+  "request_budget_exhausted": false,
+  "retrieval_complete": true,
+  "seed_resolution_failures": [],
+  "group_query_failures": [],
+  "cutoff_retrieval_failures": [],
+  "pools": [
+    {
+      "cutoff": 2023,
+      "training_seed_count": 25,
+      "resolved_training_seed_count": 25,
+      "holdout_count": 0,
+      "candidate_count_before_abstract_gate": 1162,
+      "candidate_count": 741,
+      "missing_abstract_removed": 421,
+      "reachable_holdout_count": 0,
+      "candidate_pool_ceiling": null
+    }
+  ]
+}

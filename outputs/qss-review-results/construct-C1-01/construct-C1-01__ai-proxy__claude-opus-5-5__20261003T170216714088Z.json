@@ -1,0 +1,299 @@
+{
+  "schema_version": "qss-review-response-v1",
+  "batch_id": "construct-C1-01",
+  "review_type": "CONSTRUCT_AUDIT",
+  "rubric_version": "qss-review-rubric-v3",
+  "reviewer": {
+    "type": "AI_PROXY",
+    "id": "claude-opus-5-5",
+    "role": "PRIMARY_REVIEWER",
+    "review_status": "AI_FIRST_PASS",
+    "reviewed_at": "2026-10-03T17:02:16.714088Z"
+  },
+  "reviews": [
+    {
+      "review_row_id": "C1-2022-01",
+      "corpus_or_project": "C1",
+      "source_group": "knowledge_lens_guidance",
+      "paper": {
+        "title": "Providing visual analytics guidance through decision support",
+        "doi": "https://doi.org/10.1177/14738716221147289",
+        "openalex_id": "https://openalex.org/W4313641066"
+      },
+      "normalized_decision": "INCLUDE",
+      "scope_fit": "IN_SCOPE",
+      "role_fit": "DIRECT",
+      "evidence_sufficiency": "SUFFICIENT_ABSTRACT",
+      "primary_reason_code": "DIRECT_METHOD_OR_EVIDENCE_ROLE",
+      "secondary_reason_codes": [],
+      "assigned_label": "knowledge_lens_guidance",
+      "corrected_label": null,
+      "evidence": [
+        {
+          "source_field": "ABSTRACT",
+          "supports": "ROLE",
+          "paraphrase": "Proposes a generic method for providing visual-analytics guidance by framing guidance as a decision problem to help users reach analytical goals and insights."
+        },
+        {
+          "source_field": "ABSTRACT",
+          "supports": "SCOPE",
+          "paraphrase": "Guidance in visual analytics is a named element of the knowledge-lens group purpose; the use case is clustering-method choice rather than rainfall."
+        }
+      ],
+      "rationale": "The paper is a direct visual-analytics guidance method and fits knowledge_lens_guidance as defined. It does not touch rainfall evidence, but the group is method-side by design. As a valid representative of a group omitted from 30/150 final bags, it supports reading that omission as a genuine selection loss rather than a pool gap.",
+      "confidence": "HIGH",
+      "flags": [
+        "CLAIM_CRITICAL"
+      ],
+      "follow_up": {
+        "required": true,
+        "priority": "MEDIUM",
+        "reasons": [
+          "AI_PROXY_REQUIRES_HUMAN_CONFIRMATION",
+          "CLAIM_CRITICAL"
+        ],
+        "recommended_action": "HUMAN_CHECK"
+      },
+      "task_specific": {
+        "scope_decision": "KEEP_IN_SCOPE",
+        "group_decision": "CORRECT_GROUP",
+        "corrected_group": null,
+        "literature_decision": null
+      }
+    },
+    {
+      "review_row_id": "C1-2022-02",
+      "corpus_or_project": "C1",
+      "source_group": "rainfall_pattern_evidence",
+      "paper": {
+        "title": "Assessment of Satellite Products in Estimating Tropical Cyclone Remote Precipitation over the Yangtze River Delta Region",
+        "doi": "https://doi.org/10.3390/atmos15060667",
+        "openalex_id": "https://openalex.org/W4399219816"
+      },
+      "normalized_decision": "EXCLUDE",
+      "scope_fit": "OUT_OF_SCOPE",
+      "role_fit": "PARTIAL",
+      "evidence_sufficiency": "SUFFICIENT_ABSTRACT",
+      "primary_reason_code": "TOO_GENERIC_FOR_CLAIM",
+      "secondary_reason_codes": [
+        "WRONG_DOMAIN_OR_POPULATION"
+      ],
+      "assigned_label": "rainfall_pattern_evidence",
+      "corrected_label": null,
+      "evidence": [
+        {
+          "source_field": "ABSTRACT",
+          "supports": "SCOPE",
+          "paraphrase": "Evaluates CMORPH, TRMM and GPM satellite precipitation products for two typhoon-related heavy-rain events over the Yangtze River Delta using skill scores against gauges."
+        },
+        {
+          "source_field": "ABSTRACT",
+          "supports": "ROLE",
+          "paraphrase": "Touches spatial distribution, temporal distribution and peak detection of rainfall, which overlap the rainfall-pattern group's dimensions."
+        },
+        {
+          "source_field": "ABSTRACT",
+          "supports": "RISK",
+          "paraphrase": "No knowledge lens, figure/table interpretation, Bangkok context or traceable-claim mechanism is described."
+        }
+      ],
+      "rationale": "This is a satellite-product validation study for tropical-cyclone rainfall in China; it shares rainfall-pattern vocabulary but supplies no named method or evidence role for knowledge-guided interpretation of Bangkok rainfall evidence. Under the frozen scope note that generic hydrometeorological work is excluded unless it fills a named role, it is out of scope, though the boundary is debatable because the rainfall group is defined broadly.",
+      "confidence": "MEDIUM",
+      "flags": [
+        "BOUNDARY_CASE"
+      ],
+      "follow_up": {
+        "required": true,
+        "priority": "MEDIUM",
+        "reasons": [
+          "AI_PROXY_REQUIRES_HUMAN_CONFIRMATION",
+          "BOUNDARY_CASE"
+        ],
+        "recommended_action": "HUMAN_CHECK"
+      },
+      "task_specific": {
+        "scope_decision": "REMOVE_OUT_OF_SCOPE",
+        "group_decision": "PARTIAL_ANALOGUE",
+        "corrected_group": null,
+        "literature_decision": null
+      }
+    },
+    {
+      "review_row_id": "C1-2022-03",
+      "corpus_or_project": "C1",
+      "source_group": "method_evidence_bridge",
+      "paper": {
+        "title": "Data Provenance in Biomedical Research: Scoping Review",
+        "doi": "https://doi.org/10.2196/42289",
+        "openalex_id": "https://openalex.org/W4361000714"
+      },
+      "normalized_decision": "INCLUDE",
+      "scope_fit": "IN_SCOPE",
+      "role_fit": "MISMATCH",
+      "evidence_sufficiency": "SUFFICIENT_ABSTRACT",
+      "primary_reason_code": "VALID_CONTEXT_BUT_WRONG_GROUP",
+      "secondary_reason_codes": [],
+      "assigned_label": "method_evidence_bridge",
+      "corrected_label": "provenance_traceability",
+      "evidence": [
+        {
+          "source_field": "ABSTRACT",
+          "supports": "ROLE",
+          "paraphrase": "A PRISMA-ScR scoping review of 44 articles on software-based data-provenance management in biomedical research, covering capture, storage, retrieval, visualization and analysis."
+        },
+        {
+          "source_field": "ABSTRACT",
+          "supports": "SCOPE",
+          "paraphrase": "Provenance supports reproducibility and auditable evidence, matching the provenance_traceability purpose."
+        },
+        {
+          "source_field": "ABSTRACT",
+          "supports": "RISK",
+          "paraphrase": "It does not connect a knowledge or visual-analytic method to rainfall evidence or a specific traceable claim, which is what method_evidence_bridge requires."
+        }
+      ],
+      "rationale": "The paper is legitimate provenance context but describes provenance infrastructure in biomedicine, not a bridge from a knowledge/visual method to empirical rainfall evidence. It belongs to provenance_traceability rather than method_evidence_bridge. If confirmed, the bridge group's omission from 97/150 bags is partly a construct-assignment issue rather than only a selection loss.",
+      "confidence": "MEDIUM",
+      "flags": [
+        "POSSIBLE_WRONG_GROUP",
+        "CLAIM_CRITICAL",
+        "ROLE_COVERAGE_RISK"
+      ],
+      "follow_up": {
+        "required": true,
+        "priority": "HIGH",
+        "reasons": [
+          "AI_PROXY_REQUIRES_HUMAN_CONFIRMATION",
+          "GROUP_DISAGREEMENT",
+          "CLAIM_CRITICAL",
+          "ROLE_COVERAGE_RISK"
+        ],
+        "recommended_action": "HUMAN_CHECK"
+      },
+      "task_specific": {
+        "scope_decision": "KEEP_IN_SCOPE",
+        "group_decision": "WRONG_GROUP",
+        "corrected_group": "provenance_traceability",
+        "literature_decision": null
+      }
+    },
+    {
+      "review_row_id": "C1-2022-04",
+      "corpus_or_project": "C1",
+      "source_group": "provenance_traceability",
+      "paper": {
+        "title": "Guided spiral visualization for periodic time series and residual analysis",
+        "doi": "https://doi.org/10.1016/j.cag.2026.104535",
+        "openalex_id": "https://openalex.org/W7124980387"
+      },
+      "normalized_decision": "INCLUDE",
+      "scope_fit": "IN_SCOPE",
+      "role_fit": "PARTIAL",
+      "evidence_sufficiency": "SUFFICIENT_ABSTRACT",
+      "primary_reason_code": "DIRECT_METHOD_OR_EVIDENCE_ROLE",
+      "secondary_reason_codes": [
+        "BRIDGE_REFERENCE"
+      ],
+      "assigned_label": "provenance_traceability",
+      "corrected_label": null,
+      "evidence": [
+        {
+          "source_field": "ABSTRACT",
+          "supports": "ROLE",
+          "paraphrase": "Presents a guided analytical workflow around spiral visualization of periodic time series, with visual guidance and residual analysis leading to insights."
+        },
+        {
+          "source_field": "ABSTRACT",
+          "supports": "ROLE",
+          "paraphrase": "Includes a provenance dashboard that records all user interactions and supports comparing spirals."
+        },
+        {
+          "source_field": "ABSTRACT",
+          "supports": "SCOPE",
+          "paraphrase": "Targets periodic patterns such as day-night rhythms in climate, traffic and energy data, which maps onto diurnal rainfall interpretation."
+        }
+      ],
+      "rationale": "The paper is in scope and does contain a provenance mechanism, so provenance_traceability is partly justified, but its central contribution is visual guidance for periodic-pattern insight, closer to knowledge_lens_guidance, and it also bridges method and time-series evidence. The assignment is a partial rather than primary fit.",
+      "confidence": "MEDIUM",
+      "flags": [
+        "POSSIBLE_WRONG_GROUP",
+        "BOUNDARY_CASE"
+      ],
+      "follow_up": {
+        "required": true,
+        "priority": "MEDIUM",
+        "reasons": [
+          "AI_PROXY_REQUIRES_HUMAN_CONFIRMATION",
+          "GROUP_DISAGREEMENT",
+          "BOUNDARY_CASE"
+        ],
+        "recommended_action": "HUMAN_CHECK"
+      },
+      "task_specific": {
+        "scope_decision": "KEEP_IN_SCOPE",
+        "group_decision": "PARTIAL_ANALOGUE",
+        "corrected_group": null,
+        "literature_decision": null
+      }
+    },
+    {
+      "review_row_id": "C1-2022-05",
+      "corpus_or_project": "C1",
+      "source_group": "rainfall_pattern_evidence",
+      "paper": {
+        "title": "Designing an Interactive Visual Analytics System for Precipitation Data Analysis",
+        "doi": "https://doi.org/10.3390/app15105467",
+        "openalex_id": "https://openalex.org/W4410345768"
+      },
+      "normalized_decision": "INCLUDE",
+      "scope_fit": "IN_SCOPE",
+      "role_fit": "PARTIAL",
+      "evidence_sufficiency": "SUFFICIENT_ABSTRACT",
+      "primary_reason_code": "VALID_CONTEXT_BUT_WRONG_GROUP",
+      "secondary_reason_codes": [
+        "BRIDGE_REFERENCE"
+      ],
+      "assigned_label": "rainfall_pattern_evidence",
+      "corrected_label": "method_evidence_bridge",
+      "evidence": [
+        {
+          "source_field": "ABSTRACT",
+          "supports": "ROLE",
+          "paraphrase": "Designs an interactive visual analytics system with coordinated views for hourly precipitation across U.S. states, supporting temporal, spatial and statistical pattern analysis."
+        },
+        {
+          "source_field": "ABSTRACT",
+          "supports": "SCOPE",
+          "paraphrase": "Links a visual-analytic method directly to empirical precipitation evidence (intensity, duration, frequency) via storm case studies."
+        },
+        {
+          "source_field": "ABSTRACT",
+          "supports": "RISK",
+          "paraphrase": "The contribution is the VA system rather than rainfall-pattern findings, and the data are U.S. stations rather than Bangkok."
+        }
+      ],
+      "rationale": "The paper connects a visual-analytics method to empirical precipitation evidence, which is the defining purpose of method_evidence_bridge; rainfall_pattern_evidence captures only its data side. It is in scope as method-to-evidence context, but the group label should probably be method_evidence_bridge.",
+      "confidence": "MEDIUM",
+      "flags": [
+        "POSSIBLE_WRONG_GROUP",
+        "CLAIM_CRITICAL"
+      ],
+      "follow_up": {
+        "required": true,
+        "priority": "HIGH",
+        "reasons": [
+          "AI_PROXY_REQUIRES_HUMAN_CONFIRMATION",
+          "GROUP_DISAGREEMENT",
+          "CLAIM_CRITICAL"
+        ],
+        "recommended_action": "HUMAN_CHECK"
+      },
+      "task_specific": {
+        "scope_decision": "KEEP_IN_SCOPE",
+        "group_decision": "WRONG_GROUP",
+        "corrected_group": "method_evidence_bridge",
+        "literature_decision": null
+      }
+    }
+  ]
+}

@@ -1,0 +1,190 @@
+{
+  "schema_version": 1,
+  "study_id": "qss-C4-temporal-v1",
+  "status": "frozen_before_candidate_retrieval",
+  "frozen_on": "2026-08-28",
+  "evaluation_mode": "temporal_positive_holdout",
+  "cutoffs": [
+    2024
+  ],
+  "through_year": 2026,
+  "scope": "Evidence-grounded modular quality assurance for Thai legal question-answer resources, using atomic statutory claims, specialized verifier roles, risk-sensitive routing, and expert-auditable evidence traces.",
+  "canonical_inputs": {
+    "bib": "<REDACTED_LOCAL_PATH>/pk-proposal-v002-with-abstracts.bib",
+    "bib_sha256": "d13d62a8e0bf37d2eccf4b0223866f2fb1bafea6cbe34be6dad1d41ad85e90c2",
+    "scope_file": "<REDACTED_LOCAL_PATH>/proposal.md",
+    "scope_sha256": "83429f107180fd5b3e7ba05729ea2941f6a4ae239906f21bff389254a184af42"
+  },
+  "interpretation_boundary": "The system routes QA resources for Accept/Review/Reject under supplied statutory evidence; it does not replace legal expert judgment or certify correctness beyond the evidence boundary.",
+  "legacy_group_key_note": "The runner reads kbs_frozen_evidence_groups; these are independently frozen C4 groups.",
+  "kbs_frozen_evidence_groups": [
+    {
+      "id": "thai_legal_qa_resources",
+      "purpose": "Thai legal question-answering benchmarks, datasets, retrieval, and resource-quality evidence that defines the target corpus and evaluation setting.",
+      "capacity": 3,
+      "query": "Thai legal question answering benchmark dataset legal QA evaluation",
+      "seed_validation_terms": [
+        "question answering",
+        "benchmark",
+        "dataset",
+        "retrieval"
+      ],
+      "terms": [
+        "Thai legal",
+        "legal question answering",
+        "legal QA",
+        "benchmark",
+        "dataset",
+        "NitiBench",
+        "legal information retrieval"
+      ],
+      "anchor_families": [
+        [
+          "legal",
+          "law",
+          "statutory"
+        ],
+        [
+          "question answering",
+          "QA",
+          "benchmark",
+          "dataset",
+          "retrieval"
+        ]
+      ]
+    },
+    {
+      "id": "statutory_evidence_grounding",
+      "purpose": "Atomic-claim verification, statutory entailment, citation grounding, factuality, and traceable evidence needed to distinguish supported, contradicted, and unsupported legal claims.",
+      "capacity": 3,
+      "query": "legal statutory entailment evidence grounded claim verification citation factuality",
+      "seed_expansion_query": "legal statutory entailment evidence grounding claim verification citation factuality",
+      "seed_validation_terms": [
+        "evidence",
+        "entailment",
+        "verification",
+        "citation",
+        "factuality",
+        "claim"
+      ],
+      "terms": [
+        "statutory entailment",
+        "claim verification",
+        "evidence grounded",
+        "citation",
+        "factuality",
+        "supported",
+        "contradicted",
+        "not found",
+        "atomic claim"
+      ],
+      "anchor_families": [
+        [
+          "legal",
+          "law",
+          "statutory",
+          "court"
+        ],
+        [
+          "evidence",
+          "entailment",
+          "verification",
+          "citation",
+          "factuality",
+          "claim"
+        ]
+      ]
+    },
+    {
+      "id": "defect_risk_taxonomy",
+      "purpose": "Taxonomies and controlled perturbations for omission, numeric or temporal errors, entity-role swaps, answer alignment, completeness, and risk-sensitive QA quality evaluation.",
+      "capacity": 3,
+      "query": "legal QA error taxonomy answer quality perturbation omission numeric temporal entity role",
+      "seed_expansion_query": "legal question answering error taxonomy answer quality perturbation omission completeness",
+      "seed_validation_terms": [
+        "error",
+        "defect",
+        "risk",
+        "perturbation",
+        "omission",
+        "completeness",
+        "alignment"
+      ],
+      "terms": [
+        "error taxonomy",
+        "perturbation",
+        "omission",
+        "numeric error",
+        "temporal error",
+        "entity swapping",
+        "role swapping",
+        "answer alignment",
+        "answer completeness"
+      ],
+      "anchor_families": [
+        [
+          "legal",
+          "law",
+          "question answering",
+          "QA",
+          "answer"
+        ],
+        [
+          "error",
+          "defect",
+          "risk",
+          "perturbation",
+          "omission",
+          "completeness",
+          "alignment"
+        ]
+      ]
+    },
+    {
+      "id": "verifier_judge_governance",
+      "purpose": "LLM-as-judge, multi-agent verification, consensus, uncertainty, selective review, and human-expert governance evidence for auditable Accept/Review/Reject routing.",
+      "capacity": 3,
+      "query": "LLM judge multi agent verification consensus human review selective prediction legal QA",
+      "seed_expansion_query": "LLM as judge multi agent verification consensus human review abstention legal QA",
+      "seed_validation_terms": [
+        "review",
+        "consensus",
+        "verification",
+        "abstention",
+        "uncertainty",
+        "governance",
+        "audit"
+      ],
+      "terms": [
+        "LLM-as-judge",
+        "multi-agent",
+        "verifier",
+        "majority vote",
+        "consensus",
+        "human review",
+        "selective prediction",
+        "uncertainty",
+        "abstention",
+        "audit trail"
+      ],
+      "anchor_families": [
+        [
+          "LLM",
+          "language model",
+          "agent",
+          "verifier",
+          "judge"
+        ],
+        [
+          "review",
+          "consensus",
+          "verification",
+          "abstention",
+          "uncertainty",
+          "governance",
+          "audit"
+        ]
+      ]
+    }
+  ]
+}

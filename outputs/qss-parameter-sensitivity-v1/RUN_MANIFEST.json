@@ -1,0 +1,16 @@
+{
+  "schema_version": 1,
+  "analysis_id": "qss-frozen-parameter-sensitivity-v1",
+  "status": "secondary_robustness_not_parameter_selection",
+  "spec": "<REDACTED_LOCAL_PATH>/qss_parameter_sensitivity_v1.json",
+  "registry": "<REDACTED_LOCAL_PATH>/qss_corpus_registry.json",
+  "bags_per_fraction": 50,
+  "evaluator_workers": 4,
+  "parallel_jobs": 4,
+  "maximum_process_workers": 16,
+  "case_count": 12,
+  "variant_count": 12,
+  "run_count": 144,
+  "openalex_requests": 0,
+  "retuning_forbidden": true
+}

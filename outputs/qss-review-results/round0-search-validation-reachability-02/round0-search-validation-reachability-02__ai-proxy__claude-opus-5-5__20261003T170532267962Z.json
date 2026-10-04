@@ -1,0 +1,287 @@
+{
+  "schema_version": "qss-review-response-v1",
+  "batch_id": "round0-search-validation-reachability-02",
+  "review_type": "ROUND0_LITERATURE_REVIEW",
+  "rubric_version": "qss-review-rubric-v3",
+  "reviewer": {
+    "type": "AI_PROXY",
+    "id": "claude-opus-5-5",
+    "role": "PRIMARY_REVIEWER",
+    "review_status": "AI_FIRST_PASS",
+    "reviewed_at": "2026-10-03T17:05:32.267962Z"
+  },
+  "reviews": [
+    {
+      "review_row_id": "round0-006",
+      "corpus_or_project": "qss_self_hosting",
+      "source_group": "search_validation_reachability",
+      "paper": {
+        "title": "Graph-based interactive bibliographic information retrieval systems",
+        "doi": "https://doi.org/10.17918/etd-7224",
+        "openalex_id": "https://openalex.org/W2623111144"
+      },
+      "normalized_decision": "EXCLUDE",
+      "scope_fit": "IN_SCOPE",
+      "role_fit": "MISMATCH",
+      "evidence_sufficiency": "SUFFICIENT_ABSTRACT",
+      "primary_reason_code": "WRONG_METHOD_OR_OUTCOME",
+      "secondary_reason_codes": [
+        "BRIDGE_REFERENCE"
+      ],
+      "assigned_label": "search_validation_reachability",
+      "corrected_label": null,
+      "evidence": [
+        {
+          "source_field": "ABSTRACT",
+          "supports": "SCOPE",
+          "paraphrase": "Dissertation proposing form-, natural-language- and graph-based systems for complex bibliographic queries such as co-citation and coupling."
+        },
+        {
+          "source_field": "ABSTRACT",
+          "supports": "ROLE",
+          "paraphrase": "Evaluation measures query processing time and usability, not search sensitivity, relative recall or reachability of relevant records."
+        },
+        {
+          "source_field": "METADATA",
+          "supports": "RISK",
+          "paraphrase": "Discovery role was bibliography_as_research_state; venue is blank and the record is a dissertation."
+        }
+      ],
+      "rationale": "The work is scholarly search infrastructure and sits inside the broad inclusion boundary, but it does not validate searches against benchmark sets or measure reachability, so it does not support the assigned role. It might fit a scholarly-search role better.",
+      "confidence": "MEDIUM",
+      "flags": [
+        "POSSIBLE_WRONG_GROUP"
+      ],
+      "follow_up": {
+        "required": true,
+        "priority": "ROUTINE",
+        "reasons": [
+          "AI_PROXY_REQUIRES_HUMAN_CONFIRMATION",
+          "GROUP_DISAGREEMENT"
+        ],
+        "recommended_action": "HUMAN_CHECK"
+      },
+      "task_specific": {
+        "scope_decision": null,
+        "group_decision": null,
+        "corrected_group": null,
+        "literature_decision": "REMOVE"
+      }
+    },
+    {
+      "review_row_id": "round0-007",
+      "corpus_or_project": "qss_self_hosting",
+      "source_group": "search_validation_reachability",
+      "paper": {
+        "title": "How to Write Effective Prompts for Screening Biomedical Literature Using Large Language Models",
+        "doi": "https://doi.org/10.20944/preprints202502.0396.v1",
+        "openalex_id": "https://openalex.org/W4407206494"
+      },
+      "normalized_decision": "EXCLUDE",
+      "scope_fit": "UNCERTAIN",
+      "role_fit": "MISMATCH",
+      "evidence_sufficiency": "SUFFICIENT_ABSTRACT",
+      "primary_reason_code": "WRONG_METHOD_OR_OUTCOME",
+      "secondary_reason_codes": [
+        "BRIDGE_REFERENCE"
+      ],
+      "assigned_label": "search_validation_reachability",
+      "corrected_label": null,
+      "evidence": [
+        {
+          "source_field": "ABSTRACT",
+          "supports": "ROLE",
+          "paraphrase": "Overview of prompt engineering for LLM abstract screening, contrasting recall-maximising 'soft' prompts with 'strict' prompts in a periodontics case."
+        },
+        {
+          "source_field": "ABSTRACT",
+          "supports": "SCOPE",
+          "paraphrase": "Concerns screening decisions after retrieval and stresses expert oversight, not validating whether a search reaches relevant records."
+        }
+      ],
+      "rationale": "Screening recall is adjacent to search validation, and the paper touches human oversight of evidence selection, but its contribution is prompt design for screening rather than benchmark-based search validation or reachability. It does not support the assigned role; at most it bridges to curation/governance.",
+      "confidence": "MEDIUM",
+      "flags": [
+        "POSSIBLE_WRONG_GROUP",
+        "BOUNDARY_CASE"
+      ],
+      "follow_up": {
+        "required": true,
+        "priority": "ROUTINE",
+        "reasons": [
+          "AI_PROXY_REQUIRES_HUMAN_CONFIRMATION",
+          "GROUP_DISAGREEMENT",
+          "BOUNDARY_CASE"
+        ],
+        "recommended_action": "HUMAN_CHECK"
+      },
+      "task_specific": {
+        "scope_decision": null,
+        "group_decision": null,
+        "corrected_group": null,
+        "literature_decision": "REMOVE"
+      }
+    },
+    {
+      "review_row_id": "round0-008",
+      "corpus_or_project": "qss_self_hosting",
+      "source_group": "search_validation_reachability",
+      "paper": {
+        "title": "Diagnosis of Cervical Cancer and Pre-Cancerous Lesions by Artificial Intelligence: A Systematic Review",
+        "doi": "https://doi.org/10.3390/diagnostics12112771",
+        "openalex_id": "https://openalex.org/W4309002538"
+      },
+      "normalized_decision": "EXCLUDE",
+      "scope_fit": "OUT_OF_SCOPE",
+      "role_fit": "MISMATCH",
+      "evidence_sufficiency": "SUFFICIENT_ABSTRACT",
+      "primary_reason_code": "WRONG_DOMAIN_OR_POPULATION",
+      "secondary_reason_codes": [
+        "FALSE_LEXICAL_OR_SEMANTIC_MATCH"
+      ],
+      "assigned_label": "search_validation_reachability",
+      "corrected_label": null,
+      "evidence": [
+        {
+          "source_field": "ABSTRACT",
+          "supports": "SCOPE",
+          "paraphrase": "Systematic review of AI diagnostic accuracy for cervical cancer and pre-cancerous lesions."
+        },
+        {
+          "source_field": "ABSTRACT",
+          "supports": "RISK",
+          "paraphrase": "'Sensitivity' refers to diagnostic sensitivity of AI for CIN2+, not search sensitivity; the search itself is only described procedurally."
+        }
+      ],
+      "rationale": "This is a clinical diagnostic-accuracy review; it matches the role only through the word sensitivity and the presence of a PRISMA search. It is out of scope.",
+      "confidence": "HIGH",
+      "flags": [
+        "POSSIBLE_FALSE_MATCH"
+      ],
+      "follow_up": {
+        "required": true,
+        "priority": "ROUTINE",
+        "reasons": [
+          "AI_PROXY_REQUIRES_HUMAN_CONFIRMATION"
+        ],
+        "recommended_action": "HUMAN_CHECK"
+      },
+      "task_specific": {
+        "scope_decision": null,
+        "group_decision": null,
+        "corrected_group": null,
+        "literature_decision": "REMOVE"
+      }
+    },
+    {
+      "review_row_id": "round0-009",
+      "corpus_or_project": "qss_self_hosting",
+      "source_group": "search_validation_reachability",
+      "paper": {
+        "title": "The emergence of large language models as tools in literature reviews: a large language model-assisted systematic review",
+        "doi": "https://doi.org/10.1093/jamia/ocaf063",
+        "openalex_id": "https://openalex.org/W4410157139"
+      },
+      "normalized_decision": "EXCLUDE",
+      "scope_fit": "UNCERTAIN",
+      "role_fit": "MISMATCH",
+      "evidence_sufficiency": "SUFFICIENT_ABSTRACT",
+      "primary_reason_code": "TOO_GENERIC_FOR_CLAIM",
+      "secondary_reason_codes": [
+        "BRIDGE_REFERENCE"
+      ],
+      "assigned_label": "search_validation_reachability",
+      "corrected_label": null,
+      "evidence": [
+        {
+          "source_field": "ABSTRACT",
+          "supports": "SCOPE",
+          "paraphrase": "LLM-assisted systematic review of 172 studies on using LLMs for review automation, including searching (34.9%) and data extraction."
+        },
+        {
+          "source_field": "ABSTRACT",
+          "supports": "ROLE",
+          "paraphrase": "Reports pooled extraction precision/recall, but does not validate search sensitivity or reachability against benchmark sets."
+        }
+      ],
+      "rationale": "The review maps LLM use across review stages and could provide landscape context on automated searching, but it does not supply search-validation methods or reachability evidence. It is too generic for the assigned role.",
+      "confidence": "MEDIUM",
+      "flags": [
+        "BOUNDARY_CASE"
+      ],
+      "follow_up": {
+        "required": true,
+        "priority": "ROUTINE",
+        "reasons": [
+          "AI_PROXY_REQUIRES_HUMAN_CONFIRMATION",
+          "BOUNDARY_CASE"
+        ],
+        "recommended_action": "HUMAN_CHECK"
+      },
+      "task_specific": {
+        "scope_decision": null,
+        "group_decision": null,
+        "corrected_group": null,
+        "literature_decision": "REMOVE"
+      }
+    },
+    {
+      "review_row_id": "round0-010",
+      "corpus_or_project": "qss_self_hosting",
+      "source_group": "search_validation_reachability",
+      "paper": {
+        "title": "ADVANCED COMPUTING APPLICATIONS IN BI DASHBOARDS: IMPROVING REAL-TIME DECISION SUPPORT FOR GLOBAL ENTERPRISES",
+        "doi": "https://doi.org/10.63125/3x6vpb92",
+        "openalex_id": "https://openalex.org/W4414518606"
+      },
+      "normalized_decision": "EXCLUDE",
+      "scope_fit": "OUT_OF_SCOPE",
+      "role_fit": "MISMATCH",
+      "evidence_sufficiency": "SUFFICIENT_ABSTRACT",
+      "primary_reason_code": "WRONG_DOMAIN_OR_POPULATION",
+      "secondary_reason_codes": [
+        "FALSE_LEXICAL_OR_SEMANTIC_MATCH"
+      ],
+      "assigned_label": "search_validation_reachability",
+      "corrected_label": null,
+      "evidence": [
+        {
+          "source_field": "ABSTRACT",
+          "supports": "SCOPE",
+          "paraphrase": "Systematic review of computing architectures for real-time business-intelligence dashboards (streaming, HTAP, GPU SQL)."
+        },
+        {
+          "source_field": "ABSTRACT",
+          "supports": "RISK",
+          "paraphrase": "Match arises from PRISMA screening and governance/lineage vocabulary only."
+        },
+        {
+          "source_field": "METADATA",
+          "supports": "RISK",
+          "paraphrase": "The author field lists 'MBA in International Business' as an author name and venue is blank."
+        }
+      ],
+      "rationale": "The paper concerns enterprise BI systems and has no connection to literature-search validation or scholarly evidence selection. It is out of scope; the author metadata also appear malformed.",
+      "confidence": "HIGH",
+      "flags": [
+        "POSSIBLE_FALSE_MATCH",
+        "METADATA_ISSUE"
+      ],
+      "follow_up": {
+        "required": true,
+        "priority": "ROUTINE",
+        "reasons": [
+          "AI_PROXY_REQUIRES_HUMAN_CONFIRMATION",
+          "METADATA_ISSUE"
+        ],
+        "recommended_action": "HUMAN_CHECK"
+      },
+      "task_specific": {
+        "scope_decision": null,
+        "group_decision": null,
+        "corrected_group": null,
+        "literature_decision": "REMOVE"
+      }
+    }
+  ]
+}

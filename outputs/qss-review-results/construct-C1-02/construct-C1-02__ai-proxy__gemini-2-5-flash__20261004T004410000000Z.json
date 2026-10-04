@@ -1,0 +1,103 @@
+{
+  "schema_version": "qss-review-response-v1",
+  "batch_id": "construct-C1-02",
+  "review_type": "CONSTRUCT_AUDIT",
+  "rubric_version": "qss-review-rubric-v3",
+  "reviewer": {
+    "type": "AI_PROXY",
+    "id": "gemini-2-5-flash",
+    "role": "PRIMARY_REVIEWER",
+    "review_status": "AI_FIRST_PASS",
+    "reviewed_at": null
+  },
+  "reviews": [
+    {
+      "review_row_id": "C1-2023-06",
+      "corpus_or_project": "C1",
+      "source_group": "rainfall_pattern_evidence",
+      "paper": {
+        "title": "Designing an Interactive Visual Analytics System for Precipitation Data Analysis",
+        "doi": "https://doi.org/10.3390/app15105467",
+        "openalex_id": "https://openalex.org/W4410345768"
+      },
+      "normalized_decision": "INCLUDE",
+      "scope_fit": "IN_SCOPE",
+      "role_fit": "DIRECT",
+      "evidence_sufficiency": "SUFFICIENT_ABSTRACT",
+      "primary_reason_code": "DIRECT_METHOD_OR_EVIDENCE_ROLE",
+      "secondary_reason_codes": [],
+      "assigned_label": "rainfall_pattern_evidence",
+      "corrected_label": null,
+      "evidence": [
+        {
+          "source_field": "ABSTRACT",
+          "supports": "SCOPE",
+          "paraphrase": "Interactive visual analytics system for analyzing temporal and spatial precipitation patterns."
+        }
+      ],
+      "rationale": "Directly supports precipitation visual analytics and pattern discovery across high-resolution station data.",
+      "confidence": "HIGH",
+      "flags": [
+        "BOUNDARY_CASE"
+      ],
+      "follow_up": {
+        "required": true,
+        "priority": "ROUTINE",
+        "reasons": [
+          "AI_PROXY_REQUIRES_HUMAN_CONFIRMATION"
+        ],
+        "recommended_action": "HUMAN_CHECK"
+      },
+      "task_specific": {
+        "scope_decision": "KEEP_IN_SCOPE",
+        "group_decision": "CORRECT_GROUP",
+        "corrected_group": null,
+        "literature_decision": null
+      }
+    },
+    {
+      "review_row_id": "C1-2024-07",
+      "corpus_or_project": "C1",
+      "source_group": "rainfall_pattern_evidence",
+      "paper": {
+        "title": "Designing an Interactive Visual Analytics System for Precipitation Data Analysis",
+        "doi": "https://doi.org/10.3390/app15105467",
+        "openalex_id": "https://openalex.org/W4410345768"
+      },
+      "normalized_decision": "INCLUDE",
+      "scope_fit": "IN_SCOPE",
+      "role_fit": "DIRECT",
+      "evidence_sufficiency": "SUFFICIENT_ABSTRACT",
+      "primary_reason_code": "DIRECT_METHOD_OR_EVIDENCE_ROLE",
+      "secondary_reason_codes": [],
+      "assigned_label": "rainfall_pattern_evidence",
+      "corrected_label": null,
+      "evidence": [
+        {
+          "source_field": "ABSTRACT",
+          "supports": "SCOPE",
+          "paraphrase": "Interactive visual analytics system for hourly precipitation data analysis."
+        }
+      ],
+      "rationale": "Provides precipitation pattern visualization and interactive exploration methods.",
+      "confidence": "HIGH",
+      "flags": [
+        "BOUNDARY_CASE"
+      ],
+      "follow_up": {
+        "required": true,
+        "priority": "ROUTINE",
+        "reasons": [
+          "AI_PROXY_REQUIRES_HUMAN_CONFIRMATION"
+        ],
+        "recommended_action": "HUMAN_CHECK"
+      },
+      "task_specific": {
+        "scope_decision": "KEEP_IN_SCOPE",
+        "group_decision": "CORRECT_GROUP",
+        "corrected_group": null,
+        "literature_decision": null
+      }
+    }
+  ]
+}

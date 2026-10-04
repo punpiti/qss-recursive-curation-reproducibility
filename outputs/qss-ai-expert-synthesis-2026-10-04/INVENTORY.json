@@ -1,0 +1,667 @@
+{
+  "generated_at": "2026-10-03T18:59:21.935653Z",
+  "source_files": [
+    {
+      "batch_id": "construct-C2-01",
+      "expert": "Claude",
+      "reviewer_id": "claude-opus-5-5",
+      "path": "outputs/qss-review-results/construct-C2-01/construct-C2-01__ai-proxy__claude-opus-5-5__20261003T170121427890Z.json",
+      "sha256": "1c5fa2af2b34a70b724d00c0b1b669139fd6f3a407ac8b5d55334f6c288275b4",
+      "rows": 5
+    },
+    {
+      "batch_id": "construct-C2-01",
+      "expert": "Codex",
+      "reviewer_id": "codex-cli-0-159-3",
+      "path": "outputs/qss-review-results/construct-C2-01/construct-C2-01__ai-proxy__codex-cli-0-159-3__20261003T173319382152Z.json",
+      "sha256": "00a6382c27dd02161409f624091e7d70e099ab3bff01cf3076b8b9606411673c",
+      "rows": 5
+    },
+    {
+      "batch_id": "construct-C2-01",
+      "expert": "Gemini",
+      "reviewer_id": "gemini-2-5-flash",
+      "path": "outputs/qss-review-results/construct-C2-01/construct-C2-01__ai-proxy__gemini-2-5-flash__20261004T004410000000Z.json",
+      "sha256": "ceea05108d3c746a4bcea8fb99449b73def11406516ecba79fa3d0d4b8a9e472",
+      "rows": 5
+    },
+    {
+      "batch_id": "construct-C2-02",
+      "expert": "Claude",
+      "reviewer_id": "claude-opus-5-5",
+      "path": "outputs/qss-review-results/construct-C2-02/construct-C2-02__ai-proxy__claude-opus-5-5__20261003T170121621945Z.json",
+      "sha256": "d271d29e658e32f20e8db881d301d5cf5f2552d1928fb46d39354e113849f563",
+      "rows": 4
+    },
+    {
+      "batch_id": "construct-C2-02",
+      "expert": "Codex",
+      "reviewer_id": "codex-cli-0-159-3",
+      "path": "outputs/qss-review-results/construct-C2-02/construct-C2-02__ai-proxy__codex-cli-0-159-3__20261003T173701221711Z.json",
+      "sha256": "6e518f9203a8c796d782e522f081337b3eca48414a0f7c1c83b92a94e7dd14ab",
+      "rows": 4
+    },
+    {
+      "batch_id": "construct-C2-02",
+      "expert": "Gemini",
+      "reviewer_id": "gemini-2-5-flash",
+      "path": "outputs/qss-review-results/construct-C2-02/construct-C2-02__ai-proxy__gemini-2-5-flash__20261004T004410000000Z.json",
+      "sha256": "b9279127e8c34572e435a2299adb74822b1471a3983415cbf9df95e72abde526",
+      "rows": 4
+    },
+    {
+      "batch_id": "construct-C3-01",
+      "expert": "Claude",
+      "reviewer_id": "claude-opus-5-5",
+      "path": "outputs/qss-review-results/construct-C3-01/construct-C3-01__ai-proxy__claude-opus-5-5__20261003T170136183588Z.json",
+      "sha256": "17d7cbbb175ea7e8f0056550ef5e96ca9baea1ff328fff5631fd7d5bb3796d0d",
+      "rows": 5
+    },
+    {
+      "batch_id": "construct-C3-01",
+      "expert": "Codex",
+      "reviewer_id": "codex-cli-0-159-3",
+      "path": "outputs/qss-review-results/construct-C3-01/construct-C3-01__ai-proxy__codex-cli-0-159-3__20261003T173928404814Z.json",
+      "sha256": "b8313142dd98288b56210aed246015b790d95922cceeae68a2346b352de11a94",
+      "rows": 5
+    },
+    {
+      "batch_id": "construct-C3-01",
+      "expert": "Gemini",
+      "reviewer_id": "gemini-2-5-flash",
+      "path": "outputs/qss-review-results/construct-C3-01/construct-C3-01__ai-proxy__gemini-2-5-flash__20261004T004410000000Z.json",
+      "sha256": "1e3603c2962f2b8d8514911c2284eb59a7da71fdb4e7d0ecee6e55c74227dcb1",
+      "rows": 5
+    },
+    {
+      "batch_id": "construct-C1-01",
+      "expert": "Claude",
+      "reviewer_id": "claude-opus-5-5",
+      "path": "outputs/qss-review-results/construct-C1-01/construct-C1-01__ai-proxy__claude-opus-5-5__20261003T170216714088Z.json",
+      "sha256": "139de894293308ec0a0eb823a591ced6a05993d70654be79895930315974d523",
+      "rows": 5
+    },
+    {
+      "batch_id": "construct-C1-01",
+      "expert": "Codex",
+      "reviewer_id": "codex-cli-0-159-3",
+      "path": "outputs/qss-review-results/construct-C1-01/construct-C1-01__ai-proxy__codex-cli-0-159-3__20261003T174307676920Z.json",
+      "sha256": "11e1b09ad53a83b9ec6a13f5c70f5e532ab45ec3a076076aa43d83b441d3c29f",
+      "rows": 5
+    },
+    {
+      "batch_id": "construct-C1-01",
+      "expert": "Gemini",
+      "reviewer_id": "gemini-2-5-flash",
+      "path": "outputs/qss-review-results/construct-C1-01/construct-C1-01__ai-proxy__gemini-2-5-flash__20261004T004410000000Z.json",
+      "sha256": "089c00719571852fb1a9cc7bf5fdfeef3721caff11e099174b821aa1bd16ed8f",
+      "rows": 5
+    },
+    {
+      "batch_id": "construct-C1-02",
+      "expert": "Claude",
+      "reviewer_id": "claude-opus-5-5",
+      "path": "outputs/qss-review-results/construct-C1-02/construct-C1-02__ai-proxy__claude-opus-5-5__20261003T170303103936Z.json",
+      "sha256": "358d2213be34f6fcabba6e0d711333301b7d1aa186b8f98295addd339cb2f2f9",
+      "rows": 2
+    },
+    {
+      "batch_id": "construct-C1-02",
+      "expert": "Codex",
+      "reviewer_id": "codex-cli-0-159-3",
+      "path": "outputs/qss-review-results/construct-C1-02/construct-C1-02__ai-proxy__codex-cli-0-159-3__20261003T174549319966Z.json",
+      "sha256": "d6c3c898b2bae68fb7685070712c606f9dc8cba92d9f9023fc6a4821fd7452c4",
+      "rows": 2
+    },
+    {
+      "batch_id": "construct-C1-02",
+      "expert": "Gemini",
+      "reviewer_id": "gemini-2-5-flash",
+      "path": "outputs/qss-review-results/construct-C1-02/construct-C1-02__ai-proxy__gemini-2-5-flash__20261004T004410000000Z.json",
+      "sha256": "ce6788723272ef272ca3834c0ba5698b06364f5234cf97f61018e1dc4385fc14",
+      "rows": 2
+    },
+    {
+      "batch_id": "construct-C4-01",
+      "expert": "Claude",
+      "reviewer_id": "claude-opus-5-5",
+      "path": "outputs/qss-review-results/construct-C4-01/construct-C4-01__ai-proxy__claude-opus-5-5__20261003T170313022581Z.json",
+      "sha256": "093ecf057d1713507e15cffb7c8ef874e3139b8e939ddd32c002ffe57c67d10b",
+      "rows": 3
+    },
+    {
+      "batch_id": "construct-C4-01",
+      "expert": "Codex",
+      "reviewer_id": "codex-cli-0-159-3",
+      "path": "outputs/qss-review-results/construct-C4-01/construct-C4-01__ai-proxy__codex-cli-0-159-3__20261003T174758806178Z.json",
+      "sha256": "6bf4b8a49cb5ae0e2b8f72fd24c63303f277936c9a2e89621dd47b9062cf1e95",
+      "rows": 3
+    },
+    {
+      "batch_id": "construct-C4-01",
+      "expert": "Gemini",
+      "reviewer_id": "gemini-2-5-flash",
+      "path": "outputs/qss-review-results/construct-C4-01/construct-C4-01__ai-proxy__gemini-2-5-flash__20261004T004410000000Z.json",
+      "sha256": "10e0d0441e4c816a7971fba74efb8624c6dae3d36818edc18d9bdb33862af4d0",
+      "rows": 3
+    },
+    {
+      "batch_id": "construct-C6-01",
+      "expert": "Claude",
+      "reviewer_id": "claude-opus-5-5",
+      "path": "outputs/qss-review-results/construct-C6-01/construct-C6-01__ai-proxy__claude-opus-5-5__20261003T170343786481Z.json",
+      "sha256": "7ca647ec9279d511e0b8a6337a95e5af10d89c750366c5f53c5fdfafd36a26ca",
+      "rows": 2
+    },
+    {
+      "batch_id": "construct-C6-01",
+      "expert": "Codex",
+      "reviewer_id": "codex-cli-0-159-3",
+      "path": "outputs/qss-review-results/construct-C6-01/construct-C6-01__ai-proxy__codex-cli-0-159-3__20261003T175058476641Z.json",
+      "sha256": "b9b71d8e1bcd321ba4208c0b04f8f23c3077b8f99a7c122e2677dc3d93f8c5ae",
+      "rows": 2
+    },
+    {
+      "batch_id": "construct-C6-01",
+      "expert": "Gemini",
+      "reviewer_id": "gemini-2-5-flash",
+      "path": "outputs/qss-review-results/construct-C6-01/construct-C6-01__ai-proxy__gemini-2-5-flash__20261004T004410000000Z.json",
+      "sha256": "9c4419bd153cf089abbb049be151cb2436af1e71714ffbd45bf9066f7afc22b2",
+      "rows": 2
+    },
+    {
+      "batch_id": "construct-C5-01",
+      "expert": "Claude",
+      "reviewer_id": "claude-opus-5-5",
+      "path": "outputs/qss-review-results/construct-C5-01/construct-C5-01__ai-proxy__claude-opus-5-5__20261003T170402843127Z.json",
+      "sha256": "70c78ea1821917d642e0c6bd2018a30803ddd2ffe5bdab102de51fbeb1ec14c2",
+      "rows": 5
+    },
+    {
+      "batch_id": "construct-C5-01",
+      "expert": "Codex",
+      "reviewer_id": "codex-cli-0-159-3",
+      "path": "outputs/qss-review-results/construct-C5-01/construct-C5-01__ai-proxy__codex-cli-0-159-3__20261003T175252606077Z.json",
+      "sha256": "d3f058f163b870259af8626884666328a7184447a3da929836e5f1b4e699c798",
+      "rows": 5
+    },
+    {
+      "batch_id": "construct-C5-01",
+      "expert": "Gemini",
+      "reviewer_id": "gemini-2-5-pro",
+      "path": "outputs/qss-review-results/construct-C5-01/construct-C5-01__ai-proxy__gemini-2-5-pro__20261003T175900000000Z.json",
+      "sha256": "5d2cb636d60fb10975026d1b527759dae8f5e91a2a40b787558c164993eafce6",
+      "rows": 5
+    },
+    {
+      "batch_id": "construct-C5-02",
+      "expert": "Claude",
+      "reviewer_id": "claude-opus-5-5",
+      "path": "outputs/qss-review-results/construct-C5-02/construct-C5-02__ai-proxy__claude-opus-5-5__20261003T170439306306Z.json",
+      "sha256": "486b33568916bf09aa4cb19c393dbd572fc92bec390296052531a09cef512728",
+      "rows": 1
+    },
+    {
+      "batch_id": "construct-C5-02",
+      "expert": "Codex",
+      "reviewer_id": "codex-cli-0-159-3",
+      "path": "outputs/qss-review-results/construct-C5-02/construct-C5-02__ai-proxy__codex-cli-0-159-3__20261003T175644459067Z.json",
+      "sha256": "5d7211ef3925d703864fb0ef2ecd8e131e7b9152d0caad34074236d771c428b8",
+      "rows": 1
+    },
+    {
+      "batch_id": "construct-C5-02",
+      "expert": "Gemini",
+      "reviewer_id": "gemini-2-5-pro",
+      "path": "outputs/qss-review-results/construct-C5-02/construct-C5-02__ai-proxy__gemini-2-5-pro__20261003T175900000000Z.json",
+      "sha256": "9d69b725bdc2b06b6d6d4092223941021ec65fc6b94ec04c83fd7f2f4832f6ba",
+      "rows": 1
+    },
+    {
+      "batch_id": "round0-search-validation-reachability-01",
+      "expert": "Claude",
+      "reviewer_id": "claude-opus-5-5",
+      "path": "outputs/qss-review-results/round0-search-validation-reachability-01/round0-search-validation-reachability-01__ai-proxy__claude-opus-5-5__20261003T170451012787Z.json",
+      "sha256": "b8cbe2e66057dc680b993636e1f5df07ee13f0f9d86a1781fa9cb28b6c761bc3",
+      "rows": 5
+    },
+    {
+      "batch_id": "round0-search-validation-reachability-01",
+      "expert": "Codex",
+      "reviewer_id": "codex-cli-0-159-3",
+      "path": "outputs/qss-review-results/round0-search-validation-reachability-01/round0-search-validation-reachability-01__ai-proxy__codex-cli-0-159-3__20261003T175828339700Z.json",
+      "sha256": "41927e24e9a9eaf17b413dba35764e50aaed009296b1197062c39fbf23af685d",
+      "rows": 5
+    },
+    {
+      "batch_id": "round0-search-validation-reachability-01",
+      "expert": "Gemini",
+      "reviewer_id": "gemini-2-5-flash",
+      "path": "outputs/qss-review-results/round0-search-validation-reachability-01/round0-search-validation-reachability-01__ai-proxy__gemini-2-5-flash__20261003T183000000000Z.json.json",
+      "sha256": "f45834519867dd67fc080e70a6addd4fa68e29c938326ca3694d425253335fa9",
+      "rows": 5
+    },
+    {
+      "batch_id": "round0-search-validation-reachability-02",
+      "expert": "Claude",
+      "reviewer_id": "claude-opus-5-5",
+      "path": "outputs/qss-review-results/round0-search-validation-reachability-02/round0-search-validation-reachability-02__ai-proxy__claude-opus-5-5__20261003T170532267962Z.json",
+      "sha256": "a56b2f638f75c1af6fe92aebb1f3c90c48b24f44082caa87c827aa457dd6dba3",
+      "rows": 5
+    },
+    {
+      "batch_id": "round0-search-validation-reachability-02",
+      "expert": "Codex",
+      "reviewer_id": "codex-cli-0-159-3",
+      "path": "outputs/qss-review-results/round0-search-validation-reachability-02/round0-search-validation-reachability-02__ai-proxy__codex-cli-0-159-3__20261003T180136567110Z.json",
+      "sha256": "9c7950e78f047264d6fcab131b778c367ebf95309c53d520dbc4b231c9940c24",
+      "rows": 5
+    },
+    {
+      "batch_id": "round0-search-validation-reachability-02",
+      "expert": "Gemini",
+      "reviewer_id": "gemini-2-5-flash",
+      "path": "outputs/qss-review-results/round0-search-validation-reachability-02/round0-search-validation-reachability-02__ai-proxy__gemini-2-5-flash__20261003T183000000000Z.json.json",
+      "sha256": "9bba298d11b6465ac47424a424711c0c666c469265bf17ccd1658586db055a30",
+      "rows": 5
+    },
+    {
+      "batch_id": "round0-search-validation-reachability-03",
+      "expert": "Claude",
+      "reviewer_id": "claude-opus-5-5",
+      "path": "outputs/qss-review-results/round0-search-validation-reachability-03/round0-search-validation-reachability-03__ai-proxy__claude-opus-5-5__20261003T170602156674Z.json",
+      "sha256": "3b20030631b7282078ff89f5a19e38eb59b55f8a4489a320a482eed76215069d",
+      "rows": 5
+    },
+    {
+      "batch_id": "round0-search-validation-reachability-03",
+      "expert": "Codex",
+      "reviewer_id": "codex-cli-0-159-3",
+      "path": "outputs/qss-review-results/round0-search-validation-reachability-03/round0-search-validation-reachability-03__ai-proxy__codex-cli-0-159-3__20261003T180407804149Z.json",
+      "sha256": "4f8c773aed6f7aabebc3617a6d25d1dc9e2350da7370589fb47cc033e7b25b49",
+      "rows": 5
+    },
+    {
+      "batch_id": "round0-search-validation-reachability-03",
+      "expert": "Gemini",
+      "reviewer_id": "gemini-2-5-flash",
+      "path": "outputs/qss-review-results/round0-search-validation-reachability-03/round0-search-validation-reachability-03__ai-proxy__gemini-2-5-flash__20261003T183000000000Z.json.json",
+      "sha256": "afa68104374d4857e12dae752dedc486a6dd4732f09e85351ef05220fcb5efc0",
+      "rows": 5
+    },
+    {
+      "batch_id": "round0-scholarly-recommendation-relevance-feedback-01",
+      "expert": "Claude",
+      "reviewer_id": "claude-opus-5-5",
+      "path": "outputs/qss-review-results/round0-scholarly-recommendation-relevance-feedback-01/round0-scholarly-recommendation-relevance-feedback-01__ai-proxy__claude-opus-5-5__20261003T170619456756Z.json",
+      "sha256": "b2c4168f7114b0bbc99c4779a5e5c89b32fdeaea962822113ff953ef47e4a45a",
+      "rows": 5
+    },
+    {
+      "batch_id": "round0-scholarly-recommendation-relevance-feedback-01",
+      "expert": "Codex",
+      "reviewer_id": "codex-cli-0-159-3",
+      "path": "outputs/qss-review-results/round0-scholarly-recommendation-relevance-feedback-01/round0-scholarly-recommendation-relevance-feedback-01__ai-proxy__codex-cli-0-159-3__20261003T180723593387Z.json",
+      "sha256": "7bdab64921fc8aa313b9386e92ed6b0e758899632c7daf54f15ddd447dfc3caf",
+      "rows": 5
+    },
+    {
+      "batch_id": "round0-scholarly-recommendation-relevance-feedback-01",
+      "expert": "Gemini",
+      "reviewer_id": "gemini-2-5-flash",
+      "path": "outputs/qss-review-results/round0-scholarly-recommendation-relevance-feedback-01/round0-scholarly-recommendation-relevance-feedback-01__ai-proxy__gemini-2-5-flash__20261003T183000000000Z.json.json",
+      "sha256": "40aaf809a38b33a7c0bfe4e8e8af6c5815f55875c2776123efc0bcb5c3412e64",
+      "rows": 5
+    },
+    {
+      "batch_id": "round0-scholarly-recommendation-relevance-feedback-02",
+      "expert": "Claude",
+      "reviewer_id": "claude-opus-5-5",
+      "path": "outputs/qss-review-results/round0-scholarly-recommendation-relevance-feedback-02/round0-scholarly-recommendation-relevance-feedback-02__ai-proxy__claude-opus-5-5__20261003T170649846495Z.json",
+      "sha256": "9deda1879b024cd1e6b0cadb60b9cb4a6545373ea2903ab2d8809494764133d6",
+      "rows": 5
+    },
+    {
+      "batch_id": "round0-scholarly-recommendation-relevance-feedback-02",
+      "expert": "Codex",
+      "reviewer_id": "codex-cli-0-159-3",
+      "path": "outputs/qss-review-results/round0-scholarly-recommendation-relevance-feedback-02/round0-scholarly-recommendation-relevance-feedback-02__ai-proxy__codex-cli-0-159-3__20261003T180956273126Z.json",
+      "sha256": "3b63d69baaaac6a551db5f6e33d3808953b8faebffc8fc6f0ee036a7472729cc",
+      "rows": 5
+    },
+    {
+      "batch_id": "round0-scholarly-recommendation-relevance-feedback-02",
+      "expert": "Gemini",
+      "reviewer_id": "gemini-2-5-flash",
+      "path": "outputs/qss-review-results/round0-scholarly-recommendation-relevance-feedback-02/round0-scholarly-recommendation-relevance-feedback-02__ai-proxy__gemini-2-5-flash__20261003T183000000000Z.json.json",
+      "sha256": "0e677dc16ea497d3bc17bb162b28969d7865ed50879f7c2813eb2a2cd91d362c",
+      "rows": 5
+    },
+    {
+      "batch_id": "round0-scholarly-recommendation-relevance-feedback-03",
+      "expert": "Claude",
+      "reviewer_id": "claude-opus-5-5",
+      "path": "outputs/qss-review-results/round0-scholarly-recommendation-relevance-feedback-03/round0-scholarly-recommendation-relevance-feedback-03__ai-proxy__claude-opus-5-5__20261003T170709864700Z.json",
+      "sha256": "32bbe3cd71ac53b385ba7e65c782435474fa9361e0f98b030337303bd8f45657",
+      "rows": 5
+    },
+    {
+      "batch_id": "round0-scholarly-recommendation-relevance-feedback-03",
+      "expert": "Codex",
+      "reviewer_id": "codex-cli-0-159-3",
+      "path": "outputs/qss-review-results/round0-scholarly-recommendation-relevance-feedback-03/round0-scholarly-recommendation-relevance-feedback-03__ai-proxy__codex-cli-0-159-3__20261003T181239391136Z.json",
+      "sha256": "7c725d63c1db7cb97066f662319e2aff34b9f9f555dc79db3412afd2e76493a5",
+      "rows": 5
+    },
+    {
+      "batch_id": "round0-scholarly-recommendation-relevance-feedback-03",
+      "expert": "Gemini",
+      "reviewer_id": "gemini-2-5-flash",
+      "path": "outputs/qss-review-results/round0-scholarly-recommendation-relevance-feedback-03/round0-scholarly-recommendation-relevance-feedback-03__ai-proxy__gemini-2-5-flash__20261003T183000000000Z.json.json",
+      "sha256": "8ac2c392ca031257f0af1ab27763f3ced3b4d454560c01d9667ce71ced1fc603",
+      "rows": 5
+    },
+    {
+      "batch_id": "round0-temporal-evaluation-observability-01",
+      "expert": "Claude",
+      "reviewer_id": "claude-opus-5-5",
+      "path": "outputs/qss-review-results/round0-temporal-evaluation-observability-01/round0-temporal-evaluation-observability-01__ai-proxy__claude-opus-5-5__20261003T170723079906Z.json",
+      "sha256": "3536a9491283ecda113bbb2295b32066780e087e03b4b7f0c8e4adb66cf588a7",
+      "rows": 3
+    },
+    {
+      "batch_id": "round0-temporal-evaluation-observability-01",
+      "expert": "Codex",
+      "reviewer_id": "codex-cli-0-159-3",
+      "path": "outputs/qss-review-results/round0-temporal-evaluation-observability-01/round0-temporal-evaluation-observability-01__ai-proxy__codex-cli-0-159-3__20261003T181521912905Z.json",
+      "sha256": "c5fa8b282e194e20a42e05d26696b2f5fb239d43684efa09fed8f70d06f16e4b",
+      "rows": 3
+    },
+    {
+      "batch_id": "round0-temporal-evaluation-observability-01",
+      "expert": "Gemini",
+      "reviewer_id": "gemini-2-5-flash",
+      "path": "outputs/qss-review-results/round0-temporal-evaluation-observability-01/round0-temporal-evaluation-observability-01__ai-proxy__gemini-2-5-flash__20261003T183858000000Z.json.json",
+      "sha256": "15d29137e4bcf75f5c4abef651bcd08d5bb3fb06118ef3b8960ade502f747e74",
+      "rows": 3
+    },
+    {
+      "batch_id": "round0-coverage-diversity-stability-01",
+      "expert": "Claude",
+      "reviewer_id": "claude-opus-5-5",
+      "path": "outputs/qss-review-results/round0-coverage-diversity-stability-01/round0-coverage-diversity-stability-01__ai-proxy__claude-opus-5-5__20261003T170742986842Z.json",
+      "sha256": "ec871d66b6e8bf0ab95759bb167c71ac09e97b643d6ac5978c5537fed13b5c65",
+      "rows": 5
+    },
+    {
+      "batch_id": "round0-coverage-diversity-stability-01",
+      "expert": "Codex",
+      "reviewer_id": "codex-cli-0-159-3",
+      "path": "outputs/qss-review-results/round0-coverage-diversity-stability-01/round0-coverage-diversity-stability-01__ai-proxy__codex-cli-0-159-3__20261003T181745132088Z.json",
+      "sha256": "436b3a825ada0f2e9466fc4cd84bb75ea231fbe0957b54c8716b6877575ad898",
+      "rows": 5
+    },
+    {
+      "batch_id": "round0-coverage-diversity-stability-01",
+      "expert": "Gemini",
+      "reviewer_id": "gemini-2.5-flash",
+      "path": "outputs/qss-review-results/round0-coverage-diversity-stability-01/round0-coverage-diversity-stability-01__ai-proxy__gemini-2-5-flash__20261003T180541000000Z..json",
+      "sha256": "774ba4b752fea4a6ce776f6a4a6523c86f98e71ebe2bceac35e1ff45549c7560",
+      "rows": 5
+    },
+    {
+      "batch_id": "round0-coverage-diversity-stability-02",
+      "expert": "Claude",
+      "reviewer_id": "claude-opus-5-5",
+      "path": "outputs/qss-review-results/round0-coverage-diversity-stability-02/round0-coverage-diversity-stability-02__ai-proxy__claude-opus-5-5__20261003T170755205132Z.json",
+      "sha256": "bfd11bec69f63e6ad3b0468a619dcf24e57cbf3c004af20add42945f42792c54",
+      "rows": 5
+    },
+    {
+      "batch_id": "round0-coverage-diversity-stability-02",
+      "expert": "Codex",
+      "reviewer_id": "codex-cli-0-159-3",
+      "path": "outputs/qss-review-results/round0-coverage-diversity-stability-02/round0-coverage-diversity-stability-02__ai-proxy__codex-cli-0-159-3__20261003T182023451867Z.json",
+      "sha256": "8edbdb8ea4a034e37f518ab8ad9e76c74c1269d08e3ca33edbfacf560b818b22",
+      "rows": 5
+    },
+    {
+      "batch_id": "round0-coverage-diversity-stability-02",
+      "expert": "Gemini",
+      "reviewer_id": "gemini-2.5-flash",
+      "path": "outputs/qss-review-results/round0-coverage-diversity-stability-02/round0-coverage-diversity-stability-02__ai-proxy__gemini-2-5-flash__20261003T180541000000Z.json",
+      "sha256": "7275619f709f11219c4abcbee1cc3bf7a7c1500576f9d5635c5a0f26f204109e",
+      "rows": 5
+    },
+    {
+      "batch_id": "round0-coverage-diversity-stability-03",
+      "expert": "Claude",
+      "reviewer_id": "claude-opus-5-5",
+      "path": "outputs/qss-review-results/round0-coverage-diversity-stability-03/round0-coverage-diversity-stability-03__ai-proxy__claude-opus-5-5__20261003T170820124646Z.json",
+      "sha256": "7da19bd2c1a0adeef8290bc63fe208119bd9b0b0eb1e8e642c440e948bea8865",
+      "rows": 5
+    },
+    {
+      "batch_id": "round0-coverage-diversity-stability-03",
+      "expert": "Codex",
+      "reviewer_id": "codex-cli-0-159-3",
+      "path": "outputs/qss-review-results/round0-coverage-diversity-stability-03/round0-coverage-diversity-stability-03__ai-proxy__codex-cli-0-159-3__20261003T182303785051Z.json",
+      "sha256": "613da77bebd9f327d3570d46df9ced0aed1bcc019698080c3e281e99f2852494",
+      "rows": 5
+    },
+    {
+      "batch_id": "round0-coverage-diversity-stability-03",
+      "expert": "Gemini",
+      "reviewer_id": "gemini-2.5-flash",
+      "path": "outputs/qss-review-results/round0-coverage-diversity-stability-03/round0-coverage-diversity-stability-03__ai-proxy__gemini-2-5-flash__20261003T180541000000Z.json",
+      "sha256": "c1071b0590c400516bf937c31fc6bf035eaf1848696daf15e1f70083b242ad2b",
+      "rows": 5
+    },
+    {
+      "batch_id": "round0-dependent-inference-01",
+      "expert": "Claude",
+      "reviewer_id": "claude-opus-5-5",
+      "path": "outputs/qss-review-results/round0-dependent-inference-01/round0-dependent-inference-01__ai-proxy__claude-opus-5-5__20261003T170838988314Z.json",
+      "sha256": "84b6b51fc1f444ccd998277f58a2e2f842bb8cc8c7e5c7e7149a9b309a4600f6",
+      "rows": 5
+    },
+    {
+      "batch_id": "round0-dependent-inference-01",
+      "expert": "Codex",
+      "reviewer_id": "codex-cli-0-159-3",
+      "path": "outputs/qss-review-results/round0-dependent-inference-01/round0-dependent-inference-01__ai-proxy__codex-cli-0-159-3__20261003T182428973685Z.json",
+      "sha256": "7eccaad77103d436f1e380e8a513c32c65e99adedf3ce0550da2797ff268ecda",
+      "rows": 5
+    },
+    {
+      "batch_id": "round0-dependent-inference-01",
+      "expert": "Gemini",
+      "reviewer_id": "gemini-3-flash",
+      "path": "outputs/qss-review-results/round0-dependent-inference-01/round0-dependent-inference-01__ai-proxy__gemini-3-flash__20261003T182100000000Z.json.json",
+      "sha256": "2a40d453119d53d18d718c5c41880611db3de1324acd40df4e74da1ea4726f52",
+      "rows": 5
+    },
+    {
+      "batch_id": "round0-dependent-inference-02",
+      "expert": "Claude",
+      "reviewer_id": "claude-opus-5-5",
+      "path": "outputs/qss-review-results/round0-dependent-inference-02/round0-dependent-inference-02__ai-proxy__claude-opus-5-5__20261003T170920140779Z.json",
+      "sha256": "cd5b4438b7760f56530eb11bf9758a09e30a8cc7820b3d6df3104f0bdcbf0e08",
+      "rows": 5
+    },
+    {
+      "batch_id": "round0-dependent-inference-02",
+      "expert": "Codex",
+      "reviewer_id": "codex-cli-0-159-3",
+      "path": "outputs/qss-review-results/round0-dependent-inference-02/round0-dependent-inference-02__ai-proxy__codex-cli-0-159-3__20261003T182734547266Z.json",
+      "sha256": "d35d807c33fc7e6b6b9f2b07549f295c88c1a2a48c6f2eea7311ca0b65080be5",
+      "rows": 5
+    },
+    {
+      "batch_id": "round0-dependent-inference-02",
+      "expert": "Gemini",
+      "reviewer_id": "gemini-3-flash",
+      "path": "outputs/qss-review-results/round0-dependent-inference-02/round0-dependent-inference-02__ai-proxy__gemini-3-flash__20261003T182100000000Z.json.json",
+      "sha256": "4a11c0764cbe08650c314ecf3c44f74feb411c72ecc40a274bb256721dd3681c",
+      "rows": 5
+    },
+    {
+      "batch_id": "round0-human-curation-governance-01",
+      "expert": "Claude",
+      "reviewer_id": "claude-opus-5-5",
+      "path": "outputs/qss-review-results/round0-human-curation-governance-01/round0-human-curation-governance-01__ai-proxy__claude-opus-5-5__20261003T170950204956Z.json",
+      "sha256": "436baa758797456e05f079d8b381de4571780a491b1efd66d61cebccdac2122c",
+      "rows": 5
+    },
+    {
+      "batch_id": "round0-human-curation-governance-01",
+      "expert": "Codex",
+      "reviewer_id": "codex-cli-0-159-3",
+      "path": "outputs/qss-review-results/round0-human-curation-governance-01/round0-human-curation-governance-01__ai-proxy__codex-cli-0-159-3__20261003T183003263048Z.json",
+      "sha256": "9e69d5bb92fa293d92196d137b8fdf9029327a5db5f26bdec42df72e063e0d83",
+      "rows": 5
+    },
+    {
+      "batch_id": "round0-human-curation-governance-01",
+      "expert": "Gemini",
+      "reviewer_id": "gemini-3-flash",
+      "path": "outputs/qss-review-results/round0-human-curation-governance-01/round0-human-curation-governance-01__ai-proxy__gemini-3-flash__20261003T182100000000Z.json.json",
+      "sha256": "bc37b5b6871843a64b3475ba584d518d6f91921ecca5b29657e250a2e2000c44",
+      "rows": 5
+    },
+    {
+      "batch_id": "round0-human-curation-governance-02",
+      "expert": "Claude",
+      "reviewer_id": "claude-opus-5-5",
+      "path": "outputs/qss-review-results/round0-human-curation-governance-02/round0-human-curation-governance-02__ai-proxy__claude-opus-5-5__20261003T171021645048Z.json",
+      "sha256": "aea101031a0ee00b55c8d9c295d91c586e61781b4bcb46331474559333947f66",
+      "rows": 5
+    },
+    {
+      "batch_id": "round0-human-curation-governance-02",
+      "expert": "Codex",
+      "reviewer_id": "codex-cli-0-159-3",
+      "path": "outputs/qss-review-results/round0-human-curation-governance-02/round0-human-curation-governance-02__ai-proxy__codex-cli-0-159-3__20261003T183239389312Z.json",
+      "sha256": "974d26497e00062bf75b7ac262e4368e9eb47a3ca2c6f362027b962a75e77d3a",
+      "rows": 5
+    },
+    {
+      "batch_id": "round0-human-curation-governance-02",
+      "expert": "Gemini",
+      "reviewer_id": "gemini-3-flash",
+      "path": "outputs/qss-review-results/round0-human-curation-governance-02/round0-human-curation-governance-02__ai-proxy__gemini-3-flash__20261003T182100000000Z.json.json",
+      "sha256": "4be5a3aac7ecc0fc9864209722cea7a8460df546a72f0b6bc524c0dca07781d8",
+      "rows": 5
+    },
+    {
+      "batch_id": "round0-human-curation-governance-03",
+      "expert": "Claude",
+      "reviewer_id": "claude-opus-5-5",
+      "path": "outputs/qss-review-results/round0-human-curation-governance-03/round0-human-curation-governance-03__ai-proxy__claude-opus-5-5__20261003T171054931499Z.json",
+      "sha256": "ec5eeb72b0537b8eaf40e0dedcbb6b89d7ae50aebacc12e19a9e633fba399b40",
+      "rows": 5
+    },
+    {
+      "batch_id": "round0-human-curation-governance-03",
+      "expert": "Codex",
+      "reviewer_id": "codex-cli-0-159-3",
+      "path": "outputs/qss-review-results/round0-human-curation-governance-03/round0-human-curation-governance-03__ai-proxy__codex-cli-0-159-3__20261003T183519284125Z.json",
+      "sha256": "615c4b3b71322868e38b66cb7bd8bbe34d2cef14487fab2eb3434c664eb97d3e",
+      "rows": 5
+    },
+    {
+      "batch_id": "round0-human-curation-governance-03",
+      "expert": "Gemini",
+      "reviewer_id": "gemini-3-flash",
+      "path": "outputs/qss-review-results/round0-human-curation-governance-03/round0-human-curation-governance-03__ai-proxy__gemini-3-flash__20261003T182100000000Z.json.json",
+      "sha256": "f8d75e772d3339f74ae8894939860075b0c161d24a385684771e4c6fd1bd563a",
+      "rows": 5
+    },
+    {
+      "batch_id": "round0-bibliography-as-research-state-01",
+      "expert": "Claude",
+      "reviewer_id": "claude-opus-5-5",
+      "path": "outputs/qss-review-results/round0-bibliography-as-research-state-01/round0-bibliography-as-research-state-01__ai-proxy__claude-opus-5-5__20261003T171124252914Z.json",
+      "sha256": "beb6f9cd2d724b3cb35b3df772c8d9cbc6021260451fe601919920d6d9f15452",
+      "rows": 5
+    },
+    {
+      "batch_id": "round0-bibliography-as-research-state-01",
+      "expert": "Codex",
+      "reviewer_id": "codex-cli-0-159-3",
+      "path": "outputs/qss-review-results/round0-bibliography-as-research-state-01/round0-bibliography-as-research-state-01__ai-proxy__codex-cli-0-159-3__20261003T183701115166Z.json",
+      "sha256": "66b1b8b204010610b0e9c22e0b5a176528356482dd96bbbaa677c50cb4bc5df2",
+      "rows": 5
+    },
+    {
+      "batch_id": "round0-bibliography-as-research-state-01",
+      "expert": "Gemini",
+      "reviewer_id": "gemini-2.5-flash",
+      "path": "outputs/qss-review-results/round0-bibliography-as-research-state-01/round0-bibliography-as-research-state-01__ai-proxy__gemini-2-5-flash__20261003T180541000000Z.json",
+      "sha256": "8114d4f13767c517c4828021f76467b7988cdbd2ce955b70192a8f4f12e970fe",
+      "rows": 5
+    },
+    {
+      "batch_id": "round0-bibliography-as-research-state-02",
+      "expert": "Claude",
+      "reviewer_id": "claude-opus-5-5",
+      "path": "outputs/qss-review-results/round0-bibliography-as-research-state-02/round0-bibliography-as-research-state-02__ai-proxy__claude-opus-5-5__20261003T171149952245Z.json",
+      "sha256": "61f014dcd60e4a91875f59b66f1b39120e649fdb77ced8fe3f5216e24a13363c",
+      "rows": 5
+    },
+    {
+      "batch_id": "round0-bibliography-as-research-state-02",
+      "expert": "Codex",
+      "reviewer_id": "codex-cli-0-159-3",
+      "path": "outputs/qss-review-results/round0-bibliography-as-research-state-02/round0-bibliography-as-research-state-02__ai-proxy__codex-cli-0-159-3__20261003T183956311555Z.json",
+      "sha256": "2644fb61f25f636bc270ec1e9f52ff57470e7113872cef949c1a80fb3cbd4a4c",
+      "rows": 5
+    },
+    {
+      "batch_id": "round0-bibliography-as-research-state-02",
+      "expert": "Gemini",
+      "reviewer_id": "gemini-2.5-flash",
+      "path": "outputs/qss-review-results/round0-bibliography-as-research-state-02/round0-bibliography-as-research-state-02__ai-proxy__gemini-2-5-flash__20261003T180541000000Z.json",
+      "sha256": "c9c04eb7e9092fc4033e8aa300485e86203c4520f34b8551e725fa27a5b8ef69",
+      "rows": 5
+    },
+    {
+      "batch_id": "round0-bibliography-as-research-state-03",
+      "expert": "Claude",
+      "reviewer_id": "claude-opus-5-5",
+      "path": "outputs/qss-review-results/round0-bibliography-as-research-state-03/round0-bibliography-as-research-state-03__ai-proxy__claude-opus-5-5__20261003T171220498619Z.json",
+      "sha256": "16a832183f2cbc1d9c8f681eccab270a582e030a55baa20cb636a70f7b9acb2d",
+      "rows": 5
+    },
+    {
+      "batch_id": "round0-bibliography-as-research-state-03",
+      "expert": "Codex",
+      "reviewer_id": "codex-cli-0-159-3",
+      "path": "outputs/qss-review-results/round0-bibliography-as-research-state-03/round0-bibliography-as-research-state-03__ai-proxy__codex-cli-0-159-3__20261003T184238949527Z.json",
+      "sha256": "0909976642825a429b9361e612fdcc0ad481de448142bfa47a7b4d9ce7e9abb6",
+      "rows": 5
+    },
+    {
+      "batch_id": "round0-bibliography-as-research-state-03",
+      "expert": "Gemini",
+      "reviewer_id": "gemini-2.5-flash",
+      "path": "outputs/qss-review-results/round0-bibliography-as-research-state-03/round0-bibliography-as-research-state-03__ai-proxy__gemini-2-5-flash__20261003T180541000000Z.json",
+      "sha256": "c15824a58b79155903c6d22a15c29f403094895348a6513297469cba7f267e4f",
+      "rows": 5
+    }
+  ],
+  "artifacts": [
+    {
+      "path": "outputs/qss-ai-expert-synthesis-2026-10-04/SUMMARY.json",
+      "sha256": "f1c453730dd71e0ca190625c221f61e23e1792e848634cca76636476065508ec"
+    },
+    {
+      "path": "outputs/qss-ai-expert-synthesis-2026-10-04/consensus_rows.csv",
+      "sha256": "50c9a0cbe736a2acd355f24915ca40458b12870758d57dbbcff8f40f9b14b24f"
+    },
+    {
+      "path": "outputs/qss-ai-expert-synthesis-2026-10-04/REPORT.md",
+      "sha256": "572912ddd0e30a920053fcddb21837cec2b73984e6df35285e08e3d7f8530e50"
+    }
+  ]
+}

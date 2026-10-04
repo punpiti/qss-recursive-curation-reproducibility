@@ -1,0 +1,61 @@
+{
+  "schema_version": "qss-review-response-v1",
+  "batch_id": "construct-C5-02",
+  "review_type": "CONSTRUCT_AUDIT",
+  "rubric_version": "qss-review-rubric-v3",
+  "reviewer": {
+    "type": "AI_PROXY",
+    "id": "gemini-2-5-pro",
+    "role": "PRIMARY_REVIEWER",
+    "review_status": "AI_FIRST_PASS",
+    "reviewed_at": null
+  },
+  "reviews": [
+    {
+      "review_row_id": "C5-2023-06",
+      "corpus_or_project": "C5",
+      "source_group": "semantic_parts_occlusion",
+      "paper": {
+        "title": "Fine-Grained Soybean Variety Recognition Using Swin Transformer with Differential Attention and Dynamic Channel Aggregation",
+        "doi": "https://doi.org/10.3390/agriculture16141509",
+        "openalex_id": "https://openalex.org/W7168208703"
+      },
+      "normalized_decision": "EXCLUDE",
+      "scope_fit": "OUT_OF_SCOPE",
+      "role_fit": "MISMATCH",
+      "evidence_sufficiency": "SUFFICIENT_ABSTRACT",
+      "primary_reason_code": "WRONG_DOMAIN_OR_POPULATION",
+      "secondary_reason_codes": [
+        "VALID_CONTEXT_BUT_WRONG_GROUP"
+      ],
+      "assigned_label": "semantic_parts_occlusion",
+      "corrected_label": null,
+      "evidence": [
+        {
+          "source_field": "ABSTRACT",
+          "supports": "SCOPE",
+          "paraphrase": "The study presents Swin-Diff-DCA for fine-grained soybean seed variety recognition in agricultural inspection."
+        }
+      ],
+      "rationale": "The paper applies fine-grained visual recognition and attention-based feature aggregation to soybean seed varieties for agricultural germplasm management. Although it employs fine-grained local feature enhancement techniques, the subject domain is agricultural crop seeds rather than vehicles, placing it outside the research scope.",
+      "confidence": "HIGH",
+      "flags": [
+        "BOUNDARY_CASE"
+      ],
+      "follow_up": {
+        "required": true,
+        "priority": "ROUTINE",
+        "reasons": [
+          "AI_PROXY_REQUIRES_HUMAN_CONFIRMATION"
+        ],
+        "recommended_action": "HUMAN_CHECK"
+      },
+      "task_specific": {
+        "scope_decision": "REMOVE_OUT_OF_SCOPE",
+        "group_decision": "WRONG_GROUP",
+        "corrected_group": null,
+        "literature_decision": null
+      }
+    }
+  ]
+}

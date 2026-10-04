@@ -1,0 +1,39 @@
+{
+  "schema_version": 1,
+  "policy_id": "qss-late-pruner-v2-relevance-soft-capacity",
+  "status": "frozen_after_2022_development_mixed_held_out_validation",
+  "frozen_on": "2026-08-28",
+  "development_cutoff": 2022,
+  "held_out_test_cutoffs": [
+    2023,
+    2024
+  ],
+  "exploration_k": 30,
+  "final_k": 10,
+  "max_rounds": 3,
+  "additions_per_round": 10,
+  "tau_fit": 0.18,
+  "recovery_similarity": 0.1,
+  "ranking": {
+    "primary": "title_abstract_relevance",
+    "tie_breakers": [
+      "concept_novelty_gain",
+      "leave_one_out_bagging_confidence",
+      "recursive_utility"
+    ],
+    "bagging_role": "confidence_and_tie_break_only_not_equal_weight_penalty",
+    "scope_gate": "candidate must match one frozen evidence group at tau_fit",
+    "diversity": "prefer at most three papers per evidence group in the first pass; backfill by relevance to return final_k"
+  },
+  "excluded_from_retrospective_score": {
+    "current_openalex_citation_count": "post_cutoff_temporal_leakage",
+    "scopus_sjr_quartile_2025": "post_cutoff_and_9.1_percent_pool_coverage",
+    "journal_h_index_2025": "post_cutoff_and_9.1_percent_pool_coverage"
+  },
+  "validation_decision": {
+    "group_coverage": "conditionally_supported_on_both_held_out_cutoffs",
+    "exact_paper_ranking": "not_confirmed_because_2024_failed_strict_non_inferiority",
+    "operational_role": "experimental_coverage_layer_beside_fixed_core_not_a_replacement",
+    "retuning_rule": "do_not_tune_this_policy_on_2023_or_2024"
+  }
+}

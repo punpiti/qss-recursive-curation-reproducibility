@@ -1,0 +1,71 @@
+{
+  "schema_version": "qss-review-response-v1",
+  "batch_id": "construct-C5-02",
+  "review_type": "CONSTRUCT_AUDIT",
+  "rubric_version": "qss-review-rubric-v3",
+  "reviewer": {
+    "type": "AI_PROXY",
+    "id": "claude-opus-5-5",
+    "role": "PRIMARY_REVIEWER",
+    "review_status": "AI_FIRST_PASS",
+    "reviewed_at": "2026-10-03T17:04:39.306306Z"
+  },
+  "reviews": [
+    {
+      "review_row_id": "C5-2023-06",
+      "corpus_or_project": "C5",
+      "source_group": "semantic_parts_occlusion",
+      "paper": {
+        "title": "Fine-Grained Soybean Variety Recognition Using Swin Transformer with Differential Attention and Dynamic Channel Aggregation",
+        "doi": "https://doi.org/10.3390/agriculture16141509",
+        "openalex_id": "https://openalex.org/W7168208703"
+      },
+      "normalized_decision": "EXCLUDE",
+      "scope_fit": "OUT_OF_SCOPE",
+      "role_fit": "MISMATCH",
+      "evidence_sufficiency": "SUFFICIENT_ABSTRACT",
+      "primary_reason_code": "WRONG_DOMAIN_OR_POPULATION",
+      "secondary_reason_codes": [
+        "FALSE_LEXICAL_OR_SEMANTIC_MATCH"
+      ],
+      "assigned_label": "semantic_parts_occlusion",
+      "corrected_label": null,
+      "evidence": [
+        {
+          "source_field": "ABSTRACT",
+          "supports": "SCOPE",
+          "paraphrase": "Classifies 25 soybean seed varieties from cropped images with a modified Swin Transformer."
+        },
+        {
+          "source_field": "ABSTRACT",
+          "supports": "ROLE",
+          "paraphrase": "Uses channel aggregation for local feature reuse and differential attention for discrimination, with no semantic parts, missing views or occlusion."
+        },
+        {
+          "source_field": "ABSTRACT",
+          "supports": "RISK",
+          "paraphrase": "The match rests on generic fine-grained, local-feature and attention vocabulary."
+        }
+      ],
+      "rationale": "This is fine-grained agricultural seed classification on standardized crops; it has no vehicle parts and does not address occluded or missing evidence. It is out of scope and only a lexical match to semantic_parts_occlusion, consistent with its use as a boundary example.",
+      "confidence": "HIGH",
+      "flags": [
+        "POSSIBLE_FALSE_MATCH"
+      ],
+      "follow_up": {
+        "required": true,
+        "priority": "ROUTINE",
+        "reasons": [
+          "AI_PROXY_REQUIRES_HUMAN_CONFIRMATION"
+        ],
+        "recommended_action": "HUMAN_CHECK"
+      },
+      "task_specific": {
+        "scope_decision": "REMOVE_OUT_OF_SCOPE",
+        "group_decision": "WRONG_GROUP",
+        "corrected_group": null,
+        "literature_decision": null
+      }
+    }
+  ]
+}

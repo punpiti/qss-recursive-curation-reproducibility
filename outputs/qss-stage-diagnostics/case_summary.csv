@@ -1,0 +1,13 @@
+corpus,cutoff,evaluation_role,candidate_count,eligible_candidate_count,future_holdout_count,exact_reachable_holdout_count,exact_retrieval_ceiling,frozen_group_reachability,oracle_frozen_group_coverage_at_k,assigned_holdout_count,holdout_role_reachability_ceiling,oracle_holdout_role_recall_at_k
+C1,2022,development_only_frozen_rule,1380,347,57,13,0.22807,1.0,1.0,10,0.9,0.9
+C1,2023,held_out_test,1245,313,48,11,0.229167,1.0,1.0,7,0.857143,0.857143
+C1,2024,held_out_test,1243,312,28,8,0.285714,1.0,1.0,4,0.75,0.75
+C2,2022,held_out_test,740,336,17,3,0.176471,1.0,1.0,6,1.0,1.0
+C2,2023,held_out_test,679,295,14,2,0.142857,1.0,1.0,6,1.0,1.0
+C2,2024,held_out_test,639,268,6,1,0.166667,1.0,1.0,3,1.0,1.0
+C3,2022,held_out_test,1528,529,9,1,0.111111,1.0,1.0,6,0.833333,0.833333
+C3,2023,held_out_test,1406,486,7,0,0.0,1.0,1.0,5,0.8,0.8
+C3,2024,held_out_test,1328,451,6,0,0.0,1.0,1.0,4,0.5,0.5
+C5,2023,cross_sectional_scope_robustness,741,490,0,0,,1.0,1.0,0,,
+C6,2024,cross_sectional_scope_robustness,936,416,0,0,,1.0,1.0,0,,
+C4,2024,held_out_test,774,325,7,3,0.428571,1.0,1.0,5,1.0,1.0

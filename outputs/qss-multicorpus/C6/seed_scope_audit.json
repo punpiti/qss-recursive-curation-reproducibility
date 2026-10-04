@@ -1,0 +1,53 @@
+{
+  "schema_version": 1,
+  "audit": "qss_seed_scope_coverage",
+  "bib": "<REDACTED_LOCAL_PATH>/ejmste-43711-references.bib",
+  "study": "<REDACTED_LOCAL_PATH>/qss_C6_cross_sectional_frozen.json",
+  "evidence_threshold": 0.75,
+  "minimum_entries_per_group": 2,
+  "future_holdout_access": "counts_only; holdout identities and text are not used to define or tune groups",
+  "canonical_bib_modified": false,
+  "cutoffs": [
+    {
+      "cutoff": 2024,
+      "historical_seed_count": 27,
+      "historical_abstract_count": 27,
+      "historical_abstract_coverage": 1.0,
+      "future_holdout_count_not_used_for_audit": 0,
+      "coverage_model": "multi_label_all_frozen_anchor_families_plus_discriminator_term",
+      "represented_group_count": 4,
+      "frozen_group_count": 4,
+      "seed_group_coverage": 1.0,
+      "minimum_eligible_entries_across_groups": 7,
+      "groups_below_minimum": [],
+      "group_counts": [
+        {
+          "group": "computational_thinking_construct",
+          "eligible_seed_entries": 9,
+          "minimum_required": 2,
+          "needs_expansion": false
+        },
+        {
+          "group": "stem_motivation_self_efficacy",
+          "eligible_seed_entries": 8,
+          "minimum_required": 2,
+          "needs_expansion": false
+        },
+        {
+          "group": "scientific_reasoning_problem_solving",
+          "eligible_seed_entries": 7,
+          "minimum_required": 2,
+          "needs_expansion": false
+        },
+        {
+          "group": "gender_multigroup_equity",
+          "eligible_seed_entries": 9,
+          "minimum_required": 2,
+          "needs_expansion": false
+        }
+      ],
+      "decision": "seed_scope_gate_passed"
+    }
+  ],
+  "overall_decision": "seed_scope_gate_passed"
+}

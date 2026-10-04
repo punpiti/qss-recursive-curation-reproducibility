@@ -1,0 +1,729 @@
+{
+  "schema_version": 1,
+  "method": "cutoff_safe_scope_conditioned_seed_expansion",
+  "status": "complete",
+  "canonical_bib": "<REDACTED_LOCAL_PATH>/references_raw.bib",
+  "canonical_bib_sha256": "b387db7428017c9e1ef58c0d22480d953b2d1823d03ec6f5f01372192e6170cb",
+  "canonical_bib_modified": false,
+  "expanded_bib": "<REDACTED_LOCAL_PATH>/expanded_seed.bib",
+  "expanded_bib_sha256": "4d190d28dcdd99a53e7a82cb1e82b7b48d429f67c84c432b158e41600f42fd45",
+  "cutoff": 2022,
+  "future_holdout_access": "none",
+  "abstract_required": true,
+  "selection_rule": "frozen query + publication year <= cutoff + abstract + frozen anchors + fit >= threshold; rank fit, citations, recency, OpenAlex ID",
+  "selection_mode": "reviewed_concept_fit",
+  "additions_are_discovery_outcomes": false,
+  "network_requests": 0,
+  "cache_hits": 2,
+  "cache_misses": 0,
+  "before": {
+    "cutoff": 2022,
+    "historical_seed_count": 28,
+    "historical_abstract_count": 16,
+    "historical_abstract_coverage": 0.571429,
+    "future_holdout_count_not_used_for_audit": 17,
+    "coverage_model": "multi_label_all_frozen_anchor_families_plus_discriminator_term",
+    "represented_group_count": 3,
+    "frozen_group_count": 4,
+    "seed_group_coverage": 0.75,
+    "minimum_eligible_entries_across_groups": 0,
+    "groups_below_minimum": [
+      "gauge_field_reconstruction",
+      "continuity_residual_diagnostic"
+    ],
+    "group_counts": [
+      {
+        "group": "gauge_field_reconstruction",
+        "eligible_seed_entries": 1,
+        "minimum_required": 2,
+        "needs_expansion": true
+      },
+      {
+        "group": "convective_growth_classification",
+        "eligible_seed_entries": 9,
+        "minimum_required": 2,
+        "needs_expansion": false
+      },
+      {
+        "group": "advection_motion_nowcasting",
+        "eligible_seed_entries": 5,
+        "minimum_required": 2,
+        "needs_expansion": false
+      },
+      {
+        "group": "continuity_residual_diagnostic",
+        "eligible_seed_entries": 0,
+        "minimum_required": 2,
+        "needs_expansion": true
+      }
+    ],
+    "decision": "scope_conditioned_seed_expansion_required"
+  },
+  "deficient_groups": {
+    "gauge_field_reconstruction": 1,
+    "continuity_residual_diagnostic": 2
+  },
+  "eligible_candidate_counts": {
+    "gauge_field_reconstruction": 40,
+    "continuity_residual_diagnostic": 6
+  },
+  "eligible_shortlist": {
+    "gauge_field_reconstruction": [
+      {
+        "openalex_id": "https://openalex.org/W2954601359",
+        "title": "A Review of Radar‐Rain Gauge Data Merging Methods and Their Potential for Urban Hydrological Applications",
+        "abstract": null,
+        "abstract_sha256": "13aa521fdb871226c3e4d733a95c331d4b97cdb7192d4ddad796b7eb241e60a1",
+        "abstract_chars": 1598,
+        "year": 2019,
+        "doi": "https://doi.org/10.1029/2018wr023332",
+        "venue": "Water Resources Research",
+        "authors": [
+          "Susana Ochoa-Rodríguez",
+          "Li-Pen Wang",
+          "Patrick Willems",
+          "Christian Onof"
+        ],
+        "cited_by_count": 196,
+        "queried_for_group": "gauge_field_reconstruction",
+        "assigned_group": "gauge_field_reconstruction",
+        "frozen_fit": 1.0
+      },
+      {
+        "openalex_id": "https://openalex.org/W1976845822",
+        "title": "Frontal Rainfall Observation by a Commercial Microwave Communication Network",
+        "abstract": null,
+        "abstract_sha256": "892e55589d1234a95f468f81e5aa30092650bae24c20d87759ac1e988658ae88",
+        "abstract_chars": 1454,
+        "year": 2008,
+        "doi": "https://doi.org/10.1175/2008jamc2014.1",
+        "venue": "Journal of Applied Meteorology and Climatology",
+        "authors": [
+          "A. Zinevich",
+          "Hagit Messer",
+          "Pinhas Alpert"
+        ],
+        "cited_by_count": 104,
+        "queried_for_group": "gauge_field_reconstruction",
+        "assigned_group": "gauge_field_reconstruction",
+        "frozen_fit": 1.0
+      },
+      {
+        "openalex_id": "https://openalex.org/W1874106356",
+        "title": "Spatio-temporal assessment of WRF, TRMM and in situ precipitation data in a tropical mountain environment (Cordillera Blanca, Peru)",
+        "abstract": null,
+        "abstract_sha256": "f582c311d4cc1aed661ae3fcb6da256758e512095af433f53a56b60afb31b239",
+        "abstract_chars": 2110,
+        "year": 2016,
+        "doi": "https://doi.org/10.5194/hess-20-125-2016",
+        "venue": "Hydrology and earth system sciences",
+        "authors": [
+          "Lise Mourre",
+          "Thomas Condom",
+          "Clémentine Junquas",
+          "Thierry Lebel",
+          "Jean‐Emmanuel Sicart",
+          "Rosa Maria Anccasi Figueroa",
+          "Alejo Cochachín"
+        ],
+        "cited_by_count": 70,
+        "queried_for_group": "gauge_field_reconstruction",
+        "assigned_group": "gauge_field_reconstruction",
+        "frozen_fit": 1.0
+      },
+      {
+        "openalex_id": "https://openalex.org/W3192637658",
+        "title": "Rainfall estimates from opportunistic sensors in Germany across spatio-temporal scales",
+        "abstract": null,
+        "abstract_sha256": "e055cf256f74e1f0c5dfe1ba126ea816e9b7303a78226c5e7ab330fc9ba65899",
+        "abstract_chars": 1556,
+        "year": 2021,
+        "doi": "https://doi.org/10.1016/j.ejrh.2021.100883",
+        "venue": "Journal of Hydrology Regional Studies",
+        "authors": [
+          "Maximilian Graf",
+          "Abbas El Hachem",
+          "Micha Eisele",
+          "Jochen Seidel",
+          "Christian Chwala",
+          "Harald Kunstmann",
+          "András Bàrdossy"
+        ],
+        "cited_by_count": 58,
+        "queried_for_group": "gauge_field_reconstruction",
+        "assigned_group": "gauge_field_reconstruction",
+        "frozen_fit": 1.0
+      },
+      {
+        "openalex_id": "https://openalex.org/W3175559683",
+        "title": "Tropical rainfall monitoring with commercial microwave links in Sri Lanka",
+        "abstract": null,
+        "abstract_sha256": "6f67707376f85c51cf6b472d33f4cc44821ae7c6919dfc1e90acaa2359bf5768",
+        "abstract_chars": 1007,
+        "year": 2021,
+        "doi": "https://doi.org/10.1088/1748-9326/ac0fa6",
+        "venue": "Environmental Research Letters",
+        "authors": [
+          "Aart Overeem",
+          "Hidde Leijnse",
+          "Thomas C. van Leth",
+          "Linda Bogerd",
+          "Jan Priebe",
+          "Daniele Tricarico",
+          "Arjan Droste",
+          "R. Uijlenhoet"
+        ],
+        "cited_by_count": 32,
+        "queried_for_group": "gauge_field_reconstruction",
+        "assigned_group": "gauge_field_reconstruction",
+        "frozen_fit": 1.0
+      },
+      {
+        "openalex_id": "https://openalex.org/W2908014315",
+        "title": "Generation of Monthly Precipitation Climatologies for Costa Rica Using Irregular Rain-Gauge Observational Networks",
+        "abstract": null,
+        "abstract_sha256": "2ba9892f0bfb61ade319d37784feb4852095b5912e76a272dbf014f9c608845f",
+        "abstract_chars": 2147,
+        "year": 2019,
+        "doi": "https://doi.org/10.3390/w11010070",
+        "venue": "Water",
+        "authors": [
+          "Maikel Méndez-Morales",
+          "Luis-Alexander Calvo-Valverde",
+          "B.H.P. Maathuis",
+          "Luis-Fernando Alvarado-Gamboa"
+        ],
+        "cited_by_count": 26,
+        "queried_for_group": "gauge_field_reconstruction",
+        "assigned_group": "gauge_field_reconstruction",
+        "frozen_fit": 1.0
+      },
+      {
+        "openalex_id": "https://openalex.org/W2526775372",
+        "title": "Reproducing an extreme flood with uncertain post-event information",
+        "abstract": null,
+        "abstract_sha256": "ab0200a0c58c62cf2c83a8b33767a0e4390f64164238569120fac1a53f9bab05",
+        "abstract_chars": 2032,
+        "year": 2017,
+        "doi": "https://doi.org/10.5194/hess-21-3597-2017",
+        "venue": "Hydrology and earth system sciences",
+        "authors": [
+          "Diana Fuentes",
+          "Keith Beven",
+          "Sven Halldin",
+          "Chong‐Yu Xu",
+          "J. E. Reynolds",
+          "Giuliano Di Baldassarre"
+        ],
+        "cited_by_count": 18,
+        "queried_for_group": "gauge_field_reconstruction",
+        "assigned_group": "gauge_field_reconstruction",
+        "frozen_fit": 1.0
+      },
+      {
+        "openalex_id": "https://openalex.org/W3025294027",
+        "title": "The impact of different rainfall products on landscape modelling simulations",
+        "abstract": null,
+        "abstract_sha256": "504cb538c19362fcae31dfbb6ec6e4739da2f1fe9938072981f962a721ad13f3",
+        "abstract_chars": 1830,
+        "year": 2020,
+        "doi": "https://doi.org/10.1002/esp.4894",
+        "venue": "Earth Surface Processes and Landforms",
+        "authors": [
+          "Chris Skinner",
+          "Nadav Peleg",
+          "Niall Quinn",
+          "Tom Coulthard",
+          "Péter Molnár",
+          "Jim Freer"
+        ],
+        "cited_by_count": 13,
+        "queried_for_group": "gauge_field_reconstruction",
+        "assigned_group": "gauge_field_reconstruction",
+        "frozen_fit": 1.0
+      },
+      {
+        "openalex_id": "https://openalex.org/W3121212238",
+        "title": "High Space-Time Resolution Observation of Extreme Orographic Rain Gradients in a Pacific Island Catchment",
+        "abstract": null,
+        "abstract_sha256": "23de4627eada7ba741d66aac905fff443b363667e11899066c5bfb5177e7a12e",
+        "abstract_chars": 1757,
+        "year": 2021,
+        "doi": "https://doi.org/10.3389/feart.2020.546246",
+        "venue": "Frontiers in Earth Science",
+        "authors": [
+          "Lionel Benoît",
+          "Matthew P. Lucas",
+          "Han Tseng",
+          "Y.-F. Huang",
+          "Yinphan Tsang",
+          "Alison D. Nugent",
+          "Thomas W. Giambelluca",
+          "Grégoire Mariethoz"
+        ],
+        "cited_by_count": 11,
+        "queried_for_group": "gauge_field_reconstruction",
+        "assigned_group": "gauge_field_reconstruction",
+        "frozen_fit": 1.0
+      },
+      {
+        "openalex_id": "https://openalex.org/W4292300318",
+        "title": "Rain Field Retrieval by Ground-Level Sensors of Various Types",
+        "abstract": null,
+        "abstract_sha256": "616019a1e27012817752c3b27c1c874cc7ed9a7f818857786ad7f68510bf979e",
+        "abstract_chars": 1239,
+        "year": 2022,
+        "doi": "https://doi.org/10.3389/frsip.2022.877336",
+        "venue": "Frontiers in Signal Processing",
+        "authors": [
+          "Hagit Messer",
+          "Adam Eshel",
+          "Hai Victor Habi",
+          "Shay Sagiv",
+          "Xin Zheng"
+        ],
+        "cited_by_count": 8,
+        "queried_for_group": "gauge_field_reconstruction",
+        "assigned_group": "gauge_field_reconstruction",
+        "frozen_fit": 1.0
+      },
+      {
+        "openalex_id": "https://openalex.org/W4297997256",
+        "title": "Trends in extreme precipitation events (SW Hungary) based on a high-density monitoring network",
+        "abstract": null,
+        "abstract_sha256": "220143f88e8d4bab725caedfe16b1df2f9eb139d6f38fe78f25512ec62876c51",
+        "abstract_chars": 1621,
+        "year": 2022,
+        "doi": "https://doi.org/10.15201/hungeobull.71.3.2",
+        "venue": "Hungarian Geographical Bulletin",
+        "authors": [
+          "Gabriella Schmeller",
+          "Gábor Nagy",
+          "Noémi Sarkadi",
+          "Anikó Cséplő",
+          "Ervin Pirkhoffer",
+          "István Geresdi",
+          "Richárd Balogh",
+          "Levente Ronczyk",
+          "Szabolcs Czigány"
+        ],
+        "cited_by_count": 8,
+        "queried_for_group": "gauge_field_reconstruction",
+        "assigned_group": "gauge_field_reconstruction",
+        "frozen_fit": 1.0
+      },
+      {
+        "openalex_id": "https://openalex.org/W2534052241",
+        "title": "Retrieval of rainfall fields in urban areas using attenuation measurements from mobile phone networks: a modeling feasibility study",
+        "abstract": null,
+        "abstract_sha256": "a054a5fb6bc4fcdecb1eae4eb572c56cae1019b4112e15b7edbfe09c50d6a7c3",
+        "abstract_chars": 2507,
+        "year": 2016,
+        "doi": "https://doi.org/10.5194/hess-2016-540",
+        "venue": "",
+        "authors": [
+          "Bahtiyor Zohidov",
+          "Hervé Andrieu",
+          "Myriam Servières",
+          "Nicolas Normand"
+        ],
+        "cited_by_count": 7,
+        "queried_for_group": "gauge_field_reconstruction",
+        "assigned_group": "gauge_field_reconstruction",
+        "frozen_fit": 1.0
+      },
+      {
+        "openalex_id": "https://openalex.org/W4229375120",
+        "title": "Research on the Method of Rainfall Field Retrieval Based on the Combination of Earth–Space Links and Horizontal Microwave Links",
+        "abstract": null,
+        "abstract_sha256": "b7210ef6d762e1e51a3b20d774b00948760dbf437e980cdc11e3e62fee457635",
+        "abstract_chars": 1649,
+        "year": 2022,
+        "doi": "https://doi.org/10.3390/rs14092220",
+        "venue": "Remote Sensing",
+        "authors": [
+          "Yingcheng Zhao",
+          "Xichuan Liu",
+          "Kang Pu",
+          "Jin Ye",
+          "Minghao Xian"
+        ],
+        "cited_by_count": 5,
+        "queried_for_group": "gauge_field_reconstruction",
+        "assigned_group": "gauge_field_reconstruction",
+        "frozen_fit": 1.0
+      },
+      {
+        "openalex_id": "https://openalex.org/W2557870523",
+        "title": "Automated convective and stratiform precipitation estimation in a small mountainous catchment using X-band radar data in Central Spain",
+        "abstract": null,
+        "abstract_sha256": "ef1d3cec6114b24507abcf80c35f5a5b3cb3f6c80468243d10ba9dbbe7af77d8",
+        "abstract_chars": 1393,
+        "year": 2016,
+        "doi": "https://doi.org/10.2166/hydro.2016.225",
+        "venue": "Journal of Hydroinformatics",
+        "authors": [
+          "Carolina Guardiola‐Albert",
+          "Carlos Rivero-Honegger",
+          "Robert Monjo",
+          "Andrés Dí­ez Herrero",
+          "Carlos Yagüe",
+          "José María Bodoque",
+          "Francisco J. Tapiador"
+        ],
+        "cited_by_count": 5,
+        "queried_for_group": "gauge_field_reconstruction",
+        "assigned_group": "gauge_field_reconstruction",
+        "frozen_fit": 1.0
+      },
+      {
+        "openalex_id": "https://openalex.org/W2206386457",
+        "title": "A COMPARISON OF METHODS FOR THE APPROXIMATION AND ANALYSIS OF RAINFALL FIELDS IN ENVIRONMENTAL APPLICATIONS",
+        "abstract": null,
+        "abstract_sha256": "f8d7de72099d48c88344c98dc30d3775c287967bb38fcb75ffd224d98cf41748",
+        "abstract_chars": 1300,
+        "year": 2015,
+        "doi": "https://doi.org/10.5194/isprsannals-ii-3-w5-523-2015",
+        "venue": "ISPRS annals of the photogrammetry, remote sensing and spatial information sciences",
+        "authors": [
+          "Giuseppe Patanè",
+          "Andrea Cerri",
+          "Vibeke Skytt",
+          "Simone Pittaluga",
+          "Silvia Biasotti",
+          "Davide Sobrero",
+          "Tor Dokken",
+          "Michela Spagnuolo"
+        ],
+        "cited_by_count": 2,
+        "queried_for_group": "gauge_field_reconstruction",
+        "assigned_group": "gauge_field_reconstruction",
+        "frozen_fit": 1.0
+      },
+      {
+        "openalex_id": "https://openalex.org/W4207064349",
+        "title": "Acquisition of Rainfall in Ungauged Basins: a Study of Rainfall Distribution Heterogeneity Based on a New Method",
+        "abstract": null,
+        "abstract_sha256": "580392f5ba7d59f911e12cff493b9b957768f3143c5fc894d0cc4d802e48cc22",
+        "abstract_chars": 1617,
+        "year": 2022,
+        "doi": "https://doi.org/10.21203/rs.3.rs-1237636/v1",
+        "venue": "Research Square",
+        "authors": [
+          "Ye Zhao",
+          "Xiang Zhang",
+          "Feng Xiong",
+          "Shuying Liu",
+          "Yao Wang",
+          "Changmei Liang"
+        ],
+        "cited_by_count": 1,
+        "queried_for_group": "gauge_field_reconstruction",
+        "assigned_group": "gauge_field_reconstruction",
+        "frozen_fit": 1.0
+      },
+      {
+        "openalex_id": "https://openalex.org/W2528393685",
+        "title": "Weather radar rainfall data in urban hydrology",
+        "abstract": null,
+        "abstract_sha256": "503808e1b59bd5e3afda74a66f21db8260d0eb6a68ba9a22ca1cfa7dbaac5c18",
+        "abstract_chars": 1346,
+        "year": 2017,
+        "doi": "https://doi.org/10.5194/hess-21-1359-2017",
+        "venue": "Hydrology and earth system sciences",
+        "authors": [
+          "Søren Liedtke Thorndahl",
+          "Thomas Einfalt",
+          "Patrick Willems",
+          "Jesper Ellerbæk Nielsen",
+          "Marie‐Claire ten Veldhuis",
+          "Karsten Arnbjerg‐Nielsen",
+          "Michael R. Rasmussen",
+          "Péter Molnár"
+        ],
+        "cited_by_count": 222,
+        "queried_for_group": "gauge_field_reconstruction",
+        "assigned_group": "gauge_field_reconstruction",
+        "frozen_fit": 0.5
+      },
+      {
+        "openalex_id": "https://openalex.org/W2795662228",
+        "title": "Opportunistic remote sensing of rainfall using microwave links from cellular communication networks",
+        "abstract": null,
+        "abstract_sha256": "610af1190922178611da52b24e887d21323c9e7fa5716b731acd61fce5699aef",
+        "abstract_chars": 1512,
+        "year": 2018,
+        "doi": "https://doi.org/10.1002/wat2.1289",
+        "venue": "Wiley Interdisciplinary Reviews Water",
+        "authors": [
+          "R. Uijlenhoet",
+          "Aart Overeem",
+          "Hidde Leijnse"
+        ],
+        "cited_by_count": 150,
+        "queried_for_group": "gauge_field_reconstruction",
+        "assigned_group": "gauge_field_reconstruction",
+        "frozen_fit": 0.5
+      },
+      {
+        "openalex_id": "https://openalex.org/W2111695408",
+        "title": "Mapping the Hazard of Extreme Rainfall by Peaks over Threshold Extreme Value Analysis and Spatial Regression Techniques",
+        "abstract": null,
+        "abstract_sha256": "cc20d990421984ccba62adbe1111d1de69c73efa5ca4d4a0199427c9daa75a7d",
+        "abstract_chars": 1378,
+        "year": 2006,
+        "doi": "https://doi.org/10.1175/jam2324.1",
+        "venue": "Journal of Applied Meteorology and Climatology",
+        "authors": [
+          "Santiago Beguerı́a",
+          "Sergio M. Vicente‐Serrano"
+        ],
+        "cited_by_count": 126,
+        "queried_for_group": "gauge_field_reconstruction",
+        "assigned_group": "gauge_field_reconstruction",
+        "frozen_fit": 0.5
+      },
+      {
+        "openalex_id": "https://openalex.org/W2998003141",
+        "title": "Rain event detection in commercial microwave link attenuation data using convolutional neural networks",
+        "abstract": null,
+        "abstract_sha256": "cf208bfb4deb9d897591e57464bb290f55a682f499f535381841f750080d379e",
+        "abstract_chars": 2925,
+        "year": 2020,
+        "doi": "https://doi.org/10.5194/amt-13-3835-2020",
+        "venue": "Atmospheric measurement techniques",
+        "authors": [
+          "Julius Polz",
+          "Christian Chwala",
+          "Maximilian Graf",
+          "Harald Kunstmann"
+        ],
+        "cited_by_count": 80,
+        "queried_for_group": "gauge_field_reconstruction",
+        "assigned_group": "gauge_field_reconstruction",
+        "frozen_fit": 0.5
+      }
+    ],
+    "continuity_residual_diagnostic": [
+      {
+        "openalex_id": "https://openalex.org/W2137376882",
+        "title": "Nimrod: a system for generating automated very short range forecasts",
+        "abstract": null,
+        "abstract_sha256": "a38f8d6888387879ce09b5e9bb8e5797e90975f00674bc0efe2070a5ba2c2a45",
+        "abstract_chars": 1216,
+        "year": 1998,
+        "doi": "https://doi.org/10.1017/s1350482798000577",
+        "venue": "Meteorological Applications",
+        "authors": [
+          "Brian Golding"
+        ],
+        "cited_by_count": 373,
+        "queried_for_group": "continuity_residual_diagnostic",
+        "assigned_group": "continuity_residual_diagnostic",
+        "frozen_fit": 0.0
+      },
+      {
+        "openalex_id": "https://openalex.org/W2121617333",
+        "title": "The Nowcasting of Precipitation during Sydney 2000: An Appraisal of the QPF Algorithms",
+        "abstract": null,
+        "abstract_sha256": "f8d6d2629f777a6328b26023bfdb91fc87f14c281042e1f004feba4cd58a1a2b",
+        "abstract_chars": 1769,
+        "year": 2004,
+        "doi": "https://doi.org/10.1175/1520-0434(2004)019<0007:tnopds>2.0.co;2",
+        "venue": "Weather and Forecasting",
+        "authors": [
+          "Chris Pierce",
+          "Elizabeth E. Ebert",
+          "Alan Seed",
+          "Michael Sleigh",
+          "C. G. Collier",
+          "Neil I. Fox",
+          "Norman Donaldson",
+          "John Wilson",
+          "Rita D. Roberts",
+          "Cynthia K. Mueller"
+        ],
+        "cited_by_count": 80,
+        "queried_for_group": "continuity_residual_diagnostic",
+        "assigned_group": "continuity_residual_diagnostic",
+        "frozen_fit": 0.0
+      },
+      {
+        "openalex_id": "https://openalex.org/W3180010583",
+        "title": "Use of Deep Learning for Weather Radar Nowcasting",
+        "abstract": null,
+        "abstract_sha256": "8160167ba41e9ce5c4ce67323a2aa5654ace8c0d573407bdb4d5ef61eb30caf7",
+        "abstract_chars": 993,
+        "year": 2021,
+        "doi": "https://doi.org/10.1175/jtech-d-21-0012.1",
+        "venue": "Journal of Atmospheric and Oceanic Technology",
+        "authors": [
+          "Joaquin Cuomo",
+          "V. Chandrasekar"
+        ],
+        "cited_by_count": 29,
+        "queried_for_group": "continuity_residual_diagnostic",
+        "assigned_group": "continuity_residual_diagnostic",
+        "frozen_fit": 0.0
+      },
+      {
+        "openalex_id": "https://openalex.org/W3208548582",
+        "title": "Lagrangian Integro-Difference Equation Model for Precipitation Nowcasting",
+        "abstract": null,
+        "abstract_sha256": "2abcb55d9ed95440fc06ce2ffe2fe1585e72a060cf99f7e94ab5c5ab6722e06f",
+        "abstract_chars": 3081,
+        "year": 2021,
+        "doi": "https://doi.org/10.1175/jtech-d-21-0013.1",
+        "venue": "Journal of Atmospheric and Oceanic Technology",
+        "authors": [
+          "Seppo Pulkkinen",
+          "V. Chandrasekar",
+          "Tero Niemi"
+        ],
+        "cited_by_count": 26,
+        "queried_for_group": "continuity_residual_diagnostic",
+        "assigned_group": "continuity_residual_diagnostic",
+        "frozen_fit": 0.0
+      },
+      {
+        "openalex_id": "https://openalex.org/W2789506177",
+        "title": "A spatio-temporal modeling framework for weather radar image data in tropical Southeast Asia",
+        "abstract": null,
+        "abstract_sha256": "3a68757dfea63baf258348e4e9ad85b653e91db04d1371fd87673c772ed3fd89",
+        "abstract_chars": 1417,
+        "year": 2018,
+        "doi": "https://doi.org/10.1214/17-aoas1064",
+        "venue": "The Annals of Applied Statistics",
+        "authors": [
+          "Xiao Liu",
+          "Vikneswaran Gopal",
+          "Jayant Kalagnanam"
+        ],
+        "cited_by_count": 13,
+        "queried_for_group": "continuity_residual_diagnostic",
+        "assigned_group": "continuity_residual_diagnostic",
+        "frozen_fit": 0.0
+      },
+      {
+        "openalex_id": "https://openalex.org/W2560675042",
+        "title": "An experiment of rainfall prediction over the odra catchment by combining weather radar and a numerical weather model",
+        "abstract": null,
+        "abstract_sha256": "1baffd3438ad67abedf257f8bebb7bee0433404b76e01d4cb1152fb3a41cfc70",
+        "abstract_chars": 1257,
+        "year": 2006,
+        "doi": "",
+        "venue": "Bristol Research (University of Bristol)",
+        "authors": [
+          "ID Cluckie",
+          "Miguel A. Rico‐Ramirez",
+          "Yunqing Xuan",
+          "Wiwiana Szalińska"
+        ],
+        "cited_by_count": 7,
+        "queried_for_group": "continuity_residual_diagnostic",
+        "assigned_group": "continuity_residual_diagnostic",
+        "frozen_fit": 0.0
+      }
+    ]
+  },
+  "selected": [
+    {
+      "openalex_id": "https://openalex.org/W2954601359",
+      "title": "A Review of Radar‐Rain Gauge Data Merging Methods and Their Potential for Urban Hydrological Applications",
+      "abstract": null,
+      "abstract_sha256": "13aa521fdb871226c3e4d733a95c331d4b97cdb7192d4ddad796b7eb241e60a1",
+      "abstract_chars": 1598,
+      "year": 2019,
+      "doi": "https://doi.org/10.1029/2018wr023332",
+      "venue": "Water Resources Research",
+      "authors": [
+        "Susana Ochoa-Rodríguez",
+        "Li-Pen Wang",
+        "Patrick Willems",
+        "Christian Onof"
+      ],
+      "cited_by_count": 196,
+      "queried_for_group": "gauge_field_reconstruction",
+      "assigned_group": "gauge_field_reconstruction",
+      "frozen_fit": 1.0
+    },
+    {
+      "openalex_id": "https://openalex.org/W2137376882",
+      "title": "Nimrod: a system for generating automated very short range forecasts",
+      "abstract": null,
+      "abstract_sha256": "a38f8d6888387879ce09b5e9bb8e5797e90975f00674bc0efe2070a5ba2c2a45",
+      "abstract_chars": 1216,
+      "year": 1998,
+      "doi": "https://doi.org/10.1017/s1350482798000577",
+      "venue": "Meteorological Applications",
+      "authors": [
+        "Brian Golding"
+      ],
+      "cited_by_count": 373,
+      "queried_for_group": "continuity_residual_diagnostic",
+      "assigned_group": "continuity_residual_diagnostic",
+      "frozen_fit": 0.0
+    },
+    {
+      "openalex_id": "https://openalex.org/W3208548582",
+      "title": "Lagrangian Integro-Difference Equation Model for Precipitation Nowcasting",
+      "abstract": null,
+      "abstract_sha256": "2abcb55d9ed95440fc06ce2ffe2fe1585e72a060cf99f7e94ab5c5ab6722e06f",
+      "abstract_chars": 3081,
+      "year": 2021,
+      "doi": "https://doi.org/10.1175/jtech-d-21-0013.1",
+      "venue": "Journal of Atmospheric and Oceanic Technology",
+      "authors": [
+        "Seppo Pulkkinen",
+        "V. Chandrasekar",
+        "Tero Niemi"
+      ],
+      "cited_by_count": 26,
+      "queried_for_group": "continuity_residual_diagnostic",
+      "assigned_group": "continuity_residual_diagnostic",
+      "frozen_fit": 0.0
+    }
+  ],
+  "after": {
+    "cutoff": 2022,
+    "historical_seed_count": 31,
+    "historical_abstract_count": 19,
+    "historical_abstract_coverage": 0.612903,
+    "future_holdout_count_not_used_for_audit": 17,
+    "coverage_model": "multi_label_all_frozen_anchor_families_plus_discriminator_term",
+    "represented_group_count": 4,
+    "frozen_group_count": 4,
+    "seed_group_coverage": 1.0,
+    "minimum_eligible_entries_across_groups": 2,
+    "groups_below_minimum": [],
+    "group_counts": [
+      {
+        "group": "gauge_field_reconstruction",
+        "eligible_seed_entries": 2,
+        "minimum_required": 2,
+        "needs_expansion": false
+      },
+      {
+        "group": "convective_growth_classification",
+        "eligible_seed_entries": 11,
+        "minimum_required": 2,
+        "needs_expansion": false
+      },
+      {
+        "group": "advection_motion_nowcasting",
+        "eligible_seed_entries": 7,
+        "minimum_required": 2,
+        "needs_expansion": false
+      },
+      {
+        "group": "continuity_residual_diagnostic",
+        "eligible_seed_entries": 2,
+        "minimum_required": 2,
+        "needs_expansion": false
+      }
+    ],
+    "decision": "seed_scope_gate_passed"
+  },
+  "unmet_groups": [],
+  "selection_errors": []
+}

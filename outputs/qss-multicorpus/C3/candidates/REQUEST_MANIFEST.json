@@ -1,0 +1,43 @@
+{
+  "schema_version": 1,
+  "bib": "<REDACTED_LOCAL_PATH>/bmc_rebuild_with_abstracts.bib",
+  "bib_sha256": "4ac00d0a0f57e712569f1d142cf41284a49dc87d6238783d0573701889f1ec51",
+  "study": "<REDACTED_LOCAL_PATH>/qss_C3_temporal_frozen.json",
+  "cutoffs": [
+    2022,
+    2023,
+    2024
+  ],
+  "through_year": 2026,
+  "retrieval_since_year": 2023,
+  "cache_dir": "<REDACTED_LOCAL_PATH>/openalex",
+  "allow_network": true,
+  "max_network_requests": 20,
+  "retrieval_mode": "group_queries_citing",
+  "evaluation_mode": "temporal_positive_holdout",
+  "candidate_rule": "seed from years <= cutoff; hold out years > cutoff; exclude past identities only",
+  "abstract_required": true,
+  "planned_group_queries": [
+    {
+      "group": "divergent_reference_low_resource",
+      "query": "divergent reference mapping bias low depth short reads sample specific reference genomics",
+      "since_year": 2023
+    },
+    {
+      "group": "iterative_alignment_consensus",
+      "query": "iterative reference refinement read alignment consensus profile sequence hard assignment",
+      "since_year": 2023
+    },
+    {
+      "group": "local_assembly_gap_filling",
+      "query": "local de novo assembly gap filling unplaced reads contig anchoring reference guided",
+      "since_year": 2023
+    },
+    {
+      "group": "organelle_low_depth_benchmarking",
+      "query": "mitochondrial organelle genome assembly benchmarking low coverage read depth divergence",
+      "since_year": 2023
+    }
+  ],
+  "request_journal": "<REDACTED_LOCAL_PATH>/OPENALEX_REQUESTS.jsonl"
+}

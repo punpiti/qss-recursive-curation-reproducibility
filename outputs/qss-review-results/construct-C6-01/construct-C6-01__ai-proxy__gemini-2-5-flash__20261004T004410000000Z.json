@@ -1,0 +1,103 @@
+{
+  "schema_version": "qss-review-response-v1",
+  "batch_id": "construct-C6-01",
+  "review_type": "CONSTRUCT_AUDIT",
+  "rubric_version": "qss-review-rubric-v3",
+  "reviewer": {
+    "type": "AI_PROXY",
+    "id": "gemini-2-5-flash",
+    "role": "PRIMARY_REVIEWER",
+    "review_status": "AI_FIRST_PASS",
+    "reviewed_at": null
+  },
+  "reviews": [
+    {
+      "review_row_id": "C6-2024-01",
+      "corpus_or_project": "C6",
+      "source_group": "gender_multigroup_equity",
+      "paper": {
+        "title": "Unpacking teachers' value beliefs about computational thinking and programming",
+        "doi": "https://doi.org/10.31681/jetol.1497284",
+        "openalex_id": "https://openalex.org/W4406971498"
+      },
+      "normalized_decision": "EXCLUDE",
+      "scope_fit": "OUT_OF_SCOPE",
+      "role_fit": "MISMATCH",
+      "evidence_sufficiency": "SUFFICIENT_ABSTRACT",
+      "primary_reason_code": "WRONG_DOMAIN_OR_POPULATION",
+      "secondary_reason_codes": [],
+      "assigned_label": "gender_multigroup_equity",
+      "corrected_label": null,
+      "evidence": [
+        {
+          "source_field": "ABSTRACT",
+          "supports": "SCOPE",
+          "paraphrase": "Focuses on teachers' value beliefs and simple t-test/MANOVA comparisons across gender."
+        }
+      ],
+      "rationale": "Focuses on teacher beliefs using basic group differences (t-test/MANOVA) rather than student path models connecting CT and STEM attitudes.",
+      "confidence": "HIGH",
+      "flags": [
+        "NONE"
+      ],
+      "follow_up": {
+        "required": true,
+        "priority": "ROUTINE",
+        "reasons": [
+          "AI_PROXY_REQUIRES_HUMAN_CONFIRMATION"
+        ],
+        "recommended_action": "HUMAN_CHECK"
+      },
+      "task_specific": {
+        "scope_decision": "REMOVE_OUT_OF_SCOPE",
+        "group_decision": "WRONG_GROUP",
+        "corrected_group": null,
+        "literature_decision": null
+      }
+    },
+    {
+      "review_row_id": "C6-2024-02",
+      "corpus_or_project": "C6",
+      "source_group": "stem_motivation_self_efficacy",
+      "paper": {
+        "title": "Fostering students’ motivation and self-efficacy in science, technology, engineering, and design through design thinking and making in project-based learning: a gender-perspective study in primary education",
+        "doi": null,
+        "openalex_id": null
+      },
+      "normalized_decision": "DEFER",
+      "scope_fit": "UNCERTAIN",
+      "role_fit": "UNCERTAIN",
+      "evidence_sufficiency": "FULL_TEXT_REQUIRED",
+      "primary_reason_code": "INSUFFICIENT_ABSTRACT_EVIDENCE",
+      "secondary_reason_codes": [],
+      "assigned_label": "stem_motivation_self_efficacy",
+      "corrected_label": null,
+      "evidence": [
+        {
+          "source_field": "ABSTRACT",
+          "supports": "DECISION",
+          "paraphrase": "Abstract text was truncated in input."
+        }
+      ],
+      "rationale": "The abstract text provided in the batch input was truncated before structural analysis details could be evaluated, requiring full-text review.",
+      "confidence": "MEDIUM",
+      "flags": [
+        "NEEDS_FULL_TEXT"
+      ],
+      "follow_up": {
+        "required": true,
+        "priority": "HIGH",
+        "reasons": [
+          "AI_PROXY_REQUIRES_HUMAN_CONFIRMATION"
+        ],
+        "recommended_action": "READ_FULL_TEXT"
+      },
+      "task_specific": {
+        "scope_decision": "DEFER_FULL_TEXT",
+        "group_decision": "UNASSIGNED",
+        "corrected_group": null,
+        "literature_decision": null
+      }
+    }
+  ]
+}

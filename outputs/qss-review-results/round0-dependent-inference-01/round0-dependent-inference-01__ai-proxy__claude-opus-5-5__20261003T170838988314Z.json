@@ -1,0 +1,272 @@
+{
+  "schema_version": "qss-review-response-v1",
+  "batch_id": "round0-dependent-inference-01",
+  "review_type": "ROUND0_LITERATURE_REVIEW",
+  "rubric_version": "qss-review-rubric-v3",
+  "reviewer": {
+    "type": "AI_PROXY",
+    "id": "claude-opus-5-5",
+    "role": "PRIMARY_REVIEWER",
+    "review_status": "AI_FIRST_PASS",
+    "reviewed_at": "2026-10-03T17:08:38.988314Z"
+  },
+  "reviews": [
+    {
+      "review_row_id": "round0-049",
+      "corpus_or_project": "qss_self_hosting",
+      "source_group": "dependent_inference",
+      "paper": {
+        "title": "Evaluating the evidence for biotypes of depression: Methodological replication and extension of",
+        "doi": "https://doi.org/10.1016/j.nicl.2019.101796",
+        "openalex_id": "https://openalex.org/W2923495490"
+      },
+      "normalized_decision": "EXCLUDE",
+      "scope_fit": "OUT_OF_SCOPE",
+      "role_fit": "PARTIAL",
+      "evidence_sufficiency": "SUFFICIENT_ABSTRACT",
+      "primary_reason_code": "WRONG_DOMAIN_OR_POPULATION",
+      "secondary_reason_codes": [
+        "TOO_GENERIC_FOR_CLAIM"
+      ],
+      "assigned_label": "dependent_inference",
+      "corrected_label": null,
+      "evidence": [
+        {
+          "source_field": "ABSTRACT",
+          "supports": "SCOPE",
+          "paraphrase": "Replicates a depression-biotype analysis (CCA plus hierarchical clustering on resting-state fMRI) in 187 participants and tests significance and stability."
+        },
+        {
+          "source_field": "ABSTRACT",
+          "supports": "ROLE",
+          "paraphrase": "Uses resampling to examine stability and permutation-style significance tests, but does not correct inference for dependence among resampled sets."
+        }
+      ],
+      "rationale": "The paper uses resampling or cross-validation within a domain prediction study but does not address statistical dependence among folds, bags, queries or perturbations, which is the defining purpose of the dependent_inference role. Its stability-under-resampling framing is at most a bridge to coverage/stability analysis.",
+      "confidence": "MEDIUM",
+      "flags": [
+        "NONE"
+      ],
+      "follow_up": {
+        "required": true,
+        "priority": "ROUTINE",
+        "reasons": [
+          "AI_PROXY_REQUIRES_HUMAN_CONFIRMATION"
+        ],
+        "recommended_action": "HUMAN_CHECK"
+      },
+      "task_specific": {
+        "scope_decision": null,
+        "group_decision": null,
+        "corrected_group": null,
+        "literature_decision": "REMOVE"
+      }
+    },
+    {
+      "review_row_id": "round0-050",
+      "corpus_or_project": "qss_self_hosting",
+      "source_group": "dependent_inference",
+      "paper": {
+        "title": "Comparison of integrated clustering methods for accurate and stable prediction of building energy consumption data",
+        "doi": "https://doi.org/10.1016/j.apenergy.2015.08.126",
+        "openalex_id": "https://openalex.org/W1817814880"
+      },
+      "normalized_decision": "EXCLUDE",
+      "scope_fit": "OUT_OF_SCOPE",
+      "role_fit": "PARTIAL",
+      "evidence_sufficiency": "SUFFICIENT_ABSTRACT",
+      "primary_reason_code": "WRONG_DOMAIN_OR_POPULATION",
+      "secondary_reason_codes": [
+        "TOO_GENERIC_FOR_CLAIM"
+      ],
+      "assigned_label": "dependent_inference",
+      "corrected_label": null,
+      "evidence": [
+        {
+          "source_field": "ABSTRACT",
+          "supports": "SCOPE",
+          "paraphrase": "Compares clusterwise regression with two-stage clustering for building energy prediction using 20-fold CV."
+        },
+        {
+          "source_field": "ABSTRACT",
+          "supports": "ROLE",
+          "paraphrase": "Measures cluster stability under perturbation with the Jaccard coefficient; no dependence-corrected inference across folds."
+        }
+      ],
+      "rationale": "The paper uses resampling or cross-validation within a domain prediction study but does not address statistical dependence among folds, bags, queries or perturbations, which is the defining purpose of the dependent_inference role. Jaccard stability of perturbed clusters is a possible methodological analogue for result-set stability, but that belongs to a different role.",
+      "confidence": "MEDIUM",
+      "flags": [
+        "POSSIBLE_WRONG_GROUP"
+      ],
+      "follow_up": {
+        "required": true,
+        "priority": "ROUTINE",
+        "reasons": [
+          "AI_PROXY_REQUIRES_HUMAN_CONFIRMATION",
+          "GROUP_DISAGREEMENT"
+        ],
+        "recommended_action": "HUMAN_CHECK"
+      },
+      "task_specific": {
+        "scope_decision": null,
+        "group_decision": null,
+        "corrected_group": null,
+        "literature_decision": "REMOVE"
+      }
+    },
+    {
+      "review_row_id": "round0-051",
+      "corpus_or_project": "qss_self_hosting",
+      "source_group": "dependent_inference",
+      "paper": {
+        "title": "How to remove or control confounds in predictive models, with applications to brain biomarkers",
+        "doi": "https://doi.org/10.1093/gigascience/giac014",
+        "openalex_id": "https://openalex.org/W4220876827"
+      },
+      "normalized_decision": "EXCLUDE",
+      "scope_fit": "OUT_OF_SCOPE",
+      "role_fit": "PARTIAL",
+      "evidence_sufficiency": "SUFFICIENT_ABSTRACT",
+      "primary_reason_code": "WRONG_METHOD_OR_OUTCOME",
+      "secondary_reason_codes": [
+        "BRIDGE_REFERENCE"
+      ],
+      "assigned_label": "dependent_inference",
+      "corrected_label": null,
+      "evidence": [
+        {
+          "source_field": "ABSTRACT",
+          "supports": "SCOPE",
+          "paraphrase": "Reviews confound control in predictive neuroimaging models and shows how cross-validation must be modified for nuisance effects."
+        },
+        {
+          "source_field": "ABSTRACT",
+          "supports": "ROLE",
+          "paraphrase": "The CV modification addresses confounding, not correlation between repeated folds or clustered observations."
+        }
+      ],
+      "rationale": "The paper uses resampling or cross-validation within a domain prediction study but does not address statistical dependence among folds, bags, queries or perturbations, which is the defining purpose of the dependent_inference role. It is a sound evaluation-methodology paper, but its inferential issue is confounding rather than dependence.",
+      "confidence": "MEDIUM",
+      "flags": [
+        "NONE"
+      ],
+      "follow_up": {
+        "required": true,
+        "priority": "ROUTINE",
+        "reasons": [
+          "AI_PROXY_REQUIRES_HUMAN_CONFIRMATION"
+        ],
+        "recommended_action": "HUMAN_CHECK"
+      },
+      "task_specific": {
+        "scope_decision": null,
+        "group_decision": null,
+        "corrected_group": null,
+        "literature_decision": "REMOVE"
+      }
+    },
+    {
+      "review_row_id": "round0-052",
+      "corpus_or_project": "qss_self_hosting",
+      "source_group": "dependent_inference",
+      "paper": {
+        "title": "Bootstrap Enhanced Penalized Regression for Variable Selection with Neuroimaging Data",
+        "doi": "https://doi.org/10.3389/fnins.2016.00344",
+        "openalex_id": "https://openalex.org/W2482743998"
+      },
+      "normalized_decision": "EXCLUDE",
+      "scope_fit": "OUT_OF_SCOPE",
+      "role_fit": "PARTIAL",
+      "evidence_sufficiency": "SUFFICIENT_ABSTRACT",
+      "primary_reason_code": "WRONG_DOMAIN_OR_POPULATION",
+      "secondary_reason_codes": [
+        "FALSE_LEXICAL_OR_SEMANTIC_MATCH"
+      ],
+      "assigned_label": "dependent_inference",
+      "corrected_label": null,
+      "evidence": [
+        {
+          "source_field": "ABSTRACT",
+          "supports": "SCOPE",
+          "paraphrase": "Proposes a bootstrap quantile approach for variable selection in penalized regression on neuroimaging connectivity data."
+        },
+        {
+          "source_field": "ABSTRACT",
+          "supports": "ROLE",
+          "paraphrase": "Bootstrap is used to stabilise variable selection among correlated predictors, not to correct inference for dependent resamples."
+        }
+      ],
+      "rationale": "The paper uses resampling or cross-validation within a domain prediction study but does not address statistical dependence among folds, bags, queries or perturbations, which is the defining purpose of the dependent_inference role. 'Correlated' refers to collinear predictors, so the match is partly lexical.",
+      "confidence": "HIGH",
+      "flags": [
+        "POSSIBLE_FALSE_MATCH"
+      ],
+      "follow_up": {
+        "required": true,
+        "priority": "ROUTINE",
+        "reasons": [
+          "AI_PROXY_REQUIRES_HUMAN_CONFIRMATION"
+        ],
+        "recommended_action": "HUMAN_CHECK"
+      },
+      "task_specific": {
+        "scope_decision": null,
+        "group_decision": null,
+        "corrected_group": null,
+        "literature_decision": "REMOVE"
+      }
+    },
+    {
+      "review_row_id": "round0-053",
+      "corpus_or_project": "qss_self_hosting",
+      "source_group": "dependent_inference",
+      "paper": {
+        "title": "Outcome prediction based on microarray analysis: a critical perspective on methods",
+        "doi": "https://doi.org/10.1186/1471-2105-10-53",
+        "openalex_id": "https://openalex.org/W1987485110"
+      },
+      "normalized_decision": "EXCLUDE",
+      "scope_fit": "OUT_OF_SCOPE",
+      "role_fit": "PARTIAL",
+      "evidence_sufficiency": "SUFFICIENT_ABSTRACT",
+      "primary_reason_code": "WRONG_METHOD_OR_OUTCOME",
+      "secondary_reason_codes": [
+        "BRIDGE_REFERENCE"
+      ],
+      "assigned_label": "dependent_inference",
+      "corrected_label": null,
+      "evidence": [
+        {
+          "source_field": "ABSTRACT",
+          "supports": "SCOPE",
+          "paraphrase": "Critically compares validation schemes (independent test set vs 10-fold CV) for microarray gene-selection algorithms."
+        },
+        {
+          "source_field": "ABSTRACT",
+          "supports": "ROLE",
+          "paraphrase": "Shows CV estimates are biased relative to independent test sets and measures signature stability over training-set variation, but does not model fold dependence."
+        }
+      ],
+      "rationale": "The paper uses resampling or cross-validation within a domain prediction study but does not address statistical dependence among folds, bags, queries or perturbations, which is the defining purpose of the dependent_inference role. No paper in this batch supplies dependence-corrected resampling inference, so the role may lack direct Round-0 coverage.",
+      "confidence": "MEDIUM",
+      "flags": [
+        "ROLE_COVERAGE_RISK"
+      ],
+      "follow_up": {
+        "required": true,
+        "priority": "MEDIUM",
+        "reasons": [
+          "AI_PROXY_REQUIRES_HUMAN_CONFIRMATION",
+          "ROLE_COVERAGE_RISK"
+        ],
+        "recommended_action": "HUMAN_CHECK"
+      },
+      "task_specific": {
+        "scope_decision": null,
+        "group_decision": null,
+        "corrected_group": null,
+        "literature_decision": "REMOVE"
+      }
+    }
+  ]
+}

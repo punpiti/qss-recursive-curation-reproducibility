@@ -1,0 +1,237 @@
+{
+  "schema_version": "qss-review-response-v1",
+  "batch_id": "construct-C3-01",
+  "review_type": "CONSTRUCT_AUDIT",
+  "rubric_version": "qss-review-rubric-v3",
+  "reviewer": {
+    "type": "AI_PROXY",
+    "id": "gemini-2-5-flash",
+    "role": "PRIMARY_REVIEWER",
+    "review_status": "AI_FIRST_PASS",
+    "reviewed_at": null
+  },
+  "reviews": [
+    {
+      "review_row_id": "C3-2022-01",
+      "corpus_or_project": "C3",
+      "source_group": "iterative_alignment_consensus",
+      "paper": {
+        "title": "When less is more: sketching with minimizers in genomics",
+        "doi": "https://doi.org/10.1186/s13059-024-03414-4",
+        "openalex_id": "https://openalex.org/W4403379006"
+      },
+      "normalized_decision": "EXCLUDE",
+      "scope_fit": "OUT_OF_SCOPE",
+      "role_fit": "PARTIAL",
+      "evidence_sufficiency": "SUFFICIENT_ABSTRACT",
+      "primary_reason_code": "TOO_GENERIC_FOR_CLAIM",
+      "secondary_reason_codes": [],
+      "assigned_label": "iterative_alignment_consensus",
+      "corrected_label": null,
+      "evidence": [
+        {
+          "source_field": "ABSTRACT",
+          "supports": "SCOPE",
+          "paraphrase": "Broad review on minimizers and data sketching techniques across general genomic applications."
+        }
+      ],
+      "rationale": "Provides a high-level review of sketching and minimizers across general genomics, lacking specific focus on sample-specific organelle reference refinement from low-depth short reads.",
+      "confidence": "HIGH",
+      "flags": [
+        "NONE"
+      ],
+      "follow_up": {
+        "required": true,
+        "priority": "ROUTINE",
+        "reasons": [
+          "AI_PROXY_REQUIRES_HUMAN_CONFIRMATION"
+        ],
+        "recommended_action": "HUMAN_CHECK"
+      },
+      "task_specific": {
+        "scope_decision": "REMOVE_OUT_OF_SCOPE",
+        "group_decision": "WRONG_GROUP",
+        "corrected_group": null,
+        "literature_decision": null
+      }
+    },
+    {
+      "review_row_id": "C3-2022-02",
+      "corpus_or_project": "C3",
+      "source_group": "divergent_reference_low_resource",
+      "paper": {
+        "title": "A complete diploid human genome benchmark for personalized genomics",
+        "doi": "https://doi.org/10.1016/j.cell.2026.06.016",
+        "openalex_id": "https://openalex.org/W4414403753"
+      },
+      "normalized_decision": "EXCLUDE",
+      "scope_fit": "OUT_OF_SCOPE",
+      "role_fit": "MISMATCH",
+      "evidence_sufficiency": "SUFFICIENT_ABSTRACT",
+      "primary_reason_code": "WRONG_DOMAIN_OR_POPULATION",
+      "secondary_reason_codes": [
+        "WRONG_METHOD_OR_OUTCOME"
+      ],
+      "assigned_label": "divergent_reference_low_resource",
+      "corrected_label": null,
+      "evidence": [
+        {
+          "source_field": "ABSTRACT",
+          "supports": "SCOPE",
+          "paraphrase": "Presents a telomere-to-telomere whole-genome diploid human benchmark and de novo assembly comparisons."
+        }
+      ],
+      "rationale": "Focuses on human whole-genome de novo assembly and diploid benchmarking, which is explicitly excluded by the research scope.",
+      "confidence": "HIGH",
+      "flags": [
+        "NONE"
+      ],
+      "follow_up": {
+        "required": true,
+        "priority": "ROUTINE",
+        "reasons": [
+          "AI_PROXY_REQUIRES_HUMAN_CONFIRMATION"
+        ],
+        "recommended_action": "HUMAN_CHECK"
+      },
+      "task_specific": {
+        "scope_decision": "REMOVE_OUT_OF_SCOPE",
+        "group_decision": "WRONG_GROUP",
+        "corrected_group": null,
+        "literature_decision": null
+      }
+    },
+    {
+      "review_row_id": "C3-2022-03",
+      "corpus_or_project": "C3",
+      "source_group": "iterative_alignment_consensus",
+      "paper": {
+        "title": "REFCON: Reference-free and robust copy number inference in single-cell tumor transcriptomes",
+        "doi": "https://doi.org/10.64898/2026.08.03.742406",
+        "openalex_id": "https://openalex.org/W7201840246"
+      },
+      "normalized_decision": "EXCLUDE",
+      "scope_fit": "OUT_OF_SCOPE",
+      "role_fit": "MISMATCH",
+      "evidence_sufficiency": "SUFFICIENT_ABSTRACT",
+      "primary_reason_code": "WRONG_DOMAIN_OR_POPULATION",
+      "secondary_reason_codes": [],
+      "assigned_label": "iterative_alignment_consensus",
+      "corrected_label": null,
+      "evidence": [
+        {
+          "source_field": "ABSTRACT",
+          "supports": "SCOPE",
+          "paraphrase": "Infers copy number profiles from single-cell RNA sequencing in cancer transcriptomes."
+        }
+      ],
+      "rationale": "Pertains to single-cell tumor transcriptome copy number profiling rather than organelle/mitochondrial reference refinement from DNA reads.",
+      "confidence": "HIGH",
+      "flags": [
+        "BOUNDARY_CASE"
+      ],
+      "follow_up": {
+        "required": true,
+        "priority": "ROUTINE",
+        "reasons": [
+          "AI_PROXY_REQUIRES_HUMAN_CONFIRMATION"
+        ],
+        "recommended_action": "HUMAN_CHECK"
+      },
+      "task_specific": {
+        "scope_decision": "REMOVE_OUT_OF_SCOPE",
+        "group_decision": "WRONG_GROUP",
+        "corrected_group": null,
+        "literature_decision": null
+      }
+    },
+    {
+      "review_row_id": "C3-2023-04",
+      "corpus_or_project": "C3",
+      "source_group": "iterative_alignment_consensus",
+      "paper": {
+        "title": "REFCON: Reference-free and robust copy number inference in single-cell tumor transcriptomes",
+        "doi": "https://doi.org/10.64898/2026.08.03.742406",
+        "openalex_id": "https://openalex.org/W7201840246"
+      },
+      "normalized_decision": "EXCLUDE",
+      "scope_fit": "OUT_OF_SCOPE",
+      "role_fit": "MISMATCH",
+      "evidence_sufficiency": "SUFFICIENT_ABSTRACT",
+      "primary_reason_code": "WRONG_DOMAIN_OR_POPULATION",
+      "secondary_reason_codes": [],
+      "assigned_label": "iterative_alignment_consensus",
+      "corrected_label": null,
+      "evidence": [
+        {
+          "source_field": "ABSTRACT",
+          "supports": "SCOPE",
+          "paraphrase": "Single-cell RNA-seq cancer copy number profiling method."
+        }
+      ],
+      "rationale": "Cancer transcriptomics single-cell CNV analysis is outside the small-genome short-read reference refinement scope.",
+      "confidence": "HIGH",
+      "flags": [
+        "BOUNDARY_CASE"
+      ],
+      "follow_up": {
+        "required": true,
+        "priority": "ROUTINE",
+        "reasons": [
+          "AI_PROXY_REQUIRES_HUMAN_CONFIRMATION"
+        ],
+        "recommended_action": "HUMAN_CHECK"
+      },
+      "task_specific": {
+        "scope_decision": "REMOVE_OUT_OF_SCOPE",
+        "group_decision": "WRONG_GROUP",
+        "corrected_group": null,
+        "literature_decision": null
+      }
+    },
+    {
+      "review_row_id": "C3-2024-05",
+      "corpus_or_project": "C3",
+      "source_group": "iterative_alignment_consensus",
+      "paper": {
+        "title": "REFCON: Reference-free and robust copy number inference in single-cell tumor transcriptomes",
+        "doi": "https://doi.org/10.64898/2026.08.03.742406",
+        "openalex_id": "https://openalex.org/W7201840246"
+      },
+      "normalized_decision": "EXCLUDE",
+      "scope_fit": "OUT_OF_SCOPE",
+      "role_fit": "MISMATCH",
+      "evidence_sufficiency": "SUFFICIENT_ABSTRACT",
+      "primary_reason_code": "WRONG_DOMAIN_OR_POPULATION",
+      "secondary_reason_codes": [],
+      "assigned_label": "iterative_alignment_consensus",
+      "corrected_label": null,
+      "evidence": [
+        {
+          "source_field": "ABSTRACT",
+          "supports": "SCOPE",
+          "paraphrase": "Single-cell RNA-seq cancer copy number profiling."
+        }
+      ],
+      "rationale": "Single-cell tumor transcriptome copy number inference is outside the organelle reference refinement scope.",
+      "confidence": "HIGH",
+      "flags": [
+        "BOUNDARY_CASE"
+      ],
+      "follow_up": {
+        "required": true,
+        "priority": "ROUTINE",
+        "reasons": [
+          "AI_PROXY_REQUIRES_HUMAN_CONFIRMATION"
+        ],
+        "recommended_action": "HUMAN_CHECK"
+      },
+      "task_specific": {
+        "scope_decision": "REMOVE_OUT_OF_SCOPE",
+        "group_decision": "WRONG_GROUP",
+        "corrected_group": null,
+        "literature_decision": null
+      }
+    }
+  ]
+}

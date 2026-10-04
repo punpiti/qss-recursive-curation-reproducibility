@@ -1,0 +1,306 @@
+{
+  "schema_version": "qss-review-response-v1",
+  "batch_id": "construct-C3-01",
+  "review_type": "CONSTRUCT_AUDIT",
+  "rubric_version": "qss-review-rubric-v3",
+  "reviewer": {
+    "type": "AI_PROXY",
+    "id": "claude-opus-5-5",
+    "role": "PRIMARY_REVIEWER",
+    "review_status": "AI_FIRST_PASS",
+    "reviewed_at": "2026-10-03T17:01:36.183588Z"
+  },
+  "reviews": [
+    {
+      "review_row_id": "C3-2022-01",
+      "corpus_or_project": "C3",
+      "source_group": "iterative_alignment_consensus",
+      "paper": {
+        "title": "When less is more: sketching with minimizers in genomics",
+        "doi": "https://doi.org/10.1186/s13059-024-03414-4",
+        "openalex_id": "https://openalex.org/W4403379006"
+      },
+      "normalized_decision": "EXCLUDE",
+      "scope_fit": "OUT_OF_SCOPE",
+      "role_fit": "MISMATCH",
+      "evidence_sufficiency": "SUFFICIENT_ABSTRACT",
+      "primary_reason_code": "TOO_GENERIC_FOR_CLAIM",
+      "secondary_reason_codes": [
+        "FALSE_LEXICAL_OR_SEMANTIC_MATCH"
+      ],
+      "assigned_label": "iterative_alignment_consensus",
+      "corrected_label": null,
+      "evidence": [
+        {
+          "source_field": "ABSTRACT",
+          "supports": "SCOPE",
+          "paraphrase": "A broad review of minimizers and data-sketching techniques across assembly, metagenomics, read alignment, read correction and pangenomes."
+        },
+        {
+          "source_field": "ABSTRACT",
+          "supports": "ROLE",
+          "paraphrase": "Does not describe iterative alignment, hard assignment, position-wise counting, or consensus/reference refinement; read alignment appears only as one application area."
+        },
+        {
+          "source_field": "ABSTRACT",
+          "supports": "RISK",
+          "paraphrase": "As the highest-fit pool candidate for the omitted group, its weak fit suggests the candidate pool held no close iterative-consensus paper."
+        }
+      ],
+      "rationale": "The paper is a general review of sequence-sketching data structures, too generic to evidence ASEM-style iterative alignment and consensus refinement. Its group fit appears driven by shared vocabulary such as read alignment and correction. Because it is the omitted group's best pool candidate, the group's absence may reflect pool composition rather than an exploration-stage loss.",
+      "confidence": "HIGH",
+      "flags": [
+        "POSSIBLE_FALSE_MATCH",
+        "ROLE_COVERAGE_RISK",
+        "CLAIM_CRITICAL"
+      ],
+      "follow_up": {
+        "required": true,
+        "priority": "HIGH",
+        "reasons": [
+          "AI_PROXY_REQUIRES_HUMAN_CONFIRMATION",
+          "CLAIM_CRITICAL",
+          "ROLE_COVERAGE_RISK"
+        ],
+        "recommended_action": "HUMAN_CHECK"
+      },
+      "task_specific": {
+        "scope_decision": "REMOVE_OUT_OF_SCOPE",
+        "group_decision": "WRONG_GROUP",
+        "corrected_group": null,
+        "literature_decision": null
+      }
+    },
+    {
+      "review_row_id": "C3-2022-02",
+      "corpus_or_project": "C3",
+      "source_group": "divergent_reference_low_resource",
+      "paper": {
+        "title": "A complete diploid human genome benchmark for personalized genomics",
+        "doi": "https://doi.org/10.1016/j.cell.2026.06.016",
+        "openalex_id": "https://openalex.org/W4414403753"
+      },
+      "normalized_decision": "INCLUDE",
+      "scope_fit": "UNCERTAIN",
+      "role_fit": "BRIDGE",
+      "evidence_sufficiency": "PARTIAL_ABSTRACT",
+      "primary_reason_code": "BRIDGE_REFERENCE",
+      "secondary_reason_codes": [
+        "WRONG_DOMAIN_OR_POPULATION"
+      ],
+      "assigned_label": "divergent_reference_low_resource",
+      "corrected_label": null,
+      "evidence": [
+        {
+          "source_field": "ABSTRACT",
+          "supports": "ROLE",
+          "paraphrase": "States that mapping reads to a reference suffers from technical and reference biases that leave duplicated and polymorphic regions unmapped."
+        },
+        {
+          "source_field": "ABSTRACT",
+          "supports": "SCOPE",
+          "paraphrase": "Builds a complete telomere-to-telomere diploid human benchmark (HG002), a high-resource setting rather than low-depth reads against a divergent reference."
+        },
+        {
+          "source_field": "ABSTRACT",
+          "supports": "RISK",
+          "paraphrase": "Contribution is a benchmark and accuracy tools for whole human genomes, not sample-specific refinement of small genomes."
+        }
+      ],
+      "rationale": "The abstract offers explicit reference-bias motivation relevant to the divergent-reference group, so it can serve as bridging context. However, its population (human, high coverage, complete assembly) is far from low-resource organelle genomes, so it is a partial fit rather than direct evidence; inclusion is a boundary call.",
+      "confidence": "MEDIUM",
+      "flags": [
+        "BOUNDARY_CASE"
+      ],
+      "follow_up": {
+        "required": true,
+        "priority": "MEDIUM",
+        "reasons": [
+          "AI_PROXY_REQUIRES_HUMAN_CONFIRMATION",
+          "BOUNDARY_CASE"
+        ],
+        "recommended_action": "HUMAN_CHECK"
+      },
+      "task_specific": {
+        "scope_decision": "KEEP_IN_SCOPE",
+        "group_decision": "PARTIAL_ANALOGUE",
+        "corrected_group": null,
+        "literature_decision": null
+      }
+    },
+    {
+      "review_row_id": "C3-2022-03",
+      "corpus_or_project": "C3",
+      "source_group": "iterative_alignment_consensus",
+      "paper": {
+        "title": "REFCON: Reference-free and robust copy number inference in single-cell tumor transcriptomes",
+        "doi": "https://doi.org/10.64898/2026.08.03.742406",
+        "openalex_id": "https://openalex.org/W7201840246"
+      },
+      "normalized_decision": "EXCLUDE",
+      "scope_fit": "OUT_OF_SCOPE",
+      "role_fit": "MISMATCH",
+      "evidence_sufficiency": "SUFFICIENT_ABSTRACT",
+      "primary_reason_code": "WRONG_DOMAIN_OR_POPULATION",
+      "secondary_reason_codes": [
+        "FALSE_LEXICAL_OR_SEMANTIC_MATCH"
+      ],
+      "assigned_label": "iterative_alignment_consensus",
+      "corrected_label": null,
+      "evidence": [
+        {
+          "source_field": "ABSTRACT",
+          "supports": "SCOPE",
+          "paraphrase": "Infers per-cell copy-number profiles from single-cell tumour RNA-seq, not reference refinement for small genomes from low-depth short reads."
+        },
+        {
+          "source_field": "ABSTRACT",
+          "supports": "ROLE",
+          "paraphrase": "'Reference' here means a panel of normal cells used for expression normalisation, not a reference genome sequence; the method is a deep-learning model, not iterative alignment or consensus."
+        },
+        {
+          "source_field": "ABSTRACT",
+          "supports": "RISK",
+          "paraphrase": "The group match rests on shared words such as reference-free, refinement and profile."
+        }
+      ],
+      "rationale": "REFCON addresses reference-free normalisation of scRNA-seq copy-number inference, which differs in data type, meaning of 'reference' and method from iterative alignment/consensus refinement of organelle-scale genomes. It is a lexical false match for the group and out of scope, consistent with its use as a boundary example.",
+      "confidence": "HIGH",
+      "flags": [
+        "POSSIBLE_FALSE_MATCH",
+        "CLAIM_CRITICAL"
+      ],
+      "follow_up": {
+        "required": true,
+        "priority": "MEDIUM",
+        "reasons": [
+          "AI_PROXY_REQUIRES_HUMAN_CONFIRMATION",
+          "CLAIM_CRITICAL"
+        ],
+        "recommended_action": "HUMAN_CHECK"
+      },
+      "task_specific": {
+        "scope_decision": "REMOVE_OUT_OF_SCOPE",
+        "group_decision": "WRONG_GROUP",
+        "corrected_group": null,
+        "literature_decision": null
+      }
+    },
+    {
+      "review_row_id": "C3-2023-04",
+      "corpus_or_project": "C3",
+      "source_group": "iterative_alignment_consensus",
+      "paper": {
+        "title": "REFCON: Reference-free and robust copy number inference in single-cell tumor transcriptomes",
+        "doi": "https://doi.org/10.64898/2026.08.03.742406",
+        "openalex_id": "https://openalex.org/W7201840246"
+      },
+      "normalized_decision": "EXCLUDE",
+      "scope_fit": "OUT_OF_SCOPE",
+      "role_fit": "MISMATCH",
+      "evidence_sufficiency": "SUFFICIENT_ABSTRACT",
+      "primary_reason_code": "WRONG_DOMAIN_OR_POPULATION",
+      "secondary_reason_codes": [
+        "FALSE_LEXICAL_OR_SEMANTIC_MATCH"
+      ],
+      "assigned_label": "iterative_alignment_consensus",
+      "corrected_label": null,
+      "evidence": [
+        {
+          "source_field": "ABSTRACT",
+          "supports": "SCOPE",
+          "paraphrase": "Infers per-cell copy-number profiles from single-cell tumour RNA-seq, not reference refinement for small genomes from low-depth short reads."
+        },
+        {
+          "source_field": "ABSTRACT",
+          "supports": "ROLE",
+          "paraphrase": "'Reference' here means a panel of normal cells used for expression normalisation, not a reference genome sequence; the method is a deep-learning model, not iterative alignment or consensus."
+        },
+        {
+          "source_field": "ABSTRACT",
+          "supports": "RISK",
+          "paraphrase": "The group match rests on shared words such as reference-free, refinement and profile."
+        }
+      ],
+      "rationale": "REFCON addresses reference-free normalisation of scRNA-seq copy-number inference, which differs in data type, meaning of 'reference' and method from iterative alignment/consensus refinement of organelle-scale genomes. It is a lexical false match for the group and out of scope, consistent with its use as a boundary example.",
+      "confidence": "HIGH",
+      "flags": [
+        "POSSIBLE_FALSE_MATCH",
+        "CLAIM_CRITICAL"
+      ],
+      "follow_up": {
+        "required": true,
+        "priority": "MEDIUM",
+        "reasons": [
+          "AI_PROXY_REQUIRES_HUMAN_CONFIRMATION",
+          "CLAIM_CRITICAL"
+        ],
+        "recommended_action": "HUMAN_CHECK"
+      },
+      "task_specific": {
+        "scope_decision": "REMOVE_OUT_OF_SCOPE",
+        "group_decision": "WRONG_GROUP",
+        "corrected_group": null,
+        "literature_decision": null
+      }
+    },
+    {
+      "review_row_id": "C3-2024-05",
+      "corpus_or_project": "C3",
+      "source_group": "iterative_alignment_consensus",
+      "paper": {
+        "title": "REFCON: Reference-free and robust copy number inference in single-cell tumor transcriptomes",
+        "doi": "https://doi.org/10.64898/2026.08.03.742406",
+        "openalex_id": "https://openalex.org/W7201840246"
+      },
+      "normalized_decision": "EXCLUDE",
+      "scope_fit": "OUT_OF_SCOPE",
+      "role_fit": "MISMATCH",
+      "evidence_sufficiency": "SUFFICIENT_ABSTRACT",
+      "primary_reason_code": "WRONG_DOMAIN_OR_POPULATION",
+      "secondary_reason_codes": [
+        "FALSE_LEXICAL_OR_SEMANTIC_MATCH"
+      ],
+      "assigned_label": "iterative_alignment_consensus",
+      "corrected_label": null,
+      "evidence": [
+        {
+          "source_field": "ABSTRACT",
+          "supports": "SCOPE",
+          "paraphrase": "Infers per-cell copy-number profiles from single-cell tumour RNA-seq, not reference refinement for small genomes from low-depth short reads."
+        },
+        {
+          "source_field": "ABSTRACT",
+          "supports": "ROLE",
+          "paraphrase": "'Reference' here means a panel of normal cells used for expression normalisation, not a reference genome sequence; the method is a deep-learning model, not iterative alignment or consensus."
+        },
+        {
+          "source_field": "ABSTRACT",
+          "supports": "RISK",
+          "paraphrase": "The group match rests on shared words such as reference-free, refinement and profile."
+        }
+      ],
+      "rationale": "REFCON addresses reference-free normalisation of scRNA-seq copy-number inference, which differs in data type, meaning of 'reference' and method from iterative alignment/consensus refinement of organelle-scale genomes. It is a lexical false match for the group and out of scope, consistent with its use as a boundary example.",
+      "confidence": "HIGH",
+      "flags": [
+        "POSSIBLE_FALSE_MATCH",
+        "CLAIM_CRITICAL"
+      ],
+      "follow_up": {
+        "required": true,
+        "priority": "MEDIUM",
+        "reasons": [
+          "AI_PROXY_REQUIRES_HUMAN_CONFIRMATION",
+          "CLAIM_CRITICAL"
+        ],
+        "recommended_action": "HUMAN_CHECK"
+      },
+      "task_specific": {
+        "scope_decision": "REMOVE_OUT_OF_SCOPE",
+        "group_decision": "WRONG_GROUP",
+        "corrected_group": null,
+        "literature_decision": null
+      }
+    }
+  ]
+}

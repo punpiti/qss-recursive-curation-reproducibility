@@ -1,0 +1,406 @@
+{
+  "schema_version": 1,
+  "status": "prompt_batches_ready",
+  "review_mode": "ai_proxy_not_human_validation",
+  "response_schema": {
+    "version": "qss-review-response-v1",
+    "rubric_version": "qss-review-rubric-v3",
+    "path": "config/qss_review_response.schema.json",
+    "sha256": "a0a75a3b564124c1919df4fe8387de18ec0dded00c63583667cf2cfc85725b35"
+  },
+  "batch_size": 5,
+  "result_files": {
+    "directory_template": "outputs/qss-review-results/{batch_id}/",
+    "filename_template": "{batch_id}__{reviewer_type}__{reviewer_id}__{run_id}.json",
+    "encoding": "UTF-8",
+    "overwrite_existing": false
+  },
+  "source_inputs": {
+    "outputs/qss-stage-diagnostics/human_construct_audit_queue.csv": {
+      "sha256": "9eb2c64b47f74ab706efe946d9e4700d5471a97fd472052bb44f519b0391c178",
+      "rows": 32
+    },
+    "outputs/qss-self-hosting/round0/round0_review_queue.csv": {
+      "sha256": "afbabaf882605ec1e3880df995e49d66cbfdcd135dcbfd2ba6b2e78cd6483d56",
+      "rows": 88
+    }
+  },
+  "counts": {
+    "construct_rows": 32,
+    "round0_rows": 88,
+    "total_rows": 120,
+    "batches": 27
+  },
+  "safety": {
+    "writes_human_columns": false,
+    "changes_frozen_outcomes": false,
+    "allows_manuscript_citation_insertion": false,
+    "ai_reviews_require_human_follow_up": true,
+    "human_and_ai_share_response_schema": true
+  },
+  "batches": [
+    {
+      "batch_id": "construct-C2-01",
+      "review_type": "construct_audit",
+      "path": "outputs/qss-ai-proxy-review/construct-audit/construct-C2-01.md",
+      "rows": 5,
+      "review_row_ids": [
+        "C2-2022-01",
+        "C2-2022-02",
+        "C2-2022-03",
+        "C2-2023-04",
+        "C2-2023-05"
+      ],
+      "sha256": "8821c2752a551c6903f6ed4ee03e39b3504a5d2a34ff00ee0327e69fa71cdc19"
+    },
+    {
+      "batch_id": "construct-C2-02",
+      "review_type": "construct_audit",
+      "path": "outputs/qss-ai-proxy-review/construct-audit/construct-C2-02.md",
+      "rows": 4,
+      "review_row_ids": [
+        "C2-2023-06",
+        "C2-2024-07",
+        "C2-2024-08",
+        "C2-2024-09"
+      ],
+      "sha256": "8bdde00cbac463d3af39e1de4a6f12cb5b8a963dea5b7050a43a60094695919a"
+    },
+    {
+      "batch_id": "construct-C3-01",
+      "review_type": "construct_audit",
+      "path": "outputs/qss-ai-proxy-review/construct-audit/construct-C3-01.md",
+      "rows": 5,
+      "review_row_ids": [
+        "C3-2022-01",
+        "C3-2022-02",
+        "C3-2022-03",
+        "C3-2023-04",
+        "C3-2024-05"
+      ],
+      "sha256": "a5299508be211f007054fce8f34b877b92420f2709145d5b2e304e22c705bc34"
+    },
+    {
+      "batch_id": "construct-C1-01",
+      "review_type": "construct_audit",
+      "path": "outputs/qss-ai-proxy-review/construct-audit/construct-C1-01.md",
+      "rows": 5,
+      "review_row_ids": [
+        "C1-2022-01",
+        "C1-2022-02",
+        "C1-2022-03",
+        "C1-2022-04",
+        "C1-2022-05"
+      ],
+      "sha256": "eff3759e23b4f9f4e56ff819f06abb40bf8af9ece64d2cd0468535456f0f3e7c"
+    },
+    {
+      "batch_id": "construct-C1-02",
+      "review_type": "construct_audit",
+      "path": "outputs/qss-ai-proxy-review/construct-audit/construct-C1-02.md",
+      "rows": 2,
+      "review_row_ids": [
+        "C1-2023-06",
+        "C1-2024-07"
+      ],
+      "sha256": "3c7eed41715aad84cf11ab9e44410c9dda6f02fd0fd98359f5e8bbbfb01df8c3"
+    },
+    {
+      "batch_id": "construct-C4-01",
+      "review_type": "construct_audit",
+      "path": "outputs/qss-ai-proxy-review/construct-audit/construct-C4-01.md",
+      "rows": 3,
+      "review_row_ids": [
+        "C4-2024-01",
+        "C4-2024-02",
+        "C4-2024-03"
+      ],
+      "sha256": "f5f3bf6868e72821972874e488aa3bcef6735c1091b4a285cc3401f22382f77b"
+    },
+    {
+      "batch_id": "construct-C6-01",
+      "review_type": "construct_audit",
+      "path": "outputs/qss-ai-proxy-review/construct-audit/construct-C6-01.md",
+      "rows": 2,
+      "review_row_ids": [
+        "C6-2024-01",
+        "C6-2024-02"
+      ],
+      "sha256": "77eae6e76273db4160cb33c11011d130611dd2d422251ee293da444505694647"
+    },
+    {
+      "batch_id": "construct-C5-01",
+      "review_type": "construct_audit",
+      "path": "outputs/qss-ai-proxy-review/construct-audit/construct-C5-01.md",
+      "rows": 5,
+      "review_row_ids": [
+        "C5-2023-01",
+        "C5-2023-02",
+        "C5-2023-03",
+        "C5-2023-04",
+        "C5-2023-05"
+      ],
+      "sha256": "1a869d2a8d83643caa25230903c61db37c5d9a37f512e41c99235411266381ea"
+    },
+    {
+      "batch_id": "construct-C5-02",
+      "review_type": "construct_audit",
+      "path": "outputs/qss-ai-proxy-review/construct-audit/construct-C5-02.md",
+      "rows": 1,
+      "review_row_ids": [
+        "C5-2023-06"
+      ],
+      "sha256": "763c16be23041b2822e1673a37e4f7f9ed30f5305f1bd392502305f0c14e7e9f"
+    },
+    {
+      "batch_id": "round0-search-validation-reachability-01",
+      "review_type": "round0_literature",
+      "path": "outputs/qss-ai-proxy-review/round0-literature/round0-search-validation-reachability-01.md",
+      "rows": 5,
+      "review_row_ids": [
+        "round0-001",
+        "round0-002",
+        "round0-003",
+        "round0-004",
+        "round0-005"
+      ],
+      "sha256": "a8c8779ebc9a0e70d62c3519086ec3a03f8bd8fd82a00d133e72388c3cef7b39"
+    },
+    {
+      "batch_id": "round0-search-validation-reachability-02",
+      "review_type": "round0_literature",
+      "path": "outputs/qss-ai-proxy-review/round0-literature/round0-search-validation-reachability-02.md",
+      "rows": 5,
+      "review_row_ids": [
+        "round0-006",
+        "round0-007",
+        "round0-008",
+        "round0-009",
+        "round0-010"
+      ],
+      "sha256": "5c26bdbc1730ee4e66bb2e6590d57e45dd0e6671b8a0478109db1f6a570ebb6c"
+    },
+    {
+      "batch_id": "round0-search-validation-reachability-03",
+      "review_type": "round0_literature",
+      "path": "outputs/qss-ai-proxy-review/round0-literature/round0-search-validation-reachability-03.md",
+      "rows": 5,
+      "review_row_ids": [
+        "round0-011",
+        "round0-012",
+        "round0-013",
+        "round0-014",
+        "round0-015"
+      ],
+      "sha256": "889bf8a62e266aa10abccf48a7b35d797313588d646e11e649b5a9da7b9f5fb0"
+    },
+    {
+      "batch_id": "round0-scholarly-recommendation-relevance-feedback-01",
+      "review_type": "round0_literature",
+      "path": "outputs/qss-ai-proxy-review/round0-literature/round0-scholarly-recommendation-relevance-feedback-01.md",
+      "rows": 5,
+      "review_row_ids": [
+        "round0-016",
+        "round0-017",
+        "round0-018",
+        "round0-019",
+        "round0-020"
+      ],
+      "sha256": "e4d5fd931e8845908080bf5d58b244d8fd7f11b27dec265c7baf79a000ceb7ed"
+    },
+    {
+      "batch_id": "round0-scholarly-recommendation-relevance-feedback-02",
+      "review_type": "round0_literature",
+      "path": "outputs/qss-ai-proxy-review/round0-literature/round0-scholarly-recommendation-relevance-feedback-02.md",
+      "rows": 5,
+      "review_row_ids": [
+        "round0-021",
+        "round0-022",
+        "round0-023",
+        "round0-024",
+        "round0-025"
+      ],
+      "sha256": "79d86d204fb3659668dce1ee5f6b60a7a830b928e74cf29b22e883938ab81a65"
+    },
+    {
+      "batch_id": "round0-scholarly-recommendation-relevance-feedback-03",
+      "review_type": "round0_literature",
+      "path": "outputs/qss-ai-proxy-review/round0-literature/round0-scholarly-recommendation-relevance-feedback-03.md",
+      "rows": 5,
+      "review_row_ids": [
+        "round0-026",
+        "round0-027",
+        "round0-028",
+        "round0-029",
+        "round0-030"
+      ],
+      "sha256": "d90917143081bd9712a3958134502199ea233136efffd9b719fc46f6bb57b463"
+    },
+    {
+      "batch_id": "round0-temporal-evaluation-observability-01",
+      "review_type": "round0_literature",
+      "path": "outputs/qss-ai-proxy-review/round0-literature/round0-temporal-evaluation-observability-01.md",
+      "rows": 3,
+      "review_row_ids": [
+        "round0-031",
+        "round0-032",
+        "round0-033"
+      ],
+      "sha256": "23f77afd135a4fc30417db8dddfa880e5c258eed385c92f189ccb67b80cdfe77"
+    },
+    {
+      "batch_id": "round0-coverage-diversity-stability-01",
+      "review_type": "round0_literature",
+      "path": "outputs/qss-ai-proxy-review/round0-literature/round0-coverage-diversity-stability-01.md",
+      "rows": 5,
+      "review_row_ids": [
+        "round0-034",
+        "round0-035",
+        "round0-036",
+        "round0-037",
+        "round0-038"
+      ],
+      "sha256": "ab804c9ec13146ebbc99ad9b29a75087647132e84c325f84712d292e9291e6c9"
+    },
+    {
+      "batch_id": "round0-coverage-diversity-stability-02",
+      "review_type": "round0_literature",
+      "path": "outputs/qss-ai-proxy-review/round0-literature/round0-coverage-diversity-stability-02.md",
+      "rows": 5,
+      "review_row_ids": [
+        "round0-039",
+        "round0-040",
+        "round0-041",
+        "round0-042",
+        "round0-043"
+      ],
+      "sha256": "6a790e06ef81ea473d003945c32357b467f96805b6474c8ded5939a7b5c8e25f"
+    },
+    {
+      "batch_id": "round0-coverage-diversity-stability-03",
+      "review_type": "round0_literature",
+      "path": "outputs/qss-ai-proxy-review/round0-literature/round0-coverage-diversity-stability-03.md",
+      "rows": 5,
+      "review_row_ids": [
+        "round0-044",
+        "round0-045",
+        "round0-046",
+        "round0-047",
+        "round0-048"
+      ],
+      "sha256": "4fafe1ff7d3ab4bf80b3ad5eaeb0c0fa4ac359c2b7654f3848f45a1744b5d1af"
+    },
+    {
+      "batch_id": "round0-dependent-inference-01",
+      "review_type": "round0_literature",
+      "path": "outputs/qss-ai-proxy-review/round0-literature/round0-dependent-inference-01.md",
+      "rows": 5,
+      "review_row_ids": [
+        "round0-049",
+        "round0-050",
+        "round0-051",
+        "round0-052",
+        "round0-053"
+      ],
+      "sha256": "2d45e04d7fabc8e01bca13198f9d166016053198fbd1432ac2a2bbf104e73407"
+    },
+    {
+      "batch_id": "round0-dependent-inference-02",
+      "review_type": "round0_literature",
+      "path": "outputs/qss-ai-proxy-review/round0-literature/round0-dependent-inference-02.md",
+      "rows": 5,
+      "review_row_ids": [
+        "round0-054",
+        "round0-055",
+        "round0-056",
+        "round0-057",
+        "round0-058"
+      ],
+      "sha256": "e8860e6e5eeecb5f38394f8f66cce245308057d3f14a0258192548bfd4a8ff4f"
+    },
+    {
+      "batch_id": "round0-human-curation-governance-01",
+      "review_type": "round0_literature",
+      "path": "outputs/qss-ai-proxy-review/round0-literature/round0-human-curation-governance-01.md",
+      "rows": 5,
+      "review_row_ids": [
+        "round0-059",
+        "round0-060",
+        "round0-061",
+        "round0-062",
+        "round0-063"
+      ],
+      "sha256": "598db7d977c7c8fbb6a46cff5d6d6dadc02940265fcb5bce76bb5ad6a79a85c0"
+    },
+    {
+      "batch_id": "round0-human-curation-governance-02",
+      "review_type": "round0_literature",
+      "path": "outputs/qss-ai-proxy-review/round0-literature/round0-human-curation-governance-02.md",
+      "rows": 5,
+      "review_row_ids": [
+        "round0-064",
+        "round0-065",
+        "round0-066",
+        "round0-067",
+        "round0-068"
+      ],
+      "sha256": "b3dc16d0ffc89141a76377197093c09982ebc150a1b10a27ed0aa5c0953583cc"
+    },
+    {
+      "batch_id": "round0-human-curation-governance-03",
+      "review_type": "round0_literature",
+      "path": "outputs/qss-ai-proxy-review/round0-literature/round0-human-curation-governance-03.md",
+      "rows": 5,
+      "review_row_ids": [
+        "round0-069",
+        "round0-070",
+        "round0-071",
+        "round0-072",
+        "round0-073"
+      ],
+      "sha256": "43e5382c3950fb765c8ce2a3a98c98bd3f7d64d5b3f159760b3208fce90003f9"
+    },
+    {
+      "batch_id": "round0-bibliography-as-research-state-01",
+      "review_type": "round0_literature",
+      "path": "outputs/qss-ai-proxy-review/round0-literature/round0-bibliography-as-research-state-01.md",
+      "rows": 5,
+      "review_row_ids": [
+        "round0-074",
+        "round0-075",
+        "round0-076",
+        "round0-077",
+        "round0-078"
+      ],
+      "sha256": "fe2a08b43d0e704480cfcc02802e3e7b021683055687f2722408122559e2e742"
+    },
+    {
+      "batch_id": "round0-bibliography-as-research-state-02",
+      "review_type": "round0_literature",
+      "path": "outputs/qss-ai-proxy-review/round0-literature/round0-bibliography-as-research-state-02.md",
+      "rows": 5,
+      "review_row_ids": [
+        "round0-079",
+        "round0-080",
+        "round0-081",
+        "round0-082",
+        "round0-083"
+      ],
+      "sha256": "e683fc5df527cdcb7179498ef3bf392126098a78468d82e4caffb30576b94c4d"
+    },
+    {
+      "batch_id": "round0-bibliography-as-research-state-03",
+      "review_type": "round0_literature",
+      "path": "outputs/qss-ai-proxy-review/round0-literature/round0-bibliography-as-research-state-03.md",
+      "rows": 5,
+      "review_row_ids": [
+        "round0-084",
+        "round0-085",
+        "round0-086",
+        "round0-087",
+        "round0-088"
+      ],
+      "sha256": "b96a07c70f6c54212b4d85368723dadae06d6cf549f7dc4bb16e5367c5a3b33a"
+    }
+  ]
+}

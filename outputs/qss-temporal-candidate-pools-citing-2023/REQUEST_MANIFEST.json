@@ -1,0 +1,39 @@
+{
+  "schema_version": 1,
+  "bib": "<REDACTED_LOCAL_PATH>/C1.bib",
+  "bib_sha256": "9a86b168daed388b74029d285ec77ee6877800bca4fb176527c98144aaf29cdb",
+  "study": "<REDACTED_LOCAL_PATH>/qss_recursive_curation_study.json",
+  "cutoffs": [
+    2023
+  ],
+  "through_year": 2026,
+  "retrieval_since_year": 2023,
+  "cache_dir": "<REDACTED_LOCAL_PATH>/openalex",
+  "allow_network": true,
+  "max_network_requests": 20,
+  "retrieval_mode": "group_queries_citing",
+  "candidate_rule": "seed from years <= cutoff; hold out years > cutoff; exclude past identities only",
+  "abstract_required": true,
+  "planned_group_queries": [
+    {
+      "group": "knowledge_lens_guidance",
+      "query": "knowledge guided visual analytics domain knowledge provenance traceable insight",
+      "since_year": 2023
+    },
+    {
+      "group": "provenance_traceability",
+      "query": "visual analytics insight provenance sensemaking synthesis multiple insights",
+      "since_year": 2023
+    },
+    {
+      "group": "rainfall_pattern_evidence",
+      "query": "diurnal rainfall amount frequency intensity peak hour spatial visualization",
+      "since_year": 2023
+    },
+    {
+      "group": "method_evidence_bridge",
+      "query": "narrative visualization evidence provenance data storytelling traceability",
+      "since_year": 2023
+    }
+  ]
+}

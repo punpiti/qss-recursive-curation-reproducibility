@@ -1,0 +1,30 @@
+{
+  "schema_version": 1,
+  "bib": "<REDACTED_LOCAL_PATH>/bmc_rebuild_with_abstracts.bib",
+  "candidate_pool": "<REDACTED_LOCAL_PATH>/qss_candidates_2024.json",
+  "study": "<REDACTED_LOCAL_PATH>/qss_C3_temporal_frozen.json",
+  "parameters": {
+    "bib": "<REDACTED_LOCAL_PATH>/bmc_rebuild_with_abstracts.bib",
+    "candidate_pool": "<REDACTED_LOCAL_PATH>/qss_candidates_2024.json",
+    "cutoff": 2024,
+    "study": "<REDACTED_LOCAL_PATH>/qss_C3_temporal_frozen.json",
+    "fractions": "0.5,0.7,0.85",
+    "bags": 50,
+    "workers": 8,
+    "random_seed": 20260827,
+    "evidence_threshold": 0.75,
+    "recovery_similarity": 0.1,
+    "tau_fit": 0.18,
+    "tau_gain": 0.05,
+    "additions_per_round": 10,
+    "max_rounds": 3,
+    "exploration_k": 30,
+    "final_k": 10,
+    "evaluation_role": "held_out_test",
+    "rule_version": "v2_relevance_soft_capacity",
+    "output_dir": "<REDACTED_LOCAL_PATH>/2024",
+    "overwrite_output": false
+  },
+  "cache_only": true,
+  "openalex_requests": 0
+}

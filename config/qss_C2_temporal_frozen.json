@@ -1,0 +1,190 @@
+{
+  "schema_version": 1,
+  "study_id": "qss-amt-temporal-v1",
+  "status": "frozen_before_candidate_retrieval",
+  "frozen_on": "2026-08-28",
+  "evaluation_mode": "temporal_positive_holdout",
+  "cutoffs": [
+    2022,
+    2023,
+    2024
+  ],
+  "through_year": 2026,
+  "scope": "Diagnose convective rainfall growth from dense urban rain-gauge fields by comparing observed evolution with an optical-flow advection-only reference and interpreting the residual within explicit measurement limitations.",
+  "canonical_inputs": {
+    "bib": "<REDACTED_LOCAL_PATH>/amt.bib",
+    "bib_sha256": "b387db7428017c9e1ef58c0d22480d953b2d1823d03ec6f5f01372192e6170cb",
+    "scope_file": "<REDACTED_LOCAL_PATH>/amt.tex",
+    "scope_sha256": "789e9cb461327a60d70b13c70780aab3eea188c39d9cf94d8a04cf40a561d59b"
+  },
+  "interpretation_boundary": "This QSS run evaluates frozen bibliographic scope groups only. It does not reopen the rejected AMT latent temporal-transition model or authorize temporal-path candidate scoring.",
+  "legacy_group_key_note": "The runner reads kbs_frozen_evidence_groups; these are independently frozen AMT groups.",
+  "kbs_frozen_evidence_groups": [
+    {
+      "id": "gauge_field_reconstruction",
+      "purpose": "Dense rain-gauge network sampling, gridding, interpolation, smoothing, and uncertainty needed to construct spatial rainfall fields from surface measurements.",
+      "capacity": 3,
+      "query": "dense rain gauge network rainfall field reconstruction gridding interpolation uncertainty urban",
+      "seed_expansion_query": "dense rain gauge network spatial interpolation rainfall field reconstruction urban",
+      "seed_validation_terms": [
+        "rain gauge",
+        "gauge network",
+        "gridding",
+        "interpolation",
+        "smoothing",
+        "sampling uncertainty"
+      ],
+      "terms": [
+        "rain gauge",
+        "gauge network",
+        "rainfall field",
+        "gridding",
+        "interpolation",
+        "spatial rainfall",
+        "smoothing",
+        "sampling uncertainty"
+      ],
+      "anchor_families": [
+        [
+          "rain",
+          "rainfall",
+          "precipitation"
+        ],
+        [
+          "gauge",
+          "station",
+          "interpolation",
+          "grid",
+          "field reconstruction"
+        ]
+      ]
+    },
+    {
+      "id": "convective_growth_classification",
+      "purpose": "Convective or stratiform rainfall identification and empirical growth/decay evidence that bounds what the proposed surface diagnostic may indicate.",
+      "capacity": 3,
+      "query": "convective stratiform rainfall classification growth decay precipitation identification",
+      "seed_validation_terms": [
+        "convective",
+        "stratiform",
+        "rainfall classification",
+        "precipitation classification",
+        "growth",
+        "decay",
+        "cell evolution"
+      ],
+      "terms": [
+        "convective",
+        "stratiform",
+        "rainfall classification",
+        "precipitation classification",
+        "growth",
+        "decay",
+        "cell evolution",
+        "intensity threshold"
+      ],
+      "anchor_families": [
+        [
+          "rain",
+          "rainfall",
+          "precipitation",
+          "storm"
+        ],
+        [
+          "convective",
+          "stratiform",
+          "growth",
+          "decay",
+          "classification",
+          "cell evolution"
+        ]
+      ]
+    },
+    {
+      "id": "advection_motion_nowcasting",
+      "purpose": "Optical-flow, tracking, and advection-based representations of short-interval rainfall motion used to construct a transport-only reference field.",
+      "capacity": 3,
+      "query": "rainfall advection optical flow precipitation motion tracking nowcasting",
+      "seed_validation_terms": [
+        "advection",
+        "optical flow",
+        "motion field",
+        "cell tracking",
+        "nowcasting",
+        "Lagrangian",
+        "transport"
+      ],
+      "terms": [
+        "advection",
+        "optical flow",
+        "motion field",
+        "cell tracking",
+        "nowcasting",
+        "Lagrangian",
+        "transport",
+        "rainfall motion"
+      ],
+      "anchor_families": [
+        [
+          "rain",
+          "rainfall",
+          "precipitation",
+          "storm"
+        ],
+        [
+          "advection",
+          "optical flow",
+          "motion",
+          "tracking",
+          "nowcasting",
+          "transport"
+        ]
+      ]
+    },
+    {
+      "id": "continuity_residual_diagnostic",
+      "purpose": "Continuity-equation, source-sink, or transport-residual methods that distinguish observed local rainfall change from horizontal advection without claiming direct cloud microphysics retrieval.",
+      "capacity": 3,
+      "query": "precipitation continuity equation source sink advection residual rainfall growth diagnostic",
+      "seed_expansion_query": "precipitation nowcasting growth decay model advection radar",
+      "seed_validation_terms": [
+        "continuity equation",
+        "source sink",
+        "source-sink",
+        "advection residual",
+        "transport residual",
+        "mass conservation",
+        "local generation",
+        "growth",
+        "decay"
+      ],
+      "terms": [
+        "continuity equation",
+        "source sink",
+        "source-sink",
+        "advection residual",
+        "transport residual",
+        "rainfall growth",
+        "mass conservation",
+        "local generation"
+      ],
+      "anchor_families": [
+        [
+          "rain",
+          "rainfall",
+          "precipitation",
+          "water"
+        ],
+        [
+          "continuity",
+          "source",
+          "sink",
+          "residual",
+          "advection",
+          "transport",
+          "conservation"
+        ]
+      ]
+    }
+  ]
+}

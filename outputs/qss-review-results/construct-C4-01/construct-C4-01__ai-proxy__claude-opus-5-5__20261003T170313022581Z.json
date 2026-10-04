@@ -1,0 +1,192 @@
+{
+  "schema_version": "qss-review-response-v1",
+  "batch_id": "construct-C4-01",
+  "review_type": "CONSTRUCT_AUDIT",
+  "rubric_version": "qss-review-rubric-v3",
+  "reviewer": {
+    "type": "AI_PROXY",
+    "id": "claude-opus-5-5",
+    "role": "PRIMARY_REVIEWER",
+    "review_status": "AI_FIRST_PASS",
+    "reviewed_at": "2026-10-03T17:03:13.022581Z"
+  },
+  "reviews": [
+    {
+      "review_row_id": "C4-2024-01",
+      "corpus_or_project": "C4",
+      "source_group": "defect_risk_taxonomy",
+      "paper": {
+        "title": "Beyond BLEU: Ethical Risks of Misleading Evaluation in Domain-Specific QA with LLMs",
+        "doi": "https://doi.org/10.26615/978-954-452-102-8-009",
+        "openalex_id": "https://openalex.org/W7131639106"
+      },
+      "normalized_decision": "INCLUDE",
+      "scope_fit": "UNCERTAIN",
+      "role_fit": "PARTIAL",
+      "evidence_sufficiency": "SUFFICIENT_ABSTRACT",
+      "primary_reason_code": "BRIDGE_REFERENCE",
+      "secondary_reason_codes": [
+        "WRONG_DOMAIN_OR_POPULATION"
+      ],
+      "assigned_label": "defect_risk_taxonomy",
+      "corrected_label": null,
+      "evidence": [
+        {
+          "source_field": "ABSTRACT",
+          "supports": "ROLE",
+          "paraphrase": "Shows that BLEU, ROUGE, EM and BERTScore misrepresent domain QA quality, especially under paraphrasing and omission, compared with expert ratings of accuracy and completeness."
+        },
+        {
+          "source_field": "ABSTRACT",
+          "supports": "SCOPE",
+          "paraphrase": "The domain is botanical/biodiversity QA, not Thai legal QA, and it offers no defect taxonomy or controlled perturbation set."
+        },
+        {
+          "source_field": "ABSTRACT",
+          "supports": "RISK",
+          "paraphrase": "It is the highest-fit pool candidate for the defect/risk group, yet only an analogue of that group's purpose."
+        }
+      ],
+      "rationale": "The paper supports the motivation for risk-sensitive, omission- and completeness-aware QA evaluation, but it is a metric-versus-expert comparison in botany rather than a defect taxonomy or perturbation design for legal answers. It is a partial analogue and bridging reference; that the group's best pool candidate is only this close suggests limited pool coverage for the group.",
+      "confidence": "MEDIUM",
+      "flags": [
+        "BOUNDARY_CASE",
+        "ROLE_COVERAGE_RISK",
+        "CLAIM_CRITICAL"
+      ],
+      "follow_up": {
+        "required": true,
+        "priority": "HIGH",
+        "reasons": [
+          "AI_PROXY_REQUIRES_HUMAN_CONFIRMATION",
+          "BOUNDARY_CASE",
+          "ROLE_COVERAGE_RISK",
+          "CLAIM_CRITICAL"
+        ],
+        "recommended_action": "HUMAN_CHECK"
+      },
+      "task_specific": {
+        "scope_decision": "KEEP_IN_SCOPE",
+        "group_decision": "PARTIAL_ANALOGUE",
+        "corrected_group": null,
+        "literature_decision": null
+      }
+    },
+    {
+      "review_row_id": "C4-2024-02",
+      "corpus_or_project": "C4",
+      "source_group": "statutory_evidence_grounding",
+      "paper": {
+        "title": "Benchmarking Normative AI Assistants Under Inconsistent Evidence with Paraconsistent Trace Semantics",
+        "doi": "https://doi.org/10.3390/ai7080321",
+        "openalex_id": "https://openalex.org/W7203823360"
+      },
+      "normalized_decision": "INCLUDE",
+      "scope_fit": "IN_SCOPE",
+      "role_fit": "DIRECT",
+      "evidence_sufficiency": "SUFFICIENT_ABSTRACT",
+      "primary_reason_code": "DIRECT_METHOD_OR_EVIDENCE_ROLE",
+      "secondary_reason_codes": [],
+      "assigned_label": "statutory_evidence_grounding",
+      "corrected_label": null,
+      "evidence": [
+        {
+          "source_field": "ABSTRACT",
+          "supports": "ROLE",
+          "paraphrase": "Introduces ParaTraceBench for post-retrieval normative/legal reasoning over fixed evidence packages, with evidence-grounded arguments, gold diagnostic traces and unsupported-conclusion avoidance."
+        },
+        {
+          "source_field": "ABSTRACT",
+          "supports": "SCOPE",
+          "paraphrase": "Evaluates contradiction localisation and answer status under inconsistent evidence, close to the supported/contradicted/unsupported distinction in the grounding group."
+        },
+        {
+          "source_field": "ABSTRACT",
+          "supports": "RISK",
+          "paraphrase": "Data are Russian-language legal materials and the focus is defeasible normative reasoning rather than atomic statutory entailment."
+        }
+      ],
+      "rationale": "The benchmark directly addresses evidence-grounded, trace-auditable legal reasoning and distinguishes supported from contradicted or unsupported conclusions, fitting statutory_evidence_grounding. Differences in language and reasoning formalism make it method context rather than a Thai-resource paper, but the group assignment is sound.",
+      "confidence": "MEDIUM",
+      "flags": [
+        "NONE"
+      ],
+      "follow_up": {
+        "required": true,
+        "priority": "ROUTINE",
+        "reasons": [
+          "AI_PROXY_REQUIRES_HUMAN_CONFIRMATION"
+        ],
+        "recommended_action": "HUMAN_CHECK"
+      },
+      "task_specific": {
+        "scope_decision": "KEEP_IN_SCOPE",
+        "group_decision": "CORRECT_GROUP",
+        "corrected_group": null,
+        "literature_decision": null
+      }
+    },
+    {
+      "review_row_id": "C4-2024-03",
+      "corpus_or_project": "C4",
+      "source_group": "thai_legal_qa_resources",
+      "paper": {
+        "title": "Ai Voice Agent For Noisy Indian Telephony Calls",
+        "doi": "https://doi.org/10.25258/ijddt.16.29s.8",
+        "openalex_id": "https://openalex.org/W7161586260"
+      },
+      "normalized_decision": "DEFER",
+      "scope_fit": "UNCERTAIN",
+      "role_fit": "MISMATCH",
+      "evidence_sufficiency": "FULL_TEXT_REQUIRED",
+      "primary_reason_code": "INSUFFICIENT_ABSTRACT_EVIDENCE",
+      "secondary_reason_codes": [
+        "VALID_CONTEXT_BUT_WRONG_GROUP"
+      ],
+      "assigned_label": "thai_legal_qa_resources",
+      "corrected_label": "statutory_evidence_grounding",
+      "evidence": [
+        {
+          "source_field": "TITLE",
+          "supports": "RISK",
+          "paraphrase": "The title describes a voice agent for noisy Indian telephony calls, which does not match the abstract."
+        },
+        {
+          "source_field": "ABSTRACT",
+          "supports": "ROLE",
+          "paraphrase": "The abstract describes JurisGraph, a knowledge-graph-grounded neuro-symbolic method to reduce legal hallucination, evaluated on LegalBench and CUAD with citation accuracy."
+        },
+        {
+          "source_field": "ABSTRACT",
+          "supports": "SCOPE",
+          "paraphrase": "Nothing in the record concerns Thai legal QA resources; the abstract content would align with statutory_evidence_grounding instead."
+        }
+      ],
+      "rationale": "The title and abstract describe different works, so the record's identity cannot be trusted from metadata alone. If the abstract is the correct content, the paper is relevant to legal evidence grounding but not to thai_legal_qa_resources; either way the current group assignment looks wrong.",
+      "confidence": "LOW",
+      "flags": [
+        "METADATA_ISSUE",
+        "NEEDS_FULL_TEXT",
+        "POSSIBLE_WRONG_GROUP"
+      ],
+      "follow_up": {
+        "required": true,
+        "priority": "HIGH",
+        "reasons": [
+          "AI_PROXY_REQUIRES_HUMAN_CONFIRMATION",
+          "METADATA_ISSUE",
+          "FULL_TEXT_REQUIRED",
+          "GROUP_DISAGREEMENT",
+          "LOW_CONFIDENCE"
+        ],
+        "recommended_action": "CHECK_METADATA"
+      },
+      "task_specific": {
+        "scope_decision": "DEFER_FULL_TEXT",
+        "group_decision": "WRONG_GROUP",
+        "corrected_group": "statutory_evidence_grounding",
+        "literature_decision": null
+      }
+    }
+  ]
+}

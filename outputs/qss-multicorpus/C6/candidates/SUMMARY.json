@@ -1,0 +1,32 @@
+{
+  "schema_version": 1,
+  "evaluation_mode": "cross_sectional_scope_robustness",
+  "openalex_requests": 19,
+  "cache_hits": 25,
+  "cache_misses": 11,
+  "request_budget_exhausted": false,
+  "retrieval_complete": true,
+  "seed_resolution_coverage": 0.888889,
+  "minimum_seed_resolution_coverage": 0.8,
+  "seed_resolution_failures": [
+    {
+      "bibtex_key": "Unfried2014",
+      "reason": "OpenAlex request failed after 5 attempts: /works?filter=title.search%3AGender+and+Student+Attitudes+Toward+Science%2C+Technology%2C+Engineering%2C+and+Mathematics&per-page=5&select=id%2Cdoi%2Ctitle%2Cdisplay_name%2Cpublication_year%2Cpublication_date%2Ctype%2Ccited_by_count%2Ccited_by_percentile_year%2Creferenced_works%2Crelated_works%2Ctopics%2Cauthorships%2Cprimary_location%2Cabstract_inverted_index%2Cids"
+    }
+  ],
+  "group_query_failures": [],
+  "cutoff_retrieval_failures": [],
+  "pools": [
+    {
+      "cutoff": 2024,
+      "training_seed_count": 27,
+      "resolved_training_seed_count": 24,
+      "holdout_count": 0,
+      "candidate_count_before_abstract_gate": 1112,
+      "candidate_count": 936,
+      "missing_abstract_removed": 176,
+      "reachable_holdout_count": 0,
+      "candidate_pool_ceiling": null
+    }
+  ]
+}

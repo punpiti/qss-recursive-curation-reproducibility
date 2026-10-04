@@ -1,0 +1,268 @@
+{
+  "study_id": "qss-recursive-curation-v1",
+  "title": "When Bibliographies Learn from Themselves: Measuring and Controlling Scope Drift in AI-Assisted Scholarly Curation",
+  "status": "late_pruner_v2_conditionally_supported_for_group_coverage",
+  "unit_of_scope": "user-controlled canonical bibliography plus boundary text",
+  "core_evaluation_principle": "Primary success is positive-holdout admissible-group recovery under groups frozen before the holdout is examined. Exact-paper rank is secondary; papers absent from a bibliography are unlabeled rather than negatives.",
+  "expansion_scenarios": [
+    "freshness_risk",
+    "role_fit_risk",
+    "concept_coverage_risk"
+  ],
+  "quality_dimensions": [
+    "concept_coverage",
+    "freshness",
+    "directness",
+    "stability",
+    "governance"
+  ],
+  "kbs_frozen_evidence_groups": [
+    {
+      "id": "knowledge_lens_guidance",
+      "purpose": "visual analytics, guidance, knowledge lens, and sensemaking needed to interpret source figures and tables",
+      "capacity": 3,
+      "query": "knowledge guided visual analytics domain knowledge provenance traceable insight",
+      "terms": [
+        "visual analytics",
+        "guidance",
+        "knowledge lens",
+        "sensemaking",
+        "knowledge guided"
+      ],
+      "anchor_families": [
+        [
+          "visual analytics",
+          "visualization",
+          "sensemaking"
+        ],
+        [
+          "guidance",
+          "domain knowledge",
+          "knowledge guided",
+          "knowledge lens"
+        ]
+      ]
+    },
+    {
+      "id": "provenance_traceability",
+      "purpose": "provenance, traceability, and evidence mechanisms needed to make an insight auditable",
+      "capacity": 3,
+      "query": "visual analytics insight provenance sensemaking synthesis multiple insights",
+      "terms": [
+        "provenance",
+        "traceability",
+        "evidence",
+        "insight",
+        "audit"
+      ],
+      "anchor_families": [
+        [
+          "visual analytics",
+          "visualization",
+          "sensemaking",
+          "insight"
+        ],
+        [
+          "provenance",
+          "traceability",
+          "audit",
+          "evidence"
+        ]
+      ]
+    },
+    {
+      "id": "rainfall_pattern_evidence",
+      "purpose": "rainfall or precipitation evidence that operationalizes the lens through diurnal pattern, amount, frequency, intensity, peak timing, spatial pattern, or uncertainty",
+      "capacity": 3,
+      "query": "diurnal rainfall amount frequency intensity peak hour spatial visualization",
+      "terms": [
+        "rainfall",
+        "precipitation",
+        "diurnal",
+        "frequency",
+        "intensity",
+        "peak hour",
+        "spatial",
+        "uncertainty"
+      ],
+      "anchor_families": [
+        [
+          "rainfall",
+          "precipitation",
+          "rain"
+        ],
+        [
+          "diurnal",
+          "frequency",
+          "intensity",
+          "peak",
+          "spatial",
+          "pattern",
+          "uncertainty"
+        ]
+      ]
+    },
+    {
+      "id": "method_evidence_bridge",
+      "purpose": "work that connects a knowledge/visual-analytic method to empirical rainfall evidence or a traceable claim",
+      "capacity": 3,
+      "query": "narrative visualization evidence provenance data storytelling traceability",
+      "terms": [
+        "narrative visualization",
+        "data storytelling",
+        "provenance",
+        "traceability",
+        "evidence",
+        "knowledge"
+      ],
+      "anchor_families": [
+        [
+          "visual analytics",
+          "visualization",
+          "data storytelling",
+          "narrative visualization"
+        ],
+        [
+          "evidence",
+          "provenance",
+          "traceability",
+          "rainfall",
+          "precipitation"
+        ]
+      ]
+    }
+  ],
+  "candidate_admission": {
+    "rule": "A candidate is eligible only when its title and abstract provide explicit evidence that it fills at least one frozen evidence-group purpose and a missing role in that group.",
+    "not_a_rule": "Topical similarity or recency alone is insufficient.",
+    "redundancy_interpretation": "Similarity is expected for retrieval. Difference matters only after group fit: the candidate must add a distinct citable role, mechanism, evidence type, setting, or limitation.",
+    "abstract_required_for_automatic_eligibility": true
+  },
+  "conditions": [
+    "fixed",
+    "recursive_unconstrained",
+    "recursive_thresholded",
+    "recursive_marginal_coverage",
+    "claim_gap"
+  ],
+  "parameters": {
+    "tau_fit": [
+      0.12,
+      0.18,
+      0.24
+    ],
+    "tau_gain": [
+      0.0,
+      0.05,
+      0.1
+    ],
+    "max_additions_per_round": [
+      5,
+      10,
+      20
+    ],
+    "recursion_stop_rule": "Stop early when every frozen group is at capacity or no candidate passes admission with a missing role under the active threshold version.",
+    "max_recursive_rounds": 3,
+    "bag_fractions": [
+      0.5,
+      0.7,
+      0.85
+    ],
+    "bag_sampling": "stratified_by_publication_year",
+    "pilot_bags_per_fraction": 50,
+    "confirmatory_bags_per_fraction": 200,
+    "twenty_percent_bag_role": "optional severe-incompleteness stress test only; not a primary confidence condition",
+    "threshold_version_required_for_reopen": true
+  },
+  "marginal_coverage_definition": {
+    "target": "the evidence groups and anchor families frozen from the user-declared scope before holdout inspection",
+    "state": "for each frozen group, the greatest anchored cosine similarity supplied by the active bibliography",
+    "candidate_gain": "the mean positive improvement a candidate makes over that current group-wise evidence frontier",
+    "recursive_update": "accepted candidates update the frontier before the next round",
+    "convergence": "no eligible candidate exceeds the frozen marginal-gain threshold",
+    "boundary": "this measures missing concept coverage; a newer replacement for an already-covered concept can correctly receive zero gain"
+  },
+  "outcomes": [
+    "admissible_group_recall",
+    "candidate_pool_ceiling",
+    "group_coverage_lift_over_matched_random_allocation",
+    "secondary_exact_recall_at_k",
+    "positive_only_mean_reciprocal_rank",
+    "lift_over_matched_random_ranking",
+    "bag_stability",
+    "conditional_bag_confidence",
+    "boundary_displacement",
+    "redundancy",
+    "marginal_evidence_gain",
+    "candidate_origin_concentration",
+    "blinded_human_boundary_fit",
+    "convergence_stability"
+  ],
+  "current_pilot_corpora": [
+    "C1",
+    "C2",
+    "C3"
+  ],
+  "planned_confirmatory_corpora": [
+    "C5",
+    "C6",
+    "C4"
+  ],
+  "confirmatory_corpus_rule": "Treat each student project and artifact boundary as an independent corpus. Do not pool a lab-wide bibliography or mix proposal and paper workstreams. Register and freeze the canonical BibTeX snapshot, scope text, evidence groups, and temporal cutoffs before any candidate retrieval.",
+  "retrospective_validation": {
+    "positive_label": "a dated paper that the researcher added to the same bibliography after the cutoff",
+    "unselected_candidates": "unlabeled; never assumed negative",
+    "holdout_access_rule": "held-out later papers cannot be retrieval seeds, scoring anchors, or post-hoc group definitions",
+    "primary_success_definition": "a held-out later inclusion belongs to an admissible evidence group represented by eligible output; exact paper rank is secondary",
+    "group_definition_rule": "freeze claim/evidence roles, boundary facets, or independent communities from pre-cutoff inputs; each group has a capacity budget",
+    "forbidden_metrics": [
+      "precision",
+      "accuracy",
+      "ROC_AUC",
+      "false_positive_rate"
+    ],
+    "required_reporting": [
+      "candidate_pool_ceiling",
+      "holdout_count",
+      "reachable_holdout_count",
+      "Recall_at_K",
+      "rank_of_reachable_holdouts",
+      "matched_random_lift"
+    ],
+    "openalex_metrics_role": "secondary outcome-validity descriptors only; they are not inclusion ground truth and current graph metadata may leak future availability"
+  },
+  "confirmatory_requirement": "Add independently authored, multi-domain corpora with recorded scope statements before making general claims.",
+  "openalex_policy": {
+    "cache_first": true,
+    "network_refresh_requires_request_manifest": true,
+    "record_query_and_response_provenance": true,
+    "use_bounded_query_budgets": true,
+    "do_not_fabricate_missing_abstracts": true
+  },
+  "late_pruning_validation": {
+    "policy_config": "config/qss_late_pruner_v2_frozen.json",
+    "development_cutoff": 2022,
+    "held_out_test_cutoffs": [
+      2023,
+      2024
+    ],
+    "primary_result": "group recall improved over fixed Top-10 on both held-out cutoffs",
+    "secondary_result": "exact recovery passed in 2023 and failed strict non-inferiority by 2 bag-positive hits in 2024",
+    "supported_role": "experimental coverage layer beside fixed Core ranking",
+    "forbidden_action": "do not retune v2 on 2023 or 2024"
+  },
+  "execution_policy": {
+    "cpu_threads_default": 16,
+    "local_parallel_backend": "processes_with_one_blas_thread_each",
+    "cpu_threads_override_env": "QSS_THREADS",
+    "gpu_mode_default": "auto",
+    "gpu_rule": "Use GPU only when a CUDA-enabled PyTorch environment detects a usable device; CPU multicore execution remains the reproducible baseline.",
+    "openalex_parallelism_rule": "Parallelize local bagging/scoring only. Keep network retrieval bounded and cache-first; never increase API concurrency merely because more CPU cores are available."
+  },
+  "human_review_workbook_pipeline": {
+    "config": "config/qss_review_workbook_experiment.json",
+    "experimental_stage": "human_review_instrumentation",
+    "status": "required_derived_stage",
+    "gate": "The declared workbook pipeline must pass input-hash, schema, row-count, title, abstract, and deterministic-output checks before adjudication files are distributed or included in the reproducibility package."
+  }
+}
